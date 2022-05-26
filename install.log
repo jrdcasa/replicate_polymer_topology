@@ -1,0 +1,64 @@
+
+		 Starting installation!!!! at 25/05/2022 13:23:17
+
+
+		 SYS PATH
+/home/jramos/Programacion/GITHUB_REPO_DIR/replicate_polymer
+/usr/lib/python38.zip
+/usr/lib/python3.8
+/usr/lib/python3.8/lib-dynload
+/home/jramos/Programacion/sandboxes/sandbox_replicate/lib/python3.8/site-packages
+/home/jramos/Programacion/sandboxes/sandbox_replicate/lib/python3.8/site-packages/foyer-0.9.4-py3.8.egg
+/home/jramos/Programacion/sandboxes/sandbox_replicate/lib/python3.8/site-packages/gmso-0.7.1.dev0-py3.8.egg
+/home/jramos/Programacion/sandboxes/sandbox_replicate/lib/python3.8/site-packages/mbuild-0.13.0-py3.8.egg
+/home/jramos/Programacion/sandboxes/sandbox_replicate/lib/python3.8/site-packages/intermol-0.1.0-py3.8.egg
+/home/jramos/Programacion/sandboxes/sandbox_replicate/lib/python3.8/site-packages/replicate_polymer-4.0-py3.8-linux-x86_64.egg
+
+		 INSTALLING PIP PACKAGES (25/05/2022 13:23:17)
+
+25/05/2022 13:23:17: ** REPLICATE: Installing Cython==0.29.24
+25/05/2022 13:23:18: ** REPLICATE: Installing argcomplete==1.12.3
+25/05/2022 13:23:18: ** REPLICATE: Installing numpy==1.21.3
+25/05/2022 13:23:18: ** REPLICATE: Installing GitPython==3.1.1
+25/05/2022 13:23:19: ** REPLICATE: Installing ParmEd==3.4.3
+25/05/2022 13:23:19: ** REPLICATE: Installing lark-parser==0.12.0
+25/05/2022 13:23:20: ** REPLICATE: Installing ele==0.2.0
+25/05/2022 13:23:20: ** REPLICATE: Installing pydantic==1.8.2
+25/05/2022 13:23:20: ** REPLICATE: Installing unyt==2.8.0
+25/05/2022 13:23:21: ** REPLICATE: Installing lxml==4.6.3
+25/05/2022 13:23:21: ** REPLICATE: Installing boltons==21.0.0
+25/05/2022 13:23:21: ** REPLICATE: Installing networkx==2.6.3
+25/05/2022 13:23:22: ** REPLICATE: Installing requests==2.26.0
+25/05/2022 13:23:22: ** REPLICATE: Installing mdtraj==1.9.6
+
+		 INSTALLING FOYER (https://github.com/mosdef-hub/foyer) (25/05/2022 13:23:23)
+
+https://:@github.com/jrdcasa/foyer_cj.git is already cloned in ./thirdparty/foyer
+foyer installed in the python environment
+
+		 INSTALLING OPENMM (https://openmm.org/) (25/05/2022 13:23:23)
+
+openmm installed in the python environment (25/05/2022 13:23:23)
+
+		 INSTALLING GMSO (https://github.com/mosdef-hub/gmso) (25/05/2022 13:23:23)
+
+https://:@github.com/jrdcasa/gmso_cj.git is already cloned in ./thirdparty/gmso
+gmso installed in the python environment
+
+		 INSTALLING MBUILD (https://github.com/mosdef-hub/mbuild) (25/05/2022 13:23:24)
+
+https://:@github.com/jrdcasa/mbuild.git is already cloned in ./thirdparty/mbuild
+mbuild installed in the python environment
+
+		 INSTALLING InterMol (https://github.com/shirtsgroup/InterMol) (25/05/2022 13:23:24)
+
+https://:@github.com/jrdcasa/intermol_cj.git is already cloned in ./thirdparty/intermol
+intermol installed in the python environment
+
+		 RUNNING SETUP FROM SETUPTOOLS 25/05/2022 13:23:32
+
+
+
+		 Installation Done!!!! at 25/05/2022 13:23:33
+
+

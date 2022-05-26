@@ -1,0 +1,36 @@
+
+    ***********************************************************************
+              Replicate a molecule or polymer chain (ReMoPo)
+              ----------------------------------------------
+
+                                Version 3.0
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        ReMoPo is an open-source python library to quickly replicate a molecule
+        from a pdb file containing the seed molecule. After that, the script assigns 
+        the force field parameters using the foyer library (https://mosdef.org/)
+        This program generates GROMACS and LAMMPS files to run simulations. 
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of 
+        the license (LICENSE.txt) is included with this distribution. 
+
+    ***********************************************************************
+        
+		Start Job at 18-12-2021 13:30:56 ============
+
+		Command line: 
+			python replicate_polymer.py -p 00-Inital_trimerP4HB.pdb -f ../../forcefields/trappe-ua.xml --images 1 1 1 -e lammps --noh
+			         or
+			replicate_polymer -p 00-Inital_trimerP4HB.pdb -f ../../forcefields/trappe-ua.xml --images 1 1 1 -e lammps --noh
+
+
+		Removing hydrogens in the pdb file of the seed molecles.(00-Inital_trimerP4HB.pdb)... (18-12-2021 13:30:56)
+		Replicating and typing molecule (18-12-2021 13:30:56)
+		********************************************************
+		Loading seed structure from 00-Inital_trimerP4HB_noH.pdb (18-12-2021 13:30:56)
+		Applying force field to the seed molecules 00-Inital_trimerP4HB_noH.pdb (18-12-2021 13:30:56)

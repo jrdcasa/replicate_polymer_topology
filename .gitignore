@@ -1,0 +1,10 @@
+build/**
+dist/**
+replicate_polymer.egg-info/**
+thirdparty/**
+tests_MD_engines/**
+examples/05-C150_amorphous_replicate_5x5x2/04-LAMMPS_EXAMPLE/**
+replicate_polymer/__pycache__/**
+*.lmp
+OLD/
+nohup.out

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/foyer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/foyer_cj" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/foyer_cja" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdparty/foyer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdparty/foyer/thirdparty/openmm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdparty/gmso" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdparty/intermol" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdparty/mbuild" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdparty/openmm" vcs="Git" />
+  </component>
+</project>

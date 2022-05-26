@@ -1,0 +1,95 @@
+units real
+atom_style full
+
+dimension 3
+boundary p p p
+
+bond_style hybrid harmonic
+angle_style hybrid harmonic
+dihedral_style hybrid multi/harmonic
+special_bonds lj 0.0 0.0 1.0 coul 0.0 0.0 0.5
+
+read_data model01_C5C8C11O12_opt_replicate.lmp
+
+pair_style lj/cut/coul/long 9.0 9.0
+kspace_style pppm 1e-6
+pair_coeff 1 1   0.0660000   3.5000000
+pair_coeff 2 2   0.0300000   2.5000000
+pair_coeff 3 3   0.0660000   3.5000000
+pair_coeff 4 4   0.0262906   2.5000000
+pair_coeff 5 5   0.0660000   3.5000000
+pair_coeff 6 6   0.1700000   2.5500000
+pair_coeff 7 7   0.0150000   2.4200000
+pair_coeff 8 8   0.1050000   3.1875000
+pair_coeff 9 9   0.1680000   3.1080000
+pair_coeff 3 8   0.0416233   3.3400973
+pair_coeff 2 4   0.0140421   2.5000000
+pair_coeff 4 4   0.0131453   2.5000000
+pair_coeff 5 9   0.0526498   3.2981813
+pair_coeff 4 5   0.0208278   2.9580399
+pair_coeff 1 5   0.0330000   3.5000000
+pair_coeff 1 5   0.0330000   3.5000000
+pair_coeff 1 5   0.0330000   3.5000000
+pair_coeff 4 6   0.0334268   2.5248762
+pair_coeff 1 4   0.0208278   2.9580399
+pair_coeff 2 6   0.0357071   2.5248762
+pair_coeff 2 4   0.0140421   2.5000000
+pair_coeff 4 7   0.0099292   2.4596748
+pair_coeff 1 4   0.0208278   2.9580399
+pair_coeff 2 9   0.0354965   2.7874720
+pair_coeff 2 4   0.0140421   2.5000000
+pair_coeff 4 7   0.0099292   2.4596748
+pair_coeff 2 3   0.0222486   2.9580399
+pair_coeff 2 6   0.0357071   2.5248762
+pair_coeff 3 4   0.0208278   2.9580399
+pair_coeff 2 4   0.0140421   2.5000000
+pair_coeff 2 9   0.0354965   2.7874720
+pair_coeff 2 4   0.0140421   2.5000000
+pair_coeff 1 4   0.0208278   2.9580399
+pair_coeff 4 6   0.0334268   2.5248762
+pair_coeff 4 7   0.0099292   2.4596748
+pair_coeff 2 4   0.0140421   2.5000000
+pair_coeff 2 6   0.0357071   2.5248762
+pair_coeff 2 4   0.0140421   2.5000000
+pair_coeff 3 3   0.0330000   3.5000000
+pair_coeff 2 3   0.0222486   2.9580399
+pair_coeff 2 9   0.0354965   2.7874720
+pair_coeff 2 3   0.0222486   2.9580399
+pair_coeff 3 6   0.0529623   2.9874738
+pair_coeff 2 4   0.0140421   2.5000000
+pair_coeff 4 4   0.0131453   2.5000000
+pair_coeff 3 6   0.0529623   2.9874738
+pair_coeff 3 7   0.0157321   2.9103264
+pair_coeff 2 4   0.0140421   2.5000000
+pair_coeff 3 4   0.0208278   2.9580399
+pair_coeff 4 4   0.0131453   2.5000000
+pair_coeff 4 5   0.0208278   2.9580399
+pair_coeff 4 5   0.0208278   2.9580399
+pair_coeff 2 3   0.0222486   2.9580399
+pair_coeff 2 3   0.0222486   2.9580399
+pair_coeff 4 6   0.0334268   2.5248762
+pair_coeff 4 4   0.0131453   2.5000000
+pair_coeff 2 4   0.0140421   2.5000000
+pair_coeff 2 3   0.0222486   2.9580399
+pair_coeff 4 6   0.0334268   2.5248762
+pair_coeff 3 3   0.0330000   3.5000000
+pair_coeff 3 4   0.0208278   2.9580399
+pair_coeff 4 4   0.0131453   2.5000000
+pair_coeff 2 4   0.0140421   2.5000000
+pair_coeff 1 4   0.0208278   2.9580399
+pair_coeff 3 7   0.0157321   2.9103264
+pair_coeff 3 4   0.0208278   2.9580399
+pair_coeff 4 5   0.0208278   2.9580399
+pair_coeff 3 8   0.0416233   3.3400973
+pair_coeff 4 4   0.0131453   2.5000000
+pair_coeff 4 4   0.0131453   2.5000000
+pair_coeff 4 7   0.0099292   2.4596748
+pair_coeff 4 4   0.0131453   2.5000000
+pair_coeff 7 8   0.0198431   2.7773639
+pair_coeff 2 4   0.0140421   2.5000000
+
+pair_modify mix arithmetic
+
+thermo_style custom ebond eangle edihed eimp epair evdwl ecoul elong etail pe
+
+run 0

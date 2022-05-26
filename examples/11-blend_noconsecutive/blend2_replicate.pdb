@@ -1,0 +1,502 @@
+REMARK   1 CREATED WITH MDTraj 1.9.6, 2021-12-12
+CRYST1   14.945   14.945   14.945  90.00  90.00  90.00 P 1           1 
+MODEL        0
+ATOM      1  H   Pol A   1      14.166   9.873   7.801  1.00  0.00           H  
+ATOM      2  C   Pol A   1      14.071   9.678   6.721  1.00  0.00           C  
+ATOM      3  C   Pol A   1      13.025  10.590   6.075  1.00  0.00           C  
+ATOM      4  H   Pol A   1      13.794   8.619   6.595  1.00  0.00           H  
+ATOM      5  H   Pol A   1      15.062   9.824   6.262  1.00  0.00           H  
+ATOM      6  H   Pol A   1      13.277  11.641   6.291  1.00  0.00           H  
+ATOM      7  H   Pol A   1      12.042  10.400   6.539  1.00  0.00           H  
+ATOM      8  C   Pol A   1      12.924  10.379   4.558  1.00  0.00           C  
+ATOM      9  C   Pol A   1      11.822  11.191   3.859  1.00  0.00           C  
+ATOM     10  H   Pol A   1      12.742   9.305   4.366  1.00  0.00           H  
+ATOM     11  H   Pol A   1      13.898  10.611   4.093  1.00  0.00           H  
+ATOM     12  H   Pol A   1      10.842  10.910   4.286  1.00  0.00           H  
+ATOM     13  H   Pol A   1      11.791  10.891   2.795  1.00  0.00           H  
+ATOM     14  C   Pol A   1      11.984  12.715   3.930  1.00  0.00           C  
+ATOM     15  C   Pol A   1      10.855  13.453   3.206  1.00  0.00           C  
+ATOM     16  H   Pol A   1      12.951  13.005   3.485  1.00  0.00           H  
+ATOM     17  H   Pol A   1      12.008  13.042   4.984  1.00  0.00           H  
+ATOM     18  H   Pol A   1       9.875  13.189   3.634  1.00  0.00           H  
+ATOM     19  H   Pol A   1      10.839  13.191   2.136  1.00  0.00           H  
+ATOM     20  H   Pol A   1      10.971  14.546   3.284  1.00  0.00           H  
+ATOM     21  H   Pol A   2       8.360   0.355  14.733  1.00  0.00           H  
+ATOM     22  C   Pol A   2       9.424   0.203  14.972  1.00  0.00           C  
+ATOM     23  C   Pol A   2      10.323   0.787  13.879  1.00  0.00           C  
+ATOM     24  H   Pol A   2       9.592  -0.880  15.083  1.00  0.00           H  
+ATOM     25  H   Pol A   2       9.613   0.678  15.947  1.00  0.00           H  
+ATOM     26  H   Pol A   2      10.137   1.871  13.791  1.00  0.00           H  
+ATOM     27  H   Pol A   2      10.032   0.346  12.909  1.00  0.00           H  
+ATOM     28  C   Pol A   2      11.822   0.545  14.110  1.00  0.00           C  
+ATOM     29  C   Pol A   2      12.384   1.230  15.362  1.00  0.00           C  
+ATOM     30  H   Pol A   2      12.384   0.905  13.229  1.00  0.00           H  
+ATOM     31  H   Pol A   2      12.010  -0.542  14.170  1.00  0.00           H  
+ATOM     32  H   Pol A   2      11.858   0.859  16.259  1.00  0.00           H  
+ATOM     33  H   Pol A   2      12.180   2.314  15.304  1.00  0.00           H  
+ATOM     34  C   Pol A   2      13.889   1.009  15.542  1.00  0.00           C  
+ATOM     35  C   Pol A   2      14.442   1.705  16.785  1.00  0.00           C  
+ATOM     36  H   Pol A   2      14.424   1.372  14.646  1.00  0.00           H  
+ATOM     37  H   Pol A   2      14.090  -0.074  15.617  1.00  0.00           H  
+ATOM     38  H   Pol A   2      13.992   1.279  17.696  1.00  0.00           H  
+ATOM     39  H   Pol A   2      14.219   2.784  16.765  1.00  0.00           H  
+ATOM     40  H   Pol A   2      15.534   1.588  16.861  1.00  0.00           H  
+ATOM     41  H   Pol A   3       0.414  10.886  15.645  1.00  0.00           H  
+ATOM     42  C   Pol A   3       0.287  11.935  15.332  1.00  0.00           C  
+ATOM     43  C   Pol A   3       0.950  12.208  13.980  1.00  0.00           C  
+ATOM     44  H   Pol A   3       0.723  12.574  16.116  1.00  0.00           H  
+ATOM     45  H   Pol A   3      -0.794  12.145  15.288  1.00  0.00           H  
+ATOM     46  H   Pol A   3       0.474  11.585  13.202  1.00  0.00           H  
+ATOM     47  H   Pol A   3       2.011  11.902  14.026  1.00  0.00           H  
+ATOM     48  C   Pol A   3       0.861  13.685  13.579  1.00  0.00           C  
+ATOM     49  C   Pol A   3       1.619  14.027  12.293  1.00  0.00           C  
+ATOM     50  H   Pol A   3       1.259  14.303  14.404  1.00  0.00           H  
+ATOM     51  H   Pol A   3      -0.201  13.961  13.460  1.00  0.00           H  
+ATOM     52  H   Pol A   3       1.195  13.448  11.455  1.00  0.00           H  
+ATOM     53  H   Pol A   3       2.670  13.707  12.396  1.00  0.00           H  
+ATOM     54  C   Pol A   3       1.583  15.519  11.941  1.00  0.00           C  
+ATOM     55  C   Pol A   3       2.384  15.832  10.677  1.00  0.00           C  
+ATOM     56  H   Pol A   3       1.985  16.108  12.784  1.00  0.00           H  
+ATOM     57  H   Pol A   3       0.535  15.839  11.804  1.00  0.00           H  
+ATOM     58  H   Pol A   3       2.012  15.245   9.822  1.00  0.00           H  
+ATOM     59  H   Pol A   3       3.449  15.586  10.817  1.00  0.00           H  
+ATOM     60  H   Pol A   3       2.317  16.899  10.412  1.00  0.00           H  
+ATOM     61  H   Pol A   4       6.045   0.174  -2.747  1.00  0.00           H  
+ATOM     62  C   Pol A   4       5.696  -0.197  -1.770  1.00  0.00           C  
+ATOM     63  C   Pol A   4       5.201   0.949  -0.886  1.00  0.00           C  
+ATOM     64  H   Pol A   4       6.534  -0.730  -1.292  1.00  0.00           H  
+ATOM     65  H   Pol A   4       4.895  -0.930  -1.955  1.00  0.00           H  
+ATOM     66  H   Pol A   4       4.405   1.503  -1.414  1.00  0.00           H  
+ATOM     67  H   Pol A   4       6.029   1.661  -0.724  1.00  0.00           H  
+ATOM     68  C   Pol A   4       4.671   0.471   0.472  1.00  0.00           C  
+ATOM     69  C   Pol A   4       4.268   1.628   1.396  1.00  0.00           C  
+ATOM     70  H   Pol A   4       5.448  -0.140   0.964  1.00  0.00           H  
+ATOM     71  H   Pol A   4       3.802  -0.192   0.310  1.00  0.00           H  
+ATOM     72  H   Pol A   4       3.506   2.243   0.885  1.00  0.00           H  
+ATOM     73  H   Pol A   4       5.141   2.286   1.552  1.00  0.00           H  
+ATOM     74  C   Pol A   4       3.729   1.192   2.767  1.00  0.00           C  
+ATOM     75  C   Pol A   4       4.761   0.450   3.621  1.00  0.00           C  
+ATOM     76  H   Pol A   4       2.835   0.559   2.632  1.00  0.00           H  
+ATOM     77  H   Pol A   4       3.392   2.089   3.319  1.00  0.00           H  
+ATOM     78  H   Pol A   4       5.684   1.045   3.720  1.00  0.00           H  
+ATOM     79  H   Pol A   4       5.029  -0.522   3.175  1.00  0.00           H  
+ATOM     80  H   Pol A   4       4.377   0.257   4.635  1.00  0.00           H  
+ATOM     81  H   Ran A   5       9.022   4.798   6.624  1.00  0.00           H  
+ATOM     82  C   Ran A   5       9.667   4.328   5.863  1.00  0.00           C  
+ATOM     83  C   Ran A   5      10.055   3.002   6.338  1.00  0.00           C  
+ATOM     84  H   Ran A   5      10.533   4.989   5.708  1.00  0.00           H  
+ATOM     85  H   Ran A   5       9.095   4.292   4.921  1.00  0.00           H  
+ATOM     86  O   Ran A   5       8.920   2.309   6.931  1.00  0.00           O  
+ATOM     87  H   Ran A   5      10.705   3.152   7.218  1.00  0.00           H  
+ATOM     88  C   Ran A   5       7.868   1.889   6.197  1.00  0.00           C  
+ATOM     89  C   Ran A   5       6.897   1.247   7.160  1.00  0.00           C  
+ATOM     90  O   Ran A   5       7.751   2.013   5.001  1.00  0.00           O  
+ATOM     91  H   Ran A   5       5.987   0.966   6.624  1.00  0.00           H  
+ATOM     92  H   Ran A   5       7.353   0.344   7.596  1.00  0.00           H  
+ATOM     93  H   Ran A   5       6.646   1.964   7.957  1.00  0.00           H  
+ATOM     94  C   Ran A   5      10.763   2.146   5.381  1.00  0.00           C  
+ATOM     95  C   Ran A   5      12.301   2.167   5.467  1.00  0.00           C  
+ATOM     96  H   Ran A   5      10.456   2.346   4.337  1.00  0.00           H  
+ATOM     97  H   Ran A   5      10.443   1.109   5.587  1.00  0.00           H  
+ATOM     98  H   Ran A   5      12.687   1.351   4.827  1.00  0.00           H  
+ATOM     99  H   Ran A   5      12.605   1.915   6.498  1.00  0.00           H  
+ATOM    100  C   Ran A   5      12.943   3.491   5.031  1.00  0.00           C  
+ATOM    101  C   Ran A   5      14.407   3.517   5.025  1.00  0.00           C  
+ATOM    102  H   Ran A   5      12.558   4.309   5.662  1.00  0.00           H  
+ATOM    103  H   Ran A   5      12.610   3.711   4.001  1.00  0.00           H  
+ATOM    104  O   Ran A   5      14.922   4.574   4.161  1.00  0.00           O  
+ATOM    105  H   Ran A   5      14.748   2.606   4.502  1.00  0.00           H  
+ATOM    106  C   Ran A   5      14.713   5.888   4.401  1.00  0.00           C  
+ATOM    107  C   Ran A   5      15.404   6.640   3.290  1.00  0.00           C  
+ATOM    108  O   Ran A   5      14.090   6.347   5.321  1.00  0.00           O  
+ATOM    109  H   Ran A   5      14.996   7.654   3.228  1.00  0.00           H  
+ATOM    110  H   Ran A   5      16.488   6.688   3.475  1.00  0.00           H  
+ATOM    111  H   Ran A   5      15.204   6.122   2.342  1.00  0.00           H  
+ATOM    112  C   Ran A   5      15.049   3.528   6.341  1.00  0.00           C  
+ATOM    113  C   Ran A   5      16.573   3.336   6.278  1.00  0.00           C  
+ATOM    114  H   Ran A   5      14.626   2.733   6.977  1.00  0.00           H  
+ATOM    115  H   Ran A   5      14.819   4.478   6.853  1.00  0.00           H  
+ATOM    116  H   Ran A   5      17.014   4.041   5.552  1.00  0.00           H  
+ATOM    117  H   Ran A   5      16.789   2.320   5.898  1.00  0.00           H  
+ATOM    118  C   Ran A   5      17.271   3.529   7.629  1.00  0.00           C  
+ATOM    119  C   Ran A   5      18.763   3.205   7.568  1.00  0.00           C  
+ATOM    120  H   Ran A   5      16.785   2.888   8.386  1.00  0.00           H  
+ATOM    121  H   Ran A   5      17.137   4.574   7.963  1.00  0.00           H  
+ATOM    122  H   Ran A   5      19.284   3.890   6.877  1.00  0.00           H  
+ATOM    123  H   Ran A   5      18.925   2.173   7.213  1.00  0.00           H  
+ATOM    124  H   Ran A   5      19.238   3.302   8.558  1.00  0.00           H  
+ATOM    125  H   Pol A   6      -1.314  13.926  10.021  1.00  0.00           H  
+ATOM    126  C   Pol A   6      -0.844  13.624   9.072  1.00  0.00           C  
+ATOM    127  C   Pol A   6      -0.690  14.818   8.127  1.00  0.00           C  
+ATOM    128  H   Pol A   6      -1.476  12.844   8.617  1.00  0.00           H  
+ATOM    129  H   Pol A   6       0.131  13.172   9.313  1.00  0.00           H  
+ATOM    130  H   Pol A   6      -0.061  15.590   8.604  1.00  0.00           H  
+ATOM    131  H   Pol A   6      -1.685  15.276   7.979  1.00  0.00           H  
+ATOM    132  C   Pol A   6      -0.100  14.449   6.758  1.00  0.00           C  
+ATOM    133  C   Pol A   6       1.328  13.888   6.818  1.00  0.00           C  
+ATOM    134  H   Pol A   6      -0.101  15.343   6.110  1.00  0.00           H  
+ATOM    135  H   Pol A   6      -0.765  13.719   6.268  1.00  0.00           H  
+ATOM    136  H   Pol A   6       1.334  12.948   7.398  1.00  0.00           H  
+ATOM    137  H   Pol A   6       1.965  14.600   7.374  1.00  0.00           H  
+ATOM    138  C   Pol A   6       1.960  13.632   5.441  1.00  0.00           C  
+ATOM    139  C   Pol A   6       1.247  12.558   4.617  1.00  0.00           C  
+ATOM    140  H   Pol A   6       3.013  13.323   5.582  1.00  0.00           H  
+ATOM    141  H   Pol A   6       1.982  14.577   4.869  1.00  0.00           H  
+ATOM    142  H   Pol A   6       0.210  12.850   4.384  1.00  0.00           H  
+ATOM    143  H   Pol A   6       1.215  11.599   5.160  1.00  0.00           H  
+ATOM    144  H   Pol A   6       1.766  12.385   3.661  1.00  0.00           H  
+ATOM    145  H   Pol A   7       5.563   7.497   4.703  1.00  0.00           H  
+ATOM    146  C   Pol A   7       4.710   8.073   5.098  1.00  0.00           C  
+ATOM    147  C   Pol A   7       4.885   8.382   6.586  1.00  0.00           C  
+ATOM    148  H   Pol A   7       3.794   7.483   4.924  1.00  0.00           H  
+ATOM    149  H   Pol A   7       4.631   9.003   4.511  1.00  0.00           H  
+ATOM    150  H   Pol A   7       5.856   8.887   6.744  1.00  0.00           H  
+ATOM    151  H   Pol A   7       4.928   7.434   7.153  1.00  0.00           H  
+ATOM    152  C   Pol A   7       3.762   9.266   7.145  1.00  0.00           C  
+ATOM    153  C   Pol A   7       3.884   9.528   8.651  1.00  0.00           C  
+ATOM    154  H   Pol A   7       2.787   8.788   6.938  1.00  0.00           H  
+ATOM    155  H   Pol A   7       3.759  10.230   6.604  1.00  0.00           H  
+ATOM    156  H   Pol A   7       4.866   9.990   8.865  1.00  0.00           H  
+ATOM    157  H   Pol A   7       3.870   8.561   9.186  1.00  0.00           H  
+ATOM    158  C   Pol A   7       2.776  10.427   9.212  1.00  0.00           C  
+ATOM    159  C   Pol A   7       2.874  10.603  10.729  1.00  0.00           C  
+ATOM    160  H   Pol A   7       1.790   9.999   8.959  1.00  0.00           H  
+ATOM    161  H   Pol A   7       2.821  11.418   8.723  1.00  0.00           H  
+ATOM    162  H   Pol A   7       3.820  11.096  11.009  1.00  0.00           H  
+ATOM    163  H   Pol A   7       2.835   9.628  11.240  1.00  0.00           H  
+ATOM    164  H   Pol A   7       2.046  11.217  11.117  1.00  0.00           H  
+ATOM    165  H   Pol A   8      10.502   9.184   0.097  1.00  0.00           H  
+ATOM    166  C   Pol A   8       9.888   8.862   0.954  1.00  0.00           C  
+ATOM    167  C   Pol A   8       8.984   9.994   1.448  1.00  0.00           C  
+ATOM    168  H   Pol A   8      10.572   8.526   1.752  1.00  0.00           H  
+ATOM    169  H   Pol A   8       9.289   7.995   0.633  1.00  0.00           H  
+ATOM    170  H   Pol A   8       8.359  10.340   0.610  1.00  0.00           H  
+ATOM    171  H   Pol A   8       9.607  10.853   1.751  1.00  0.00           H  
+ATOM    172  C   Pol A   8       8.105   9.556   2.628  1.00  0.00           C  
+ATOM    173  C   Pol A   8       7.265  10.657   3.300  1.00  0.00           C  
+ATOM    174  H   Pol A   8       8.774   9.129   3.398  1.00  0.00           H  
+ATOM    175  H   Pol A   8       7.447   8.730   2.307  1.00  0.00           H  
+ATOM    176  H   Pol A   8       7.894  11.550   3.466  1.00  0.00           H  
+ATOM    177  H   Pol A   8       6.995  10.291   4.309  1.00  0.00           H  
+ATOM    178  C   Pol A   8       5.952  11.070   2.612  1.00  0.00           C  
+ATOM    179  C   Pol A   8       6.081  11.844   1.298  1.00  0.00           C  
+ATOM    180  H   Pol A   8       5.389  11.701   3.323  1.00  0.00           H  
+ATOM    181  H   Pol A   8       5.330  10.173   2.442  1.00  0.00           H  
+ATOM    182  H   Pol A   8       6.489  11.218   0.491  1.00  0.00           H  
+ATOM    183  H   Pol A   8       6.731  12.725   1.413  1.00  0.00           H  
+ATOM    184  H   Pol A   8       5.091  12.196   0.965  1.00  0.00           H  
+ATOM    185  H   Pol A   9      12.965   1.252  10.622  1.00  0.00           H  
+ATOM    186  C   Pol A   9      12.483   2.235  10.504  1.00  0.00           C  
+ATOM    187  C   Pol A   9      13.502   3.369  10.611  1.00  0.00           C  
+ATOM    188  H   Pol A   9      11.707   2.323  11.282  1.00  0.00           H  
+ATOM    189  H   Pol A   9      11.983   2.250   9.522  1.00  0.00           H  
+ATOM    190  H   Pol A   9      14.263   3.239   9.822  1.00  0.00           H  
+ATOM    191  H   Pol A   9      14.036   3.294  11.575  1.00  0.00           H  
+ATOM    192  C   Pol A   9      12.861   4.758  10.500  1.00  0.00           C  
+ATOM    193  C   Pol A   9      13.867   5.915  10.577  1.00  0.00           C  
+ATOM    194  H   Pol A   9      12.124   4.870  11.317  1.00  0.00           H  
+ATOM    195  H   Pol A   9      12.290   4.830   9.557  1.00  0.00           H  
+ATOM    196  H   Pol A   9      14.491   5.792  11.481  1.00  0.00           H  
+ATOM    197  H   Pol A   9      13.318   6.865  10.705  1.00  0.00           H  
+ATOM    198  C   Pol A   9      14.777   6.054   9.350  1.00  0.00           C  
+ATOM    199  C   Pol A   9      15.769   7.205   9.510  1.00  0.00           C  
+ATOM    200  H   Pol A   9      14.158   6.220   8.449  1.00  0.00           H  
+ATOM    201  H   Pol A   9      15.332   5.116   9.182  1.00  0.00           H  
+ATOM    202  H   Pol A   9      16.436   7.026  10.369  1.00  0.00           H  
+ATOM    203  H   Pol A   9      15.235   8.154   9.684  1.00  0.00           H  
+ATOM    204  H   Pol A   9      16.397   7.331   8.614  1.00  0.00           H  
+ATOM    205  H   Ran A  10      -0.160   8.778  13.286  1.00  0.00           H  
+ATOM    206  C   Ran A  10       0.850   8.393  13.500  1.00  0.00           C  
+ATOM    207  C   Ran A  10       0.806   7.495  14.646  1.00  0.00           C  
+ATOM    208  H   Ran A  10       1.513   9.255  13.671  1.00  0.00           H  
+ATOM    209  H   Ran A  10       1.201   7.860  12.602  1.00  0.00           H  
+ATOM    210  O   Ran A  10      -0.134   6.427  14.390  1.00  0.00           O  
+ATOM    211  H   Ran A  10       0.471   8.083  15.518  1.00  0.00           H  
+ATOM    212  C   Ran A  10      -1.349   6.440  14.992  1.00  0.00           C  
+ATOM    213  C   Ran A  10      -2.092   5.217  14.523  1.00  0.00           C  
+ATOM    214  O   Ran A  10      -1.736   7.274  15.759  1.00  0.00           O  
+ATOM    215  H   Ran A  10      -2.712   5.464  13.650  1.00  0.00           H  
+ATOM    216  H   Ran A  10      -1.379   4.420  14.266  1.00  0.00           H  
+ATOM    217  H   Ran A  10      -2.736   4.865  15.337  1.00  0.00           H  
+ATOM    218  C   Ran A  10       2.095   6.896  14.986  1.00  0.00           C  
+ATOM    219  C   Ran A  10       3.162   7.874  15.499  1.00  0.00           C  
+ATOM    220  H   Ran A  10       2.480   6.346  14.108  1.00  0.00           H  
+ATOM    221  H   Ran A  10       1.910   6.132  15.763  1.00  0.00           H  
+ATOM    222  H   Ran A  10       2.724   8.506  16.293  1.00  0.00           H  
+ATOM    223  H   Ran A  10       3.450   8.568  14.691  1.00  0.00           H  
+ATOM    224  C   Ran A  10       4.427   7.205  16.070  1.00  0.00           C  
+ATOM    225  C   Ran A  10       5.158   6.302  15.169  1.00  0.00           C  
+ATOM    226  H   Ran A  10       4.148   6.636  16.976  1.00  0.00           H  
+ATOM    227  H   Ran A  10       5.098   8.010  16.424  1.00  0.00           H  
+ATOM    228  O   Ran A  10       5.288   6.795  13.810  1.00  0.00           O  
+ATOM    229  H   Ran A  10       4.530   5.402  15.031  1.00  0.00           H  
+ATOM    230  C   Ran A  10       5.923   7.947  13.505  1.00  0.00           C  
+ATOM    231  C   Ran A  10       5.833   8.100  12.002  1.00  0.00           C  
+ATOM    232  O   Ran A  10       6.445   8.695  14.292  1.00  0.00           O  
+ATOM    233  H   Ran A  10       6.221   9.084  11.715  1.00  0.00           H  
+ATOM    234  H   Ran A  10       6.434   7.316  11.510  1.00  0.00           H  
+ATOM    235  H   Ran A  10       4.778   8.018  11.691  1.00  0.00           H  
+ATOM    236  C   Ran A  10       6.429   5.851  15.749  1.00  0.00           C  
+ATOM    237  C   Ran A  10       7.235   4.871  14.882  1.00  0.00           C  
+ATOM    238  H   Ran A  10       6.214   5.384  16.727  1.00  0.00           H  
+ATOM    239  H   Ran A  10       7.073   6.723  15.962  1.00  0.00           H  
+ATOM    240  H   Ran A  10       7.511   5.377  13.939  1.00  0.00           H  
+ATOM    241  H   Ran A  10       6.605   4.012  14.595  1.00  0.00           H  
+ATOM    242  C   Ran A  10       8.524   4.362  15.550  1.00  0.00           C  
+ATOM    243  C   Ran A  10       8.319   3.446  16.761  1.00  0.00           C  
+ATOM    244  H   Ran A  10       9.137   5.229  15.854  1.00  0.00           H  
+ATOM    245  H   Ran A  10       9.118   3.811  14.799  1.00  0.00           H  
+ATOM    246  H   Ran A  10       7.701   2.570  16.505  1.00  0.00           H  
+ATOM    247  H   Ran A  10       7.831   3.971  17.598  1.00  0.00           H  
+ATOM    248  H   Ran A  10       9.289   3.071  17.128  1.00  0.00           H  
+TER     249      Ran A  10
+ENDMDL
+CONECT    1    2
+CONECT    2    1    3    4    5
+CONECT    3    2    6    7    8
+CONECT    4    2
+CONECT    5    2
+CONECT    6    3
+CONECT    7    3
+CONECT    8    3    9   10   11
+CONECT    9    8   12   13   14
+CONECT   10    8
+CONECT   11    8
+CONECT   12    9
+CONECT   13    9
+CONECT   14    9   15   16   17
+CONECT   15   14   20   18   19
+CONECT   16   14
+CONECT   17   14
+CONECT   18   15
+CONECT   19   15
+CONECT   20   15
+CONECT   21   22
+CONECT   22   21   23   24   25
+CONECT   23   22   26   27   28
+CONECT   24   22
+CONECT   25   22
+CONECT   26   23
+CONECT   27   23
+CONECT   28   23   29   30   31
+CONECT   29   28   32   33   34
+CONECT   30   28
+CONECT   31   28
+CONECT   32   29
+CONECT   33   29
+CONECT   34   29   35   36   37
+CONECT   35   34   40   38   39
+CONECT   36   34
+CONECT   37   34
+CONECT   38   35
+CONECT   39   35
+CONECT   40   35
+CONECT   41   42
+CONECT   42   41   43   44   45
+CONECT   43   42   46   47   48
+CONECT   44   42
+CONECT   45   42
+CONECT   46   43
+CONECT   47   43
+CONECT   48   43   49   50   51
+CONECT   49   48   52   53   54
+CONECT   50   48
+CONECT   51   48
+CONECT   52   49
+CONECT   53   49
+CONECT   54   49   55   56   57
+CONECT   55   54   60   58   59
+CONECT   56   54
+CONECT   57   54
+CONECT   58   55
+CONECT   59   55
+CONECT   60   55
+CONECT   61   62
+CONECT   62   61   63   64   65
+CONECT   63   62   66   67   68
+CONECT   64   62
+CONECT   65   62
+CONECT   66   63
+CONECT   67   63
+CONECT   68   63   69   70   71
+CONECT   69   68   72   73   74
+CONECT   70   68
+CONECT   71   68
+CONECT   72   69
+CONECT   73   69
+CONECT   74   69   75   76   77
+CONECT   75   74   80   78   79
+CONECT   76   74
+CONECT   77   74
+CONECT   78   75
+CONECT   79   75
+CONECT   80   75
+CONECT   81   82
+CONECT   82   81   83   84   85
+CONECT   83   82   86   87   94
+CONECT   84   82
+CONECT   85   82
+CONECT   86   83   88
+CONECT   87   83
+CONECT   88   86   89   90
+CONECT   89   88   93   92   91
+CONECT   90   88
+CONECT   91   89
+CONECT   92   89
+CONECT   93   89
+CONECT   94   83   95   96   97
+CONECT   95   94   98   99  100
+CONECT   96   94
+CONECT   97   94
+CONECT   98   95
+CONECT   99   95
+CONECT  100   95  101  102  103
+CONECT  101  100  104  105  112
+CONECT  102  100
+CONECT  103  100
+CONECT  104  101  106
+CONECT  105  101
+CONECT  106  104  107  108
+CONECT  107  106  111  110  109
+CONECT  108  106
+CONECT  109  107
+CONECT  110  107
+CONECT  111  107
+CONECT  112  101  113  114  115
+CONECT  113  112  116  117  118
+CONECT  114  112
+CONECT  115  112
+CONECT  116  113
+CONECT  117  113
+CONECT  118  113  119  120  121
+CONECT  119  118  124  122  123
+CONECT  120  118
+CONECT  121  118
+CONECT  122  119
+CONECT  123  119
+CONECT  124  119
+CONECT  125  126
+CONECT  126  125  127  128  129
+CONECT  127  126  130  131  132
+CONECT  128  126
+CONECT  129  126
+CONECT  130  127
+CONECT  131  127
+CONECT  132  127  133  134  135
+CONECT  133  132  136  137  138
+CONECT  134  132
+CONECT  135  132
+CONECT  136  133
+CONECT  137  133
+CONECT  138  133  139  140  141
+CONECT  139  138  144  142  143
+CONECT  140  138
+CONECT  141  138
+CONECT  142  139
+CONECT  143  139
+CONECT  144  139
+CONECT  145  146
+CONECT  146  145  147  148  149
+CONECT  147  146  150  151  152
+CONECT  148  146
+CONECT  149  146
+CONECT  150  147
+CONECT  151  147
+CONECT  152  147  153  154  155
+CONECT  153  152  156  157  158
+CONECT  154  152
+CONECT  155  152
+CONECT  156  153
+CONECT  157  153
+CONECT  158  153  159  160  161
+CONECT  159  158  164  162  163
+CONECT  160  158
+CONECT  161  158
+CONECT  162  159
+CONECT  163  159
+CONECT  164  159
+CONECT  165  166
+CONECT  166  165  167  168  169
+CONECT  167  166  170  171  172
+CONECT  168  166
+CONECT  169  166
+CONECT  170  167
+CONECT  171  167
+CONECT  172  167  173  174  175
+CONECT  173  172  176  177  178
+CONECT  174  172
+CONECT  175  172
+CONECT  176  173
+CONECT  177  173
+CONECT  178  173  179  180  181
+CONECT  179  178  184  182  183
+CONECT  180  178
+CONECT  181  178
+CONECT  182  179
+CONECT  183  179
+CONECT  184  179
+CONECT  185  186
+CONECT  186  185  187  188  189
+CONECT  187  186  190  191  192
+CONECT  188  186
+CONECT  189  186
+CONECT  190  187
+CONECT  191  187
+CONECT  192  187  193  194  195
+CONECT  193  192  196  197  198
+CONECT  194  192
+CONECT  195  192
+CONECT  196  193
+CONECT  197  193
+CONECT  198  193  199  200  201
+CONECT  199  198  204  202  203
+CONECT  200  198
+CONECT  201  198
+CONECT  202  199
+CONECT  203  199
+CONECT  204  199
+CONECT  205  206
+CONECT  206  205  207  208  209
+CONECT  207  206  210  211  218
+CONECT  208  206
+CONECT  209  206
+CONECT  210  207  212
+CONECT  211  207
+CONECT  212  210  213  214
+CONECT  213  212  217  216  215
+CONECT  214  212
+CONECT  215  213
+CONECT  216  213
+CONECT  217  213
+CONECT  218  207  219  220  221
+CONECT  219  218  222  223  224
+CONECT  220  218
+CONECT  221  218
+CONECT  222  219
+CONECT  223  219
+CONECT  224  219  225  226  227
+CONECT  225  224  228  229  236
+CONECT  226  224
+CONECT  227  224
+CONECT  228  225  230
+CONECT  229  225
+CONECT  230  228  231  232
+CONECT  231  230  235  234  233
+CONECT  232  230
+CONECT  233  231
+CONECT  234  231
+CONECT  235  231
+CONECT  236  225  237  238  239
+CONECT  237  236  240  241  242
+CONECT  238  236
+CONECT  239  236
+CONECT  240  237
+CONECT  241  237
+CONECT  242  237  243  244  245
+CONECT  243  242  248  246  247
+CONECT  244  242
+CONECT  245  242
+CONECT  246  243
+CONECT  247  243
+CONECT  248  243
+END

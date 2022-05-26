@@ -1,0 +1,40 @@
+
+	***************** START Gecos rdkit TEST *****************
+		Starting: 	 11-04-2022 17:53:22
+
+	Test_01: Test box information.
+	===============================
+
+		PDB without CRYST section (./data/103191_noctane.order_nocryst.pdb): PASSED
+
+		PDB without CRYST section (./data/103191_noctane.order_nocryst.pdb) boxlength through interface: PASSED
+
+		PDB without CRYST section (./data/103191_noctane.order_nocryst.pdb) boxangles through interface: PASSED
+
+		PDB without CRYST section (./data/103191_noctane.order_nocryst.pdb) boxlengths and boxangles through interface: PASSED
+
+		PDB with CRYST section (./data/103191_noctane.order_cryst.pdb): PASSED
+
+		PDB with CRYST section (./data/103191_noctane.order_cryst.pdb) boxlength through interface: PASSED
+
+		PDB with CRYST section (./data/103191_noctane.order_cryst.pdb) boxangles through interface: PASSED
+
+		PDB with CRYST section (./data/103191_noctane.order_cryst.pdb) boxlength and boxangles through interface: PASSED
+
+	Test_02: Test atom shifts in a replica.
+	========================================
+
+		Replica [0,0,1]. PDB with CRYST section (./data/103191_noctane.order_cryst.pdb): PASSED
+
+		Replica [1,0,1]. PDB with CRYST section (./data/103191_noctane.order_cryst.pdb): PASSED
+
+		Replica [1,0,1]. PDB with CRYST section (./data/103191_noctane.order_cryst.pdb): PASSED
+
+		Replica [0,0,0]. PDB with CRYST section (./data/103191_noctane.order_cryst.pdb): PASSED
+
+		Replica [1,0,1]. PDB without CRYST section (./data/103191_noctane.order_cryst.pdb): PASSED
+
+
+	***************** END Gecos rdkit TEST *****************
+		Finishing: 	 11-04-2022 17:53:22
+

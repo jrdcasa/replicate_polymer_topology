@@ -1,0 +1,26 @@
+
+	***************** START Remove_Hydrogen TEST *****************
+		Starting: 	 14-04-2022 13:31:54
+
+	Test_01: CONECT section exists in the PDB file.
+	================================================
+
+	All atoms are equal to 8 with removeallh=False
+	All atoms are equal to 8 with removeallh=True
+	Hydrogens are not present removeallh=False
+	Hydrogens are not present removeallh=True
+	PASSED
+
+	Test_02: CONECT section exists in the PDB file.
+	================================================
+
+	All atoms are equal to 20 with removeallh=False
+	All atoms are equal to 8 with removeallh=True
+	1 Hydrogen is present removeallh=False
+	Hydrogens are not present removeallh=True
+	PASSED
+
+
+	***************** END Remove_Hydrogen TEST *****************
+		Finishing: 	 14-04-2022 13:31:54
+

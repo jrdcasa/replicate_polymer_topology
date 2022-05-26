@@ -1,0 +1,61 @@
+TITLE      Conformation C01 -56.80616760253906
+REMARK   1 File created by GaussView 6.0.16
+HETATM    1  C   M01 X   0      -3.973  -1.106  -0.061  1.00  1.00           C
+HETATM    2  H   M01 X   0      -4.844  -0.467   0.157  1.00  0.00           H
+HETATM    3  H   M01 X   0      -4.040  -1.420  -1.117  1.00  0.00           H
+HETATM    4  H   M01 X   0      -4.053  -2.013   0.563  1.00  0.00           H
+HETATM    5  C   M01 X   0      -2.657  -0.371   0.205  1.00  1.00           C
+HETATM    6  H   M01 X   0      -2.615  -0.050   1.263  1.00  0.00           H
+HETATM    7  H   M01 X   0      -2.611   0.547  -0.406  1.00  0.00           H
+HETATM    8  C   M01 X   0      -1.433  -1.235  -0.107  1.00  1.00           C
+HETATM    9  H   M01 X   0      -1.440  -1.518  -1.177  1.00  0.00           H
+HETATM   10  H   M01 X   0      -1.478  -2.175   0.474  1.00  0.00           H
+HETATM   11  C   M01 X   0      -0.108  -0.550   0.215  1.00  1.00           C
+HETATM   12  O   M01 X   0      -0.082   0.696  -0.534  1.00  0.00           O
+HETATM   13  H   M01 X   0      -0.064  -0.297   1.288  1.00  0.00           H
+HETATM   14  C   M01 X   0       1.110  -1.384  -0.172  1.00  1.00           C
+HETATM   15  H   M01 X   0       1.053  -1.613  -1.253  1.00  0.00           H
+HETATM   16  H   M01 X   0       1.040  -2.350   0.364  1.00  0.00           H
+HETATM   17  C   M01 X   0       2.452  -0.719   0.148  1.00  1.00           C
+HETATM   18  H   M01 X   0       2.476  -0.432   1.214  1.00  0.00           H
+HETATM   19  H   M01 X   0       2.537   0.220  -0.428  1.00  0.00           H
+HETATM   20  C   M01 X   0       3.638  -1.628  -0.182  1.00  1.00           C
+HETATM   21  H   M01 X   0       3.597  -2.561   0.406  1.00  0.00           H
+HETATM   22  H   M01 X   0       3.638  -1.905  -1.250  1.00  0.00           H
+HETATM   23  H   M01 X   0       4.599  -1.133   0.038  1.00  0.00           H
+HETATM   24  C   M01 X   0       0.297   1.812   0.147  1.00  0.00           C
+HETATM   25  O   M01 X   0       0.636   1.834   1.314  1.00  0.00           O
+HETATM   26  C   M01 X   0       0.212   3.016  -0.763  1.00  0.00           C
+HETATM   27  H   M01 X   0       0.684   3.879  -0.275  1.00  0.00           H
+HETATM   28  H   M01 X   0       0.699   2.799  -1.725  1.00  0.00           H
+HETATM   29  H   M01 X   0      -0.847   3.241  -0.967  1.00  0.00           H
+END
+CONECT    1    2    3    4    5
+CONECT    2    1
+CONECT    3    1
+CONECT    4    1
+CONECT    5    1    6    7    8
+CONECT    6    5
+CONECT    7    5
+CONECT    8    5    9   10   11
+CONECT    9    8
+CONECT   10    8
+CONECT   11    8   12   13   14
+CONECT   12   11   24
+CONECT   13   11
+CONECT   14   11   15   16   17
+CONECT   15   14
+CONECT   16   14
+CONECT   17   14   18   19   20
+CONECT   18   17
+CONECT   19   17
+CONECT   20   17   21   22   23
+CONECT   21   20
+CONECT   22   20
+CONECT   23   20
+CONECT   24   12   25   26
+CONECT   25   24
+CONECT   26   24   27   28   29
+CONECT   27   26
+CONECT   28   26
+CONECT   29   26

@@ -1,0 +1,26 @@
+MODEL        0
+ATOM      1 _CH3 M01 A   0      -3.973  -1.106  -0.061  1.00  1.00           C  
+ATOM      2 _CH2 M01 A   0      -2.657  -0.371   0.205  1.00  1.00           C  
+ATOM      3 _CH2 M01 A   0      -1.433  -1.235  -0.107  1.00  1.00           C  
+ATOM      4 _CH  M01 A   0      -0.108  -0.550   0.215  1.00  1.00           C  
+ATOM      5  O   M01 A   0      -0.082   0.696  -0.534  1.00  0.00           O  
+ATOM      6 _CH2 M01 A   0       1.110  -1.384  -0.172  1.00  1.00           C  
+ATOM      7 _CH2 M01 A   0       2.452  -0.719   0.148  1.00  1.00           C  
+ATOM      8 _CH3 M01 A   0       3.638  -1.628  -0.182  1.00  1.00           C  
+ATOM      9  C   M01 A   0       0.297   1.812   0.147  1.00  0.00           C  
+ATOM     10  O   M01 A   0       0.636   1.834   1.314  1.00  0.00           O  
+ATOM     11 _CH3 M01 A   0       0.212   3.016  -0.763  1.00  0.00           C  
+TER      12      M01 A   0
+ENDMDL
+CONECT    1    2
+CONECT    2    1    3
+CONECT    3    2    4
+CONECT    4    3    5    6
+CONECT    5    4    9
+CONECT    6    4    7
+CONECT    7    6    8
+CONECT    8    7
+CONECT    9    5   10   11
+CONECT   10    9
+CONECT   11    9
+END

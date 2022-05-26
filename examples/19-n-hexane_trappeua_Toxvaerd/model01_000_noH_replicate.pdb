@@ -1,0 +1,18 @@
+REMARK   1 CREATED WITH MDTraj 1.9.6, 2022-05-26
+CRYST1    0.614    5.040    3.837  90.00  90.00  90.00 P 1           1 
+MODEL        0
+ATOM      1 _CH3 HEX A   1       0.101   0.000   0.000  1.00  1.00           C  
+ATOM      2 _CH2 HEX A   1       0.614   0.725   1.257  1.00  1.00           C  
+ATOM      3 _CH2 HEX A   1       0.101   2.177   1.257  1.00  1.00           C  
+ATOM      4 _CH2 HEX A   1       0.614   2.903   2.515  1.00  1.00           C  
+ATOM      5 _CH2 HEX A   1       0.000   4.314   2.580  1.00  1.00           C  
+ATOM      6 _CH3 HEX A   1       0.513   5.040   3.837  1.00  1.00           C  
+TER       7      HEX A   1
+ENDMDL
+CONECT    1    2
+CONECT    2    1    3
+CONECT    3    2    4
+CONECT    4    3    5
+CONECT    5    4    6
+CONECT    6    5
+END

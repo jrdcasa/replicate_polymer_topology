@@ -1,0 +1,65 @@
+
+    ***********************************************************************
+              Replicate a molecule or polymer chain (ReMoPo)
+              ----------------------------------------------
+
+                                Version 0.1
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        ReMoPo is an open-source python library to quickly replicate a molecule
+        from a pdb file containing the seed molecule. This program generates
+        GROMACS and LAMMPS files to run simulations. 
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of 
+        the license (LICENSE.txt) is included with this distribution. 
+
+    ***********************************************************************
+
+        
+		Start Job at 26-10-2021 12:58:04 ============
+
+		Command line: 
+			python replicate_polymer.py -p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 10 10 3 -e lammps
+
+		Replicate a molecule or polymer chain (26-10-2021 12:58:04)
+		***************************************************************
+		Input file                  : ./data/C150_1fold_initial_new.pdb
+		Number of molecules in cell : 1
+		Number of chains in cell    : 1
+		Number of bonds in cell    : 451
+		Number of residues in cell  : 1
+		Number of atoms in cell     : 452
+		Simulation box dimension    : 0.7488 0.5129 9.4404 nm
+		Simulation box angles       : 90.00 90.00 90.00 degrees
+		Replicate the molecule 10x10x3 times
+		***************************************************************
+
+
+		Molecule replicated info (26-10-2021 12:58:04)
+		**************************************************
+		Number of molecules in cell : 300
+		Number of chains in cell    : 300
+		Number of residues in cell  : 300
+		Number of atoms in cell     : 135600
+		Simulation box dimension    : 7.4880 5.1290 28.3212 nm
+		Simulation box angles       : 90.00 90.00 90.00 degrees
+		**************************************************
+
+
+		Applying force field to molecule or polymer chain (26-10-2021 12:58:17)
+		***************************************************************************
+		Loading force field.(../../forcefields/oplsaa.xml)
+		Checking bonds ./data/C150_1fold_initial_new_replicate.gro (26-10-2021 12:58:17)
+		Applying force field to system ./data/C150_1fold_initial_new_replicate.gro (26-10-2021 12:58:41)
+		Generating topology and coordinate files for LAMMPS (26-10-2021 13:54:59)
+			 ./data/C150_1fold_initial_new_replicate.top
+			 ./data/C150_1fold_initial_new_replicate.gro
+		***************************************************************************
+
+		Job  Done at 26-10-2021 14:00:16 ============
+

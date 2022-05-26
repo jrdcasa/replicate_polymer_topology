@@ -1,0 +1,63 @@
+
+    ***********************************************************************
+              Replicate a molecule or polymer chain (ReMoPo)
+              ----------------------------------------------
+
+                                Version 3.0
+
+                              Dr. Javier Ramos
+                      Macromolecular Physics Department
+                Instituto de Estructura de la Materia (IEM-CSIC)
+                               Madrid (Spain)
+
+        ReMoPo is an open-source python library to quickly replicate a molecule
+        from a pdb file containing the seed molecule. After that, the script assigns 
+        the force field parameters using the foyer library (https://mosdef.org/)
+        This program generates GROMACS and LAMMPS files to run simulations. 
+
+        This software is distributed under the terms of the
+        GNU General Public License v3.0 (GNU GPLv3). A copy of 
+        the license (LICENSE.txt) is included with this distribution. 
+
+    ***********************************************************************
+        
+		Start Job at 25-12-2021 11:47:30 ============
+
+		Command line: 
+			python replicate_polymer.py -p model01_C5C8C11O12_opt.pdb -f ../../forcefields/oplsaa.xml --images 2 1 1 -e lammps
+			         or
+			replicate_polymer -p model01_C5C8C11O12_opt.pdb -f ../../forcefields/oplsaa.xml --images 2 1 1 -e lammps
+
+		Replicating and typing molecule (25-12-2021 11:47:30)
+		********************************************************
+		Loading seed structure from model01_C5C8C11O12_opt.pdb (25-12-2021 11:47:30)
+		Applying force field to the seed molecules model01_C5C8C11O12_opt.pdb (25-12-2021 11:47:30)
+
+		Replicate a molecule or polymer chain (25-12-2021 11:47:32)
+		***************************************************************
+		Input file                  : model01_C5C8C11O12_opt.pdb
+		Number of molecules in cell : 1
+		Number of chains in cell    : 1
+		Number of bonds in cell     : 28
+		Number of residues in cell  : 1
+		Number of atoms in cell     : 29
+		Simulation box dimension    : 0.9443 0.6440 0.3039 nm
+		Simulation box angles       : 90.00 90.00 90.00 degrees
+		Replicate the molecule 2x1x1 times
+		***************************************************************
+
+		Molecule replicated info (25-12-2021 11:47:32)
+		*************************************************
+		Number of molecules in cell : 2
+		Number of chains in cell    : 2
+		Number of residues in cell  : 2
+		Number of atoms in cell     : 58
+		Simulation box dimension    : 1.8886 0.6440 0.3039 nm
+		Simulation box angles       : 90.00 90.00 90.00 degrees
+		*************************************************
+
+		Generating lmp and data files for LAMMPS (25-12-2021 11:47:32)
+		*****************************************************************
+
+		Job  Done at 25-12-2021 11:47:32 ============
+

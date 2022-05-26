@@ -1,0 +1,28 @@
+
+	***************** START Impropers TEST *****************
+		Starting: 	 18-04-2022 12:16:35
+
+	Test_01. Automatic impropers in an United Atom model.
+	======================================================
+
+	PASSED
+
+	Test_02. Initial model PDB with Hs. Remove Hs and Trappe force field.
+	======================================================================
+
+	PASSED
+
+	Test_03. 
+	==========
+
+	PASSED
+
+	Test_04. 
+	==========
+
+	PASSED
+
+
+	***************** END Impropers TEST *****************
+		Finishing: 	 18-04-2022 12:16:35
+

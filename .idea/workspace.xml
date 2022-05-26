@@ -1,0 +1,1110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="097f4e77-3800-4c0f-93e1-d3b7c8a880f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd/model01_000.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forcefields/trappe-ua_PEToxvaerd.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/Info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules_replicate.gro" beforeDir="false" afterPath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules_replicate.gro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules_replicate.inp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules_replicate.inp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules_replicate.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules_replicate.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/replicate_pdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/replicate_pdb.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/tests/01-test_check_connect.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/replicate_polymer_lib/remove_hydrogens.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/tests/test/test01_check_connect_pdb.log" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/replicate_polymer_lib/check_connect_pdb.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="JupyterTrust" id="9e7deb4b-d547-4198-a22c-ef6addc4ee35" />
+  <component name="ProjectId" id="213tTMvsBYoQcIjUD8aTCaMMdXJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests/data" />
+      <recent name="$PROJECT_DIR$/replicate_polymer_lib" />
+      <recent name="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/TMP" />
+      <recent name="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd" />
+      <recent name="$PROJECT_DIR$/forcefields" />
+      <recent name="$PROJECT_DIR$/tests/data" />
+      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$/examples" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.19-n-hexane_trappeUA_PEToxvaerd">
+    <configuration name="00-INSTALL" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setup.py" />
+      <option name="PARAMETERS" value="install" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="01-noctane" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/01-n-octane_103191_replicate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 3 3 3 --engine lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="02-C150_5x5x1" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 5 5 1 --engine lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="03-C150_10x10x3" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 10 10 3 --engine lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="04-C150_20x20x1" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 20 20 1 --engine lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="05-C150_03_Replicate_5x5x5 with box" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p ../02-LAMMPS_amorphous/last.pdb -f ../../../forcefields/oplsaa.xml --images 5 5 5 --engine lammps --boxlength 8.0 8.0 3.0 --boxangle 65.0 60.0 70.0" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="05-C150_03_Replicate_5x5x5" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p ../02-LAMMPS_amorphous/last.pdb -f ../../../forcefields/oplsaa.xml --images 5 5 5 --engine lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="05-C150_Create_1x1x1" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/01-CREATE" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p C150_1fold_initial_new.pdb -f ../../../forcefields/oplsaa.xml --images 1 1 1 --engine lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="06-C150_03_Trappe2x2x1" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p C150_1fold_initial_new.pdb -f ../../forcefields/trappe-ua.xml --images 2 2 1 -e lammps --noh" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="07-P4HB_oplsaa_1x1x1" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p 00-Inital_trimerP4HB.pdb -f ../../forcefields/oplsaa.xml --images 1 1 1 -e lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="08-P4HB_trappeUA_1x1x1" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/08-Trimer_P4HB_TrappeUA" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p 00-Inital_trimerP4HB.pdb -f ../../forcefields/trappe-ua.xml --images 1 1 1 -e lammps --noh" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="09-pdb_two_different_molecules" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p two_molecules.pdb -f ../../forcefields/oplsaa.xml --images 2 2 2 -e lammps --boxlength 1 1 1" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="10-pdb_blend_form_xsd" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/10-blend_xsd" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p blend.pdb -f ../../forcefields/oplsaa.xml --images 2 2 2 -e lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="11-pdb_blend_form_xsd_noconsecutive" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/11-blend_noconsecutive" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p blend2.pdb -f ../../forcefields/oplsaa.xml --images 1 1 1 -e lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="12-ETH-EVA_50wt_trappeUA" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua/" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p ETH-EVA_50wt_0000.pdb -f ../../forcefields/trappe-ua.xml --images 2 1 1 -e lammps --noh --impropers impropers.ndx" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="13-ETH-EVA_50wt_oplsaa" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p ETH-EVA_50wt_0000.pdb -f ../../forcefields/oplsaa.xml --images 1 1 1 -e lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="15-ModelEVA_torsion_oplsaa" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/15-ModelEVA_torsion_oplsaa" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p model01_C5C8C11O12_opt.pdb -f ../../forcefields/oplsaa.xml --images 2 1 1 -e lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="16-ModelEVA_torsion_loplsaa" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/16-ModelEVA_torsion_loplsaa" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p model01_C5C8C11O12_opt.pdb -f ../../forcefields/loplsaa.xml --images 1 1 1 -e lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="18-n-hexane_LOPLS" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/18-n-hexane_LOPLS" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p model01_000.pdb -f ../../forcefields/loplsaa.xml --images 1 1 1 -e lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="19-OneChain_P$HB_noPBC_info" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p ETH-EVA_50wt_0000.pdb -f ../../forcefields/oplsaa.xml --images 1 1 1 -e lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="19-n-hexane_trappeUA_PEToxvaerd" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p model01_000.pdb -f ../../forcefields/trappe-ua_PEToxvaerd.xml --images 1 1 1 -e lammps --noh" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="20-P3HB_exclusions" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Replicate_Polymer_tutorials/01-P3HB_10mon_1Ch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p P3HB_10mon_01c_residues.gro -f ../../replicate_polymer/forcefields/oplsaa.xml --images 1 1 1 --npairs 2" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="21-PE500_exclusions" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Replicate_Polymer_tutorials/02-500PE_1Ch" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p PE500_residues.pdb -f $PROJECT_DIR$/forcefields/oplsaa.xml --images 1 1 1 --npairs 1" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PQ" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="WORKING_DIRECTORY" value="/media/jramos/Elements/2021_PE_EVA_BLENDS/04-EVA_wt100/02-TRAPPE_TYPE" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p /media/jramos/Elements/2021_PE_EVA_BLENDS/04-EVA_wt100/01-XSD_from_PDB/EVA_100wt.pdb -f $PROJECT_DIR$/forcefields/trappe-ua.xml  --images 1 1 1 -e lammps --noh" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PQ_2" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documentos/___MIS_PROYECTOS___/2021-PHA/08-SingleChain/01-TYPE_P3HB" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p ../00-PREPARE_CHAINS/P3HB_100mon_01c.pdb -f ~/Programacion/GITHUB_REPO_DIR/replicate_polymer/forcefields/oplsaa.xml  --images 1 1 1" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PQ_3" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/replicate_polymer" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p ../00-PREPARE_CHAINS/P3HB_100mon_01c.pdb -f ../../forcefields/trappe-ua.xml --images 1 1 1 -e lammps --noh" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test" type="tests" factoryName="Unittests">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_replicate_polymer.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test01_check_connect" type="tests" factoryName="Unittests">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_replicate/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/01-test_check_connect.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test02_Remove_hydrogens" type="tests" factoryName="Unittests">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_replicate/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/02-test_remove_hydrogen.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test03_SetupImproper" type="tests" factoryName="Unittests">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_replicate/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/03-test_setup_chiral_impropers.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.00-INSTALL" />
+      <item itemvalue="Python.01-noctane" />
+      <item itemvalue="Python.02-C150_5x5x1" />
+      <item itemvalue="Python.03-C150_10x10x3" />
+      <item itemvalue="Python.04-C150_20x20x1" />
+      <item itemvalue="Python.05-C150_03_Replicate_5x5x5 with box" />
+      <item itemvalue="Python.05-C150_03_Replicate_5x5x5" />
+      <item itemvalue="Python.05-C150_Create_1x1x1" />
+      <item itemvalue="Python.06-C150_03_Trappe2x2x1" />
+      <item itemvalue="Python.07-P4HB_oplsaa_1x1x1" />
+      <item itemvalue="Python.08-P4HB_trappeUA_1x1x1" />
+      <item itemvalue="Python.09-pdb_two_different_molecules" />
+      <item itemvalue="Python.10-pdb_blend_form_xsd" />
+      <item itemvalue="Python.11-pdb_blend_form_xsd_noconsecutive" />
+      <item itemvalue="Python.12-ETH-EVA_50wt_trappeUA" />
+      <item itemvalue="Python.13-ETH-EVA_50wt_oplsaa" />
+      <item itemvalue="Python.20-P3HB_exclusions" />
+      <item itemvalue="Python.21-PE500_exclusions" />
+      <item itemvalue="Python.18-n-hexane_LOPLS" />
+      <item itemvalue="Python.19-n-hexane_trappeUA_PEToxvaerd" />
+      <item itemvalue="Python.19-OneChain_P$HB_noPBC_info" />
+      <item itemvalue="Python.PQ_3" />
+      <item itemvalue="Python.15-ModelEVA_torsion_oplsaa" />
+      <item itemvalue="Python.16-ModelEVA_torsion_loplsaa" />
+      <item itemvalue="Python.PQ" />
+      <item itemvalue="Python.PQ_2" />
+      <item itemvalue="Python tests.Test01_check_connect" />
+      <item itemvalue="Python tests.Test02_Remove_hydrogens" />
+      <item itemvalue="Python tests.Test03_SetupImproper" />
+      <item itemvalue="Python tests.Test" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="097f4e77-3800-4c0f-93e1-d3b7c8a880f0" name="Default Changelist" comment="" />
+      <created>1637181605879</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637181605879</updated>
+      <workItem from="1637181618085" duration="24124000" />
+      <workItem from="1637599753356" duration="28881000" />
+      <workItem from="1637762482178" duration="25927000" />
+      <workItem from="1639062078673" duration="17521000" />
+      <workItem from="1639224287544" duration="4108000" />
+      <workItem from="1639396436953" duration="585000" />
+      <workItem from="1639829330121" duration="20886000" />
+      <workItem from="1640021322876" duration="55000" />
+      <workItem from="1640021688336" duration="5184000" />
+      <workItem from="1640164692067" duration="1340000" />
+      <workItem from="1640172175560" duration="6000" />
+      <workItem from="1640200297341" duration="33429000" />
+      <workItem from="1640432016189" duration="24395000" />
+      <workItem from="1640794896730" duration="5584000" />
+      <workItem from="1640819580159" duration="16002000" />
+      <workItem from="1641070255188" duration="60000" />
+      <workItem from="1641070607908" duration="757000" />
+      <workItem from="1641304443147" duration="837000" />
+      <workItem from="1641406756302" duration="42000" />
+      <workItem from="1641912563459" duration="10350000" />
+      <workItem from="1642506335128" duration="18000" />
+      <workItem from="1642613437061" duration="2644000" />
+      <workItem from="1642668534592" duration="216000" />
+      <workItem from="1642694181990" duration="6000" />
+      <workItem from="1642694416304" duration="5961000" />
+      <workItem from="1643101453958" duration="6107000" />
+      <workItem from="1644601490540" duration="314000" />
+      <workItem from="1649691971811" duration="15743000" />
+      <workItem from="1649836102976" duration="1225000" />
+      <workItem from="1649934122106" duration="5681000" />
+      <workItem from="1650272205181" duration="5578000" />
+      <workItem from="1650380795034" duration="7000" />
+      <workItem from="1650447593369" duration="4188000" />
+      <workItem from="1651737692255" duration="2006000" />
+      <workItem from="1651768161094" duration="3000" />
+      <workItem from="1651782690791" duration="123000" />
+      <workItem from="1651782853734" duration="2537000" />
+      <workItem from="1652808033967" duration="5000" />
+      <workItem from="1652808044756" duration="7306000" />
+      <workItem from="1653381478839" duration="6392000" />
+      <workItem from="1653392123322" duration="27677000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="219" width="1920" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1653573352742">
+      <screen x="0" y="27" width="1920" height="959" />
+    </state>
+    <state x="2363" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650449259261" />
+    <state x="443" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1013@0.27.1920.1013" timestamp="1649936435738" />
+    <state x="0" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408361446" />
+    <state x="2363" y="203" width="1327" height="755" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652893223474" />
+    <state x="443" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015@0.27.1920.1015" timestamp="1651782755488" />
+    <state x="0" y="219" width="1920" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653573352742" />
+    <state x="2116" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653386505144" />
+    <state x="100" y="127" width="1720" height="813" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1649934928030">
+      <screen x="0" y="27" width="1920" height="1013" />
+    </state>
+    <state x="100" y="127" width="1720" height="813" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.27.1920.1013@0.27.1920.1013" timestamp="1649934928030" />
+    <state x="2862" y="182" width="825" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1649757620907">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2862" y="182" width="825" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1649757620907" />
+    <state x="293" y="248" key="#xdebugger.evaluate" timestamp="1653407242428">
+      <screen x="0" y="27" width="1920" height="1015" />
+    </state>
+    <state x="2213" y="235" key="#xdebugger.evaluate/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650275358253" />
+    <state x="293" y="248" key="#xdebugger.evaluate/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653407242428" />
+    <state width="978" height="506" key="DebuggerActiveHint" timestamp="1653569738596">
+      <screen x="0" y="27" width="1920" height="959" />
+    </state>
+    <state width="978" height="506" key="DebuggerActiveHint/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653569738596" />
+    <state x="449" y="299" width="424" height="491" key="FileChooserDialogImpl" timestamp="1653560604929">
+      <screen x="0" y="27" width="1920" height="959" />
+    </state>
+    <state x="2369" y="306" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650447834535" />
+    <state x="449" y="314" key="FileChooserDialogImpl/0.27.1920.1013@0.27.1920.1013" timestamp="1649936424643" />
+    <state x="2369" y="306" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652892178312" />
+    <state x="449" y="315" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1015@0.27.1920.1015" timestamp="1651782751740" />
+    <state x="449" y="299" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653560604929" />
+    <state x="898" y="315" key="FileChooserDialogImpl/0.27.3840.1015@0.27.3840.1015" timestamp="1651834274302" />
+    <state width="1874" height="242" key="GridCell.Tab.0.bottom" timestamp="1653575264036">
+      <screen x="0" y="27" width="1920" height="959" />
+    </state>
+    <state width="1874" height="248" key="GridCell.Tab.0.bottom/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
+    <state width="1874" height="248" key="GridCell.Tab.0.bottom/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650551045592" />
+    <state width="1874" height="266" key="GridCell.Tab.0.bottom/0.27.1920.1013@0.27.1920.1013" timestamp="1650131515026" />
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408405763" />
+    <state width="1874" height="289" key="GridCell.Tab.0.bottom/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652893506157" />
+    <state width="1874" height="280" key="GridCell.Tab.0.bottom/0.27.1920.1015@0.27.1920.1015" timestamp="1651859112112" />
+    <state width="1874" height="242" key="GridCell.Tab.0.bottom/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
+    <state width="1234" height="275" key="GridCell.Tab.0.bottom/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967335" />
+    <state width="1874" height="152" key="GridCell.Tab.0.bottom/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
+    <state width="1874" height="242" key="GridCell.Tab.0.center" timestamp="1653575264036">
+      <screen x="0" y="27" width="1920" height="959" />
+    </state>
+    <state width="1874" height="248" key="GridCell.Tab.0.center/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
+    <state width="1874" height="248" key="GridCell.Tab.0.center/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650551045592" />
+    <state width="1874" height="266" key="GridCell.Tab.0.center/0.27.1920.1013@0.27.1920.1013" timestamp="1650131515026" />
+    <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408405763" />
+    <state width="1874" height="289" key="GridCell.Tab.0.center/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652893506157" />
+    <state width="1874" height="280" key="GridCell.Tab.0.center/0.27.1920.1015@0.27.1920.1015" timestamp="1651859112112" />
+    <state width="1874" height="242" key="GridCell.Tab.0.center/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
+    <state width="1234" height="275" key="GridCell.Tab.0.center/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967335" />
+    <state width="1874" height="152" key="GridCell.Tab.0.center/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
+    <state width="1874" height="242" key="GridCell.Tab.0.left" timestamp="1653575264036">
+      <screen x="0" y="27" width="1920" height="959" />
+    </state>
+    <state width="1874" height="248" key="GridCell.Tab.0.left/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
+    <state width="1874" height="248" key="GridCell.Tab.0.left/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650551045592" />
+    <state width="1874" height="266" key="GridCell.Tab.0.left/0.27.1920.1013@0.27.1920.1013" timestamp="1650131515026" />
+    <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408405762" />
+    <state width="1874" height="289" key="GridCell.Tab.0.left/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652893506157" />
+    <state width="1874" height="280" key="GridCell.Tab.0.left/0.27.1920.1015@0.27.1920.1015" timestamp="1651859112112" />
+    <state width="1874" height="242" key="GridCell.Tab.0.left/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
+    <state width="1234" height="275" key="GridCell.Tab.0.left/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967334" />
+    <state width="1874" height="152" key="GridCell.Tab.0.left/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
+    <state width="1874" height="242" key="GridCell.Tab.0.right" timestamp="1653575264036">
+      <screen x="0" y="27" width="1920" height="959" />
+    </state>
+    <state width="1874" height="248" key="GridCell.Tab.0.right/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
+    <state width="1874" height="248" key="GridCell.Tab.0.right/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650551045592" />
+    <state width="1874" height="266" key="GridCell.Tab.0.right/0.27.1920.1013@0.27.1920.1013" timestamp="1650131515026" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408405763" />
+    <state width="1874" height="289" key="GridCell.Tab.0.right/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652893506157" />
+    <state width="1874" height="280" key="GridCell.Tab.0.right/0.27.1920.1015@0.27.1920.1015" timestamp="1651859112112" />
+    <state width="1874" height="242" key="GridCell.Tab.0.right/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
+    <state width="1234" height="275" key="GridCell.Tab.0.right/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967335" />
+    <state width="1874" height="152" key="GridCell.Tab.0.right/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
+    <state width="1874" height="242" key="GridCell.Tab.1.bottom" timestamp="1653575264036">
+      <screen x="0" y="27" width="1920" height="959" />
+    </state>
+    <state width="1874" height="248" key="GridCell.Tab.1.bottom/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
+    <state width="1874" height="248" key="GridCell.Tab.1.bottom/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650551045592" />
+    <state width="1874" height="266" key="GridCell.Tab.1.bottom/0.27.1920.1013@0.27.1920.1013" timestamp="1650131515027" />
+    <state width="1874" height="344" key="GridCell.Tab.1.bottom/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408325789" />
+    <state width="1874" height="152" key="GridCell.Tab.1.bottom/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652892768318" />
+    <state width="1874" height="242" key="GridCell.Tab.1.bottom/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
+    <state width="1874" height="152" key="GridCell.Tab.1.bottom/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
+    <state width="1874" height="242" key="GridCell.Tab.1.center" timestamp="1653575264036">
+      <screen x="0" y="27" width="1920" height="959" />
+    </state>
+    <state width="1874" height="248" key="GridCell.Tab.1.center/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
+    <state width="1874" height="248" key="GridCell.Tab.1.center/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650551045592" />
+    <state width="1874" height="266" key="GridCell.Tab.1.center/0.27.1920.1013@0.27.1920.1013" timestamp="1650131515026" />
+    <state width="1874" height="344" key="GridCell.Tab.1.center/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408325789" />
+    <state width="1874" height="152" key="GridCell.Tab.1.center/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652892768318" />
+    <state width="1874" height="242" key="GridCell.Tab.1.center/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
+    <state width="1874" height="152" key="GridCell.Tab.1.center/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
+    <state width="1874" height="242" key="GridCell.Tab.1.left" timestamp="1653575264036">
+      <screen x="0" y="27" width="1920" height="959" />
+    </state>
+    <state width="1874" height="248" key="GridCell.Tab.1.left/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
+    <state width="1874" height="248" key="GridCell.Tab.1.left/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650551045592" />
+    <state width="1874" height="266" key="GridCell.Tab.1.left/0.27.1920.1013@0.27.1920.1013" timestamp="1650131515026" />
+    <state width="1874" height="344" key="GridCell.Tab.1.left/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408325789" />
+    <state width="1874" height="152" key="GridCell.Tab.1.left/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652892768318" />
+    <state width="1874" height="242" key="GridCell.Tab.1.left/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
+    <state width="1874" height="152" key="GridCell.Tab.1.left/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
+    <state width="1874" height="242" key="GridCell.Tab.1.right" timestamp="1653575264036">
+      <screen x="0" y="27" width="1920" height="959" />
+    </state>
+    <state width="1874" height="248" key="GridCell.Tab.1.right/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
+    <state width="1874" height="248" key="GridCell.Tab.1.right/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650551045592" />
+    <state width="1874" height="266" key="GridCell.Tab.1.right/0.27.1920.1013@0.27.1920.1013" timestamp="1650131515026" />
+    <state width="1874" height="344" key="GridCell.Tab.1.right/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408325789" />
+    <state width="1874" height="152" key="GridCell.Tab.1.right/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652892768318" />
+    <state width="1874" height="242" key="GridCell.Tab.1.right/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
+    <state width="1874" height="152" key="GridCell.Tab.1.right/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
+    <state x="449" y="173" width="1022" height="737" key="SettingsEditor" timestamp="1651782702790">
+      <screen x="0" y="27" width="1920" height="1015" />
+    </state>
+    <state x="2369" y="155" width="1022" height="737" key="SettingsEditor/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650448254042" />
+    <state x="449" y="173" width="1022" height="737" key="SettingsEditor/0.27.1920.1015@0.27.1920.1015" timestamp="1651782702790" />
+    <state width="960" height="507" key="XDebugger.FullValuePopup" timestamp="1653572564781">
+      <screen x="0" y="27" width="1920" height="959" />
+    </state>
+    <state width="960" height="507" key="XDebugger.FullValuePopup/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653572564781" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandbox_replicate_polymer/lib/python3.8/site-packages/mbuild-0.13.0-py3.8.egg/mbuild/compound.py</url>
+          <line>2009</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandbox_replicate_polymer/lib/python3.8/site-packages/parmed/gromacs/gromacstop.py</url>
+          <line>295</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_replicate_polymer.py</url>
+          <line>107</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandbox_replicate_polymer/lib/python3.8/site-packages/parmed/gromacs/gromacstop.py</url>
+          <line>1265</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_replicate/lib/python3.8/site-packages/intermol-0.1.0-py3.8.egg/intermol/lammps/lammps_parser.py</url>
+          <line>1034</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/01-test_check_connect.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/02-test_remove_hydrogen.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/02-test_remove_hydrogen.py</url>
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/03-test_setup_chiral_impropers.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer_lib/setup_chiral_impropers.py</url>
+          <line>84</line>
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer_lib/exclusions.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="228" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer_lib/replicate_pdb.py</url>
+          <line>238</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_replicate/lib/python3.8/site-packages/intermol-0.1.0-py3.8.egg/intermol/gromacs/gromacs_parser.py</url>
+          <line>994</line>
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py</url>
+          <line>75</line>
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="266" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="key" />
+        <watch expression="graph" />
+        <watch expression="v" />
+        <watch expression="atoms_improper" />
+        <watch expression="br_onwait" />
+        <watch expression="element[iat]" />
+        <watch expression="iat" />
+        <watch expression="element[iat] != 'H'" />
+      </configuration>
+      <configuration name="PythonConfigurationType">
+        <watch expression="untyped_mol" />
+        <watch expression="conversion" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/replicate_polymer$07_P4HB_trappeUA_1x1x1.coverage" NAME="07-P4HB_oplsaa_1x1x1 Coverage Results" MODIFIED="1637600304715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/07-Trimer_P4HB" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$03_C150_10x10x3.coverage" NAME="03-C150_10x10x3 Coverage Results" MODIFIED="1639133632382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$16_ModelEVA_torsion_loplsaa.coverage" NAME="16-ModelEVA_torsion_loplsaa Coverage Results" MODIFIED="1644601792854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/16-ModelEVA_torsion_loplsaa" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$12_ETH_EVA_50wt_trappeUA.coverage" NAME="12-ETH-EVA_50wt_trappeUA Coverage Results" MODIFIED="1640548464291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua/" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$06_C150_03_Trappe2x2x1.coverage" NAME="06-C150_03_Trappe2x2x1 Coverage Results" MODIFIED="1639830773254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$01_noctane.coverage" NAME="01-noctane Coverage Results" MODIFIED="1649755600956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/01-n-octane_103191_replicate" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$12_ETH_EVA_50wt_trappeua.coverage" NAME="00-INSTALL Coverage Results" MODIFIED="1639829737362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$05_C150_Create_1x1x1.coverage" NAME="05-C150_Create_1x1x1 Coverage Results" MODIFIED="1637247360604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/01-CREATE" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$14_ModelEVA_torsion_trappeua.coverage" NAME="14-ModelEVA_torsion_trappeua Coverage Results" MODIFIED="1640544215490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/14-ModelEVA_torsion_trappeua" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$19_n_hexane_trappeUA_PEToxvaerd.coverage" NAME="19-n-hexane_trappeUA_PEToxvaerd Coverage Results" MODIFIED="1653574904491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$PQ_2.coverage" NAME="PQ_2 Coverage Results" MODIFIED="1650551045575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PROYECTOS___/2021-PHA/08-SingleChain/01-TYPE_P3HB" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$05_C150_03_Replicate_5x5x5.coverage" NAME="05-C150_03_Replicate_5x5x5 Coverage Results" MODIFIED="1639337957560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$Test01_check_connect.coverage" NAME="Test01_check_connect Coverage Results" MODIFIED="1649767620443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$02_C150_5x5x1.coverage" NAME="02-C150_5x5x1 Coverage Results" MODIFIED="1639133489733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$20_P3HB_exclusions.coverage" NAME="20-P3HB_exclusions Coverage Results" MODIFIED="1653462967328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/01-P3HB_10mon_1Ch" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$08_P4HB_trappeUA_1x1x1.coverage" NAME="08-P4HB_trappeUA_1x1x1 Coverage Results" MODIFIED="1639830650314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/08-Trimer_P4HB_TrappeUA" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$09_pdb_two_different_molecules.coverage" NAME="09-pdb_two_different_molecules Coverage Results" MODIFIED="1653562276996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$00_pdb_two_different_molecules.coverage" NAME="00-pdb_two_different_molecules Coverage Results" MODIFIED="1639136479730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$Test03_SetupImproper.coverage" NAME="Test03_SetupImproper Coverage Results" MODIFIED="1650276993968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$01_nocatne.coverage" NAME="01-noctane Coverage Results" MODIFIED="1637248793108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/01-n-octane_103191_replicate" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$17_n_hexane_trappeua.coverage" NAME="PQ Coverage Results" MODIFIED="1641037263151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/media/jramos/Elements/2021_PE_EVA_BLENDS/04-EVA_wt100/02-TRAPPE_TYPE" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$11_pdb_blend_form_xsd_noconsecutive.coverage" NAME="11-pdb_blend_form_xsd_noconsecutive Coverage Results" MODIFIED="1639337867186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/11-blend_noconsecutive" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$PQ_3.coverage" NAME="PQ_3 Coverage Results" MODIFIED="1650447785442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PROYECTOS___/2021-PHA/08-SingleChain/01-TYPE_P3HB" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$15_ModelEVA_torsion_oplsaa.coverage" NAME="15-ModelEVA_torsion_oplsaa Coverage Results" MODIFIED="1640795132236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/15-ModelEVA_torsion_oplsaa" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$16_n_hexane_LOPLS.coverage" NAME="16-n-hexane_LOPLS Coverage Results" MODIFIED="1640818196729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/16-n-hexane_LOPLS" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$08_P4HB_trappeUA_1x1x1__1_.coverage" NAME="08-P4HB_trappeUA_1x1x1 (1) Coverage Results" MODIFIED="1639134587235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/08-Trimer_P4HB_TrappeUA" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$21_PE500_exclusions.coverage" NAME="21-PE500_exclusions Coverage Results" MODIFIED="1653562419221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/02-500PE_1Ch" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$13_ETH_EVA_50wt_oplsaa.coverage" NAME="13-ETH-EVA_50wt_oplsaa Coverage Results" MODIFIED="1651782860179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$09_pdb_from_xsd_PE_04br04.coverage" NAME="09-pdb_from_xsd_PE_04br04 Coverage Results" MODIFIED="1639133316678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/09-pdb_from_xsd_PE_04br04" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$test.coverage" NAME="test Coverage Results" MODIFIED="1637258079633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$Test.coverage" NAME="Test Coverage Results" MODIFIED="1649692399954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$00_INSTALL.coverage" NAME="00-INSTALL Coverage Results" MODIFIED="1650448322279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$05_C150_03_Replicate_5x5x5_with_box.coverage" NAME="05-C150_03_Replicate_5x5x5 with box Coverage Results" MODIFIED="1639134497196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$10_pdb_blend_form_xsd.coverage" NAME="10-pdb_blend_form_xsd Coverage Results" MODIFIED="1639337935698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/10-blend_xsd" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$Test02_Remove_hydrogens.coverage" NAME="Test02_Remove_hydrogens Coverage Results" MODIFIED="1649935913251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$04_C150_20x20x1.coverage" NAME="04-C150_20x20x1 Coverage Results" MODIFIED="1639133699749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$07_P4HB_oplsaa_1x1x1.coverage" NAME="07-P4HB_oplsaa_1x1x1 Coverage Results" MODIFIED="1639134645700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA" />
+  </component>
+</project>

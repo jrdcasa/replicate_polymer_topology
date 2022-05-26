@@ -1,0 +1,23 @@
+units real
+atom_style full
+
+dimension 3
+boundary p p p
+
+bond_style hybrid harmonic
+angle_style hybrid harmonic
+dihedral_style hybrid multi/harmonic
+special_bonds lj 0.0 0.0 1.0 coul 0.0 0.0 1.0
+
+read_data C150_1fold_initial_new_noH_replicate.lmp
+
+pair_style lj/cut/coul/long 9.0 9.0
+kspace_style pppm 1e-6
+pair_coeff 1 1   0.1947459   3.7500000
+pair_coeff 2 2   0.0914113   3.9500000
+
+pair_modify mix arithmetic
+
+thermo_style custom ebond eangle edihed eimp epair evdwl ecoul elong etail pe
+
+run 0

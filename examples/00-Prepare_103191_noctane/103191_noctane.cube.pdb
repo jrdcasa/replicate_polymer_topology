@@ -1,0 +1,55 @@
+COMPND    C8 H18
+COMPND   1Created by VESTA
+HETATM    1 C1                   1.866   3.450   1.292  1.00  0.03           C
+HETATM    2 C1                   4.662   1.737   9.596  1.00  0.03           C
+HETATM    3 H1B                  2.606   3.992   1.047  1.00  0.03           H
+HETATM    4 H1B                  3.922   1.195   9.841  1.00  0.03           H
+HETATM    5 H1C                  1.550   2.945   0.500  1.00  0.05           H
+HETATM    6 H1C                  4.979   2.242  10.388  1.00  0.05           H
+HETATM    7 C2                   2.233   2.485   2.410  1.00  0.02           C
+HETATM    8 C2                   4.295   2.701   8.478  1.00  0.02           C
+HETATM    9 H2A                  1.482   1.934   2.618  1.00  0.03           H
+HETATM   10 H2A                  5.046   3.253   8.271  1.00  0.03           H
+HETATM   11 H2B                  2.929   1.879   2.113  1.00  0.03           H
+HETATM   12 H2B                  3.599   3.308   8.775  1.00  0.03           H
+HETATM   13 C3                   2.687   3.194   3.676  1.00  0.02           C
+HETATM   14 C3                   3.841   1.993   7.212  1.00  0.02           C
+HETATM   15 H3A                  1.999   3.818   3.980  1.00  0.02           H
+HETATM   16 H3A                  4.530   1.369   6.909  1.00  0.02           H
+HETATM   17 H3B                  3.445   3.734   3.476  1.00  0.02           H
+HETATM   18 H3B                  3.083   1.453   7.413  1.00  0.02           H
+HETATM   19 C4                   3.035   2.238   4.812  1.00  0.02           C
+HETATM   20 C4                   3.493   2.949   6.077  1.00  0.02           C
+HETATM   21 H4A                  2.278   1.704   5.023  1.00  0.02           H
+HETATM   22 H4A                  4.251   3.483   5.866  1.00  0.02           H
+HETATM   23 H4B                  3.726   1.626   4.499  1.00  0.02           H
+HETATM   24 H4B                  2.802   3.561   6.389  1.00  0.02           H
+HETATM   25 H1A                  1.167   4.068   1.591  1.00  0.04           H
+HETATM   26 H1A                  5.361   1.119   9.297  1.00  0.04           H
+CONECT    1   25    5    7    3
+CONECT    2    4    8    6   26
+CONECT    3    1
+CONECT    4    2
+CONECT    5    1
+CONECT    6    2
+CONECT    7    1    9   13   11
+CONECT    8    2   12   10   14
+CONECT    9    7
+CONECT   10    8
+CONECT   11    7
+CONECT   12    8
+CONECT   13    7   19   15   17
+CONECT   14    8   18   16   20
+CONECT   15   13
+CONECT   16   14
+CONECT   17   13
+CONECT   18   14
+CONECT   19   13   21   23   20
+CONECT   20   14   19   24   22
+CONECT   21   19
+CONECT   22   20
+CONECT   23   19
+CONECT   24   20
+CONECT   25    1
+CONECT   26    2
+END
