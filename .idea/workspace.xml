@@ -20,39 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="097f4e77-3800-4c0f-93e1-d3b7c8a880f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/Forcefield.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/Smart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/Smarts_Graph.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/Validator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/atomtyper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/element.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/periodic_table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/topology_graph.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/utils/external.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/utils/io.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/utils/misc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/utils/nbfixes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/tmp/force_field_base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/typing_molecule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MyPolymers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyPolymers.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst.top" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.gro" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.gro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.inp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.inp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.top" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/Info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/Info.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/install.log" beforeDir="false" afterPath="$PROJECT_DIR$/install.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/ext_libc/c_distC.c" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/ext_libc/c_distC.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/topology/install.log" beforeDir="false" afterPath="$PROJECT_DIR$/topology/install.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topology/topology/readmol/readpdbformat.py" beforeDir="false" afterPath="$PROJECT_DIR$/topology/topology/readmol/readpdbformat.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -832,6 +801,7 @@
       <workItem from="1653576786016" duration="476000" />
       <workItem from="1653582504534" duration="65678000" />
       <workItem from="1654088046006" duration="38286000" />
+      <workItem from="1654202442925" duration="733000" />
     </task>
     <servers />
   </component>

@@ -8,3 +8,4 @@ replicate_polymer/__pycache__/**
 *.lmp
 OLD/
 nohup.out
+topology/**

@@ -1,5 +1,5 @@
 
-		 Starting installation!!!! at 26/05/2022 17:43:19
+		 Starting installation!!!! at 02/06/2022 23:00:51
 
 
 		 SYS PATH
@@ -8,43 +8,45 @@
 /usr/lib/python3.8
 /usr/lib/python3.8/lib-dynload
 /home/jramos/Programacion/sandboxes/sandbox_replicate_topology/lib/python3.8/site-packages
+/home/jramos/Programacion/sandboxes/sandbox_replicate_topology/lib/python3.8/site-packages/intermol-0.1.0-py3.8.egg
 /home/jramos/Programacion/sandboxes/sandbox_replicate_topology/lib/python3.8/site-packages/replicate_polymer-4.0-py3.8-linux-x86_64.egg
 
-		 INSTALLING PIP PACKAGES (26/05/2022 17:43:19)
+		 INSTALLING PIP PACKAGES (02/06/2022 23:00:51)
 
-26/05/2022 17:43:19: ** REPLICATE: Installing numpy
-26/05/2022 17:43:19: ** REPLICATE: Installing Cython==0.29.24
-26/05/2022 17:43:20: ** REPLICATE: Installing argcomplete==1.12.3
-26/05/2022 17:43:21: ** REPLICATE: Installing numpy==1.21.3
-26/05/2022 17:43:22: ** REPLICATE: Installing GitPython==3.1.1
-26/05/2022 17:43:23: ** REPLICATE: Installing ParmEd==3.4.3
-26/05/2022 17:43:24: ** REPLICATE: Installing lark-parser==0.12.0
-26/05/2022 17:43:25: ** REPLICATE: Installing ele==0.2.0
-26/05/2022 17:43:26: ** REPLICATE: Installing pydantic==1.8.2
-26/05/2022 17:43:26: ** REPLICATE: Installing unyt==2.8.0
-26/05/2022 17:43:27: ** REPLICATE: Installing lxml==4.6.3
-26/05/2022 17:43:28: ** REPLICATE: Installing boltons==21.0.0
-26/05/2022 17:43:29: ** REPLICATE: Installing networkx==2.6.3
-26/05/2022 17:43:30: ** REPLICATE: Installing requests==2.26.0
-26/05/2022 17:43:31: ** REPLICATE: Installing mdtraj==1.9.6
+02/06/2022 23:00:51: ** REPLICATE: Installing numpy
+02/06/2022 23:00:51: ** REPLICATE: Installing lark
+02/06/2022 23:00:51: ** REPLICATE: Installing Cython==0.29.24
+02/06/2022 23:00:52: ** REPLICATE: Installing argcomplete==1.12.3
+02/06/2022 23:00:52: ** REPLICATE: Installing numpy==1.21.3
+02/06/2022 23:00:53: ** REPLICATE: Installing GitPython==3.1.1
+02/06/2022 23:00:53: ** REPLICATE: Installing ParmEd==3.4.3
+02/06/2022 23:00:53: ** REPLICATE: Installing lark-parser==0.12.0
+02/06/2022 23:00:54: ** REPLICATE: Installing ele==0.2.0
+02/06/2022 23:00:54: ** REPLICATE: Installing pydantic==1.8.2
+02/06/2022 23:00:55: ** REPLICATE: Installing unyt==2.8.0
+02/06/2022 23:00:55: ** REPLICATE: Installing lxml==4.6.3
+02/06/2022 23:00:55: ** REPLICATE: Installing boltons==21.0.0
+02/06/2022 23:00:56: ** REPLICATE: Installing networkx==2.6.3
+02/06/2022 23:00:56: ** REPLICATE: Installing requests==2.26.0
+02/06/2022 23:00:57: ** REPLICATE: Installing mdtraj==1.9.6
 
 		 INSTALLING TOPOLOGY LIBRARY INTO THE PYTHON ENVIRONMENT FROM GITHUB
 
-26/05/2022 17:43:32: ** None: topology library is not installed in your system
-26/05/2022 17:43:32: ** None: Installing from git... https://github.com/jrdcasa/topology.git
+02/06/2022 23:00:57: ** None: topology library is not installed in your system
+02/06/2022 23:00:57: ** None: Installing from git... https://github.com/jrdcasa/topology.git
 
 
-		 INSTALLING InterMol (https://github.com/shirtsgroup/InterMol) (26/05/2022 17:50:09)
+		 INSTALLING InterMol (https://github.com/shirtsgroup/InterMol) (02/06/2022 23:05:12)
 
 Cloning from https://:@github.com/jrdcasa/intermol_cj.git in ./thirdparty/intermol
 Repository cloned
 
 intermol installed in the python environment
 
-		 RUNNING SETUP FROM SETUPTOOLS 26/05/2022 17:51:31
+		 RUNNING SETUP FROM SETUPTOOLS 02/06/2022 23:09:54
 
 
 
-		 Installation Done!!!! at 26/05/2022 17:51:31
+		 Installation Done!!!! at 02/06/2022 23:09:56
 
 
