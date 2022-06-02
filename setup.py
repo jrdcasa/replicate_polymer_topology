@@ -99,6 +99,24 @@ def install_topology_library(log=None, namepkg=None):
         subprocess.call(["python", "setup.py", "install"])
         os.chdir("..")
 
+    # Check if topology can be imported
+    try:
+        import topology
+        import topology.readmol
+        now = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        m = "topology installed in the python environment ({})".format(now)
+        print(m) if log is None else log.info(m)
+        return True
+    except (ModuleNotFoundError, ImportError):
+        m = "================= ERROR INSTALL ================\n"
+        m += "** REPLICATE: Automatic installation of topology python is unsuccessful.\n"
+        m += "** REPLICATE: Install the topology library manually using the repi:\n"
+        m += "** REPLICATE: https://github.com/jrdcasa/topology.git\n"
+        m += "** REPLICATE: and then try to re-install\n"
+        m += "================= ERROR INSTALL ================"
+        print(m) if log is None else log.info(m)
+        exit()
+
 
 # Install foyer ==============================================================
 def install_foyer(log=None):
