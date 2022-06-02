@@ -1,3 +1,5 @@
+numpy
+lark
 Cython>=0.29.24
 argcomplete>=1.12.3
 numpy>=1.21.3

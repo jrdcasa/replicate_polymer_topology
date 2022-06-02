@@ -3,7 +3,7 @@
               Replicate a molecule or polymer chain (ReMoPo)
               ----------------------------------------------
 
-                                Version 3.0
+                                Version 4.0
 
                               Dr. Javier Ramos
                       Macromolecular Physics Department
@@ -11,53 +11,31 @@
                                Madrid (Spain)
 
         ReMoPo is an open-source python library to quickly replicate a molecule
-        from a pdb file containing the seed molecule. After that, the script assigns 
+        from a pdb file containing the seed molecule. After that, the script assigns
         the force field parameters using the foyer library (https://mosdef.org/)
-        This program generates GROMACS and LAMMPS files to run simulations. 
+        This program generates GROMACS and LAMMPS files to run simulations.
 
         This software is distributed under the terms of the
-        GNU General Public License v3.0 (GNU GPLv3). A copy of 
-        the license (LICENSE.txt) is included with this distribution. 
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
 
     ***********************************************************************
         
-		Start Job at 10-12-2021 11:51:31 ============
+		Start Job at 31-05-2022 15:52:44 ============
 
 		Command line: 
 			python replicate_polymer.py -p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 5 5 1 --engine lammps
 			         or
 			replicate_polymer -p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 5 5 1 --engine lammps
 
-		Replicating and typing molecule (10-12-2021 11:51:31)
+		Replicating and typing molecule (31-05-2022 15:52:44)
 		********************************************************
-		Loading seed structure from ./data/C150_1fold_initial_new.pdb (10-12-2021 11:51:31)
-		Applying force field to the seed molecules ./data/C150_1fold_initial_new.pdb (10-12-2021 11:51:31)
+		Loading seed structure from ./data/C150_1fold_initial_new.pdb (31-05-2022 15:52:44)
+		Applying force field to the seed molecules ./data/C150_1fold_initial_new.pdb (31-05-2022 15:52:44)
 
-		Replicate a molecule or polymer chain (10-12-2021 11:51:38)
-		***************************************************************
-		Input file                  : ./data/C150_1fold_initial_new.pdb
-		Number of molecules in cell : 1
-		Number of chains in cell    : 1
-		Number of bonds in cell     : 451
-		Number of residues in cell  : 1
-		Number of atoms in cell     : 452
-		Simulation box dimension    : 0.7488 0.5129 9.4404 nm
-		Simulation box angles       : 90.00 90.00 90.00 degrees
-		Replicate the molecule 5x5x1 times
-		***************************************************************
+		------------------------------------------------------------------------------------------------------------------------------------------------------------
+		WARN: There are 655 atom types that are missing a smarts definition. To view the missing atom types, re-run with debug=True when applying the forcefield.
+		------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-		Molecule replicated info (10-12-2021 11:51:39)
-		*************************************************
-		Number of molecules in cell : 25
-		Number of chains in cell    : 25
-		Number of residues in cell  : 25
-		Number of atoms in cell     : 11300
-		Simulation box dimension    : 3.7440 2.5645 9.4404 nm
-		Simulation box angles       : 90.00 90.00 90.00 degrees
-		*************************************************
-
-		Generating lmp and data files for LAMMPS (10-12-2021 11:51:40)
-		*****************************************************************
-
-		Job  Done at 10-12-2021 11:51:50 ============
+		Job  Done at 31-05-2022 15:52:49 ============
 

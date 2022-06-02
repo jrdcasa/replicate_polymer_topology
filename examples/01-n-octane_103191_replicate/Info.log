@@ -21,19 +21,32 @@
 
     ***********************************************************************
         
-		Start Job at 12-04-2022 11:26:44 ============
+		Start Job at 02-06-2022 17:56:00 ============
 
 		Command line: 
-			python replicate_polymer.py -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 1 1 1 --engine lammps
+			python replicate_polymer.py -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 3 3 3 --engine lammps
 			         or
-			replicate_polymer -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 1 1 1 --engine lammps
+			replicate_polymer -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 3 3 3 --engine lammps
 
-		Replicating and typing molecule (12-04-2022 11:26:44)
+		Replicating and typing molecule (02-06-2022 17:56:00)
 		********************************************************
-		Loading seed structure from 103191_noctane_order_cryst.pdb (12-04-2022 11:26:44)
-		Applying force field to the seed molecules 103191_noctane_order_cryst.pdb (12-04-2022 11:26:44)
+		Loading seed structure from 103191_noctane_order_cryst.pdb (02-06-2022 17:56:00)
+		Applying force field to the seed molecules 103191_noctane_order_cryst.pdb (02-06-2022 17:56:00)
 
-		Replicate a molecule or polymer chain (12-04-2022 11:26:47)
+		------------------------------------------------------------------------------------------------------------------------------------------------------------
+		WARN: There are 655 atom types that are missing a smarts definition. To view the missing atom types, re-run with debug=True when applying the forcefield.
+		------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		------------------------------------------------------------------------------------
+		WARN: Parameters have not been assigned to all impropers.
+		Total system impropers: 32, Parameterized impropers: 0.
+ 		Note that if your system contains torsions of Ryckaert-Bellemans functional form,
+		all of these torsions are processed as propers.
+		This warn can be ignored if you are sure that impropers are not needed!!!!!
+		------------------------------------------------------------------------------------
+
+
+		Replicate a molecule or polymer chain (02-06-2022 17:56:00)
 		***************************************************************
 		Input file                  : 103191_noctane_order_cryst.pdb
 		Number of molecules in cell : 1
@@ -43,19 +56,21 @@
 		Number of atoms in cell     : 26
 		Simulation box dimension    : 0.4123 0.4686 1.0974 nm
 		Simulation box angles       : 85.06 83.72 75.10 degrees
-		Replicate the molecule 1x1x1 times
+		Replicate the molecule 3x3x3 times
 		***************************************************************
 
-		Molecule replicated info (12-04-2022 11:26:47)
+		Molecule replicated info (02-06-2022 17:56:00)
 		*************************************************
-		Number of molecules in cell : 1
-		Number of chains in cell    : 1
-		Number of residues in cell  : 1
-		Number of atoms in cell     : 26
-		Simulation box dimension    : 0.4123 0.4686 1.0974 nm
+		Number of molecules in cell : 27
+		Number of chains in cell    : 27
+		Number of residues in cell  : 27
+		Number of atoms in cell     : 702
+		Simulation box dimension    : 1.2369 1.4058 3.2922 nm
 		Simulation box angles       : 85.06 83.72 75.10 degrees
 		*************************************************
 
-		Generating lmp and data files for LAMMPS (12-04-2022 11:26:47)
+		Generating lmp and data files for LAMMPS (02-06-2022 17:56:01)
 		*****************************************************************
+
+		Job  Done at 02-06-2022 17:56:01 ============
 

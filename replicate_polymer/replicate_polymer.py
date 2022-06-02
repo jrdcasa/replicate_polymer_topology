@@ -1,12 +1,13 @@
 import os
 import sys
 import datetime
-import mbuild
+from  topology.readmol.readpdbformat import ReadPdbFormat
 from replicate_polymer_lib.parse_arguments import parse_arguments, print_header
 from replicate_polymer_lib.logger import init_logger
 from replicate_polymer_lib.check_connect_pdb import check_conect_pdb
 from replicate_polymer_lib.remove_hydrogens import remove_hydrogens
 from replicate_polymer_lib.setup_chiral_impropers import setup_chiral_impropers
+from replicate_polymer_lib.typing_molecule import typing_molecule
 from replicate_polymer_lib.replicate_pdb import replicate_pdb
 from replicate_polymer_lib.prepare_lammps import prepare_lammps
 from replicate_polymer_lib.exclusions import exclusion_gromacs
@@ -63,7 +64,7 @@ def main_app(version):
     m = "\t\t" + len(m1) * "*" + "\n"
     m += "\t\tLoading seed structure from {} ({})".format(filenamepdb, now)
     print(m1+m) if logger is None else logger.info(m1+m)
-    untyped_mol = mbuild.load(filenamepdb)
+    untyped_mol = ReadPdbFormat(filenamepdb)
 
     # Apply force field to the seed molecule
     now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
@@ -71,17 +72,9 @@ def main_app(version):
     print(m) if logger is None else logger.info(m)
     basepath = os.path.splitext(os.path.split(filenamepdb)[-1])[0]
     # Each chain (or molecule) is a residue
-    residues_compound = list(set([child.name for child in untyped_mol.children]))
-    try:
-        untyped_mol.save(basepath+".top", forcefield_files=opts.xmlfile, overwrite=True,
-                         residues=residues_compound, foyer_kwargs={'verbose': True, 'assert_dihedral_params': True})
-        print(untyped_mol.bond_graph.nodes)
-        exit()
-    except Exception:
-        # For special force field terms which cannot be handle by Foyer-Parmed-OpenMM
-        untyped_mol.save(basepath+".top", forcefield_files=opts.xmlfile, overwrite=True,
-                         residues=residues_compound, foyer_kwargs={'verbose': True, 'assert_dihedral_params': False})
-        print("HOLA")
+    typing_molecule(basepath+".top", untyped_mol, opts.xmlfile, logger=logger,
+                    type_kwargs={'verbose': True, 'assert_dihedral_params': True})
+
     # Replicate the pdb chain
     if opts.images is not None:
         _, trj_replicate, residues_map_atom = replicate_pdb(filenamepdb, opts.images, boxlength=opts.boxlength,
@@ -97,7 +90,7 @@ def main_app(version):
     ext = ".top"
     fname = os.path.join(dirlocal, base + "_replicate" + ext)
     with open(fname, "r") as f:
-        contents = f.readlines()
+         contents = f.readlines()
 
     idx_to_insert = contents.index("[ dihedrals ]\n")
 
