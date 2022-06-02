@@ -60,6 +60,7 @@ def install_topology_library(log=None, namepkg=None):
 
     giturl = "https://github.com/jrdcasa/topology.git"
     install_dir = 'topology'
+    install_dir = './thirdparty/topology'
 
     now = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
