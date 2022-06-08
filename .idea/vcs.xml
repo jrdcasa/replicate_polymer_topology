@@ -11,6 +11,8 @@
     <mapping directory="$PROJECT_DIR$/thirdparty/intermol" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/thirdparty/mbuild" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/thirdparty/openmm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdparty/topology" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/thirdparty/topology/thirdparty/openbabel" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/topology" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/topology/thirdparty/openbabel" vcs="Git" />
   </component>

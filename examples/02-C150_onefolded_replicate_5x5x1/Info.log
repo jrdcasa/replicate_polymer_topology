@@ -21,21 +21,14 @@
 
     ***********************************************************************
         
-		Start Job at 31-05-2022 15:52:44 ============
+		Start Job at 08-06-2022 11:53:13 ============
 
 		Command line: 
 			python replicate_polymer.py -p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 5 5 1 --engine lammps
 			         or
 			replicate_polymer -p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 5 5 1 --engine lammps
 
-		Replicating and typing molecule (31-05-2022 15:52:44)
+		Replicating and typing molecule (08-06-2022 11:53:13)
 		********************************************************
-		Loading seed structure from ./data/C150_1fold_initial_new.pdb (31-05-2022 15:52:44)
-		Applying force field to the seed molecules ./data/C150_1fold_initial_new.pdb (31-05-2022 15:52:44)
-
-		------------------------------------------------------------------------------------------------------------------------------------------------------------
-		WARN: There are 655 atom types that are missing a smarts definition. To view the missing atom types, re-run with debug=True when applying the forcefield.
-		------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-		Job  Done at 31-05-2022 15:52:49 ============
-
+		Loading seed structure from ./data/C150_1fold_initial_new.pdb (08-06-2022 11:53:13)
+		Applying force field to the seed molecules ./data/C150_1fold_initial_new.pdb (08-06-2022 11:53:13)

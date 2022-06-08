@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH MDTraj 1.9.6, 2022-05-05
+REMARK   1 CREATED WITH MDTraj 1.9.6, 2022-06-04
 CRYST1   64.144   64.144   64.144  90.00  90.00  90.00 P 1           1 
 MODEL        0
 ATOM      1  H   Blo A   1      20.965  65.214  -6.229  1.00  0.00           H  

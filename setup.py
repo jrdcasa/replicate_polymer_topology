@@ -5,7 +5,13 @@ import os
 import tempfile
 import shutil
 import logging
-import numpy
+try:
+    import numpy
+except ModuleNotFoundError:
+    m = "ERROR. Please install numpy in your Python environment.\n"
+    m += "ERROR. pip install numpy"
+    print(m)
+    exit()
 from datetime import datetime
 from setuptools import setup, Extension
 from distutils.ccompiler import new_compiler
@@ -31,137 +37,24 @@ class CustomFormatter(logging.Formatter):
 
 
 # Install packages from pip ==============================================================
-def install_with_pip(pack, vers=None, log=None):
+def install_with_pip(pack, vers=None, log=None, namepkg=None):
 
     # sys.executable gives the path of the python interpreter
     now = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     if vers is None:
-        m = "{}: ** REPLICATE: Installing {}".format(now, pack)
+        m = "{}: ** {}: Installing {}".format(namepkg, now, pack)
         print(m) if log is None else log.info(m)
         # subprocess.call([sys.executable, "-m", "pip", "install", "{0}".format(pack)])
         p = subprocess.Popen([sys.executable, "-m", "pip", "install", "{0}".format(pack)],
                              stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         p.communicate()
     else:
-        m = "{}: ** REPLICATE: Installing {}=={}".format(now, pack, vers)
+        m = "{}: ** {}: Installing {}=={}".format(namepkg, now, pack, vers)
         print(m) if log is None else log.info(m)
         # subprocess.call([sys.executable, "-m", "pip", "install", "{0}=={1}".format(pack, vers), " &>install.log"])
         p = subprocess.Popen([sys.executable, "-m", "pip", "install", "{0}=={1}".format(pack, vers)],
                              stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         p.communicate()
-
-# ================================================================================================
-def install_topology_library(log=None, namepkg=None):
-    """
-    Installing the python topology library if is not present in the python environment.
-    """
-
-    import git
-
-    giturl = "https://github.com/jrdcasa/topology.git"
-    install_dir = 'topology'
-    install_dir = './thirdparty/topology'
-
-    now = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-
-    m = "\n\t\t INSTALLING TOPOLOGY LIBRARY INTO THE PYTHON ENVIRONMENT FROM GITHUB\n\n"
-
-    if os.path.isdir(os.path.join(os.getcwd(), install_dir)):
-        m += "{}: ** {}: topology library is already installed in your system. {}".format(now, namepkg, giturl)
-        print(m) if log is None else log.info(m)
-    else:
-        m += "{}: ** {}: topology library is not installed in your system\n".format(now, namepkg)
-        m += "{}: ** {}: Installing from git... {}\n".format(now, namepkg, giturl)
-        print(m) if log is None else log.info(m)
-
-        fullpath_install = os.path.abspath(install_dir)
-
-        # Look at thirdparty directory
-        if os.path.isdir(fullpath_install):
-            shutil.rmtree(fullpath_install)
-        os.makedirs(fullpath_install)
-
-        try:
-            git.Repo.clone_from(giturl, fullpath_install)
-        except git.GitCommandError as e:
-            m = "================= ERROR INSTALL ================\n"
-            m += "** {}: The github repository for topology is not valid or not exists.!!!\n".format(namepkg)
-            m += "** {}: giturl     : {}\n".format(namepkg, giturl)
-            m += "** {}: install_dir: {}\n".format(namepkg, fullpath_install)
-            m += "** {}: Topology library cannot be installed\n".format(namepkg)
-            m += "** {}: The installation is aborted\n".format(namepkg)
-            m += "** Error: {}\n".format(e.stderr)
-            m += "\n================= ERROR INSTALL ================"
-            print(m) if log is None else log.info(m)
-            exit()
-
-        os.chdir(fullpath_install)
-        #print(os.getcwd())
-        subprocess.call(["python", "setup.py", "install"])
-        os.chdir("..")
-
-    # Check if topology can be imported
-    try:
-        import topology
-        import topology.readmol
-        now = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-        m = "topology installed in the python environment ({})".format(now)
-        print(m) if log is None else log.info(m)
-        return True
-    except (ModuleNotFoundError, ImportError):
-        m = "================= ERROR INSTALL ================\n"
-        m += "** REPLICATE: Automatic installation of topology python is unsuccessful.\n"
-        m += "** REPLICATE: Install the topology library manually using the repi:\n"
-        m += "** REPLICATE: https://github.com/jrdcasa/topology.git\n"
-        m += "** REPLICATE: and then try to re-install\n"
-        m += "================= ERROR INSTALL ================"
-        print(m) if log is None else log.info(m)
-        exit()
-
-
-# Install foyer ==============================================================
-def install_foyer(log=None):
-
-    import git
-
-    giturl = 'https://:@github.com/jrdcasa/foyer_cj.git'
-    # giturl = 'https://:@github.com/mosdef-hub/foyer.git'
-    install_dir = './thirdparty/foyer'
-
-    # Check if exists a distribution of foyer in the thirdparty directory
-    # git clone https://github.com/jrdcasa/foyer_cj.git
-    if os.path.isdir("thirdparty/foyer"):
-        m = "{} is already cloned in {}".format(giturl, install_dir)
-        print(m) if log is None else log.info(m)
-        pass
-    else:
-        try:
-            m = "Cloning from {} in {}".format(giturl, install_dir)
-            print(m) if log is None else log.info(m)
-            git.Repo.clone_from(giturl, install_dir)  # progress=CloneProgress())
-            m = "Repository cloned\n"
-            print(m) if log is None else log.info(m)
-        except git.GitCommandError:
-            if not os.path.isdir(install_dir):
-                m = "================= ERROR INSTALL ================\n"
-                m += "** REPLICATE: The github repository for foyer is not valid or not exist.!!!\n"
-                m += "** REPLICATE: giturl     : {}\n".format(giturl)
-                m += "** REPLICATE: install_dir: {}\n".format(install_dir)
-                m += "** REPLICATE: foyer cannot be installed\n"
-                m += "** REPLICATE: The installation is aborted\n"
-                m += "================= ERROR INSTALL ================"
-                print(m) if log is None else log.info(m)
-                exit()
-            else:
-                pass
-
-    # Install into the python environment
-    wk = os.getcwd()
-    os.chdir(install_dir)
-    subprocess.call(["python", "setup.py", "install"])
-    m = "foyer installed in the python environment"
-    print(m) if log is None else log.info(m)
-    os.chdir(wk)
 
 
 # Install openmm ==============================================================
@@ -176,7 +69,6 @@ def install_openmm(log=None):
         now = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
         m = "openmm installed in the python environment ({})".format(now)
         print(m) if log is None else log.info(m)
-
         return True
     except (ModuleNotFoundError, ImportError):
         m = "Trying to install openmm python in an automatic way."
@@ -242,96 +134,6 @@ def install_openmm(log=None):
         m += "================= ERROR INSTALL ================"
         print(m) if log is None else log.info(m)
         exit()
-
-
-# Install gmso ==============================================================
-def install_gmso(log=None):
-
-    import git
-
-    giturl = 'https://:@github.com/jrdcasa/gmso_cj.git'
-    # giturl = 'https://:@github.com/mosdef-hub/gmso.git'
-    install_dir = './thirdparty/gmso'
-
-    # Check if exists a distribution of foyer in the thirdparty directory
-    # git clone https://github.com/jrdcasa/gmso_cj.git
-    if os.path.isdir("thirdparty/gmso"):
-        m = "{} is already cloned in {}".format(giturl, install_dir)
-        print(m) if log is None else log.info(m)
-        pass
-    else:
-        try:
-            m = "Cloning from {} in {}".format(giturl, install_dir)
-            print(m) if log is None else log.info(m)
-            git.Repo.clone_from(giturl, install_dir)  # progress=CloneProgress())
-            m = "Repository cloned\n"
-            print(m) if log is None else log.info(m)
-        except git.GitCommandError:
-            if not os.path.isdir(install_dir):
-                m = "================= ERROR INSTALL ================\n"
-                m += "** REPLICATE: The github repository for gmso is not valid or not exist.!!!\n"
-                m += "** REPLICATE: giturl     : {}\n".format(giturl)
-                m += "** REPLICATE: install_dir: {}\n".format(install_dir)
-                m += "** REPLICATE: gmso cannot be installed\n"
-                m += "** REPLICATE: The installation is aborted\n"
-                m += "================= ERROR INSTALL ================"
-                print(m) if log is None else log.info(m)
-                exit()
-            else:
-                pass
-
-    # Install into the python environment
-    wk = os.getcwd()
-    os.chdir(install_dir)
-    subprocess.call(["python", "setup.py", "install"])
-    m = "gmso installed in the python environment"
-    print(m) if log is None else log.info(m)
-    os.chdir(wk)
-
-
-# Install gmso ==============================================================
-def install_mbuild(log=None):
-
-    import git
-
-    giturl = 'https://:@github.com/jrdcasa/mbuild.git'
-    # giturl = 'https://:@github.com/mosdef-hub/mbuild.git'
-    install_dir = './thirdparty/mbuild'
-
-    # Check if exists a distribution of foyer in the thirdparty directory
-    # git clone https://github.com/jrdcasa/mbuild.git
-    if os.path.isdir("thirdparty/mbuild"):
-        m = "{} is already cloned in {}".format(giturl, install_dir)
-        print(m) if log is None else log.info(m)
-        pass
-    else:
-        try:
-            m = "Cloning from {} in {}".format(giturl, install_dir)
-            print(m) if log is None else log.info(m)
-            git.Repo.clone_from(giturl, install_dir)  # progress=CloneProgress())
-            m = "Repository cloned\n"
-            print(m) if log is None else log.info(m)
-        except git.GitCommandError:
-            if not os.path.isdir(install_dir):
-                m = "================= ERROR INSTALL ================\n"
-                m += "** REPLICATE: The github repository for mbuild is not valid or not exist.!!!\n"
-                m += "** REPLICATE: giturl     : {}\n".format(giturl)
-                m += "** REPLICATE: install_dir: {}\n".format(install_dir)
-                m += "** REPLICATE: mbuild cannot be installed\n"
-                m += "** REPLICATE: The installation is aborted\n"
-                m += "================= ERROR INSTALL ================"
-                print(m) if log is None else log.info(m)
-                exit()
-            else:
-                pass
-
-    # Install into the python environment
-    wk = os.getcwd()
-    os.chdir(install_dir)
-    subprocess.call(["python", "setup.py", "install"])
-    m = "mbuild installed in the python environment"
-    print(m) if log is None else log.info(m)
-    os.chdir(wk)
 
 
 # Install intermol ==============================================================
@@ -486,8 +288,62 @@ def setup_external_extensions(debug_cflags=False, use_openmp=True):
     return extensions_install
 
 
+# Requeriments to be manually installed  ===========================================================================
+def check_requirements_outside():
+    # Check for swig (http://www.swig.org)
+    if os.system("which swig"):
+        m = "ERROR. Please install SWIG in your system (http://www.swig.org)\n"
+        m += "ERROR. Ubuntu: apt get install swig"
+        print(m) if logger is None else logger.info(m)
+        exit()
+
+    # Check for cmake
+    if os.system("which cmake"):
+        m = "ERROR. Please install CMAKE in your system\n"
+        m += "ERROR. Ubuntu: apt get install cmake"
+        print(m) if logger is None else logger.info(m)
+        exit()
+
+    # Check for pygraphviz
+    try:
+        import pygraphviz as pag
+    except ImportError:
+        m = "ERROR. Please install PYGRAPHVIZ in your system\n"
+        m += "ERROR. In Ubuntu try: sudo apt install libgraphviz-dev\n"
+        m += "ERROR. python -m pip install pygraphviz"
+
+        print(m) if logger is None else logger.info(m)
+        exit()
+
+
+# Check for Topology library  ===========================================================================
+def check_for_topology_library(namepkg=None):
+
+    try:
+        import topology
+        nowm = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        m = "\t\t** {}: Topology is installed in your system({})\n".format(namepkg, nowm)
+        m += "\t\t** {}: {}".format(namepkg, topology.__file__)
+        print(m) if logger is None else logger.info(m)
+    except (ModuleNotFoundError, ImportError):
+        m = "================= ERROR INSTALL ================\n"
+        m += "** {}: Error trying to import topology library.\n".format(namepkg)
+        m += "** {}: Library seems not to be installed in your environment.\n".format(namepkg)
+        m += "** {}: Install topology library manually following the instructions in:\n".format(namepkg)
+        m += "** {}: https://github.com/jrdcasa/topology/blob/main/docs/02-installation.md\n".format(namepkg)
+        m += "================= ERROR INSTALL ================"
+        print(m) if logger is None else logger.info(m)
+        exit()
+        m = "ERROR. Topology library is not installed in your system.\n"
+        m +="ERROR. Please check ./thirdparty/topology/install.log"
+        print(m) if logger is None else logger.info(m)
+        exit()
+
+
 # Main setup
 if __name__ == '__main__':
+
+    namepackage = "REPLICATE"
 
     # Creating the logger to install.log file ===================================
     logger = logging.getLogger(name="INSTALL_LOG")
@@ -500,9 +356,19 @@ if __name__ == '__main__':
     f1.setFormatter(CustomFormatter())
     logger.addHandler(f1)
 
+    # SWIG, cmake and pygraphviz are needed for topology library
+    check_requirements_outside()
+
     nowm = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     m1 = "\n\t\t Starting installation!!!! at {}\n\n".format(nowm)
     print(m1) if logger is None else logger.info(m1)
+
+    nowm = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+    m1 += "\n\t\t CHECKING TOPOLOGY INSTALLATION ({})\n".format(nowm)
+    print(m1) if logger is None else logger.info(m1)
+
+    # Check for topology installation ============================
+    check_for_topology_library(namepackage)
 
     # Print sys path ===================================
     m1 = "\t\t SYS PATH\n"
@@ -520,47 +386,18 @@ if __name__ == '__main__':
             pkg, version = ipack.split(">=")[0:2]
             if pkg[0] == "#":
                 continue
-            install_with_pip(pkg, vers=version, log=logger)
+            install_with_pip(pkg, vers=version, log=logger, namepkg=namepackage)
         except ValueError:
             pkg = ipack
             if pkg[0] == "#":
                 continue
-            install_with_pip(pkg, log=logger)
+            install_with_pip(pkg, log=logger, namepkg=namepackage)
 
-    # Install Topology library from github =======================================
-    install_topology_library(log=logger)
-    # Check for topology installation
-    try:
-        import topology
-    except ImportError:
-        m = "ERROR. Topology library is not correctly installed\n"
-        m +="ERROR. Please check ./topology/install.log"
-        print(m) if logger is None else logger.info(m)
-        exit()
-
-    ## Install foyer ===================================
-    #nowm = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    #m1 = "\n\t\t INSTALLING FOYER (https://github.com/mosdef-hub/foyer) ({})\n".format(nowm)
-    #print(m1) if logger is None else logger.info(m1)
-    #install_foyer(log=logger)
-
-    ## Install openmm ===================================
-    #nowm = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    #m1 = "\n\t\t INSTALLING OPENMM (https://openmm.org/) ({})\n".format(nowm)
-    #print(m1) if logger is None else logger.info(m1)
-    #install_openmm(log=logger)
-
-    ## Install gmso ===================================
-    #nowm = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    #m1 = "\n\t\t INSTALLING GMSO (https://github.com/mosdef-hub/gmso) ({})\n".format(nowm)
-    #print(m1) if logger is None else logger.info(m1)
-    #install_gmso(log=logger)
-
-    ## Install mbuild ===================================
-    #nowm = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
-    #m1 = "\n\t\t INSTALLING MBUILD (https://github.com/mosdef-hub/mbuild) ({})\n".format(nowm)
-    #print(m1) if logger is None else logger.info(m1)
-    #install_mbuild(log=logger)
+    # Install openmm ===================================
+    nowm = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+    m1 = "\n\t\t INSTALLING OPENMM (https://openmm.org/) ({})\n".format(nowm)
+    print(m1) if logger is None else logger.info(m1)
+    install_openmm(log=logger)
 
     # Install intermol ===================================
     nowm = datetime.now().strftime("%d/%m/%Y %H:%M:%S")

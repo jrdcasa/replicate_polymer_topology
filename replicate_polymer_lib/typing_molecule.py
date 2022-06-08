@@ -45,8 +45,7 @@ def typing_molecule(filename, molecule, forcefield_xml_files, overwrite=True,
         molecule._boxlength = [xmax-xmin + 5., ymax-ymin + 5., zmax-zmin + 5.]
         molecule._boxangle = [90.0, 90.0, 90.0]
 
-
-    pmd_structure = ff.apply(molecule, **type_kwargs)
+    pmd_structure = ff.apply(molecule, logger=logger, **type_kwargs)
     # pmd_structure.combining_rule = combining_rule
 
     total_charge = sum([atom.charge for atom in pmd_structure])

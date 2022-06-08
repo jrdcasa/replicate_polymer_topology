@@ -21,19 +21,32 @@
 
     ***********************************************************************
         
-		Start Job at 05-05-2022 22:34:22 ============
+		Start Job at 04-06-2022 23:57:07 ============
 
 		Command line: 
 			python replicate_polymer.py -p ETH-EVA_50wt_0000.pdb -f ../../forcefields/oplsaa.xml --images 1 1 1 -e lammps
 			         or
 			replicate_polymer -p ETH-EVA_50wt_0000.pdb -f ../../forcefields/oplsaa.xml --images 1 1 1 -e lammps
 
-		Replicating and typing molecule (05-05-2022 22:34:22)
+		Replicating and typing molecule (04-06-2022 23:57:07)
 		********************************************************
-		Loading seed structure from ETH-EVA_50wt_0000.pdb (05-05-2022 22:34:22)
-		Applying force field to the seed molecules ETH-EVA_50wt_0000.pdb (05-05-2022 22:34:22)
+		Loading seed structure from ETH-EVA_50wt_0000.pdb (04-06-2022 23:57:07)
+		Applying force field to the seed molecules ETH-EVA_50wt_0000.pdb (04-06-2022 23:57:07)
 
-		Replicate a molecule or polymer chain (05-05-2022 22:34:45)
+		------------------------------------------------------------------------------------------------------------------------------------------------------------
+		WARN: There are 655 atom types that are missing a smarts definition. To view the missing atom types, re-run with debug=True when applying the forcefield.
+		------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+		-------------------------------------------------------------------------------------
+		WARN: Parameters have not been assigned to all impropers.
+		Total system impropers: 1385, Parameterized impropers: 0.
+ 		Note that if your system contains torsions of Ryckaert-Bellemans functional form,
+		all of these torsions are processed as propers.
+		This warn can be ignored if you are sure that impropers are not needed!!!!!
+		-------------------------------------------------------------------------------------
+
+
+		Replicate a molecule or polymer chain (04-06-2022 23:57:44)
 		***************************************************************
 		Input file                  : ETH-EVA_50wt_0000.pdb
 		Number of molecules in cell : 1
@@ -46,7 +59,7 @@
 		Replicate the molecule 1x1x1 times
 		***************************************************************
 
-		Molecule replicated info (05-05-2022 22:34:45)
+		Molecule replicated info (04-06-2022 23:57:44)
 		*************************************************
 		Number of molecules in cell : 1
 		Number of chains in cell    : 1
@@ -56,8 +69,8 @@
 		Simulation box angles       : 90.00 90.00 90.00 degrees
 		*************************************************
 
-		Generating lmp and data files for LAMMPS (05-05-2022 22:34:45)
+		Generating lmp and data files for LAMMPS (04-06-2022 23:57:44)
 		*****************************************************************
 
-		Job  Done at 05-05-2022 22:34:46 ============
+		Job  Done at 04-06-2022 23:57:45 ============
 

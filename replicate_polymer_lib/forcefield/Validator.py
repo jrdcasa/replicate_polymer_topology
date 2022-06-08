@@ -25,13 +25,13 @@ class Validator(object):
         try:
             preprocessed_ff_file_name = preprocess_forcefield_files([ff_file_name])
 
-            ff_tree = etree.parse(preprocessed_ff_file_name[0])
-            self.validate_xsd(ff_tree)
+            self.ff_tree = etree.parse(preprocessed_ff_file_name[0])
+            self.validate_xsd(self.ff_tree)
 
-            self.atom_type_names = ff_tree.xpath("/ForceField/AtomTypes/Type/@name")
-            self.atom_types = ff_tree.xpath("/ForceField/AtomTypes/Type")
+            self.atom_type_names = self.ff_tree.xpath("/ForceField/AtomTypes/Type/@name")
+            self.atom_types = self.ff_tree.xpath("/ForceField/AtomTypes/Type")
 
-            self.validate_class_type_exclusivity(ff_tree)
+            self.validate_class_type_exclusivity(self.ff_tree)
 
             # Loading forcefield should succeed, because XML can be parsed and
             # basics have been validated.
@@ -44,6 +44,7 @@ class Validator(object):
 
         self.validate_smarts(debug=debug)
         self.validate_overrides()
+        self.all_forces_included_xml = self.get_all_forces_cj()
 
     # =============================================================================================
     def validate_xsd(self, ff_tree, xsd_file=None):
@@ -248,3 +249,26 @@ class Validator(object):
                     m = "\t\t" + len(m1) * "*" + "\n"
                     print("\n" + m + m1 + m2 + m) if self._logger is None else self._logger.info("\n" + m + m1 + m2 + m)
                     exit()
+
+    # =============================================================================================
+    def get_all_forces_cj(self):
+
+        """
+        Get all labels in the XML file. This is useful to consider extra potential terms, i.e: PeriodicToxvaerdForce
+
+        Args:
+
+        Returns:
+            A list of the tags for all Forces included in the XML
+
+        """
+
+        all_forces_included_xml = list()
+        root = self.ff_tree.getroot()
+        all_elements = self.ff_tree.getroot().findall("*")
+        for item in all_elements:
+            if item.tag.find("Force") != -1:
+                all_forces_included_xml.append(item.tag)
+
+        return all_forces_included_xml
+

@@ -39,6 +39,11 @@ def main_app(version):
 
     # Read the original pdb and check PDB Connect section in the PDB file
     filenamepdb = check_conect_pdb(opts.pdbfile)
+    if filenamepdb is None:
+        now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+        m = "\n\t\tRemoving hydrogens in the pdb file of the seed molecles.({})... ({})".format(filenamepdb, now)
+        print(m) if logger is None else logger.info(m)
+        exit()
 
     # Remove hydrogen atoms
     if opts.hydrogens:

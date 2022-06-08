@@ -21,22 +21,17 @@
 
     ***********************************************************************
         
-		Start Job at 02-06-2022 17:56:00 ============
+		Start Job at 08-06-2022 11:52:38 ============
 
 		Command line: 
 			python replicate_polymer.py -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 3 3 3 --engine lammps
 			         or
 			replicate_polymer -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 3 3 3 --engine lammps
 
-		Replicating and typing molecule (02-06-2022 17:56:00)
+		Replicating and typing molecule (08-06-2022 11:52:38)
 		********************************************************
-		Loading seed structure from 103191_noctane_order_cryst.pdb (02-06-2022 17:56:00)
-		Applying force field to the seed molecules 103191_noctane_order_cryst.pdb (02-06-2022 17:56:00)
-
-		------------------------------------------------------------------------------------------------------------------------------------------------------------
-		WARN: There are 655 atom types that are missing a smarts definition. To view the missing atom types, re-run with debug=True when applying the forcefield.
-		------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+		Loading seed structure from 103191_noctane_order_cryst.pdb (08-06-2022 11:52:38)
+		Applying force field to the seed molecules 103191_noctane_order_cryst.pdb (08-06-2022 11:52:38)
 		------------------------------------------------------------------------------------
 		WARN: Parameters have not been assigned to all impropers.
 		Total system impropers: 32, Parameterized impropers: 0.
@@ -46,7 +41,7 @@
 		------------------------------------------------------------------------------------
 
 
-		Replicate a molecule or polymer chain (02-06-2022 17:56:00)
+		Replicate a molecule or polymer chain (08-06-2022 11:52:39)
 		***************************************************************
 		Input file                  : 103191_noctane_order_cryst.pdb
 		Number of molecules in cell : 1
@@ -59,7 +54,7 @@
 		Replicate the molecule 3x3x3 times
 		***************************************************************
 
-		Molecule replicated info (02-06-2022 17:56:00)
+		Molecule replicated info (08-06-2022 11:52:39)
 		*************************************************
 		Number of molecules in cell : 27
 		Number of chains in cell    : 27
@@ -69,8 +64,8 @@
 		Simulation box angles       : 85.06 83.72 75.10 degrees
 		*************************************************
 
-		Generating lmp and data files for LAMMPS (02-06-2022 17:56:01)
+		Generating lmp and data files for LAMMPS (08-06-2022 11:52:39)
 		*****************************************************************
 
-		Job  Done at 02-06-2022 17:56:01 ============
+		Job  Done at 08-06-2022 11:52:40 ============
 

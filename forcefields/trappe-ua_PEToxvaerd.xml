@@ -144,25 +144,45 @@
 
  </HarmonicAngleForce>
 
- <!--PeriodicToxvaerdForce>
-     <ProperToxvaerd class1="CH2" class2="CH2" class3="CH2" class4="CH2"
+ <PeriodicToxvaerdForce>
+     <Proper class1="CH2" class2="CH2" class3="CH2" class4="CH2"
              periodicity0="0" phase0="0.0" k0="8.7375"
              periodicity1="1" phase1="3.14159265359" k1="-2.4896"
-             periodicity2="2" phase2="0.0" k2="0.7496"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
              periodicity3="3" phase3="3.14159265359" k3="-7.1311"
-             periodicity4="4" phase4="0.0" k4="0.4396"
-             periodicity5="6" phase5="3.14159265359" k5="-0.5567"
-             periodicity6="6" phase6="0.0" k6="0.2973"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
              periodicity7="7" phase7="3.14159265359" k7="-0.2254"
-             periodicity8="8" phase8="0.0" k8="0.1829"/>
- </PeriodicToxvaerdForce-->
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+       <Proper class1="CH3" class2="CH2" class3="CH2" class4="CH2"
+             periodicity0="0" phase0="0.0" k0="8.7375"
+             periodicity1="1" phase1="3.14159265359" k1="-2.4896"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
+             periodicity3="3" phase3="3.14159265359" k3="-7.1311"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
+             periodicity7="7" phase7="3.14159265359" k7="-0.2254"
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+       <Proper class1="CH3" class2="CH2" class3="CH2" class4="CH3"
+             periodicity0="0" phase0="0.0" k0="8.7375"
+             periodicity1="1" phase1="3.14159265359" k1="-2.4896"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
+             periodicity3="3" phase3="3.14159265359" k3="-7.1311"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
+             periodicity7="7" phase7="3.14159265359" k7="-0.2254"
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+ </PeriodicToxvaerdForce>
 
- <PeriodicTorsionForce>
+ <!--PeriodicTorsionForce>
     <Proper class1="CH3" class2="CH2" class3="CH2" class4="CH2"
     periodicity1="3" phase1="0.0" k1="0.75312"
     periodicity2="2" phase2="3.14159265359" k2="1.046"
     periodicity3="1" phase3="3.14159265359" k3="0.8368"/>
- </PeriodicTorsionForce>
+ </PeriodicTorsionForce-->
 
  <RBTorsionForce>
   <!--  ===================== ALKANES ==================== -->

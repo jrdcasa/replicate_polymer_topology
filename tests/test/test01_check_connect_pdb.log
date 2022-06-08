@@ -1,6 +1,6 @@
 
 	***************** START Check_connect_pdb TEST *****************
-		Starting: 	 12-04-2022 14:47:02
+		Starting: 	 08-06-2022 12:14:46
 
 	Test_01: CONECT section exists in the PDB file.
 	================================================
@@ -18,12 +18,4 @@
 	         RESNAME in PDB are not defined. This raises an error
 	         in parmed package used by check_conect_pdb
 	============================================================================================================================================================================
-
-	Bad format for PDB. No residues name in PDB file
-	None object is capture!!!
-	PASSED
-
-
-	***************** END Check_connect_pdb TEST *****************
-		Finishing: 	 12-04-2022 14:47:02
 

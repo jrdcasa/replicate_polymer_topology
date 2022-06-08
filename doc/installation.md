@@ -50,6 +50,19 @@ pip install --upgrade pip
 
 This virtual environment must be activate in order to use the program.
 
+### Prerequisites for topology library
+
+---
+
+This program makes use of the [``topology`` library](<https://github.com/jrdcasa/topology.git>). Thus, some packages or programs must be installed at hand before to start the ``replicate_polymer`` installation. These requisites are needed to properly install the ``topology`` library.
+
+```bash
+sudo apt get python3-dev
+sudo apt get libgraphviz-dev
+python -m pip install wheel
+python -m pip install pygraphviz
+```
+
 ### Install from source
 
 ---
@@ -68,7 +81,7 @@ python setup.py install
 
 To use **replicate_polymer**, the following libraries and software will need to be installed.
 
-### Pip packages
+#### Pip packages
 
 ---
 
@@ -89,15 +102,15 @@ Several packages from **pip** need to be installed. The **requirements.txt** con
 * requests>=2.26.0
 * mdtraj>=1.9.6
 
-### Package installed from the source
+#### Package installed from the source
+
+---
 
 Packages **openmm**, **mbuild**, **foyer**, **gmso** and **intermol** need to be installed from the source code. In the best scenario these programs will be installed by running **setup.py**.
 
 * **openmm**: <https://github.com/openmm/openmm.git>. No modifications from the original
-* **foyer_cj**: <https://github.com/jrdcasa/foyer_cj.git>. Modifications in the **forcefield.py** file.
-* **gmso_cj**: <https://github.com/jrdcasa/gmso_cj.git>
 * **intermol_cj**: <https://github.com/openmm/intermol_cj.git>
-* **mbuild**: <https://github.com/jrdcasa/mbuild.git>. No modifications from the original
+* **topology**: <https://github.com/jrdcasa/topology.git>. Library to implement topology from xsd, pdb and gro files
 
 After installation you can check if all depencies are correctly installed:
 
