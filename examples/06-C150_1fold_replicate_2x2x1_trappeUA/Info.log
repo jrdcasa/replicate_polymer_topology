@@ -3,7 +3,7 @@
               Replicate a molecule or polymer chain (ReMoPo)
               ----------------------------------------------
 
-                                Version 3.0
+                                Version 4.0
 
                               Dr. Javier Ramos
                       Macromolecular Physics Department
@@ -11,26 +11,20 @@
                                Madrid (Spain)
 
         ReMoPo is an open-source python library to quickly replicate a molecule
-        from a pdb file containing the seed molecule. After that, the script assigns 
+        from a pdb file containing the seed molecule. After that, the script assigns
         the force field parameters using the foyer library (https://mosdef.org/)
-        This program generates GROMACS and LAMMPS files to run simulations. 
+        This program generates GROMACS and LAMMPS files to run simulations.
 
         This software is distributed under the terms of the
-        GNU General Public License v3.0 (GNU GPLv3). A copy of 
-        the license (LICENSE.txt) is included with this distribution. 
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
 
     ***********************************************************************
         
-		Start Job at 18-12-2021 13:32:58 ============
+		Start Job at 10-06-2022 14:55:54 ============
 
-		Command line: 
-			python replicate_polymer.py -p C150_1fold_initial_new.pdb -f ../../forcefields/trappe-ua.xml --images 2 2 1 -e lammps --noh
-			         or
-			replicate_polymer -p C150_1fold_initial_new.pdb -f ../../forcefields/trappe-ua.xml --images 2 2 1 -e lammps --noh
-
-
-		Removing hydrogens in the pdb file of the seed molecles.(C150_1fold_initial_new.pdb)... (18-12-2021 13:32:58)
-		Replicating and typing molecule (18-12-2021 13:32:58)
+		Removing hydrogens in the pdb file of the seed molecles.(C150_1fold_initial_new.pdb)... (10-06-2022 14:55:54)
+		Replicating and typing molecule (10-06-2022 14:55:54)
 		********************************************************
-		Loading seed structure from C150_1fold_initial_new_noH.pdb (18-12-2021 13:32:58)
-		Applying force field to the seed molecules C150_1fold_initial_new_noH.pdb (18-12-2021 13:32:58)
+		Loading seed structure from C150_1fold_initial_new_noH.pdb (10-06-2022 14:55:54)
+		Applying force field to the seed molecules C150_1fold_initial_new_noH.pdb (10-06-2022 14:55:54)

@@ -21,7 +21,7 @@
 
     ***********************************************************************
         
-		Start Job at 06-06-2022 22:17:04 ============
+		Start Job at 12-06-2022 13:51:55 ============
 
 		Command line: 
 			python replicate_polymer.py -p model01_000.pdb -f ../../forcefields/trappe-ua_PEToxvaerd.xml --images 1 1 1 -e lammps --noh
@@ -29,8 +29,15 @@
 			replicate_polymer -p model01_000.pdb -f ../../forcefields/trappe-ua_PEToxvaerd.xml --images 1 1 1 -e lammps --noh
 
 
-		Removing hydrogens in the pdb file of the seed molecles.(model01_000.pdb)... (06-06-2022 22:17:04)
-		Replicating and typing molecule (06-06-2022 22:17:04)
+		Check resname and connect in the input file. (model01_000.pdb)... (12-06-2022 13:51:55)
+
+		Removing hydrogens in the pdb file of the seed molecles.(model01_000.pdb)... (12-06-2022 13:51:55)
+		Replicating and typing molecule (12-06-2022 13:51:55)
 		********************************************************
-		Loading seed structure from model01_000_noH.pdb (06-06-2022 22:17:04)
-		Applying force field to the seed molecules model01_000_noH.pdb (06-06-2022 22:17:04)
+		Loading seed structure from model01_000_noH.pdb (12-06-2022 13:51:55)
+		Applying force field to the seed molecules model01_000_noH.pdb (12-06-2022 13:51:55)
+		 Checking bonds    ... (verbose: False) (12-06-2022 13:51:55).
+		 End checking bonds ... (verbose: False) (12-06-2022 13:51:55).
+		 Checking angles    ... (verbose: False) (12-06-2022 13:51:55).
+		 End checking angles ... (verbose: False) (12-06-2022 13:51:55).
+		 Checking dihedrals    ... (verbose: False) (12-06-2022 13:51:55).

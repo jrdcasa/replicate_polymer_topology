@@ -1,6 +1,70 @@
 import MDAnalysis as md
+from collections import defaultdict
 import os
+import numpy as np
 
+
+# =============================================================================
+def check_resname_pdb(fnameinp, dict_namemol=None):
+
+    """
+    Check if a pdb has name for the residues or not. It the file is not pdb return the same file
+    Otherwise, use the dict_namemol to assign the namemol to each atom.
+    The format for the dictionary is:
+
+        dict_namemol = {"mol1": [0, 15], "mol2": [16, 39],...}
+        The mol1 is assigned to the atom 0 to 15, the mol2 to atoms 16 to 39 and so on.
+
+    If dict_namemol is none, the MOL name is given to all atoms.
+    The new pdb is written.
+
+    Args:
+        fnameinp:
+        dict_namemol:
+
+    Returns:
+
+    """
+
+    ext = os.path.splitext(os.path.split(fnameinp)[-1])[-1]
+    if ext != ".pdb":
+        return fnameinp
+
+    d = defaultdict()
+    if dict_namemol is not None:
+        for key, limits in dict_namemol.items():
+            values = [i for i in range(limits[0], limits[1]+1)]
+            for i in values:
+                d[i] = key
+
+    # Try to open the file
+    isnewpdb = False
+    with open(fnameinp, 'r') as f:
+        lines = f.readlines()
+        idx = 0
+        newlines = []
+        for iline in lines:
+            if iline[0:6].find("ATOM") != -1 or iline[0:6].find("HETATM") != -1:
+                if iline[17:20] == '   ':
+                    isnewpdb = True
+                    try:
+                        newlines.append(iline[0:17]+d[idx]+iline[20:])
+                    except KeyError:
+                        newlines.append(iline[0:17]+"MOL"+iline[20:])
+                idx += 1
+            else:
+                newlines.append(iline)
+
+    if isnewpdb:
+        # Write the new pdb file
+        basename = os.path.splitext(os.path.split(fnameinp)[-1])[0]
+        filenamepdb = "./" + basename + "_r.pdb"
+        with open(filenamepdb, 'w') as f:
+            for iline in newlines:
+                f.writelines(iline)
+        return filenamepdb
+    else:
+        return fnameinp
 
 # =============================================================================
 def check_conect_pdb(fnameinp):

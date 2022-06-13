@@ -21,19 +21,21 @@
 
     ***********************************************************************
         
-		Start Job at 26-05-2022 13:51:18 ============
-
-		Command line: 
-			python replicate_polymer.py -p two_molecules.pdb -f ../../forcefields/oplsaa.xml --images 2 2 2 -e lammps --boxlength 1 1 1
-			         or
-			replicate_polymer -p two_molecules.pdb -f ../../forcefields/oplsaa.xml --images 2 2 2 -e lammps --boxlength 1 1 1
-
-		Replicating and typing molecule (26-05-2022 13:51:18)
+		Start Job at 09-06-2022 21:24:44 ============
+		Replicating and typing molecule (09-06-2022 21:24:44)
 		********************************************************
-		Loading seed structure from two_molecules.pdb (26-05-2022 13:51:18)
-		Applying force field to the seed molecules two_molecules.pdb (26-05-2022 13:51:18)
+		Loading seed structure from two_molecules.pdb (09-06-2022 21:24:44)
+		Applying force field to the seed molecules two_molecules.pdb (09-06-2022 21:24:44)
+		------------------------------------------------------------------------------------
+		WARN: Parameters have not been assigned to all impropers.
+		Total system impropers: 29, Parameterized impropers: 0.
+ 		Note that if your system contains torsions of Ryckaert-Bellemans functional form,
+		all of these torsions are processed as propers.
+		This warn can be ignored if you are sure that impropers are not needed!!!!!
+		------------------------------------------------------------------------------------
 
-		Replicate a molecule or polymer chain (26-05-2022 13:51:18)
+
+		Replicate a molecule or polymer chain (09-06-2022 21:24:45)
 		***************************************************************
 		Input file                  : two_molecules.pdb
 		Number of molecules in cell : 2
@@ -46,7 +48,7 @@
 		Replicate the molecule 2x2x2 times
 		***************************************************************
 
-		Molecule replicated info (26-05-2022 13:51:18)
+		Molecule replicated info (09-06-2022 21:24:45)
 		*************************************************
 		Number of molecules in cell : 16
 		Number of chains in cell    : 8
@@ -56,8 +58,8 @@
 		Simulation box angles       : 90.00 90.00 90.00 degrees
 		*************************************************
 
-		Generating lmp and data files for LAMMPS (26-05-2022 13:51:18)
+		Generating lmp and data files for LAMMPS (09-06-2022 21:24:45)
 		*****************************************************************
 
-		Job  Done at 26-05-2022 13:51:18 ============
+		Job  Done at 09-06-2022 21:24:45 ============
 

@@ -3,7 +3,7 @@
               Replicate a molecule or polymer chain (ReMoPo)
               ----------------------------------------------
 
-                                Version 3.0
+                                Version 4.0
 
                               Dr. Javier Ramos
                       Macromolecular Physics Department
@@ -11,29 +11,37 @@
                                Madrid (Spain)
 
         ReMoPo is an open-source python library to quickly replicate a molecule
-        from a pdb file containing the seed molecule. After that, the script assigns 
+        from a pdb file containing the seed molecule. After that, the script assigns
         the force field parameters using the foyer library (https://mosdef.org/)
-        This program generates GROMACS and LAMMPS files to run simulations. 
+        This program generates GROMACS and LAMMPS files to run simulations.
 
         This software is distributed under the terms of the
-        GNU General Public License v3.0 (GNU GPLv3). A copy of 
-        the license (LICENSE.txt) is included with this distribution. 
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
 
     ***********************************************************************
         
-		Start Job at 10-12-2021 11:53:53 ============
-
-		Command line: 
-			python replicate_polymer.py -p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 10 10 3 --engine lammps
-			         or
-			replicate_polymer -p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 10 10 3 --engine lammps
-
-		Replicating and typing molecule (10-12-2021 11:53:53)
+		Start Job at 10-06-2022 15:23:47 ============
+		Replicating and typing molecule (10-06-2022 15:23:47)
 		********************************************************
-		Loading seed structure from ./data/C150_1fold_initial_new.pdb (10-12-2021 11:53:53)
-		Applying force field to the seed molecules ./data/C150_1fold_initial_new.pdb (10-12-2021 11:53:54)
+		Loading seed structure from ./data/C150_1fold_initial_new.pdb (10-06-2022 15:23:47)
+		Applying force field to the seed molecules ./data/C150_1fold_initial_new.pdb (10-06-2022 15:23:47)
+		 Checking bonds    ... (verbose: False) (10-06-2022 15:23:51).
+		 End checking bonds ... (verbose: False) (10-06-2022 15:23:51).
+		 Checking angles    ... (verbose: True) (10-06-2022 15:23:51).
+		 End checking angles ... (verbose: True) (10-06-2022 15:23:51).
+		 Checking dihedrals    ... (verbose: True) (10-06-2022 15:23:51).
+		 End dihedrals angles ... (verbose: True) (10-06-2022 15:23:52).
+		------------------------------------------------------------------------------------
+		WARN: Parameters have not been assigned to all impropers.
+		Total system impropers: 600, Parameterized impropers: 0.
+ 		Note that if your system contains torsions of Ryckaert-Bellemans functional form,
+		all of these torsions are processed as propers.
+		This warn can be ignored if you are sure that impropers are not needed!!!!!
+		------------------------------------------------------------------------------------
 
-		Replicate a molecule or polymer chain (10-12-2021 11:54:01)
+
+		Replicate a molecule or polymer chain (10-06-2022 15:23:52)
 		***************************************************************
 		Input file                  : ./data/C150_1fold_initial_new.pdb
 		Number of molecules in cell : 1
@@ -46,7 +54,7 @@
 		Replicate the molecule 10x10x3 times
 		***************************************************************
 
-		Molecule replicated info (10-12-2021 11:54:11)
+		Molecule replicated info (10-06-2022 15:23:59)
 		*************************************************
 		Number of molecules in cell : 300
 		Number of chains in cell    : 300
@@ -56,6 +64,6 @@
 		Simulation box angles       : 90.00 90.00 90.00 degrees
 		*************************************************
 
-		Generating lmp and data files for LAMMPS (10-12-2021 11:54:14)
+		Generating lmp and data files for LAMMPS (10-06-2022 15:24:01)
 		*****************************************************************
 

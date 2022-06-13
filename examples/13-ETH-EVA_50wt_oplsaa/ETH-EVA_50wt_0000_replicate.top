@@ -2,7 +2,7 @@
 ;   File ETH-EVA_50wt_0000.top  was generated
 ;   By user: jramos (1001)
 ;   On host: totem2
-;   At date: Sat. June  6 23:57:44 2022
+;   At date: Sun. June  0 13:51:41 2022
 ;
 ;   This is a standalone topology file
 ;
@@ -11,7 +11,7 @@
 ;   Executable:   replicate_polymer.py
 ;   Library dir:  /usr/local/gromacs/share/gromacs/top
 ;   Command line:
-;     /home/jramos/Programacion/GITHUB_REPO_DIR/replicate_polymer_topology/replicate_polymer/replicate_polymer.py -p ETH-EVA_50wt_0000.pdb -f ../../forcefields/oplsaa.xml --images 1 1 1 -e lammps
+;     /home/jramos/Programacion/GITHUB_REPO_DIR/replicate_polymer_topology/replicate_polymer/replicate_polymer.py -p ETH-EVA_50wt_0000.pdb -f ../../forcefields/oplsaa.xml --images 2 1 1 -e lammps
 ;
 
 [ defaults ]
@@ -10668,4 +10668,4 @@ Blo          3
 Generic title
 
 [ molecules ]
-Blo 1
+Blo 2

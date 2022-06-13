@@ -21,14 +21,45 @@
 
     ***********************************************************************
         
-		Start Job at 08-06-2022 11:53:13 ============
-
-		Command line: 
-			python replicate_polymer.py -p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 5 5 1 --engine lammps
-			         or
-			replicate_polymer -p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 5 5 1 --engine lammps
-
-		Replicating and typing molecule (08-06-2022 11:53:13)
+		Start Job at 09-06-2022 21:15:33 ============
+		Replicating and typing molecule (09-06-2022 21:15:33)
 		********************************************************
-		Loading seed structure from ./data/C150_1fold_initial_new.pdb (08-06-2022 11:53:13)
-		Applying force field to the seed molecules ./data/C150_1fold_initial_new.pdb (08-06-2022 11:53:13)
+		Loading seed structure from ./data/C150_1fold_initial_new.pdb (09-06-2022 21:15:33)
+		Applying force field to the seed molecules ./data/C150_1fold_initial_new.pdb (09-06-2022 21:15:33)
+		------------------------------------------------------------------------------------
+		WARN: Parameters have not been assigned to all impropers.
+		Total system impropers: 600, Parameterized impropers: 0.
+ 		Note that if your system contains torsions of Ryckaert-Bellemans functional form,
+		all of these torsions are processed as propers.
+		This warn can be ignored if you are sure that impropers are not needed!!!!!
+		------------------------------------------------------------------------------------
+
+
+		Replicate a molecule or polymer chain (09-06-2022 21:15:40)
+		***************************************************************
+		Input file                  : ./data/C150_1fold_initial_new.pdb
+		Number of molecules in cell : 1
+		Number of chains in cell    : 1
+		Number of bonds in cell     : 451
+		Number of residues in cell  : 1
+		Number of atoms in cell     : 452
+		Simulation box dimension    : 0.7488 0.5129 9.4404 nm
+		Simulation box angles       : 90.00 90.00 90.00 degrees
+		Replicate the molecule 5x5x1 times
+		***************************************************************
+
+		Molecule replicated info (09-06-2022 21:15:41)
+		*************************************************
+		Number of molecules in cell : 25
+		Number of chains in cell    : 25
+		Number of residues in cell  : 25
+		Number of atoms in cell     : 11300
+		Simulation box dimension    : 3.7440 2.5645 9.4404 nm
+		Simulation box angles       : 90.00 90.00 90.00 degrees
+		*************************************************
+
+		Generating lmp and data files for LAMMPS (09-06-2022 21:15:41)
+		*****************************************************************
+
+		Job  Done at 09-06-2022 21:15:49 ============
+

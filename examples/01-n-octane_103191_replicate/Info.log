@@ -21,17 +21,25 @@
 
     ***********************************************************************
         
-		Start Job at 08-06-2022 11:52:38 ============
+		Start Job at 12-06-2022 19:24:55 ============
 
 		Command line: 
 			python replicate_polymer.py -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 3 3 3 --engine lammps
 			         or
 			replicate_polymer -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 3 3 3 --engine lammps
 
-		Replicating and typing molecule (08-06-2022 11:52:38)
+
+		Check resname and connect in the input file. (103191_noctane_order_cryst.pdb)... (12-06-2022 19:24:55)
+		Replicating and typing molecule (12-06-2022 19:24:55)
 		********************************************************
-		Loading seed structure from 103191_noctane_order_cryst.pdb (08-06-2022 11:52:38)
-		Applying force field to the seed molecules 103191_noctane_order_cryst.pdb (08-06-2022 11:52:38)
+		Loading seed structure from 103191_noctane_order_cryst.pdb (12-06-2022 19:24:55)
+		Applying force field to the seed molecules 103191_noctane_order_cryst.pdb (12-06-2022 19:24:55)
+		 Checking bonds    ... (verbose: False) (12-06-2022 19:24:56).
+		 End checking bonds ... (verbose: False) (12-06-2022 19:24:56).
+		 Checking angles    ... (verbose: False) (12-06-2022 19:24:56).
+		 End checking angles ... (verbose: False) (12-06-2022 19:24:56).
+		 Checking dihedrals    ... (verbose: False) (12-06-2022 19:24:56).
+		 End dihedrals angles ... (verbose: False) (12-06-2022 19:24:56).
 		------------------------------------------------------------------------------------
 		WARN: Parameters have not been assigned to all impropers.
 		Total system impropers: 32, Parameterized impropers: 0.
@@ -40,8 +48,9 @@
 		This warn can be ignored if you are sure that impropers are not needed!!!!!
 		------------------------------------------------------------------------------------
 
+		Replicating molecules 103191_noctane_order_cryst.pdb (12-06-2022 19:24:55)
 
-		Replicate a molecule or polymer chain (08-06-2022 11:52:39)
+		Replicate a molecule or polymer chain (12-06-2022 19:24:56)
 		***************************************************************
 		Input file                  : 103191_noctane_order_cryst.pdb
 		Number of molecules in cell : 1
@@ -54,7 +63,7 @@
 		Replicate the molecule 3x3x3 times
 		***************************************************************
 
-		Molecule replicated info (08-06-2022 11:52:39)
+		Molecule replicated info (12-06-2022 19:24:56)
 		*************************************************
 		Number of molecules in cell : 27
 		Number of chains in cell    : 27
@@ -64,8 +73,9 @@
 		Simulation box angles       : 85.06 83.72 75.10 degrees
 		*************************************************
 
-		Generating lmp and data files for LAMMPS (08-06-2022 11:52:39)
+		Generating lmp and data files for LAMMPS (12-06-2022 19:24:56)
 		*****************************************************************
 
-		Job  Done at 08-06-2022 11:52:40 ============
+		Job  Done at 12-06-2022 19:24:56 ============
 
+		Total time: 0.99 seconds

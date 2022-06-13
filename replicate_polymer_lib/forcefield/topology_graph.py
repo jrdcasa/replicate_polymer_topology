@@ -70,9 +70,11 @@ class TopologyGraph(nx.Graph):
         if not name.startswith("_") and not (atomic_number and element):
             m1 = "\t\tERROR: For atoms representing an element, please include " \
                  "both the atomic_number or element symbol for the atom\n"
+            m3 = "\t\t name: {} atomic_number: {} element: {}\n".format(name, atomic_number, element)
             m2 = "\t\tMolecule cannot be typed!!!!!. Exiting....\n"
             m = "\t\t" + len(m1) * "*" + "\n"
-            print("\n" + m + m1 + m2 + m) if logger is None else logger.info("\n" + m + m1 + m2 + m)
+            print("\n" + m + m1 + m3 + m2 + m) if logger is None else logger.info("\n" + m + m1 + m3 + m2 + m)
+            print("MEGAGO EN LA PUTA")
             exit()
 
         atom_data = AtomData(index, name, atomic_number, element, **kwargs)
@@ -190,7 +192,7 @@ class TopologyGraph(nx.Graph):
                 top_graph.add_atom(name=iatom.name,
                                    index=iatom.index,
                                    atomic_number=None,
-                                   element=iatom.name)
+                                   element=None)
             else:
                 top_graph.add_atom(name=iatom.name,
                                    index=iatom.index,

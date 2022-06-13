@@ -3,7 +3,7 @@
               Replicate a molecule or polymer chain (ReMoPo)
               ----------------------------------------------
 
-                                Version 3.0
+                                Version 4.0
 
                               Dr. Javier Ramos
                       Macromolecular Physics Department
@@ -11,26 +11,40 @@
                                Madrid (Spain)
 
         ReMoPo is an open-source python library to quickly replicate a molecule
-        from a pdb file containing the seed molecule. After that, the script assigns 
+        from a pdb file containing the seed molecule. After that, the script assigns
         the force field parameters using the foyer library (https://mosdef.org/)
-        This program generates GROMACS and LAMMPS files to run simulations. 
+        This program generates GROMACS and LAMMPS files to run simulations.
 
         This software is distributed under the terms of the
-        GNU General Public License v3.0 (GNU GPLv3). A copy of 
-        the license (LICENSE.txt) is included with this distribution. 
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
 
     ***********************************************************************
         
-		Start Job at 18-12-2021 13:30:56 ============
+		Start Job at 09-06-2022 21:24:38 ============
 
-		Command line: 
-			python replicate_polymer.py -p 00-Inital_trimerP4HB.pdb -f ../../forcefields/trappe-ua.xml --images 1 1 1 -e lammps --noh
-			         or
-			replicate_polymer -p 00-Inital_trimerP4HB.pdb -f ../../forcefields/trappe-ua.xml --images 1 1 1 -e lammps --noh
-
-
-		Removing hydrogens in the pdb file of the seed molecles.(00-Inital_trimerP4HB.pdb)... (18-12-2021 13:30:56)
-		Replicating and typing molecule (18-12-2021 13:30:56)
+		Removing hydrogens in the pdb file of the seed molecles.(./00-Inital_trimerP4HB_r.pdb)... (09-06-2022 21:24:38)
+		Replicating and typing molecule (09-06-2022 21:24:38)
 		********************************************************
-		Loading seed structure from 00-Inital_trimerP4HB_noH.pdb (18-12-2021 13:30:56)
-		Applying force field to the seed molecules 00-Inital_trimerP4HB_noH.pdb (18-12-2021 13:30:56)
+		Loading seed structure from 00-Inital_trimerP4HB_r_noH.pdb (09-06-2022 21:24:38)
+		Applying force field to the seed molecules 00-Inital_trimerP4HB_r_noH.pdb (09-06-2022 21:24:38)
+		ERROR: Missing dihedral with ids (2, 3, 4, 5) and types ['CH2_OH', 'CH2_sp3', 'CH2_sp3', 'COO'].
+		ERROR: Missing dihedral with ids (3, 4, 5, 6) and types ['CH2_sp3', 'CH2_sp3', 'COO', 'OC'].
+		ERROR: Missing dihedral with ids (3, 4, 5, 7) and types ['CH2_sp3', 'CH2_sp3', 'COO', 'OCO'].
+		ERROR: Missing dihedral with ids (4, 5, 7, 8) and types ['CH2_sp3', 'COO', 'OCO', 'CH2_OC'].
+		ERROR: Missing dihedral with ids (7, 8, 9, 10) and types ['OCO', 'CH2_OC', 'CH2_sp3', 'CH2_sp3'].
+		ERROR: Missing dihedral with ids (8, 9, 10, 11) and types ['CH2_OC', 'CH2_sp3', 'CH2_sp3', 'COO'].
+		ERROR: Missing dihedral with ids (9, 10, 11, 12) and types ['CH2_sp3', 'CH2_sp3', 'COO', 'OC'].
+		ERROR: Missing dihedral with ids (9, 10, 11, 13) and types ['CH2_sp3', 'CH2_sp3', 'COO', 'OCO'].
+		ERROR: Missing dihedral with ids (10, 11, 13, 14) and types ['CH2_sp3', 'COO', 'OCO', 'CH2_OC'].
+		ERROR: Missing dihedral with ids (13, 14, 15, 16) and types ['OCO', 'CH2_OC', 'CH2_sp3', 'CH2_sp3'].
+		ERROR: Missing dihedral with ids (14, 15, 16, 17) and types ['CH2_OC', 'CH2_sp3', 'CH2_sp3', 'COO'].
+		ERROR: Missing dihedral with ids (15, 16, 17, 18) and types ['CH2_sp3', 'CH2_sp3', 'COO', 'OC'].
+		ERROR: Missing dihedral with ids (15, 16, 17, 19) and types ['CH2_sp3', 'CH2_sp3', 'COO', 'OCO'].
+		ERROR: Missing dihedral with ids (16, 17, 19, 20) and types ['CH2_sp3', 'COO', 'OCO', 'CH3_OC'].
+		ERROR: Missing dihedral with ids (18, 17, 19, 20) and types ['OC', 'COO', 'OCO', 'CH3_OC'].
+
+		****************************************************
+		ERROR: Molecule cannot be typed!!!!!. Exiting....
+		****************************************************
+

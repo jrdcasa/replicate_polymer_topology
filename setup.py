@@ -321,6 +321,7 @@ def check_for_topology_library(namepkg=None):
 
     try:
         import topology
+        import topology.readmol
         nowm = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
         m = "\t\t** {}: Topology is installed in your system({})\n".format(namepkg, nowm)
         m += "\t\t** {}: {}".format(namepkg, topology.__file__)
@@ -338,6 +339,100 @@ def check_for_topology_library(namepkg=None):
         m +="ERROR. Please check ./thirdparty/topology/install.log"
         print(m) if logger is None else logger.info(m)
         exit()
+
+# Check if libraries can be imported  ===========================================================================
+def last_import_check(log=None, namepkg="TOPOLOGY"):
+
+    m1 = "\n\t\t ******************* SUMMARY *******************\n"
+
+    # Pip packages ============================================================
+    with open('requirements.txt') as f:
+        required = f.read().splitlines()
+    for ipack in required:
+        try:
+            pkg, version = ipack.split(">=")[0:2]
+            if pkg[0] == "#":
+                continue
+        except ValueError:
+            pkg = ipack
+            if pkg[0] == "#":
+                continue
+
+        try:
+            if pkg == "GitPython":
+                pkg = "git"
+            elif pkg == "rdkit-pypi":
+                pkg = "rdkit"
+            elif pkg == "Sphinx":
+                pkg = "sphinx"
+            elif pkg == "ParmEd":
+                pkg = "parmed"
+            elif pkg == "lark-parser":
+                pkg = "lark"
+            __import__(pkg)
+        except ImportError:
+            m1 += "\t\t ERROR: Package {} cannot be imported.\n".format(pkg)
+            m1 += "\t\t ERROR: The installation is unsuccesfully!!!!!.\n"
+            print(m1) if log is None else log.info(m1)
+            exit()
+    m1 +="\t\t Pip packages in requirements.txt file have been succesfully imported.\n"
+
+    # Indigox package ==========================================================
+    try:
+        import indigox as ix
+        m1 +="\t\t Indigox has been succesfully imported.\n"
+    except ImportError:
+         m1 += "\t\t ERROR: Package {} cannot be imported.\n".format("indigox")
+         m1 += "\t\t ERROR: The installation is unsuccesfully!!!!!.\n"
+         print(m1) if log is None else log.info(m1)
+         exit()
+
+    # openbabel package ==========================================================
+    try:
+        import openbabel as ob
+        m1 +="\t\t Openbabel has been succesfully imported.\n"
+        home_directory = os.path.expanduser('~')
+        m1 +="\t\t Openbabel has been installed in {}.\n".format(os.path.join(home_directory,".local/openbabel"))
+    except ImportError:
+         m1 += "\t\t ERROR: Package {} cannot be imported.\n".format("openbabel")
+         m1 += "\t\t ERROR: The installation is unsuccesfully!!!!!.\n"
+         print(m1) if log is None else log.info(m1)
+         exit()
+
+    # topology package ==========================================================
+    try:
+        import topology
+        import topology.readmol
+        m1 +="\t\t Topology has been succesfully imported.\n"
+    except ImportError:
+         m1 += "\t\t ERROR: Package {} cannot be imported.\n".format("Topology")
+         m1 += "\t\t ERROR: The installation is unsuccesfully!!!!!.\n"
+         print(m1) if log is None else log.info(m1)
+         exit()
+
+    # intermol package ==========================================================
+    try:
+        import openmm
+        m1 +="\t\t Openmm has been succesfully imported.\n"
+    except ImportError:
+         m1 += "\t\t ERROR: Package {} cannot be imported.\n".format("openmm")
+         m1 += "\t\t ERROR: The installation is unsuccesfully!!!!!.\n"
+         print(m1) if log is None else log.info(m1)
+         exit()
+ 
+    # intermol package ==========================================================
+    try:
+        import intermol
+        m1 +="\t\t Intermol has been succesfully imported.\n"
+    except ImportError:
+         m1 += "\t\t ERROR: Package {} cannot be imported.\n".format("intermol")
+         m1 += "\t\t ERROR: The installation is unsuccesfully!!!!!.\n"
+         print(m1) if log is None else log.info(m1)
+         exit()
+ 
+    m1 += "\t\t ******************* SUMMARY *******************"
+    print(m1) if log is None else log.info(m1)
+
 
 
 # Main setup
@@ -418,6 +513,8 @@ if __name__ == '__main__':
     nowm = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     m1 = "\n\t\t Installation Done!!!! at {}\n\n".format(nowm)
     print(m1) if logger is None else logger.info(m1)
+
+    last_import_check(log=logger, namepkg="REPLICATE")
 
     # Remove warnings for simtk
     remove_warnings()

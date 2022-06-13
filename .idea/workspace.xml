@@ -23,8 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="097f4e77-3800-4c0f-93e1-d3b7c8a880f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/forcefields/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/insert_impropers_top_gromacs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/replicate_polymer_lib/insert_nonopenmm_ff_terms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/installation.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/installation.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst.top" afterDir="false" />
@@ -32,35 +32,90 @@
       <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.top" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/Info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new_replicate.inp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new_replicate.inp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new_replicate.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new_replicate.top" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/Info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3/C150_1fold_initial_new.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3/C150_1fold_initial_new.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3/C150_1fold_initial_new_replicate.inp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3/C150_1fold_initial_new_replicate.inp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3/C150_1fold_initial_new_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3/C150_1fold_initial_new_replicate.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3/C150_1fold_initial_new_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3/C150_1fold_initial_new_replicate.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3/Info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1/C150_1fold_initial_new.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1/C150_1fold_initial_new.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1/C150_1fold_initial_new_replicate.inp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1/C150_1fold_initial_new_replicate.inp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1/C150_1fold_initial_new_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1/C150_1fold_initial_new_replicate.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1/C150_1fold_initial_new_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1/C150_1fold_initial_new_replicate.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1/Info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/01-CREATE/C150_1fold_initial_new.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/01-CREATE/C150_1fold_initial_new.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/01-CREATE/C150_1fold_initial_new_replicate.inp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/01-CREATE/C150_1fold_initial_new_replicate.inp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/01-CREATE/C150_1fold_initial_new_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/01-CREATE/C150_1fold_initial_new_replicate.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/01-CREATE/C150_1fold_initial_new_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/01-CREATE/C150_1fold_initial_new_replicate.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/01-CREATE/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/01-CREATE/Info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS/Info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS/last_con.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS/last_con.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS/last_con.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS/last_con.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS/last_con_replicate.inp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS/last_con_replicate.inp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS/last_con_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS/last_con_replicate.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS/last_con_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS/last_con_replicate.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH/Info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH/last_con.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH/last_con.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH/last_con.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH/last_con.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH/last_con_replicate.gro" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH/last_con_replicate.gro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH/last_con_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH/last_con_replicate.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH/last_con_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH/last_con_replicate.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA/C150_1fold_initial_new_noH.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA/C150_1fold_initial_new_noH.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA/C150_1fold_initial_new_noH.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA/C150_1fold_initial_new_noH.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA/C150_1fold_initial_new_noH_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA/C150_1fold_initial_new_noH_replicate.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA/C150_1fold_initial_new_noH_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA/C150_1fold_initial_new_noH_replicate.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA/Info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/00-Inital_trimerP4HB.top" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/00-Inital_trimerP4HB_replicate.gro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/00-Inital_trimerP4HB_replicate.inp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/00-Inital_trimerP4HB_replicate.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/00-Inital_trimerP4HB_replicate.top" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/Info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/08-Trimer_P4HB_TrappeUA/00-Inital_trimerP4HB_noH.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/08-Trimer_P4HB_TrappeUA/00-Inital_trimerP4HB_noH.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/08-Trimer_P4HB_TrappeUA/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/08-Trimer_P4HB_TrappeUA/Info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/Info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules_replicate.inp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules_replicate.inp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules_replicate.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/two_molecules_replicate.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/10-blend_xsd/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/10-blend_xsd/Info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/10-blend_xsd/blend.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/10-blend_xsd/blend.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/10-blend_xsd/blend_replicate.inp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/10-blend_xsd/blend_replicate.inp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/10-blend_xsd/blend_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/10-blend_xsd/blend_replicate.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/10-blend_xsd/blend_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/10-blend_xsd/blend_replicate.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/11-blend_noconsecutive/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/11-blend_noconsecutive/Info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/11-blend_noconsecutive/blend2.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/11-blend_noconsecutive/blend2.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/11-blend_noconsecutive/blend2_replicate.inp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/11-blend_noconsecutive/blend2_replicate.inp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/11-blend_noconsecutive/blend2_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/11-blend_noconsecutive/blend2_replicate.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/11-blend_noconsecutive/blend2_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/11-blend_noconsecutive/blend2_replicate.top" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua/ETH-EVA_50wt_0000_noH.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua/ETH-EVA_50wt_0000_noH.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua/ETH-EVA_50wt_0000_noH.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua/ETH-EVA_50wt_0000_noH.top" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua/ETH-EVA_50wt_0000_noH_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua/ETH-EVA_50wt_0000_noH_replicate.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua/ETH-EVA_50wt_0000_noH_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua/ETH-EVA_50wt_0000_noH_replicate.top" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua/Info.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000_replicate.gro" beforeDir="false" afterPath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000_replicate.gro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000_replicate.inp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000_replicate.inp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000_replicate.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000_replicate.top" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/Info.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd/Info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forcefields/ff.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/forcefields/ff.xsd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forcefields/trappe-ua_PEToxvaerd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forcefields/trappe-ua_PEToxvaerd.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/install.log" beforeDir="false" afterPath="$PROJECT_DIR$/install.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/check_connect_pdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/check_connect_pdb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/exclusions.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/exclusions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/Forcefield.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/Forcefield.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/Validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/Validator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/element.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/element.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/atomtyper.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/atomtyper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/topology_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/topology_graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/parse_arguments.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/parse_arguments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/typing_molecule.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/typing_molecule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/01-test_check_connect.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/01-test_check_connect_pdb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test/103191_noctane.order_cryst_noconect_con.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test/103191_noctane.order_cryst_noconect_con.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test/test01_check_connect_pdb.log" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test/test01_check_connect_pdb.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test01/test01_replicate_polymer.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,10 +149,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Replicate_Polymer_tutorials/03-P3HB_50Mon_50Ch_Tg" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Replicate_Polymer_tutorials/05-MixTrapKara/02-TYPEMOL" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -117,7 +173,7 @@
       <recent name="$PROJECT_DIR$/tests/data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Test01_check_connect">
+  <component name="RunManager" selected="Python.24-trappeUA_PEToxvaerd_mix">
     <configuration name="00-INSTALL" type="PythonConfigurationType" factoryName="Python">
       <module name="MyPolymers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -191,9 +247,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -213,9 +269,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -235,14 +291,14 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/02-LAMMPS_amorphous" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
-      <option name="PARAMETERS" value="-p ../02-LAMMPS_amorphous/last.pdb -f ../../../forcefields/oplsaa.xml --images 5 5 5 --engine lammps --boxlength 8.0 8.0 3.0 --boxangle 65.0 60.0 70.0" />
+      <option name="PARAMETERS" value="-p last.pdb -f ../../../forcefields/oplsaa.xml --images 5 5 5 --engine lammps --boxlength 8.0 8.0 3.0 --boxangle 65.0 60.0 70.0" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -257,9 +313,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -279,9 +335,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/01-CREATE" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -301,9 +357,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -323,9 +379,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -345,9 +401,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/08-Trimer_P4HB_TrappeUA" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -389,9 +445,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/10-blend_xsd" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -411,9 +467,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandbox_replicate_polymer/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/11-blend_noconsecutive" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -462,7 +518,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
-      <option name="PARAMETERS" value="-p ETH-EVA_50wt_0000.pdb -f ../../forcefields/oplsaa.xml --images 1 1 1 -e lammps" />
+      <option name="PARAMETERS" value="-p ETH-EVA_50wt_0000.pdb -f ../../forcefields/oplsaa.xml --images 2 1 1 -e lammps" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -646,6 +702,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="23-P3HB_50mon_5Ch" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Replicate_Polymer_tutorials/04-P3HB_50Mon_05Ch_Th" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p confout.part0003.gro -f ../../replicate_polymer_topology/forcefields/oplsaa.xml --images 1 1 1 -e lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="24-trappeUA_PEToxvaerd_mix" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../Replicate_Polymer_tutorials/05-MixTrapKara/02-TYPEMOL" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p modelTrappKara_residues.pdb -f ../../../replicate_polymer_topology/forcefields/trappe-ua_PEToxvaerd.xml --images 1 1 1 --verbose -e lammps --noh --verbose" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="PQ" type="PythonConfigurationType" factoryName="Python">
       <module name="MyPolymers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -795,9 +895,11 @@
       <item itemvalue="Python.13-ETH-EVA_50wt_oplsaa" />
       <item itemvalue="Python.20-P3HB_exclusions" />
       <item itemvalue="Python.22-P3HB_50mon_50Ch" />
+      <item itemvalue="Python.23-P3HB_50mon_5Ch" />
       <item itemvalue="Python.21-PE500_exclusions" />
       <item itemvalue="Python.18-n-hexane_LOPLS" />
       <item itemvalue="Python.19-n-hexane_trappeUA_PEToxvaerd" />
+      <item itemvalue="Python.24-trappeUA_PEToxvaerd_mix" />
       <item itemvalue="Python.19-OneChain_P$HB_noPBC_info" />
       <item itemvalue="Python.PQ_3" />
       <item itemvalue="Python.15-ModelEVA_torsion_oplsaa" />
@@ -865,6 +967,7 @@
       <workItem from="1653582504534" duration="65678000" />
       <workItem from="1654088046006" duration="38286000" />
       <workItem from="1654202442925" duration="75675000" />
+      <workItem from="1654708832062" duration="65517000" />
     </task>
     <servers />
   </component>
@@ -888,7 +991,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="231" width="1152" height="529" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1654679771692">
+    <state x="443" y="218" width="1920" height="529" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1655054546216">
       <screen x="0" y="27" width="1920" height="1015" />
     </state>
     <state x="2363" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650449259261" />
@@ -896,11 +999,12 @@
     <state x="0" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408361446" />
     <state x="0" y="231" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1654679771692" />
     <state x="2363" y="203" width="1327" height="755" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652893223474" />
-    <state x="443" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015@0.27.1920.1015" timestamp="1651782755488" />
+    <state x="443" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015@0.27.1920.1015" timestamp="1655054546216" />
     <state x="0" y="168" width="1152" height="529" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1654597926345" />
     <state x="0" y="219" width="1920" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653576917757" />
     <state x="2116" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653386505144" />
     <state x="0" y="219" width="1920" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.3200.959@0.27.3200.959" timestamp="1654002996404" />
+    <state x="0" y="159" width="1920" height="529" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.3280.703@0.27.3280.703" timestamp="1654866972926" />
     <state x="100" y="127" width="1720" height="813" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1649934928030">
       <screen x="0" y="27" width="1920" height="1013" />
     </state>
@@ -927,19 +1031,20 @@
     </state>
     <state width="978" height="506" key="DebuggerActiveHint/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653569738596" />
     <state width="1630" height="506" key="DebuggerActiveHint/0.27.3200.959@0.27.3200.959" timestamp="1653993148156" />
-    <state x="449" y="226" width="379" height="534" key="FileChooserDialogImpl" timestamp="1654597390981">
-      <screen x="0" y="27" width="1920" height="703" />
+    <state x="449" y="315" width="424" height="491" key="FileChooserDialogImpl" timestamp="1655026085164">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
     <state x="2369" y="306" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650447834535" />
     <state x="449" y="314" key="FileChooserDialogImpl/0.27.1920.1013@0.27.1920.1013" timestamp="1649936424643" />
     <state x="449" y="315" width="379" height="534" key="FileChooserDialogImpl/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1654421538740" />
     <state x="2369" y="306" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652892178312" />
-    <state x="449" y="315" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1015@0.27.1920.1015" timestamp="1653583414048" />
+    <state x="449" y="315" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1015@0.27.1920.1015" timestamp="1655026085164" />
     <state x="449" y="226" key="FileChooserDialogImpl/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1654597390981" />
     <state x="449" y="299" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577248446" />
     <state x="748" y="299" key="FileChooserDialogImpl/0.27.3200.959@0.27.3200.959" timestamp="1654001306598" />
+    <state x="767" y="196" width="424" height="491" key="FileChooserDialogImpl/0.27.3280.703@0.27.3280.703" timestamp="1654862755688" />
     <state x="898" y="315" key="FileChooserDialogImpl/0.27.3840.1015@0.27.3840.1015" timestamp="1651834274302" />
-    <state width="1874" height="289" key="GridCell.Tab.0.bottom" timestamp="1654679827460">
+    <state width="1874" height="241" key="GridCell.Tab.0.bottom" timestamp="1655107523767">
       <screen x="0" y="27" width="1920" height="1015" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.0.bottom/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -948,15 +1053,15 @@
     <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408405763" />
     <state width="1874" height="289" key="GridCell.Tab.0.bottom/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1654679827460" />
     <state width="1874" height="289" key="GridCell.Tab.0.bottom/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652893506157" />
-    <state width="1874" height="244" key="GridCell.Tab.0.bottom/0.27.1920.1015@0.27.1920.1015" timestamp="1654034687440" />
+    <state width="1874" height="241" key="GridCell.Tab.0.bottom/0.27.1920.1015@0.27.1920.1015" timestamp="1655107523767" />
     <state width="1874" height="312" key="GridCell.Tab.0.bottom/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1654601085858" />
     <state width="1314" height="239" key="GridCell.Tab.0.bottom/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654243706415" />
     <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577078939" />
     <state width="1234" height="275" key="GridCell.Tab.0.bottom/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967335" />
     <state width="1874" height="152" key="GridCell.Tab.0.bottom/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="244" key="GridCell.Tab.0.bottom/0.27.3200.959@0.27.3200.959" timestamp="1654010747324" />
-    <state width="1874" height="195" key="GridCell.Tab.0.bottom/0.27.3280.703@0.27.3280.703" timestamp="1654085043989" />
-    <state width="1874" height="289" key="GridCell.Tab.0.center" timestamp="1654679827460">
+    <state width="1874" height="362" key="GridCell.Tab.0.bottom/0.27.3280.703@0.27.3280.703" timestamp="1654866988111" />
+    <state width="1874" height="241" key="GridCell.Tab.0.center" timestamp="1655107523767">
       <screen x="0" y="27" width="1920" height="1015" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.0.center/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -965,15 +1070,15 @@
     <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408405763" />
     <state width="1874" height="289" key="GridCell.Tab.0.center/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1654679827460" />
     <state width="1874" height="289" key="GridCell.Tab.0.center/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652893506157" />
-    <state width="1874" height="244" key="GridCell.Tab.0.center/0.27.1920.1015@0.27.1920.1015" timestamp="1654034687440" />
+    <state width="1874" height="241" key="GridCell.Tab.0.center/0.27.1920.1015@0.27.1920.1015" timestamp="1655107523767" />
     <state width="1874" height="312" key="GridCell.Tab.0.center/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1654601085858" />
     <state width="1314" height="239" key="GridCell.Tab.0.center/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654243706415" />
     <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577078939" />
     <state width="1234" height="275" key="GridCell.Tab.0.center/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967335" />
     <state width="1874" height="152" key="GridCell.Tab.0.center/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="244" key="GridCell.Tab.0.center/0.27.3200.959@0.27.3200.959" timestamp="1654010747323" />
-    <state width="1874" height="195" key="GridCell.Tab.0.center/0.27.3280.703@0.27.3280.703" timestamp="1654085043989" />
-    <state width="1874" height="289" key="GridCell.Tab.0.left" timestamp="1654679827460">
+    <state width="1874" height="362" key="GridCell.Tab.0.center/0.27.3280.703@0.27.3280.703" timestamp="1654866988110" />
+    <state width="1874" height="241" key="GridCell.Tab.0.left" timestamp="1655107523767">
       <screen x="0" y="27" width="1920" height="1015" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.0.left/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -982,15 +1087,15 @@
     <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408405762" />
     <state width="1874" height="289" key="GridCell.Tab.0.left/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1654679827460" />
     <state width="1874" height="289" key="GridCell.Tab.0.left/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652893506157" />
-    <state width="1874" height="244" key="GridCell.Tab.0.left/0.27.1920.1015@0.27.1920.1015" timestamp="1654034687440" />
+    <state width="1874" height="241" key="GridCell.Tab.0.left/0.27.1920.1015@0.27.1920.1015" timestamp="1655107523767" />
     <state width="1874" height="312" key="GridCell.Tab.0.left/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1654601085858" />
     <state width="1314" height="239" key="GridCell.Tab.0.left/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654243706415" />
     <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577078939" />
     <state width="1234" height="275" key="GridCell.Tab.0.left/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967334" />
     <state width="1874" height="152" key="GridCell.Tab.0.left/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="244" key="GridCell.Tab.0.left/0.27.3200.959@0.27.3200.959" timestamp="1654010747323" />
-    <state width="1874" height="195" key="GridCell.Tab.0.left/0.27.3280.703@0.27.3280.703" timestamp="1654085043989" />
-    <state width="1874" height="289" key="GridCell.Tab.0.right" timestamp="1654679827460">
+    <state width="1874" height="362" key="GridCell.Tab.0.left/0.27.3280.703@0.27.3280.703" timestamp="1654866988110" />
+    <state width="1874" height="241" key="GridCell.Tab.0.right" timestamp="1655107523767">
       <screen x="0" y="27" width="1920" height="1015" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.0.right/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -999,15 +1104,15 @@
     <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408405763" />
     <state width="1874" height="289" key="GridCell.Tab.0.right/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1654679827460" />
     <state width="1874" height="289" key="GridCell.Tab.0.right/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652893506157" />
-    <state width="1874" height="244" key="GridCell.Tab.0.right/0.27.1920.1015@0.27.1920.1015" timestamp="1654034687440" />
+    <state width="1874" height="241" key="GridCell.Tab.0.right/0.27.1920.1015@0.27.1920.1015" timestamp="1655107523767" />
     <state width="1874" height="312" key="GridCell.Tab.0.right/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1654601085858" />
     <state width="1314" height="239" key="GridCell.Tab.0.right/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654243706415" />
     <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577078939" />
     <state width="1234" height="275" key="GridCell.Tab.0.right/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967335" />
     <state width="1874" height="152" key="GridCell.Tab.0.right/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="244" key="GridCell.Tab.0.right/0.27.3200.959@0.27.3200.959" timestamp="1654010747324" />
-    <state width="1874" height="195" key="GridCell.Tab.0.right/0.27.3280.703@0.27.3280.703" timestamp="1654085043989" />
-    <state width="1874" height="312" key="GridCell.Tab.1.bottom" timestamp="1654679827455">
+    <state width="1874" height="362" key="GridCell.Tab.0.right/0.27.3280.703@0.27.3280.703" timestamp="1654866988111" />
+    <state width="1874" height="355" key="GridCell.Tab.1.bottom" timestamp="1655066330214">
       <screen x="0" y="27" width="1920" height="1015" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.1.bottom/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -1016,14 +1121,14 @@
     <state width="1874" height="344" key="GridCell.Tab.1.bottom/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408325789" />
     <state width="1874" height="312" key="GridCell.Tab.1.bottom/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1654679827455" />
     <state width="1874" height="152" key="GridCell.Tab.1.bottom/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652892768318" />
-    <state width="1874" height="195" key="GridCell.Tab.1.bottom/0.27.1920.1015@0.27.1920.1015" timestamp="1654034671202" />
+    <state width="1874" height="355" key="GridCell.Tab.1.bottom/0.27.1920.1015@0.27.1920.1015" timestamp="1655066330214" />
     <state width="1874" height="312" key="GridCell.Tab.1.bottom/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1654601085858" />
     <state width="1314" height="239" key="GridCell.Tab.1.bottom/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654244044318" />
     <state width="1874" height="242" key="GridCell.Tab.1.bottom/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
     <state width="1874" height="152" key="GridCell.Tab.1.bottom/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="195" key="GridCell.Tab.1.bottom/0.27.3200.959@0.27.3200.959" timestamp="1654010085139" />
-    <state width="1874" height="195" key="GridCell.Tab.1.bottom/0.27.3280.703@0.27.3280.703" timestamp="1654085043989" />
-    <state width="1874" height="312" key="GridCell.Tab.1.center" timestamp="1654679827455">
+    <state width="1874" height="300" key="GridCell.Tab.1.bottom/0.27.3280.703@0.27.3280.703" timestamp="1654866742944" />
+    <state width="1874" height="355" key="GridCell.Tab.1.center" timestamp="1655066330213">
       <screen x="0" y="27" width="1920" height="1015" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.1.center/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -1032,14 +1137,14 @@
     <state width="1874" height="344" key="GridCell.Tab.1.center/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408325789" />
     <state width="1874" height="312" key="GridCell.Tab.1.center/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1654679827455" />
     <state width="1874" height="152" key="GridCell.Tab.1.center/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652892768318" />
-    <state width="1874" height="195" key="GridCell.Tab.1.center/0.27.1920.1015@0.27.1920.1015" timestamp="1654034671202" />
+    <state width="1874" height="355" key="GridCell.Tab.1.center/0.27.1920.1015@0.27.1920.1015" timestamp="1655066330213" />
     <state width="1874" height="312" key="GridCell.Tab.1.center/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1654601085858" />
     <state width="1314" height="239" key="GridCell.Tab.1.center/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654244044318" />
     <state width="1874" height="242" key="GridCell.Tab.1.center/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
     <state width="1874" height="152" key="GridCell.Tab.1.center/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="195" key="GridCell.Tab.1.center/0.27.3200.959@0.27.3200.959" timestamp="1654010085139" />
-    <state width="1874" height="195" key="GridCell.Tab.1.center/0.27.3280.703@0.27.3280.703" timestamp="1654085043989" />
-    <state width="1874" height="312" key="GridCell.Tab.1.left" timestamp="1654679827455">
+    <state width="1874" height="300" key="GridCell.Tab.1.center/0.27.3280.703@0.27.3280.703" timestamp="1654866742944" />
+    <state width="1874" height="355" key="GridCell.Tab.1.left" timestamp="1655066330213">
       <screen x="0" y="27" width="1920" height="1015" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.1.left/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -1048,14 +1153,14 @@
     <state width="1874" height="344" key="GridCell.Tab.1.left/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408325789" />
     <state width="1874" height="312" key="GridCell.Tab.1.left/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1654679827455" />
     <state width="1874" height="152" key="GridCell.Tab.1.left/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652892768318" />
-    <state width="1874" height="195" key="GridCell.Tab.1.left/0.27.1920.1015@0.27.1920.1015" timestamp="1654034671202" />
+    <state width="1874" height="355" key="GridCell.Tab.1.left/0.27.1920.1015@0.27.1920.1015" timestamp="1655066330213" />
     <state width="1874" height="312" key="GridCell.Tab.1.left/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1654601085858" />
     <state width="1314" height="239" key="GridCell.Tab.1.left/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654244044318" />
     <state width="1874" height="242" key="GridCell.Tab.1.left/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
     <state width="1874" height="152" key="GridCell.Tab.1.left/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="195" key="GridCell.Tab.1.left/0.27.3200.959@0.27.3200.959" timestamp="1654010085139" />
-    <state width="1874" height="195" key="GridCell.Tab.1.left/0.27.3280.703@0.27.3280.703" timestamp="1654085043989" />
-    <state width="1874" height="312" key="GridCell.Tab.1.right" timestamp="1654679827455">
+    <state width="1874" height="300" key="GridCell.Tab.1.left/0.27.3280.703@0.27.3280.703" timestamp="1654866742944" />
+    <state width="1874" height="355" key="GridCell.Tab.1.right" timestamp="1655066330213">
       <screen x="0" y="27" width="1920" height="1015" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.1.right/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -1064,13 +1169,13 @@
     <state width="1874" height="344" key="GridCell.Tab.1.right/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408325789" />
     <state width="1874" height="312" key="GridCell.Tab.1.right/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1654679827455" />
     <state width="1874" height="152" key="GridCell.Tab.1.right/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652892768318" />
-    <state width="1874" height="195" key="GridCell.Tab.1.right/0.27.1920.1015@0.27.1920.1015" timestamp="1654034671202" />
+    <state width="1874" height="355" key="GridCell.Tab.1.right/0.27.1920.1015@0.27.1920.1015" timestamp="1655066330213" />
     <state width="1874" height="312" key="GridCell.Tab.1.right/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1654601085858" />
     <state width="1314" height="239" key="GridCell.Tab.1.right/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654244044318" />
     <state width="1874" height="242" key="GridCell.Tab.1.right/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
     <state width="1874" height="152" key="GridCell.Tab.1.right/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="195" key="GridCell.Tab.1.right/0.27.3200.959@0.27.3200.959" timestamp="1654010085139" />
-    <state width="1874" height="195" key="GridCell.Tab.1.right/0.27.3280.703@0.27.3280.703" timestamp="1654085043989" />
+    <state width="1874" height="300" key="GridCell.Tab.1.right/0.27.3280.703@0.27.3280.703" timestamp="1654866742944" />
     <state x="449" y="173" width="1022" height="737" key="SettingsEditor" timestamp="1654302809635">
       <screen x="0" y="27" width="1920" height="1015" />
     </state>
@@ -1079,69 +1184,73 @@
     <state x="449" y="173" width="1022" height="737" key="SettingsEditor/0.27.1920.1015@0.27.1920.1015" timestamp="1654028391595" />
     <state x="449" y="165" width="1012" height="737" key="SettingsEditor/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577261198" />
     <state x="233" y="165" key="SettingsEditor/0.27.3200.959@0.27.3200.959" timestamp="1653921709974" />
-    <state width="960" height="538" key="XDebugger.FullValuePopup" timestamp="1654426753661">
-      <screen x="0" y="27" width="1920" height="1015" />
+    <state width="1640" height="372" key="XDebugger.FullValuePopup" timestamp="1654784829510">
+      <screen x="0" y="27" width="3280" height="703" />
     </state>
     <state width="960" height="538" key="XDebugger.FullValuePopup/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1654426753661" />
-    <state width="960" height="537" key="XDebugger.FullValuePopup/0.27.1920.1015@0.27.1920.1015" timestamp="1653669332943" />
+    <state width="960" height="537" key="XDebugger.FullValuePopup/0.27.1920.1015@0.27.1920.1015" timestamp="1654726514135" />
     <state width="960" height="507" key="XDebugger.FullValuePopup/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653572564781" />
     <state width="1600" height="508" key="XDebugger.FullValuePopup/0.27.3200.959@0.27.3200.959" timestamp="1653917857821" />
-    <state x="466" y="246" width="978" height="583" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1654538332605">
+    <state width="1640" height="372" key="XDebugger.FullValuePopup/0.27.3280.703@0.27.3280.703" timestamp="1654784829510" />
+    <state x="146" y="395" width="935" height="569" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1655027824797">
       <screen x="0" y="27" width="1920" height="1015" />
     </state>
     <state x="466" y="246" width="978" height="583" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1654538332605" />
-    <state x="623" y="249" key="search.everywhere.popup" timestamp="1654110436351">
+    <state x="146" y="395" width="935" height="569" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.1920.1015@0.27.1920.1015" timestamp="1655027824797" />
+    <state x="249" y="282" width="1671" height="448" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.3280.703@0.27.3280.703" timestamp="1654785903768" />
+    <state x="623" y="249" width="672" height="678" key="search.everywhere.popup" timestamp="1654882469769">
       <screen x="0" y="27" width="1920" height="1015" />
     </state>
     <state x="623" y="249" key="search.everywhere.popup/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1654110436351" />
+    <state x="623" y="249" width="672" height="678" key="search.everywhere.popup/0.27.1920.1015@0.27.1920.1015" timestamp="1654882469769" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer_lib/forcefield/atomtyper.py</url>
+          <line>210</line>
+          <option name="timeStamp" value="730" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer_lib/forcefield/topology_graph.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="758" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_replicate_topology/lib/python3.8/site-packages/parmed/structure.py</url>
+          <line>1491</line>
+          <option name="timeStamp" value="785" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/replicate_polymer_lib/forcefield/Forcefield.py</url>
-          <line>1723</line>
-          <option name="timeStamp" value="642" />
+          <line>758</line>
+          <option name="timeStamp" value="820" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py</url>
-          <line>71</line>
-          <option name="timeStamp" value="645" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="646" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="647" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/replicate_polymer_lib/forcefield/Forcefield.py</url>
-          <line>380</line>
-          <option name="timeStamp" value="653" />
+          <line>756</line>
+          <option name="timeStamp" value="821" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_replicate_topology/lib/python3.8/site-packages/parmed/topologyobjects.py</url>
-          <line>120</line>
-          <option name="timeStamp" value="654" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/replicate_polymer_lib/forcefield/Forcefield.py</url>
-          <line>386</line>
-          <option name="timeStamp" value="655" />
+          <line>160</line>
+          <option name="timeStamp" value="827" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/replicate_polymer_lib/forcefield/Forcefield.py</url>
-          <line>858</line>
-          <option name="timeStamp" value="658" />
+          <line>149</line>
+          <option name="timeStamp" value="828" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer_lib/forcefield/Forcefield.py</url>
+          <line>807</line>
+          <option name="timeStamp" value="829" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/01-test_check_connect_pdb.py</url>
-          <line>86</line>
-          <option name="timeStamp" value="659" />
+          <url>file://$PROJECT_DIR$/replicate_polymer_lib/insert_nonopenmm_ff_terms.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="874" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1164,62 +1273,73 @@
         <watch expression="element[iat] != 'H'" />
       </configuration>
       <configuration name="PythonConfigurationType">
-        <watch expression="self.validator.ff_tree" />
-        <watch expression="leaf" />
-        <watch expression="iatom" />
-        <watch expression="iatom" />
-        <watch expression="self._universe.atoms[0]" language="Python" />
-        <watch expression="type(structure)" language="Python" />
+        <watch expression="non_openmm_potentials_terms" />
+        <watch expression="toxwaerd_dict[type_dih]" language="Python" />
+        <watch expression="toxwaerd_dict[type_dih][&quot;phase&quot;][idx]" />
+        <watch expression="toxwaerd_dict[type_dih][&quot;coeff&quot;][idx]" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/replicate_polymer$07_P4HB_trappeUA_1x1x1.coverage" NAME="07-P4HB_oplsaa_1x1x1 Coverage Results" MODIFIED="1637600304715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/07-Trimer_P4HB" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$03_C150_10x10x3.coverage" NAME="03-C150_10x10x3 Coverage Results" MODIFIED="1639133632382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$16_ModelEVA_torsion_loplsaa.coverage" NAME="16-ModelEVA_torsion_loplsaa Coverage Results" MODIFIED="1644601792854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/16-ModelEVA_torsion_loplsaa" />
-    <SUITE FILE_PATH="coverage/replicate_polymer_topology$01_noctane.coverage" NAME="01-noctane Coverage Results" MODIFIED="1654678276124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/01-n-octane_103191_replicate" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$12_ETH_EVA_50wt_trappeUA.coverage" NAME="12-ETH-EVA_50wt_trappeUA Coverage Results" MODIFIED="1640548464291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua/" />
-    <SUITE FILE_PATH="coverage/replicate_polymer_topology$02_C150_5x5x1.coverage" NAME="02-C150_5x5x1 Coverage Results" MODIFIED="1654678384968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$06_C150_03_Trappe2x2x1.coverage" NAME="06-C150_03_Trappe2x2x1 Coverage Results" MODIFIED="1639830773254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$01_noctane.coverage" NAME="01-noctane Coverage Results" MODIFIED="1655051094993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/01-n-octane_103191_replicate" />
     <SUITE FILE_PATH="coverage/replicate_polymer$01_noctane.coverage" NAME="01-noctane Coverage Results" MODIFIED="1649755600956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/01-n-octane_103191_replicate" />
-    <SUITE FILE_PATH="coverage/replicate_polymer_topology$21_PE500_exclusions.coverage" NAME="21-PE500_exclusions Coverage Results" MODIFIED="1654677856609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/02-500PE_1Ch" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$21_PE500_exclusions.coverage" NAME="21-PE500_exclusions Coverage Results" MODIFIED="1654872960697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/02-500PE_1Ch" />
     <SUITE FILE_PATH="coverage/replicate_polymer$12_ETH_EVA_50wt_trappeua.coverage" NAME="00-INSTALL Coverage Results" MODIFIED="1639829737362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/replicate_polymer$05_C150_Create_1x1x1.coverage" NAME="05-C150_Create_1x1x1 Coverage Results" MODIFIED="1637247360604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/01-CREATE" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$14_ModelEVA_torsion_trappeua.coverage" NAME="14-ModelEVA_torsion_trappeua Coverage Results" MODIFIED="1640544215490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/14-ModelEVA_torsion_trappeua" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$03_C150_10x10x3.coverage" NAME="03-C150_10x10x3 Coverage Results" MODIFIED="1654863826538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3" />
     <SUITE FILE_PATH="coverage/replicate_polymer$19_n_hexane_trappeUA_PEToxvaerd.coverage" NAME="19-n-hexane_trappeUA_PEToxvaerd Coverage Results" MODIFIED="1653574904491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$PQ_2.coverage" NAME="PQ_2 Coverage Results" MODIFIED="1650551045575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PROYECTOS___/2021-PHA/08-SingleChain/01-TYPE_P3HB" />
-    <SUITE FILE_PATH="coverage/replicate_polymer_topology$22_P3HB_50mon_50Ch.coverage" NAME="22-P3HB_50mon_50Ch Coverage Results" MODIFIED="1654601085846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/03-P3HB_50Mon_50Ch_Tg" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$05_C150_03_Replicate_5x5x5.coverage" NAME="05-C150_03_Replicate_5x5x5 Coverage Results" MODIFIED="1639337957560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS" />
     <SUITE FILE_PATH="coverage/replicate_polymer$Test01_check_connect.coverage" NAME="Test01_check_connect Coverage Results" MODIFIED="1649767620443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/replicate_polymer$02_C150_5x5x1.coverage" NAME="02-C150_5x5x1 Coverage Results" MODIFIED="1639133489733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1" />
     <SUITE FILE_PATH="coverage/replicate_polymer$20_P3HB_exclusions.coverage" NAME="20-P3HB_exclusions Coverage Results" MODIFIED="1653462967328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/01-P3HB_10mon_1Ch" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$08_P4HB_trappeUA_1x1x1.coverage" NAME="08-P4HB_trappeUA_1x1x1 Coverage Results" MODIFIED="1639830650314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/08-Trimer_P4HB_TrappeUA" />
-    <SUITE FILE_PATH="coverage/replicate_polymer_topology$20_P3HB_exclusions.coverage" NAME="20-P3HB_exclusions Coverage Results" MODIFIED="1654501108180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/01-P3HB_10mon_1Ch" />
     <SUITE FILE_PATH="coverage/replicate_polymer$09_pdb_two_different_molecules.coverage" NAME="09-pdb_two_different_molecules Coverage Results" MODIFIED="1653562276996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$00_pdb_two_different_molecules.coverage" NAME="00-pdb_two_different_molecules Coverage Results" MODIFIED="1639136479730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$Test03_SetupImproper.coverage" NAME="Test03_SetupImproper Coverage Results" MODIFIED="1650276993968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/replicate_polymer_topology$12_ETH_EVA_50wt_trappeUA.coverage" NAME="12-ETH-EVA_50wt_trappeUA Coverage Results" MODIFIED="1654678044049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$12_ETH_EVA_50wt_trappeUA.coverage" NAME="12-ETH-EVA_50wt_trappeUA Coverage Results" MODIFIED="1654879871785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua" />
     <SUITE FILE_PATH="coverage/replicate_polymer$01_nocatne.coverage" NAME="01-noctane Coverage Results" MODIFIED="1637248793108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/01-n-octane_103191_replicate" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$07_P4HB_oplsaa_1x1x1.coverage" NAME="07-P4HB_oplsaa_1x1x1 Coverage Results" MODIFIED="1654799072714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA" />
     <SUITE FILE_PATH="coverage/replicate_polymer$17_n_hexane_trappeua.coverage" NAME="PQ Coverage Results" MODIFIED="1641037263151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="/media/jramos/Elements/2021_PE_EVA_BLENDS/04-EVA_wt100/02-TRAPPE_TYPE" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$11_pdb_blend_form_xsd_noconsecutive.coverage" NAME="11-pdb_blend_form_xsd_noconsecutive Coverage Results" MODIFIED="1639337867186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/11-blend_noconsecutive" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$23_P3HB_50mon_5Ch.coverage" NAME="23-P3HB_50mon_5Ch Coverage Results" MODIFIED="1654865611400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/04-P3HB_50Mon_05Ch_Th" />
     <SUITE FILE_PATH="coverage/replicate_polymer$PQ_3.coverage" NAME="PQ_3 Coverage Results" MODIFIED="1650447785442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PROYECTOS___/2021-PHA/08-SingleChain/01-TYPE_P3HB" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$15_ModelEVA_torsion_oplsaa.coverage" NAME="15-ModelEVA_torsion_oplsaa Coverage Results" MODIFIED="1640795132236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/15-ModelEVA_torsion_oplsaa" />
     <SUITE FILE_PATH="coverage/replicate_polymer$16_n_hexane_LOPLS.coverage" NAME="16-n-hexane_LOPLS Coverage Results" MODIFIED="1640818196729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/16-n-hexane_LOPLS" />
     <SUITE FILE_PATH="coverage/replicate_polymer$08_P4HB_trappeUA_1x1x1__1_.coverage" NAME="08-P4HB_trappeUA_1x1x1 (1) Coverage Results" MODIFIED="1639134587235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/08-Trimer_P4HB_TrappeUA" />
     <SUITE FILE_PATH="coverage/replicate_polymer$21_PE500_exclusions.coverage" NAME="21-PE500_exclusions Coverage Results" MODIFIED="1653562419221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/02-500PE_1Ch" />
     <SUITE FILE_PATH="coverage/replicate_polymer$13_ETH_EVA_50wt_oplsaa.coverage" NAME="13-ETH-EVA_50wt_oplsaa Coverage Results" MODIFIED="1651782860179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$05_C150_03_Replicate_5x5x5_with_box.coverage" NAME="05-C150_03_Replicate_5x5x5 with box Coverage Results" MODIFIED="1654798736801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/02-LAMMPS_amorphous" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$24_trappeUA_PEToxvaerd_mix.coverage" NAME="24-trappeUA_PEToxvaerd_mix Coverage Results" MODIFIED="1655107571268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/05-MixTrapKara/02-TYPEMOL" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$05_C150_03_Replicate_5x5x5_with_box.coverage" NAME="05-C150_03_Replicate_5x5x5 with box Coverage Results" MODIFIED="1639134497196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$10_pdb_blend_form_xsd.coverage" NAME="10-pdb_blend_form_xsd Coverage Results" MODIFIED="1639337935698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/10-blend_xsd" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$Test02_Remove_hydrogens.coverage" NAME="Test02_Remove_hydrogens Coverage Results" MODIFIED="1649935913251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$06_C150_03_Trappe2x2x1.coverage" NAME="06-C150_03_Trappe2x2x1 Coverage Results" MODIFIED="1654862153682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$04_C150_20x20x1.coverage" NAME="04-C150_20x20x1 Coverage Results" MODIFIED="1639133699749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$Test01_check_connect.coverage" NAME="Test01_check_connect Coverage Results" MODIFIED="1654679773196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$13_ETH_EVA_50wt_oplsaa.coverage" NAME="13-ETH-EVA_50wt_oplsaa Coverage Results" MODIFIED="1655031088139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$07_P4HB_trappeUA_1x1x1.coverage" NAME="07-P4HB_oplsaa_1x1x1 Coverage Results" MODIFIED="1637600304715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/07-Trimer_P4HB" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$03_C150_10x10x3.coverage" NAME="03-C150_10x10x3 Coverage Results" MODIFIED="1639133632382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$16_ModelEVA_torsion_loplsaa.coverage" NAME="16-ModelEVA_torsion_loplsaa Coverage Results" MODIFIED="1644601792854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/16-ModelEVA_torsion_loplsaa" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$08_P4HB_trappeUA_1x1x1.coverage" NAME="08-P4HB_trappeUA_1x1x1 Coverage Results" MODIFIED="1654799078234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/08-Trimer_P4HB_TrappeUA" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$12_ETH_EVA_50wt_trappeUA.coverage" NAME="12-ETH-EVA_50wt_trappeUA Coverage Results" MODIFIED="1640548464291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/12-ETH-EVA_50wt_trappeua/" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$02_C150_5x5x1.coverage" NAME="02-C150_5x5x1 Coverage Results" MODIFIED="1654798532919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$09_pdb_two_different_molecules.coverage" NAME="09-pdb_two_different_molecules Coverage Results" MODIFIED="1654799083632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$06_C150_03_Trappe2x2x1.coverage" NAME="06-C150_03_Trappe2x2x1 Coverage Results" MODIFIED="1639830773254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/06-C150_1fold_replicate_2x2x1_trappeUA" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$14_ModelEVA_torsion_trappeua.coverage" NAME="14-ModelEVA_torsion_trappeua Coverage Results" MODIFIED="1640544215490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/14-ModelEVA_torsion_trappeua" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$PQ_2.coverage" NAME="PQ_2 Coverage Results" MODIFIED="1650551045575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PROYECTOS___/2021-PHA/08-SingleChain/01-TYPE_P3HB" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$22_P3HB_50mon_50Ch.coverage" NAME="22-P3HB_50mon_50Ch Coverage Results" MODIFIED="1654882795223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/03-P3HB_50Mon_50Ch_Tg" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$05_C150_03_Replicate_5x5x5.coverage" NAME="05-C150_03_Replicate_5x5x5 Coverage Results" MODIFIED="1639337957560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$05_C150_Create_1x1x1.coverage" NAME="05-C150_Create_1x1x1 Coverage Results" MODIFIED="1654799045396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/01-CREATE" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$08_P4HB_trappeUA_1x1x1.coverage" NAME="08-P4HB_trappeUA_1x1x1 Coverage Results" MODIFIED="1639830650314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/08-Trimer_P4HB_TrappeUA" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$20_P3HB_exclusions.coverage" NAME="20-P3HB_exclusions Coverage Results" MODIFIED="1654801053730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/01-P3HB_10mon_1Ch" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$04_C150_20x20x1.coverage" NAME="04-C150_20x20x1 Coverage Results" MODIFIED="1654798545435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$00_pdb_two_different_molecules.coverage" NAME="00-pdb_two_different_molecules Coverage Results" MODIFIED="1639136479730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$Test03_SetupImproper.coverage" NAME="Test03_SetupImproper Coverage Results" MODIFIED="1650276993968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$11_pdb_blend_form_xsd_noconsecutive.coverage" NAME="11-pdb_blend_form_xsd_noconsecutive Coverage Results" MODIFIED="1639337867186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/11-blend_noconsecutive" />
+    <SUITE FILE_PATH="coverage/replicate_polymer$15_ModelEVA_torsion_oplsaa.coverage" NAME="15-ModelEVA_torsion_oplsaa Coverage Results" MODIFIED="1640795132236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/15-ModelEVA_torsion_oplsaa" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$10_pdb_blend_form_xsd.coverage" NAME="10-pdb_blend_form_xsd Coverage Results" MODIFIED="1654800867536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/10-blend_xsd" />
     <SUITE FILE_PATH="coverage/replicate_polymer$09_pdb_from_xsd_PE_04br04.coverage" NAME="09-pdb_from_xsd_PE_04br04 Coverage Results" MODIFIED="1639133316678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/09-pdb_from_xsd_PE_04br04" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$00_INSTALL.coverage" NAME="00-INSTALL Coverage Results" MODIFIED="1654679607028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/replicate_polymer$test.coverage" NAME="test Coverage Results" MODIFIED="1637258079633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/replicate_polymer$Test.coverage" NAME="Test Coverage Results" MODIFIED="1649692399954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/replicate_polymer$00_INSTALL.coverage" NAME="00-INSTALL Coverage Results" MODIFIED="1650448322279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$05_C150_03_Replicate_5x5x5_with_box.coverage" NAME="05-C150_03_Replicate_5x5x5 with box Coverage Results" MODIFIED="1639134497196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS_BOXLENGTH" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$10_pdb_blend_form_xsd.coverage" NAME="10-pdb_blend_form_xsd Coverage Results" MODIFIED="1639337935698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/10-blend_xsd" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$Test02_Remove_hydrogens.coverage" NAME="Test02_Remove_hydrogens Coverage Results" MODIFIED="1649935913251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/replicate_polymer$04_C150_20x20x1.coverage" NAME="04-C150_20x20x1 Coverage Results" MODIFIED="1639133699749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/04-C150_onefolded_replicate_20x20x1" />
-    <SUITE FILE_PATH="coverage/replicate_polymer_topology$Test01_check_connect.coverage" NAME="Test01_check_connect Coverage Results" MODIFIED="1654679773196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$05_C150_03_Replicate_5x5x5.coverage" NAME="05-C150_03_Replicate_5x5x5 Coverage Results" MODIFIED="1654798847541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/03-REPLICATE_AMORPHOUS" />
     <SUITE FILE_PATH="coverage/replicate_polymer$07_P4HB_oplsaa_1x1x1.coverage" NAME="07-P4HB_oplsaa_1x1x1 Coverage Results" MODIFIED="1639134645700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA" />
-    <SUITE FILE_PATH="coverage/replicate_polymer_topology$19_n_hexane_trappeUA_PEToxvaerd.coverage" NAME="19-n-hexane_trappeUA_PEToxvaerd Coverage Results" MODIFIED="1654543023371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd" />
-    <SUITE FILE_PATH="coverage/replicate_polymer_topology$13_ETH_EVA_50wt_oplsaa.coverage" NAME="13-ETH-EVA_50wt_oplsaa Coverage Results" MODIFIED="1654376226428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$11_pdb_blend_form_xsd_noconsecutive.coverage" NAME="11-pdb_blend_form_xsd_noconsecutive Coverage Results" MODIFIED="1654800958777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/11-blend_noconsecutive" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$19_n_hexane_trappeUA_PEToxvaerd.coverage" NAME="19-n-hexane_trappeUA_PEToxvaerd Coverage Results" MODIFIED="1655031114593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd" />
   </component>
 </project>

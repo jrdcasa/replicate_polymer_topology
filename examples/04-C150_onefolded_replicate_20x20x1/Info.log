@@ -3,7 +3,7 @@
               Replicate a molecule or polymer chain (ReMoPo)
               ----------------------------------------------
 
-                                Version 3.0
+                                Version 4.0
 
                               Dr. Javier Ramos
                       Macromolecular Physics Department
@@ -11,29 +11,31 @@
                                Madrid (Spain)
 
         ReMoPo is an open-source python library to quickly replicate a molecule
-        from a pdb file containing the seed molecule. After that, the script assigns 
+        from a pdb file containing the seed molecule. After that, the script assigns
         the force field parameters using the foyer library (https://mosdef.org/)
-        This program generates GROMACS and LAMMPS files to run simulations. 
+        This program generates GROMACS and LAMMPS files to run simulations.
 
         This software is distributed under the terms of the
-        GNU General Public License v3.0 (GNU GPLv3). A copy of 
-        the license (LICENSE.txt) is included with this distribution. 
+        GNU General Public License v3.0 (GNU GPLv3). A copy of
+        the license (LICENSE.txt) is included with this distribution.
 
     ***********************************************************************
         
-		Start Job at 10-12-2021 11:55:01 ============
-
-		Command line: 
-			python replicate_polymer.py -p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 20 20 1 --engine lammps
-			         or
-			replicate_polymer -p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 20 20 1 --engine lammps
-
-		Replicating and typing molecule (10-12-2021 11:55:01)
+		Start Job at 09-06-2022 21:15:46 ============
+		Replicating and typing molecule (09-06-2022 21:15:46)
 		********************************************************
-		Loading seed structure from ./data/C150_1fold_initial_new.pdb (10-12-2021 11:55:01)
-		Applying force field to the seed molecules ./data/C150_1fold_initial_new.pdb (10-12-2021 11:55:01)
+		Loading seed structure from ./data/C150_1fold_initial_new.pdb (09-06-2022 21:15:46)
+		Applying force field to the seed molecules ./data/C150_1fold_initial_new.pdb (09-06-2022 21:15:46)
+		------------------------------------------------------------------------------------
+		WARN: Parameters have not been assigned to all impropers.
+		Total system impropers: 600, Parameterized impropers: 0.
+ 		Note that if your system contains torsions of Ryckaert-Bellemans functional form,
+		all of these torsions are processed as propers.
+		This warn can be ignored if you are sure that impropers are not needed!!!!!
+		------------------------------------------------------------------------------------
 
-		Replicate a molecule or polymer chain (10-12-2021 11:55:09)
+
+		Replicate a molecule or polymer chain (09-06-2022 21:15:54)
 		***************************************************************
 		Input file                  : ./data/C150_1fold_initial_new.pdb
 		Number of molecules in cell : 1
@@ -46,7 +48,7 @@
 		Replicate the molecule 20x20x1 times
 		***************************************************************
 
-		Molecule replicated info (10-12-2021 11:55:23)
+		Molecule replicated info (09-06-2022 21:16:04)
 		*************************************************
 		Number of molecules in cell : 400
 		Number of chains in cell    : 400
@@ -56,8 +58,8 @@
 		Simulation box angles       : 90.00 90.00 90.00 degrees
 		*************************************************
 
-		Generating lmp and data files for LAMMPS (10-12-2021 11:55:27)
+		Generating lmp and data files for LAMMPS (09-06-2022 21:16:06)
 		*****************************************************************
 
-		Job  Done at 10-12-2021 11:58:03 ============
+		Job  Done at 09-06-2022 21:18:04 ============
 

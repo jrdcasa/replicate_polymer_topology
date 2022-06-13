@@ -1,3 +1,48 @@
+import os
+import datetime
+
+
+# =============================================================================
+def insert_exclusions(opts, fnamepdb, residues_map_atom, logger=None):
+
+    """
+
+    Args:
+        logger:
+        residues_map_atom:
+        fnamepdb:
+        opts:
+
+    Returns:
+
+    """
+
+    base, _ = os.path.splitext(fnamepdb)
+    base = os.path.split(base)[-1]
+    dirlocal = "./"
+
+    if opts.npairs is not None:
+        now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+        m = "\t\tInserting exclusions in the topology file ({})\n".format(now)
+        ext = ".top"
+        fname = os.path.join(dirlocal, base + "_replicate" + ext)
+        with open(fname, "r") as f:
+            contents = f.readlines()
+
+        idx_to_insert = contents.index("[ system ]\n")
+
+        lines_exclusions = exclusion_gromacs(opts.npairs, residues_map_atom)
+
+        contents.insert(idx_to_insert-1, lines_exclusions)
+
+        with open(fname, "w") as f:
+            contents = "".join(contents)
+            f.write(contents)
+
+        print(m) if logger is None else logger.info(m)
+
+
+# =============================================================================
 def exclusion_gromacs(npairs, residues_map_atom, logger_log=None):
     """
 

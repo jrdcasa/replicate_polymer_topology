@@ -1,5 +1,5 @@
 """Foyer ForceField class and utility methods."""
-import collections
+import datetime
 import glob
 import itertools
 import os
@@ -7,9 +7,7 @@ import re
 import warnings
 import xml.etree.ElementTree as ET
 from collections import defaultdict
-from copy import copy
 from tempfile import NamedTemporaryFile
-from typing import Callable, Iterable, List
 from topology import Topology
 from topology.atomic_data import atomic_number
 
@@ -33,28 +31,12 @@ from openmm.app.forcefield import (
     _convertParameterToNumber,
 )
 from pkg_resources import iter_entry_points, resource_filename
-
-
 import replicate_polymer_lib.forcefield.element as custom_elem
 from replicate_polymer_lib.forcefield.atomtyper import find_atomtypes
 from replicate_polymer_lib.forcefield import Smart
 from replicate_polymer_lib.forcefield.topology_graph import TopologyGraph
-
-# from foyer.atomtyper import find_atomtypes
-
-# from foyer.utils.external import get_ref
-# from foyer.utils.io import has_mbuild, import_
-# from foyer.utils.misc import validate_type
 from replicate_polymer_lib.forcefield.Validator import Validator
-# from foyer.xml_writer import write_foyer
 
-# force_for = {
-#     NonbondedGenerator: "NonBondedForce",
-#     HarmonicBondGenerator: "HarmonicBondForce",
-#     HarmonicAngleGenerator: "HarmonicAngleForce",
-#     PeriodicTorsionGenerator: "PeriodicTorsionForce",
-#     RBTorsionGenerator: "RBTorsionForce",
-# }
 
 # =============================================================================================
 def preprocess_forcefield_files(forcefield_files=None):
@@ -128,108 +110,6 @@ def preprocess_forcefield_files(forcefield_files=None):
     return preprocessed_files
 
 
-# def get_available_forcefield_loaders() -> List[Callable]:
-#     """Get a list of available force field loader functions."""
-#     available_ff_paths = []
-#     for entry_point in iter_entry_points(group="foyer.forcefields"):
-#         available_ff_paths.append(entry_point.load())
-#
-#     return available_ff_paths
-#
-#
-# def generate_topology(non_omm_topology, non_element_types=None, residues=None):
-#     """Create an OpenMM Topology from another supported topology structure."""
-#     if non_element_types is None:
-#         non_element_types = set()
-#
-#     if isinstance(non_omm_topology, pmd.Structure):
-#         return _topology_from_parmed(non_omm_topology, non_element_types)
-#     elif has_mbuild:
-#         mb = import_("mbuild")
-#         if (non_omm_topology, mb.Compound):
-#             pmd_comp_struct = non_omm_topology.to_parmed(residues=residues)
-#             return _topology_from_parmed(pmd_comp_struct, non_element_types)
-#     else:
-#         raise FoyerError(
-#             "Unknown topology format: {}\n"
-#             "Supported formats are: "
-#             '"parmed.Structure", '
-#             '"mbuild.Compound", '
-#             '"openmm.app.Topology"'.format(non_omm_topology)
-#         )
-#
-#
-# def _structure_from_residue(residue, parent_structure):
-#     """Convert a ParmEd Residue to an equivalent Structure."""
-#     structure = pmd.Structure()
-#     orig_to_copy = (
-#         dict()
-#     )  # Clone a lot of atoms to avoid any of parmed's tracking
-#     for atom in residue.atoms:
-#         new_atom = copy(atom)
-#         new_atom._idx = atom.idx
-#         orig_to_copy[atom] = new_atom
-#         structure.add_atom(
-#             new_atom, resname=residue.name, resnum=residue.number
-#         )
-#
-#     for bond in parent_structure.bonds:
-#         if bond.atom1 in residue.atoms and bond.atom2 in residue.atoms:
-#             structure.bonds.append(
-#                 pmd.Bond(orig_to_copy[bond.atom1], orig_to_copy[bond.atom2])
-#             )
-#
-#     return structure
-#
-#
-# def _topology_from_parmed(structure, non_element_types):
-#     """Convert a ParmEd Structure to an OpenMM Topology."""
-#     topology = app.Topology()
-#     residues = dict()
-#     for pmd_residue in structure.residues:
-#         chain = topology.addChain()
-#         omm_residue = topology.addResidue(pmd_residue.name, chain)
-#         # Index ParmEd residues on name & number, no other info i.e. chain
-#         residues[(pmd_residue.name, pmd_residue.idx)] = omm_residue
-#     atoms = dict()  # pmd.Atom: omm.Atom
-#
-#     for pmd_atom in structure.atoms:
-#         name = pmd_atom.name
-#         if pmd_atom.name in non_element_types:
-#             element = non_element_types[pmd_atom.name]
-#         else:
-#             if (
-#                 isinstance(pmd_atom.atomic_number, int)
-#                 and pmd_atom.atomic_number != 0
-#             ):
-#                 element = elem.Element.getByAtomicNumber(pmd_atom.atomic_number)
-#             else:
-#                 element = elem.Element.getBySymbol(pmd_atom.name)
-#
-#         omm_atom = topology.addAtom(
-#             name,
-#             element,
-#             residues[(pmd_atom.residue.name, pmd_atom.residue.idx)],
-#         )
-#         omm_atom.id = pmd_atom.id
-#         atoms[pmd_atom] = omm_atom
-#         omm_atom.bond_partners = []
-#
-#     for bond in structure.bonds:
-#         atom1 = atoms[bond.atom1]
-#         atom2 = atoms[bond.atom2]
-#         topology.addBond(atom1, atom2)
-#         atom1.bond_partners.append(atom2)
-#         atom2.bond_partners.append(atom1)
-#     if structure.box_vectors and np.any(
-#         [x._value for x in structure.box_vectors]
-#     ):
-#         topology.setPeriodicBoxVectors(structure.box_vectors)
-#
-#     positions = structure.positions
-#     return topology, positions
-#
-#
 # =============================================================================================
 def _topology_from_residue_cJ(residue, parent_structure):
 
@@ -237,19 +117,27 @@ def _topology_from_residue_cJ(residue, parent_structure):
 
     topo = Topology()
 
+    # For residues in which the first atom has a index different to zero
+    offset = residue.atoms[0].index
+
     for iatom in residue.atoms:
-        idx = iatom.index
+        idx = iatom.index - offset
         topo.add_vertex(idx)
         topo.elements.append('')
         topo._types.append('')
+        topo._names.append('')
 
+    idx = 0
     for iatom in residue.atoms:
-        idx = iatom.index
-        topo.elements[idx] = iatom.name
-        topo._types[idx] = iatom.name
+        #cJJ idx = iatom.index
+        topo.elements[idx] = iatom.element
+        #cJJ topo._types[idx] = iatom.type
+        topo._names[idx] = iatom.name
         for jatom in iatom.bonded_atoms:
-            jdx = jatom.index
-            topo.add_edge((idx, jdx))
+            jdx = jatom.index - offset
+            topo.add_edge((idx, jdx),setforest=False)
+        idx += 1
+    topo._set_forest()
 
     topology_graph = TopologyGraph.from_topomdanalysis_topologygraph(residue)
 
@@ -290,6 +178,51 @@ def _unwrap_typemap_cJ(structure, residue_map):
 
 
 # =============================================================================================
+def _topology_from_readpdbformat_cJ(structure, non_element_types):
+    """Convert a ReadPDBFormat Structure to an OpenMM Topology."""
+    topology = mm.app.Topology()
+    residues = dict()
+    atoms = dict()
+    for mdanalysis_residue in structure._universe.residues:
+        chain = topology.addChain()
+        omm_residue = topology.addResidue(mdanalysis_residue.resname, chain)
+        # Index residues on name & number, no other info i.e. chain
+        residues[(mdanalysis_residue.resname, mdanalysis_residue.resindex)] = omm_residue
+        for mdanalysis_atom in mdanalysis_residue.atoms:
+            name = mdanalysis_atom.name
+            if mdanalysis_atom.name in non_element_types:
+                element = non_element_types[mdanalysis_atom.name]
+            else:
+                at_number = atomic_number[mdanalysis_atom.element]
+                if isinstance(at_number, int) and at_number != 0:
+                    element = elem.Element.getByAtomicNumber(at_number)
+                else:
+                    element = elem.Element.getBySymbol(name)
+            omm_atom = topology.addAtom(name, element, residues[(mdanalysis_residue.resname, mdanalysis_residue.resindex)])
+            omm_atom.id = mdanalysis_atom.type
+            atoms[mdanalysis_atom] = omm_atom
+            omm_atom.bond_partners = []
+
+    for bond in structure._universe.bonds:
+        atom1 = atoms[bond.atoms[0]]
+        atom2 = atoms[bond.atoms[1]]
+        topology.addBond(atom1, atom2)
+        atom1.bond_partners.append(atom2)
+        atom2.bond_partners.append(atom1)
+    if structure._unitcell is not None:
+        topology.setPeriodicBoxVectors(structure._unitcell * mm.unit.angstroms)
+
+    positions = None
+    lcords = list()
+    for ikey, coord in structure._atom3d_xyz.items():
+        #print(coord[0], coord[1], coord[2], mm.Vec3(coord[0], coord[1], coord[2]) * mm.unit.angstroms )
+        lcords.append(mm.Vec3(coord[0], coord[1], coord[2]))
+    positions = lcords * mm.unit.angstroms
+
+    return topology, positions
+
+
+# =============================================================================================
 def _separate_urey_bradleys(system, topology):
     """Separate urey bradley bonds from harmonic bonds in OpenMM System.
 
@@ -324,25 +257,15 @@ def _separate_urey_bradleys(system, topology):
     system.addForce(harmonic_bond_force)
     system.addForce(ub_force)
 
-#
-# def _error_or_warn(error, msg):
-#     """Raise an error or warning if topology objects are not fully parameterized.
-#
-#     Parameters
-#     ----------
-#     error : bool
-#         If True, raise an error, else raise a warning
-#     msg : str
-#         The message to be provided with the error or warning
-#     """
-#     if error:
-#         raise Exception(msg)
-#     else:
-#         warnings.warn(msg)
 
 # =============================================================================================
-def _check_bonds(data, structure, assert_bond_params, logger=None):
+def _check_bonds(data, structure, assert_bond_params, verbose=False, logger=None):
     """Check if any bonds lack paramters."""
+
+    now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    m1 = "\t\t Checking bonds    ... (verbose: {}) ({}).".format(verbose, now)
+    print(m1) if logger is None else logger.info(m1)
+
     if data.bonds:
         missing = [b for b in structure.bonds if b.type is None]
         #cJ
@@ -358,12 +281,28 @@ def _check_bonds(data, structure, assert_bond_params, logger=None):
             print("\n"+m+m1+m2+m) if logger  is None else logger .info("\n"+m+m1+m2+m)
             exit()
 
+    now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    m1 = "\t\t End checking bonds ... (verbose: {}) ({}).".format(verbose, now)
+    print(m1) if logger is None else logger.info(m1)
+
 
 # =============================================================================================
 def _check_angles(data, structure, verbose, assert_angle_params, logger=None):
     """Check if all angles were found and parametrized."""
+
+    now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    m1 = "\t\t Checking angles    ... (verbose: {}) ({}).".format(verbose, now)
+    print(m1) if logger is None else logger.info(m1)
+
+    nangles_to_check = len(data.angles)
+    offset = int(0.2*len(data.angles))
+
+    iangle = 0
     if verbose:
         for omm_ids in data.angles:
+            if iangle%offset == 0:
+                m = "\t\t\t {} angles of {}".format(iangle, nangles_to_check)
+                print(m) if logger is None else logger.info(m)
             missing_angle = True
             for pmd_angle in structure.angles:
                 pmd_ids = (
@@ -377,7 +316,7 @@ def _check_angles(data, structure, verbose, assert_angle_params, logger=None):
                 m1 = "\t\tERROR: Missing angle with ids {} and types {}.".format(
                         omm_ids, [structure.atoms[idx].type for idx in omm_ids])
                 print(m1) if logger is None else logger.info(m1)
-
+            iangle += 1
         if missing_angle:
             m2 = "\t\tERROR: Molecule cannot be typed!!!!!. Exiting....\n"
             m = "\t\t" + len(m2) * "*" + "\n"
@@ -392,16 +331,32 @@ def _check_angles(data, structure, verbose, assert_angle_params, logger=None):
         print("\n" + m + m1 + m2 + m) if logger is None else logger.info("\n" + m + m1 + m2 + m)
         exit()
 
+    now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    m1 = "\t\t End checking angles ... (verbose: {}) ({}).".format(verbose, now)
+    print(m1) if logger is None else logger.info(m1)
+
 
 # =============================================================================================
-def _check_dihedrals(data, structure, verbose, assert_dihedral_params, assert_improper_params, logger=None):
+def _check_dihedrals(data, structure, non_openmm_potentials_terms, verbose, assert_dihedral_params, assert_improper_params, logger=None):
     """Check if all dihedrals, including impropers, were found and parametrized."""
+
+    now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    m1 = "\t\t Checking dihedrals    ... (verbose: {}) ({}).".format(verbose, now)
+    print(m1) if logger is None else logger.info(m1)
+
     proper_dihedrals = [
         dihedral for dihedral in structure.dihedrals if not dihedral.improper
     ]
 
+    npropers_to_check = len(data.propers)
+    offset = int(0.2*len(data.propers))
+
     if verbose:
+        iproper = 0
         for omm_ids in data.propers:
+            if iproper%offset == 0:
+                m = "\t\t\t {} dihedral of {}".format(iproper, npropers_to_check)
+                print(m) if logger is None else logger.info(m)
             missing_dihedral = True
             for pmd_proper in proper_dihedrals:
                 pmd_ids = (
@@ -421,17 +376,24 @@ def _check_dihedrals(data, structure, verbose, assert_dihedral_params, assert_im
                 )
                 if pmd_ids == omm_ids:
                     missing_dihedral = False
+            for pmd_ids in non_openmm_potentials_terms['toxwaerd']['torsions'][0]:
+                if pmd_ids == omm_ids:
+                    missing_dihedral = False
+
             if missing_dihedral:
                 m1 = "\t\tERROR: Missing dihedral with ids {} and types {}.".format(
                       omm_ids, [structure.atoms[idx].type for idx in omm_ids])
                 print(m1) if logger is None else logger.info(m1)
+            iproper += 1
         if missing_dihedral:
             m2 = "\t\tERROR: Molecule cannot be typed!!!!!. Exiting....\n"
             m = "\t\t" + len(m2) * "*" + "\n"
             print("\n" + m + m2 + m) if logger is None else logger.info("\n" + m + m2 + m)
             exit()
 
-    if data.propers and len(data.propers) != len(proper_dihedrals) + len(structure.rb_torsions):
+    if data.propers and len(data.propers) != len(proper_dihedrals) + \
+                                             len(structure.rb_torsions) + \
+                                             len(non_openmm_potentials_terms['toxwaerd']['torsions']):
         if data.propers and len(data.propers) < len(proper_dihedrals) + len(structure.rb_torsions):
             m1 = "\t\tERROR: Parameters have been assigned to all proper dihedrals.\n" \
                  "\t\tHowever, there are more parameterized dihedrals ({}).\n" \
@@ -454,6 +416,10 @@ def _check_dihedrals(data, structure, verbose, assert_dihedral_params, assert_im
             m = "\t\t" + ll * "*" + "\n"
             print("\n" + m + m1 + m2 + m) if logger is None else logger.info("\n" + m + m1 + m2 + m)
             exit()
+
+    now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    m1 = "\t\t End dihedrals angles ... (verbose: {}) ({}).".format(verbose, now)
+    print(m1) if logger is None else logger.info(m1)
 
     improper_dihedrals = [
         dihedral for dihedral in structure.dihedrals if dihedral.improper
@@ -737,19 +703,16 @@ class Forcefield(app.ForceField):
             self.atomTypeClasses[name] = parameters["class"]
 
     # =============================================================================================
-    def apply(self, structure, references_file=None, use_residue_map=True, assert_bond_params=True,
+    def apply(self, molecule, use_residue_map=True, assert_bond_params=True,
               assert_angle_params=True, assert_dihedral_params=True, assert_improper_params=False,
-              verbose=False, logger=None, *args, **kwargs,):
+              logger=None, *args, **kwargs,):
 
         """Apply the force field to a molecular structure.
 
         Parameters
         ----------
-        structure : parmed.Structure or mbuild.Compound
+        structure : ReadPdb molecular object
             Molecular structure to apply the force field to
-        references_file : str, optional, default=None
-            Name of file where force field references will be written (in Bibtex
-            format)
         use_residue_map : boolean, optional, default=True
             Store atomtyped topologies of residues to a dictionary that maps
             them to residue names.  Each topology, including atomtypes, will be
@@ -771,11 +734,18 @@ class Forcefield(app.ForceField):
         assert_improper_params : bool, optional, default=False
             If True, Foyer will exit if parameters are not found for all system
             improper dihedrals.
-        verbose : bool, optional, default=False
-            If True, Foyer will print debug-level information about notable or
-            potentially problematic details it encounters.
         logger :
         """
+
+        if len(kwargs) > 0:
+            try:
+                for key, value in kwargs.items():
+                    verbose = kwargs['verbose']
+            except KeyError:
+                verbose = False
+        else:
+            verbose = False
+
         if self.atomTypeDefinitions == {}:
             m1 = "\t\tERROR: Attempting to atom-type using a force field with no atom type defitions.\n"
             m2 = "\t\tMolecule cannot be typed!!!!!. Exiting....\n"
@@ -783,28 +753,28 @@ class Forcefield(app.ForceField):
             print("\n"+m+m1+m2+m) if self._logger is None else self._logger.info("\n"+m+m1+m2+m)
             exit()
 
-        typemap = self.run_atomtyping_cJ(
-            structure, use_residue_map=use_residue_map, **kwargs
-        )
+        # A dictionaty with info about the typing for each atom
+        typemap = self.run_atomtyping_cJ(molecule, use_residue_map=use_residue_map, **kwargs)
 
-        self._apply_typemap_cJ(structure, typemap, logger=logger)
+        self._apply_typemap_cJ(molecule, typemap, logger=logger)
 
-        structure = self.parametrize_system(structure=structure, references_file=references_file,
-                                            assert_bond_params=assert_bond_params,
-                                            assert_angle_params=assert_angle_params,
-                                            assert_dihedral_params=assert_dihedral_params,
-                                            assert_improper_params=assert_improper_params,
-                                            verbose=verbose, logger=logger, *args, **kwargs,)
+        pmd_structure, non_openmm_potentials_terms = \
+            self.parametrize_system(structure=molecule,
+                                    assert_bond_params=assert_bond_params,
+                                    assert_angle_params=assert_angle_params,
+                                    assert_dihedral_params=assert_dihedral_params,
+                                    assert_improper_params=assert_improper_params,
+                                    logger=logger, *args, **kwargs,)
 
-        return structure
+        return pmd_structure, non_openmm_potentials_terms
 
     # =============================================================================================
-    def run_atomtyping_cJ(self, structure, use_residue_map=True, **kwargs):
+    def run_atomtyping_cJ(self, molecule, use_residue_map=True, **kwargs):
         """Atomtype the topology.
 
         Parameters
         ----------
-        structure : Molecular structure ReadPdbFormat
+        molecule : Molecular structure ReadPdbFormat
             Molecular structure to find atom types of
         use_residue_map : boolean, optional, default=True
             Store atomtyped topologies of residues to a dictionary that maps
@@ -818,34 +788,45 @@ class Forcefield(app.ForceField):
         """
 
         if use_residue_map:
-            independent_residues = _check_independent_residues_cJ(structure)
+            independent_residues = _check_independent_residues_cJ(molecule)
             if independent_residues:
                 residue_map = dict()
                 # Need to call this only once and store results for later id() comparisons
-                for res_id, res in enumerate(structure._universe.residues):
+                for res_id, res in enumerate(molecule._universe.residues):
                     if (
-                        structure._universe.residues[res_id].resname
+                        molecule._universe.residues[res_id].resname
                         not in residue_map.keys()
                     ):
-                        topo_res, topograph_res = _topology_from_residue_cJ(res, structure)
+                        topo_res, topograph_res = _topology_from_residue_cJ(res, molecule)
                         typemap = find_atomtypes(topo_res, forcefield=self)
                         residue_map[res.resname] = typemap
 
-                typemap = _unwrap_typemap_cJ(structure, residue_map)
+                typemap = _unwrap_typemap_cJ(molecule, residue_map)
 
             else:
 
-                typemap = find_atomtypes(structure._topology, forcefield=self)
+                typemap = find_atomtypes(molecule._topology, forcefield=self)
 
         else:
-            typemap = find_atomtypes(structure._topology, forcefield=self)
+            typemap = find_atomtypes(molecule._topology, forcefield=self)
 
         return typemap
 
     # =============================================================================================
-    def parametrize_system(self, structure=None, references_file=None,
+    def parametrize_system(self, structure=None,
                            assert_bond_params=True, assert_angle_params=True, assert_dihedral_params=True,
-                           assert_improper_params=False, verbose=False, logger=None,  *args, **kwargs,):
+                           assert_improper_params=False, logger=None,  *args, **kwargs,):
+
+        if len(kwargs) > 0:
+            try:
+                for key, value in kwargs.items():
+                    verbose = kwargs['verbose']
+            except KeyError:
+                verbose = False
+        else:
+            verbose = False
+
+        non_openmm_potentials_terms = defaultdict()
 
         """Create system based on resulting typemapping."""
         topology_openmm, positions_openmm = _topology_from_readpdbformat_cJ(structure, self.non_element_types)
@@ -857,7 +838,9 @@ class Forcefield(app.ForceField):
         data = self._system_data
 
         structure = pmd.openmm.load_topology(topology=topology_openmm, system=system)
-        self.check_toxwaerd_terms_cj(structure, data)
+
+        non_openmm_potentials_terms["toxwaerd"] = self.check_toxwaerd_terms_cj(structure, data)
+
         structure.bonds.sort(key=lambda x: x.atom1.idx)
         structure.positions = positions_openmm
         box_vectors = topology_openmm.getPeriodicBoxVectors()
@@ -866,11 +849,7 @@ class Forcefield(app.ForceField):
 
         _check_bonds(data, structure, assert_bond_params, logger=logger)
         _check_angles(data, structure, verbose, assert_angle_params, logger=logger)
-        _check_dihedrals(data, structure, verbose, assert_dihedral_params, assert_improper_params, logger=logger)
-
-        if references_file:
-            atom_types = set(atom.type for atom in structure.atoms)
-            self._write_references_to_file(atom_types, references_file)
+        _check_dihedrals(data, structure, non_openmm_potentials_terms, verbose, assert_dihedral_params, assert_improper_params, logger=logger)
 
         try:
             structure.combining_rule = self.combining_rule
@@ -895,7 +874,7 @@ class Forcefield(app.ForceField):
                 "Structure's total charge: {}".format(total_charge)
             )
 
-        return structure
+        return structure, non_openmm_potentials_terms
 
     # =============================================================================================
     def createSystem( self, topology, nonbondedMethod=NoCutoff, nonbondedCutoff=1.0 * u.nanometer,
@@ -1704,21 +1683,14 @@ class Forcefield(app.ForceField):
         """
 
         toxwaerd_dict = defaultdict(dict)
+        toxwaerd_torsions = list()
 
         try:
             index = self.all_forces_included_xml.index("PeriodicToxvaerdForce")
         except ValueError:
-            return toxwaerd_dict
+            return toxwaerd_dict, toxwaerd_torsions
 
-        # Number of proper dihedrals in structure
-        npropers_structure = len(structure.dihedrals)
-        # Number of proper Ryckaert-Bellemans dihedrals in structure
-        nrb_structure = len(structure.rb_torsions)
-        # Total number of proper dihedrals of any kind
-        npropers_openmm = len(data.propers)
-        # Set of possible toxwaerd dihedrals
-        toxwaerd_torsions = set(data.propers)-set(structure.dihedrals)-set(structure.rb_torsions)
-
+        # Get the Toxvaerd Torsions if they exist in the XML force field file.
         root = self.validator.ff_tree.getroot()
         leaf = root.find('PeriodicToxvaerdForce')
         for child in leaf:
@@ -1742,53 +1714,21 @@ class Forcefield(app.ForceField):
             key = class1+"-"+class2+"-"+class3+"-"+class4
             toxwaerd_dict[key] = {'coeff': coeff, 'periodicity': periodicity, 'phase': phase}
 
+        # Get the dihedrals which can be assigned to Toxwaerd
+        for iproper in data.propers:
+            at1, at2, at3, at4 = list(iproper)
+            label1 = self.atomTypeClasses[data.atoms[at1].id]   #Class 1
+            label2 = self.atomTypeClasses[data.atoms[at2].id]   #Class 2
+            label3 = self.atomTypeClasses[data.atoms[at3].id]   #Class 3
+            label4 = self.atomTypeClasses[data.atoms[at4].id]   #Class 4
+            str_f = label1 + "-" + label2 + "-" + label3 + "-" + label4
+            str_r = label4 + "-" + label3 + "-" + label2 + "-" + label1
+            if str_f in toxwaerd_dict or str_r in toxwaerd_dict:
+                toxwaerd_torsions.append([(at1, at2, at3, at4), str_f])
+        toxwaerd_dict["torsions"] = toxwaerd_torsions
+
         return toxwaerd_dict
 
 
-# =============================================================================================
-def _topology_from_readpdbformat_cJ(structure, non_element_types):
-    """Convert a ReadPDBFormat Structure to an OpenMM Topology."""
-    topology = mm.app.Topology()
-    residues = dict()
-    for mdanalysis_residue in structure._universe.residues:
-        chain = topology.addChain()
-        omm_residue = topology.addResidue(mdanalysis_residue.resname, chain)
-        # Index residues on name & number, no other info i.e. chain
-        residues[(mdanalysis_residue.resname, mdanalysis_residue.resindex)] = omm_residue
-    atoms = dict()
 
-    for mdanalysis_atom in structure._universe.atoms:
-        name = mdanalysis_atom.name
-        if mdanalysis_atom.name in non_element_types:
-            element = non_element_types[mdanalysis_atom.name]
-        else:
-            at_number = atomic_number[mdanalysis_atom.name]
-            if isinstance(at_number, int) and at_number != 0:
-                element = elem.Element.getByAtomicNumber(at_number)
-            else:
-                element = elem.Element.getBySymbol(name)
 
-        omm_atom = topology.addAtom(name, element, residues[(mdanalysis_residue.resname, mdanalysis_residue.resindex)])
-        omm_atom.id = mdanalysis_atom.type
-        atoms[mdanalysis_atom] = omm_atom
-        omm_atom.bond_partners = []
-
-    for bond in structure._universe.bonds:
-        atom1 = atoms[bond.atoms[0]]
-        atom2 = atoms[bond.atoms[1]]
-        topology.addBond(atom1, atom2)
-        atom1.bond_partners.append(atom2)
-        atom2.bond_partners.append(atom1)
-    if structure._unitcell is not None:
-        topology.setPeriodicBoxVectors(structure._unitcell * mm.unit.angstroms)
-
-    positions = None
-    lcords = list()
-    for ikey, coord in structure._atom3d_xyz.items():
-        #print(coord[0], coord[1], coord[2], mm.Vec3(coord[0], coord[1], coord[2]) * mm.unit.angstroms )
-        lcords.append(mm.Vec3(coord[0], coord[1], coord[2]))
-    positions = lcords * mm.unit.angstroms
-
-    return topology, positions
-
-####### pmd.Structure.write_foyer = write_foyer

@@ -1,6 +1,8 @@
 import argparse
 import argcomplete
 import os
+import datetime
+import sys
 
 
 # =============================================================================
@@ -33,6 +35,29 @@ def print_header(version, logger_log=None):
 
 
 # =============================================================================
+def command_info(opts, logger=None):
+
+    m1 = ""
+    for item in sys.argv[1:]:
+        m1 += " {}".format(item)
+    m = "\n\t\tCommand line: \n"
+    m += "\t\t\tpython {}".format(os.path.split(sys.argv[0])[1])
+    m += m1+"\n"
+    m += "\t\t\t         or\n"
+    m += "\t\t\treplicate_polymer".format(os.path.split(sys.argv[0])[1])
+    m += m1+"\n"
+    print(m) if logger is None else logger.info(m)
+
+    if opts.verbose:
+        m1 = "\t\tWARN: Verbose checking of angles and dihedral is activated. " \
+             "\n\t\tThis is time consuming. Perform only if there is angles or dihedrals without assignment.\n"
+        ll = int(len(m1)/1.5)
+        m = "\t\t" + ll * "-" + "\n"
+        print(m+m1+m) if logger is None else logger.info(m+m1+m)
+
+
+
+# =============================================================================
 def parse_arguments():
     import time
 
@@ -55,12 +80,13 @@ def parse_arguments():
     parser.add_argument("-e", "--engine", dest="engine",
                         help="MD package to perform the calculations.",
                         action="store", metavar="MDENGINE", required=False, default="gromacs")
-    group2 = parser.add_mutually_exclusive_group(required=False)
-    group2.add_argument("--noh", dest="hydrogens",
+
+    #group2 = parser.add_mutually_exclusive_group(required=False)
+    parser.add_argument("--noh", dest="hydrogens",
                         help="Remove hydrogens for a united atom representation.",
                         action="store_true", required=False)
 
-    group2.add_argument("--index", dest="index",
+    parser.add_argument("--index", dest="index",
                         help="Indices of atoms to be removed from the PDB.",
                         action="store", metavar="INDEX", required=False, default=None)
 
@@ -81,6 +107,11 @@ def parse_arguments():
                              "between the current residue (i) and the nearest-neighbours are "
                              "taken into account (i-1, i and i+1)", type=int,
                         action="store", required=False, default=None)
+
+    parser.add_argument("--verbose", dest="verbose",
+                        help="Verbose checking of angles and dihedral. This is time consuming. "
+                             "Perform only if there is angles without assignment.",
+                        action="store_true", required=False)
 
     argcomplete.autocomplete(parser)
     args = parser.parse_args()

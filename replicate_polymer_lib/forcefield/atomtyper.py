@@ -13,13 +13,13 @@ def _convert_topology_to_topologygraph(topology):
     # Atoms =========
     for iatom_idx in topology._graphdict.keys():
         # For no-real atoms, rather interaction sites (i.e: CG or UA models)
-        if topology.elements[iatom_idx].startswith("_"):
-            top_graph.add_atom(name=topology.elements[iatom_idx],
+        if topology._names[iatom_idx].startswith("_"):
+            top_graph.add_atom(name=topology._names[iatom_idx],
                                index=iatom_idx,
                                atomic_number=None,
-                               element=topology.elements[iatom_idx])
+                               element=None)
         else:
-            top_graph.add_atom(name=topology._types[iatom_idx],
+            top_graph.add_atom(name=topology._names[iatom_idx],
                                index=iatom_idx,
                                atomic_number=atomic_number[topology.elements[iatom_idx]],
                                element=topology.elements[iatom_idx])
@@ -76,13 +76,14 @@ def find_atomtypes(topology, forcefield, max_iter=10, logger=None):
     system_elements = set()
     for idx, bonded_list in topology._graphdict.items():
         # First add non-element types, which are strings, then elements
-        name = topology.elements[idx]
+        name = topology._names[idx]
         if name.startswith("_"):
             if name in forcefield.non_element_types:
                 system_elements.add(name)
         else:
-            at_number = atomic_number[name]
-            at_symbol = name
+            element = topology.elements[idx]
+            at_number = atomic_number[element]
+            at_symbol = element
             try:
                 element_from_num = ele.element_from_atomic_number(at_number).symbol
                 element_from_sym = ele.element_from_symbol(at_symbol).symbol

@@ -21,22 +21,25 @@
 
     ***********************************************************************
         
-		Start Job at 04-06-2022 23:57:07 ============
+		Start Job at 12-06-2022 13:51:28 ============
 
 		Command line: 
-			python replicate_polymer.py -p ETH-EVA_50wt_0000.pdb -f ../../forcefields/oplsaa.xml --images 1 1 1 -e lammps
+			python replicate_polymer.py -p ETH-EVA_50wt_0000.pdb -f ../../forcefields/oplsaa.xml --images 2 1 1 -e lammps
 			         or
-			replicate_polymer -p ETH-EVA_50wt_0000.pdb -f ../../forcefields/oplsaa.xml --images 1 1 1 -e lammps
+			replicate_polymer -p ETH-EVA_50wt_0000.pdb -f ../../forcefields/oplsaa.xml --images 2 1 1 -e lammps
 
-		Replicating and typing molecule (04-06-2022 23:57:07)
+
+		Check resname and connect in the input file. (ETH-EVA_50wt_0000.pdb)... (12-06-2022 13:51:28)
+		Replicating and typing molecule (12-06-2022 13:51:28)
 		********************************************************
-		Loading seed structure from ETH-EVA_50wt_0000.pdb (04-06-2022 23:57:07)
-		Applying force field to the seed molecules ETH-EVA_50wt_0000.pdb (04-06-2022 23:57:07)
-
-		------------------------------------------------------------------------------------------------------------------------------------------------------------
-		WARN: There are 655 atom types that are missing a smarts definition. To view the missing atom types, re-run with debug=True when applying the forcefield.
-		------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+		Loading seed structure from ETH-EVA_50wt_0000.pdb (12-06-2022 13:51:28)
+		Applying force field to the seed molecules ETH-EVA_50wt_0000.pdb (12-06-2022 13:51:28)
+		 Checking bonds    ... (verbose: False) (12-06-2022 13:51:41).
+		 End checking bonds ... (verbose: False) (12-06-2022 13:51:41).
+		 Checking angles    ... (verbose: False) (12-06-2022 13:51:41).
+		 End checking angles ... (verbose: False) (12-06-2022 13:51:41).
+		 Checking dihedrals    ... (verbose: False) (12-06-2022 13:51:41).
+		 End dihedrals angles ... (verbose: False) (12-06-2022 13:51:41).
 		-------------------------------------------------------------------------------------
 		WARN: Parameters have not been assigned to all impropers.
 		Total system impropers: 1385, Parameterized impropers: 0.
@@ -45,8 +48,9 @@
 		This warn can be ignored if you are sure that impropers are not needed!!!!!
 		-------------------------------------------------------------------------------------
 
+		Replicating molecules ETH-EVA_50wt_0000.pdb (12-06-2022 13:51:28)
 
-		Replicate a molecule or polymer chain (04-06-2022 23:57:44)
+		Replicate a molecule or polymer chain (12-06-2022 13:51:42)
 		***************************************************************
 		Input file                  : ETH-EVA_50wt_0000.pdb
 		Number of molecules in cell : 1
@@ -56,21 +60,22 @@
 		Number of atoms in cell     : 1124
 		Simulation box dimension    : 6.4144 6.4144 6.4144 nm
 		Simulation box angles       : 90.00 90.00 90.00 degrees
-		Replicate the molecule 1x1x1 times
+		Replicate the molecule 2x1x1 times
 		***************************************************************
 
-		Molecule replicated info (04-06-2022 23:57:44)
+		Molecule replicated info (12-06-2022 13:51:42)
 		*************************************************
-		Number of molecules in cell : 1
-		Number of chains in cell    : 1
-		Number of residues in cell  : 1
-		Number of atoms in cell     : 1124
-		Simulation box dimension    : 6.4144 6.4144 6.4144 nm
+		Number of molecules in cell : 2
+		Number of chains in cell    : 2
+		Number of residues in cell  : 2
+		Number of atoms in cell     : 2248
+		Simulation box dimension    : 12.8288 6.4144 6.4144 nm
 		Simulation box angles       : 90.00 90.00 90.00 degrees
 		*************************************************
 
-		Generating lmp and data files for LAMMPS (04-06-2022 23:57:44)
+		Generating lmp and data files for LAMMPS (12-06-2022 13:51:42)
 		*****************************************************************
 
-		Job  Done at 04-06-2022 23:57:45 ============
+		Job  Done at 12-06-2022 13:51:43 ============
 
+		Total time: 15.03 seconds

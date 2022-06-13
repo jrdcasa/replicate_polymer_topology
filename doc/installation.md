@@ -63,6 +63,13 @@ python -m pip install wheel
 python -m pip install pygraphviz
 ```
 
+The topology library can be installed using the following [instructions](https://github.com/jrdcasa/topology/blob/main/docs/02-installation.md):
+
+```bash
+git clone https://github.com/jrdcasa/topology.git
+```
+```
+
 ### Install from source
 
 ---
