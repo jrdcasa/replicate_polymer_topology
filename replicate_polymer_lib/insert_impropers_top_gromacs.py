@@ -21,20 +21,20 @@ def insert_impropers(opts, fnamepdb, logger=None):
             nimpropers, imp_lines = setup_chiral_impropers(fnamepdb, improper_filename=opts.impropers)
             m += "\t\t\tInserting impropers from {} ...".format(opts.impropers)
         print(m) if logger is None else logger.info(m)
-
     else:
         imp_lines = ""
         nimpropers = 0
 
-    ext = ".top"
-    fname = os.path.join(dirlocal, base + "_replicate" + ext)
-    with open(fname, "r") as f:
-        contents = f.readlines()
+    if nimpropers != 0:
+        ext = ".top"
+        fname = os.path.join(dirlocal, base + "_replicate" + ext)
+        with open(fname, "r") as f:
+            contents = f.readlines()
 
-    idx_to_insert = contents.index("[ dihedrals ]\n")
+        idx_to_insert = contents.index("[ dihedrals ]\n")
 
-    contents.insert(idx_to_insert + 1, imp_lines)
+        contents.insert(idx_to_insert + 1, imp_lines)
 
-    with open(fname, "w") as f:
-        contents = "".join(contents)
-        f.write(contents)
+        with open(fname, "w") as f:
+            contents = "".join(contents)
+            f.write(contents)
