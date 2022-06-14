@@ -3,7 +3,7 @@
               Replicate a molecule or polymer chain (ReMoPo)
               ----------------------------------------------
 
-                                Version 4.0
+                                Version 3.0
 
                               Dr. Javier Ramos
                       Macromolecular Physics Department
@@ -21,42 +21,3 @@
 
     ***********************************************************************
         
-		Start Job at 10-06-2022 00:11:42 ============
-		Replicating and typing molecule (10-06-2022 00:11:42)
-		********************************************************
-		Loading seed structure from examples/12-ETH-EVA_50wt_trappeua/ETH-EVA_50wt_0000.pdb (10-06-2022 00:11:42)
-		Applying force field to the seed molecules examples/12-ETH-EVA_50wt_trappeua/ETH-EVA_50wt_0000.pdb (10-06-2022 00:11:42)
-		-------------------------------------------------------------------------------------
-		WARN: Parameters have not been assigned to all impropers.
-		Total system impropers: 1385, Parameterized impropers: 0.
- 		Note that if your system contains torsions of Ryckaert-Bellemans functional form,
-		all of these torsions are processed as propers.
-		This warn can be ignored if you are sure that impropers are not needed!!!!!
-		-------------------------------------------------------------------------------------
-
-
-		Replicate a molecule or polymer chain (10-06-2022 00:12:26)
-		***************************************************************
-		Input file                  : examples/12-ETH-EVA_50wt_trappeua/ETH-EVA_50wt_0000.pdb
-		Number of molecules in cell : 1
-		Number of chains in cell    : 1
-		Number of bonds in cell     : 1123
-		Number of residues in cell  : 1
-		Number of atoms in cell     : 1124
-		Simulation box dimension    : 6.4144 6.4144 6.4144 nm
-		Simulation box angles       : 90.00 90.00 90.00 degrees
-		Replicate the molecule 1x1x1 times
-		***************************************************************
-
-		Molecule replicated info (10-06-2022 00:12:26)
-		*************************************************
-		Number of molecules in cell : 1
-		Number of chains in cell    : 1
-		Number of residues in cell  : 1
-		Number of atoms in cell     : 1124
-		Simulation box dimension    : 6.4144 6.4144 6.4144 nm
-		Simulation box angles       : 90.00 90.00 90.00 degrees
-		*************************************************
-
-		Job  Done at 10-06-2022 00:12:26 ============
-

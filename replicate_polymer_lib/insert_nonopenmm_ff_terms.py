@@ -16,13 +16,11 @@ def insert_nonopenmm_ff_terms(fnamepdb, non_openmm_potentials_terms):
 
     # Find the position to insert the new dihedrals
     idx_to_insert = contents.index("[ dihedrals ]\n")
-    print(idx_to_insert)
     for iline in contents[idx_to_insert:]:
         if len(iline) < 2:
             break
         else:
             idx_to_insert += 1
-    print(idx_to_insert)
 
     # Produce the lines
     for key in non_openmm_potentials_terms:
@@ -34,9 +32,6 @@ def insert_nonopenmm_ff_terms(fnamepdb, non_openmm_potentials_terms):
     with open(fname, "w") as f:
         contents = "".join(contents)
         f.write(contents)
-
-    print(fname)
-    exit()
 
 
 # =============================================================================
