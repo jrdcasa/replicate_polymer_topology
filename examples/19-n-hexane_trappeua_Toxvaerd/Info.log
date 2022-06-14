@@ -21,7 +21,7 @@
 
     ***********************************************************************
         
-		Start Job at 12-06-2022 13:51:55 ============
+		Start Job at 14-06-2022 20:02:48 ============
 
 		Command line: 
 			python replicate_polymer.py -p model01_000.pdb -f ../../forcefields/trappe-ua_PEToxvaerd.xml --images 1 1 1 -e lammps --noh
@@ -29,15 +29,49 @@
 			replicate_polymer -p model01_000.pdb -f ../../forcefields/trappe-ua_PEToxvaerd.xml --images 1 1 1 -e lammps --noh
 
 
-		Check resname and connect in the input file. (model01_000.pdb)... (12-06-2022 13:51:55)
+		Check resname and connect in the input file. (model01_000.pdb)... (14-06-2022 20:02:48)
 
-		Removing hydrogens in the pdb file of the seed molecles.(model01_000.pdb)... (12-06-2022 13:51:55)
-		Replicating and typing molecule (12-06-2022 13:51:55)
+		Removing hydrogens in the pdb file of the seed molecles.(model01_000.pdb)... (14-06-2022 20:02:48)
+		Replicating and typing molecule (14-06-2022 20:02:48)
 		********************************************************
-		Loading seed structure from model01_000_noH.pdb (12-06-2022 13:51:55)
-		Applying force field to the seed molecules model01_000_noH.pdb (12-06-2022 13:51:55)
-		 Checking bonds    ... (verbose: False) (12-06-2022 13:51:55).
-		 End checking bonds ... (verbose: False) (12-06-2022 13:51:55).
-		 Checking angles    ... (verbose: False) (12-06-2022 13:51:55).
-		 End checking angles ... (verbose: False) (12-06-2022 13:51:55).
-		 Checking dihedrals    ... (verbose: False) (12-06-2022 13:51:55).
+		Loading seed structure from model01_000_noH.pdb (14-06-2022 20:02:48)
+		Applying force field to the seed molecules model01_000_noH.pdb (14-06-2022 20:02:48)
+		 Checking bonds    ... (verbose: False) (14-06-2022 20:02:48).
+		 End checking bonds ... (verbose: False) (14-06-2022 20:02:48).
+		 Checking angles    ... (verbose: False) (14-06-2022 20:02:48).
+		 End checking angles ... (verbose: False) (14-06-2022 20:02:48).
+		 Checking dihedrals    ... (verbose: False) (14-06-2022 20:02:48).
+		 End dihedrals angles ... (verbose: False) (14-06-2022 20:02:48).
+		Replicating molecules model01_000_noH.pdb (14-06-2022 20:02:48)
+
+		Replicate a molecule or polymer chain (14-06-2022 20:02:48)
+		***************************************************************
+		Input file                  : model01_000_noH.pdb
+		Number of molecules in cell : 1
+		Number of chains in cell    : 1
+		Number of bonds in cell     : 5
+		Number of residues in cell  : 1
+		Number of atoms in cell     : 6
+		Simulation box dimension    : 0.0614 0.5040 0.3837 nm
+		Simulation box angles       : 90.00 90.00 90.00 degrees
+		Replicate the molecule 1x1x1 times
+		***************************************************************
+
+		Molecule replicated info (14-06-2022 20:02:48)
+		*************************************************
+		Number of molecules in cell : 1
+		Number of chains in cell    : 1
+		Number of residues in cell  : 1
+		Number of atoms in cell     : 6
+		Simulation box dimension    : 0.0614 0.5040 0.3837 nm
+		Simulation box angles       : 90.00 90.00 90.00 degrees
+		*************************************************
+
+		Inserting impropers in the topology file (14-06-2022 20:02:48)
+			Guessing impropers ...
+		Generating lmp and data files for LAMMPS (14-06-2022 20:02:48)
+		*****************************************************************
+
+		Job  Done at 14-06-2022 20:02:48 ============
+
+		Total time: 0.09 seconds

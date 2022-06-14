@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH MDTraj 1.9.6, 2022-05-26
+REMARK   1 CREATED WITH MDTraj 1.9.6, 2022-06-14
 CRYST1    0.614    5.040    3.837  90.00  90.00  90.00 P 1           1 
 MODEL        0
 ATOM      1 _CH3 HEX A   1       0.101   0.000   0.000  1.00  1.00           C  
