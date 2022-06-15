@@ -376,8 +376,8 @@ def _check_dihedrals(data, structure, non_openmm_potentials_terms, verbose, asse
                 )
                 if pmd_ids == omm_ids:
                     missing_dihedral = False
-            for pmd_ids in non_openmm_potentials_terms['toxwaerd']['torsions'][0]:
-                if pmd_ids == omm_ids:
+            for pmd_proper in non_openmm_potentials_terms['toxwaerd']['torsions']:
+                if pmd_proper[0] == omm_ids:
                     missing_dihedral = False
 
             if missing_dihedral:
