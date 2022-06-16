@@ -21,7 +21,7 @@
 
     ***********************************************************************
         
-		Start Job at 12-06-2022 19:24:55 ============
+		Start Job at 16-06-2022 12:43:51 ============
 
 		Command line: 
 			python replicate_polymer.py -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 3 3 3 --engine lammps
@@ -29,17 +29,17 @@
 			replicate_polymer -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 3 3 3 --engine lammps
 
 
-		Check resname and connect in the input file. (103191_noctane_order_cryst.pdb)... (12-06-2022 19:24:55)
-		Replicating and typing molecule (12-06-2022 19:24:55)
+		Check resname and connect in the input file. (103191_noctane_order_cryst.pdb)... (16-06-2022 12:43:51)
+		Replicating and typing molecule (16-06-2022 12:43:51)
 		********************************************************
-		Loading seed structure from 103191_noctane_order_cryst.pdb (12-06-2022 19:24:55)
-		Applying force field to the seed molecules 103191_noctane_order_cryst.pdb (12-06-2022 19:24:55)
-		 Checking bonds    ... (verbose: False) (12-06-2022 19:24:56).
-		 End checking bonds ... (verbose: False) (12-06-2022 19:24:56).
-		 Checking angles    ... (verbose: False) (12-06-2022 19:24:56).
-		 End checking angles ... (verbose: False) (12-06-2022 19:24:56).
-		 Checking dihedrals    ... (verbose: False) (12-06-2022 19:24:56).
-		 End dihedrals angles ... (verbose: False) (12-06-2022 19:24:56).
+		Loading seed structure from 103191_noctane_order_cryst.pdb (16-06-2022 12:43:51)
+		Applying force field to the seed molecules 103191_noctane_order_cryst.pdb (16-06-2022 12:43:51)
+		 Checking bonds    ... (verbose: False) (16-06-2022 12:43:52).
+		 End checking bonds ... (verbose: False) (16-06-2022 12:43:52).
+		 Checking angles    ... (verbose: False) (16-06-2022 12:43:52).
+		 End checking angles ... (verbose: False) (16-06-2022 12:43:52).
+		 Checking dihedrals    ... (verbose: False) (16-06-2022 12:43:52).
+		 End dihedrals angles ... (verbose: False) (16-06-2022 12:43:52).
 		------------------------------------------------------------------------------------
 		WARN: Parameters have not been assigned to all impropers.
 		Total system impropers: 32, Parameterized impropers: 0.
@@ -48,9 +48,9 @@
 		This warn can be ignored if you are sure that impropers are not needed!!!!!
 		------------------------------------------------------------------------------------
 
-		Replicating molecules 103191_noctane_order_cryst.pdb (12-06-2022 19:24:55)
+		Replicating molecules 103191_noctane_order_cryst.pdb (16-06-2022 12:43:51)
 
-		Replicate a molecule or polymer chain (12-06-2022 19:24:56)
+		Replicate a molecule or polymer chain (16-06-2022 12:43:52)
 		***************************************************************
 		Input file                  : 103191_noctane_order_cryst.pdb
 		Number of molecules in cell : 1
@@ -63,7 +63,7 @@
 		Replicate the molecule 3x3x3 times
 		***************************************************************
 
-		Molecule replicated info (12-06-2022 19:24:56)
+		Molecule replicated info (16-06-2022 12:43:52)
 		*************************************************
 		Number of molecules in cell : 27
 		Number of chains in cell    : 27
@@ -73,9 +73,9 @@
 		Simulation box angles       : 85.06 83.72 75.10 degrees
 		*************************************************
 
-		Generating lmp and data files for LAMMPS (12-06-2022 19:24:56)
+		Generating lmp and data files for LAMMPS (16-06-2022 12:43:52)
 		*****************************************************************
 
-		Job  Done at 12-06-2022 19:24:56 ============
+		Job  Done at 16-06-2022 12:43:52 ============
 
-		Total time: 0.99 seconds
+		Total time: 0.98 seconds

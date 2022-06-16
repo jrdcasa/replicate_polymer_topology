@@ -2,7 +2,7 @@
 ;   File 103191_noctane_order_cryst.top  was generated
 ;   By user: jramos (1001)
 ;   On host: totem2
-;   At date: Sun. June  0 19:24:56 2022
+;   At date: Thu. June  4 12:43:52 2022
 ;
 ;   This is a standalone topology file
 ;
@@ -269,6 +269,7 @@ OCT          3
      22     20     23     24     3     0.6276000     1.8828000     0.0000000    -2.5104000     0.0000000     0.0000000
      22     20     23     25     3     0.6276000     1.8828000     0.0000000    -2.5104000     0.0000000     0.0000000
      22     20     23     26     3     0.6276000     1.8828000     0.0000000    -2.5104000     0.0000000     0.0000000
+ ;multiple propers (Toxwaerd torsion)
 
 [ system ]
 ; Name

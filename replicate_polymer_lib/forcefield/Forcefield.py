@@ -839,7 +839,7 @@ class Forcefield(app.ForceField):
 
         structure = pmd.openmm.load_topology(topology=topology_openmm, system=system)
 
-        non_openmm_potentials_terms["toxwaerd"] = self.check_toxwaerd_terms_cj(structure, data)
+        non_openmm_potentials_terms["toxwaerd"], _ = self.check_toxwaerd_terms_cj(structure, data)
 
         structure.bonds.sort(key=lambda x: x.atom1.idx)
         structure.positions = positions_openmm
@@ -1688,6 +1688,7 @@ class Forcefield(app.ForceField):
         try:
             index = self.all_forces_included_xml.index("PeriodicToxvaerdForce")
         except ValueError:
+            toxwaerd_dict["torsions"] = toxwaerd_torsions
             return toxwaerd_dict, toxwaerd_torsions
 
         # Get the Toxvaerd Torsions if they exist in the XML force field file.
@@ -1727,7 +1728,7 @@ class Forcefield(app.ForceField):
                 toxwaerd_torsions.append([(at1, at2, at3, at4), str_f])
         toxwaerd_dict["torsions"] = toxwaerd_torsions
 
-        return toxwaerd_dict
+        return toxwaerd_dict, toxwaerd_torsions
 
 
 

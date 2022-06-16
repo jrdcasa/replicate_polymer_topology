@@ -26,7 +26,7 @@ def insert_nonopenmm_ff_terms(fnamepdb, non_openmm_potentials_terms):
         idx_to_insert = contents.index("[ angles ]\n")
         for iline in contents[idx_to_insert:]:
             if len(iline) < 2:
-                contents.insert(idx_to_insert, "\n[ dihedrals ]")
+                contents.insert(idx_to_insert, "\n[ dihedrals ]\n")
                 idx_to_insert += 1
                 break
             else:
@@ -47,7 +47,7 @@ def insert_nonopenmm_ff_terms(fnamepdb, non_openmm_potentials_terms):
 # =============================================================================
 def setup_all_toxwaerd_lines(toxwaerd_dict):
 
-    ilines = ";multiple propers (Toxwaerd torsion)\n"
+    ilines = " ;multiple propers (Toxwaerd torsion)\n"
 
     for idih in toxwaerd_dict["torsions"]:
         atoms_dih = list(idih[0])
