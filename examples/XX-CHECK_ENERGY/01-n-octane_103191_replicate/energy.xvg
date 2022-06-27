@@ -1,0 +1,38 @@
+# This file was created Mon Jun 27 14:24:11 2022
+# Created by:
+#              :-) GROMACS - gmx energy, 2021.5-EasyBuild-4.5.4 (-:
+# 
+# Executable:   /opt/easybuild/software/GROMACS/2021.5-foss-2021b/bin/gmx
+# Data prefix:  /opt/easybuild/software/GROMACS/2021.5-foss-2021b
+# Working dir:  /home/jramos/Programacion/GITHUB_REPO_DIR/replicate_polymer_topology/examples/XX-CHECK_ENERGY/01-n-octane_103191_replicate
+# Command line:
+#   gmx energy -f ener.edr
+# gmx energy is part of G R O M A C S:
+#
+# Giant Rising Ordinary Mutants for A Clerical Setup
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Bond"
+@ s1 legend "Angle"
+@ s2 legend "Ryckaert-Bell."
+@ s3 legend "LJ-14"
+@ s4 legend "Coulomb-14"
+@ s5 legend "LJ (SR)"
+@ s6 legend "Disper. corr."
+@ s7 legend "Coulomb (SR)"
+@ s8 legend "Coul. recip."
+@ s9 legend "Potential"
+    0.000000  85468.968750  1013.005249   85.244385  2221.440430  -870.398804  -16163.280273  -1392.519409  4062.224854   49.348358  73081.523438
+    1.000000  20717.210938  22488.480469  757.034546  1280.175293  -933.132690  -16024.126953  -1392.519409  3850.582031   80.981506  29432.167969
+    2.000000  16427.246094  1225.034912   24.639984  1596.100586  -1016.061768  -16053.503906  -1392.519409  3934.793457   65.071533  3418.283203
+    4.000000  5611.035645  5252.701660  259.663544  1130.150391  -1008.780945  -15890.959961  -1392.519409  3852.245117   74.711357  -3504.272949
+    5.000000  7460.037109  2202.443848   16.972506  1374.676758  -1068.152954  -15929.540039  -1392.519409  3910.518555   64.966896  -4753.117188

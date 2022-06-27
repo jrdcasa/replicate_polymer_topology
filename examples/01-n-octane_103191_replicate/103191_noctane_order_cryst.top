@@ -2,16 +2,16 @@
 ;   File 103191_noctane_order_cryst.top  was generated
 ;   By user: jramos (1001)
 ;   On host: totem2
-;   At date: Mon. June  1 10:45:40 2022
+;   At date: Mon. June  1 14:24:06 2022
 ;
 ;   This is a standalone topology file
 ;
 ;   Created by:
-;   ParmEd:       replicate_polymer.py, VERSION 3.4.3
-;   Executable:   replicate_polymer.py
+;   ParmEd:       replicate_polymer, VERSION 3.4.3
+;   Executable:   replicate_polymer
 ;   Library dir:  /usr/local/gromacs/share/gromacs/top
 ;   Command line:
-;     /home/jramos/Programacion/GITHUB_REPO_DIR/replicate_polymer_topology/replicate_polymer/replicate_polymer.py -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 3 3 3 --engine lammps
+;     /home/jramos/Programacion/sandboxes/sandbox_common/bin/replicate_polymer -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 6 6 6 --engine lammps
 ;
 
 [ defaults ]

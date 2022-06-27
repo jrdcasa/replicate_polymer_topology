@@ -16,11 +16,12 @@ dihedral_style hybrid multi/harmonic
 special_bonds lj 0.0 0.0 0.5 coul 0.0 0.0 0.5
 
 #======3.Data======
-read_data tmp.lmp
+read_data 103191_noctane_order_cryst_replicate_clean.lmp
 
 #======4.Modify Pairs======
 pair_modify mix geometric tail yes
-kspace_style pppm 1e-6
+kspace_style pppm 1e-5
+ #kspace_modify   diff  ad
 
 #======5.Settings======
 neigh_modify every 10 delay 20 check yes

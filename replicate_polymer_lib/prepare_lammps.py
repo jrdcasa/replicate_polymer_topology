@@ -17,7 +17,7 @@ def prepare_lammps(basefile, title=None, nonbonded_style_defaults=None,
     print(m1 + m) if logger is None else logger.info(m1 + m)
 
     if nonbonded_style_defaults is None:
-        nonbonded_style_defaults = 'pair_style lj/cut/coul/long 9.0 9.0\nkspace_style pppm 1e-6\n'
+        nonbonded_style_defaults = 'pair_style lj/cut/coul/long 10.0 10.0\nkspace_style pppm 1e-6\n'
 
     system, prefix, gro_in, top_in = _load_gromacs(basefile)
     if title is not None:
@@ -39,8 +39,8 @@ def clean_lammps(inp_filename, lmp_filename, gro_filename, top_filename,  ffname
     """
 
 
-    lmp_filename_new = os.path.splitext(lmp_filename)+"_clean.lmp"
-    inp_filename_new = os.path.splitext(lmp_filename)+"_clean.inp"
+    lmp_filename_new = os.path.splitext(lmp_filename)[0]+"_clean.lmp"
+    inp_filename_new = os.path.splitext(lmp_filename)[0]+"_clean.inp"
 
     # Open top_filename and look for pair styles
     d_indices_lines = defaultdict()
@@ -281,8 +281,8 @@ def _write_lmp_inp(inp_filename_new, ffname, energy_terms, units="real",
         if ff.upper() == "OPLSAA" or upper(ff) == "OPLS":
             ffterms = ["lj/cut/coul/long 10.0 10.0", "harmonic", "harmonic", "multi/harmonic", "harmonic"]
             ffterms_special_bonds = ["special_bonds lj 0.0 0.0 0.5 coul 0.0 0.0 0.5"]
-            ffterms_pair_modify = ["pair_modify mix geometric tail yes"]
-            ffterms_kspace = ["kspace_style pppm 1e-6"]
+            ffterms_pair_modify = ["pair_modify mix geometric #tail yes"]
+            ffterms_kspace = ["kspace_style pppm 1e-5\n #kspace_modify   diff  ad"]
         else:
             print("ERROR: prepare_lammps.py::_write_lmp_inpn()")
             print("ERROR. [bonds] section")

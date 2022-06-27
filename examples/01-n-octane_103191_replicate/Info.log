@@ -3,7 +3,7 @@
               Replicate a molecule or polymer chain (ReMoPo)
               ----------------------------------------------
 
-                                Version 4.0
+                                Version 3.0
 
                               Dr. Javier Ramos
                       Macromolecular Physics Department
@@ -21,25 +21,25 @@
 
     ***********************************************************************
         
-		Start Job at 27-06-2022 10:45:37 ============
+		Start Job at 27-06-2022 14:24:06 ============
 
 		Command line: 
-			python replicate_polymer.py -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 3 3 3 --engine lammps
+			python replicate_polymer -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 6 6 6 --engine lammps
 			         or
-			replicate_polymer -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 3 3 3 --engine lammps
+			replicate_polymer -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 6 6 6 --engine lammps
 
 
-		Check resname and connect in the input file. (103191_noctane_order_cryst.pdb)... (27-06-2022 10:45:37)
-		Replicating and typing molecule (27-06-2022 10:45:37)
+		Check resname and connect in the input file. (103191_noctane_order_cryst.pdb)... (27-06-2022 14:24:06)
+		Replicating and typing molecule (27-06-2022 14:24:06)
 		********************************************************
-		Loading seed structure from 103191_noctane_order_cryst.pdb (27-06-2022 10:45:37)
-		Applying force field to the seed molecules 103191_noctane_order_cryst.pdb (27-06-2022 10:45:37)
-		 Checking bonds    ... (verbose: False) (27-06-2022 10:45:40).
-		 End checking bonds ... (verbose: False) (27-06-2022 10:45:40).
-		 Checking angles    ... (verbose: False) (27-06-2022 10:45:40).
-		 End checking angles ... (verbose: False) (27-06-2022 10:45:40).
-		 Checking dihedrals    ... (verbose: False) (27-06-2022 10:45:40).
-		 End dihedrals angles ... (verbose: False) (27-06-2022 10:45:40).
+		Loading seed structure from 103191_noctane_order_cryst.pdb (27-06-2022 14:24:06)
+		Applying force field to the seed molecules 103191_noctane_order_cryst.pdb (27-06-2022 14:24:06)
+		 Checking bonds    ... (verbose: False) (27-06-2022 14:24:06).
+		 End checking bonds ... (verbose: False) (27-06-2022 14:24:06).
+		 Checking angles    ... (verbose: False) (27-06-2022 14:24:06).
+		 End checking angles ... (verbose: False) (27-06-2022 14:24:06).
+		 Checking dihedrals    ... (verbose: False) (27-06-2022 14:24:06).
+		 End dihedrals angles ... (verbose: False) (27-06-2022 14:24:06).
 		------------------------------------------------------------------------------------
 		WARN: Parameters have not been assigned to all impropers.
 		Total system impropers: 32, Parameterized impropers: 0.
@@ -48,9 +48,9 @@
 		This warn can be ignored if you are sure that impropers are not needed!!!!!
 		------------------------------------------------------------------------------------
 
-		Replicating molecules 103191_noctane_order_cryst.pdb (27-06-2022 10:45:37)
+		Replicating molecules 103191_noctane_order_cryst.pdb (27-06-2022 14:24:06)
 
-		Replicate a molecule or polymer chain (27-06-2022 10:45:40)
+		Replicate a molecule or polymer chain (27-06-2022 14:24:06)
 		***************************************************************
 		Input file                  : 103191_noctane_order_cryst.pdb
 		Number of molecules in cell : 1
@@ -60,19 +60,22 @@
 		Number of atoms in cell     : 26
 		Simulation box dimension    : 0.4123 0.4686 1.0974 nm
 		Simulation box angles       : 85.06 83.72 75.10 degrees
-		Replicate the molecule 3x3x3 times
+		Replicate the molecule 6x6x6 times
 		***************************************************************
 
-		Molecule replicated info (27-06-2022 10:45:40)
+		Molecule replicated info (27-06-2022 14:24:07)
 		*************************************************
-		Number of molecules in cell : 27
-		Number of chains in cell    : 27
-		Number of residues in cell  : 27
-		Number of atoms in cell     : 702
-		Simulation box dimension    : 1.2369 1.4058 3.2922 nm
+		Number of molecules in cell : 216
+		Number of chains in cell    : 216
+		Number of residues in cell  : 216
+		Number of atoms in cell     : 5616
+		Simulation box dimension    : 2.4738 2.8116 6.5844 nm
 		Simulation box angles       : 85.06 83.72 75.10 degrees
 		*************************************************
 
-		Generating lmp and data files for LAMMPS (27-06-2022 10:45:40)
+		Generating lmp and data files for LAMMPS (27-06-2022 14:24:07)
 		*****************************************************************
 
+		Job  Done at 27-06-2022 14:24:10 ============
+
+		Total time: 4.22 seconds

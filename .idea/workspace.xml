@@ -23,40 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="097f4e77-3800-4c0f-93e1-d3b7c8a880f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/MyPolymers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyPolymers.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.gro" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.gro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.inp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.inp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.top" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/Info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new.top" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new_replicate.inp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new_replicate.inp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new_replicate.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/C150_1fold_initial_new_replicate.top" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1/Info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/00-Inital_trimerP4HB_r.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/00-Inital_trimerP4HB_r.top" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/00-Inital_trimerP4HB_r_replicate.inp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/00-Inital_trimerP4HB_r_replicate.inp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/00-Inital_trimerP4HB_r_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/00-Inital_trimerP4HB_r_replicate.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/00-Inital_trimerP4HB_r_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/00-Inital_trimerP4HB_r_replicate.top" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/07-Trimer_P4HB_OPLSAA/Info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000.top" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000_replicate.inp" beforeDir="false" afterPath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000_replicate.inp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000_replicate.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/ETH-EVA_50wt_0000_replicate.top" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/13-ETH-EVA_50wt_oplsaa/Info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/17-n-hexane_trappeua/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/17-n-hexane_trappeua/Info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/17-n-hexane_trappeua/model01_000_noH.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/17-n-hexane_trappeua/model01_000_noH.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/17-n-hexane_trappeua/model01_000_noH.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/17-n-hexane_trappeua/model01_000_noH.top" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/17-n-hexane_trappeua/model01_000_noH_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/17-n-hexane_trappeua/model01_000_noH_replicate.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/17-n-hexane_trappeua/model01_000_noH_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/17-n-hexane_trappeua/model01_000_noH_replicate.top" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd/Info.log" beforeDir="false" afterPath="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd/Info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd/model01_000_noH.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd/model01_000_noH.top" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd/model01_000_noH_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd/model01_000_noH_replicate.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd/model01_000_noH_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd/model01_000_noH_replicate.top" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/a.top" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/tmp.inp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/install.log" beforeDir="false" afterPath="$PROJECT_DIR$/install.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +71,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/examples/01-n-octane_103191_replicate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Compare_Energy_LAMMPS_GROMACS/02-BUTANE_BOX_NOINTER/01-PREPARE" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -115,7 +91,7 @@
       <recent name="$PROJECT_DIR$/examples/09-pdb_two_diferent_molecules/TMP" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.01-noctane">
+  <component name="RunManager" selected="Python.99-TMP">
     <configuration name="00-INSTALL" type="PythonConfigurationType" factoryName="Python">
       <module name="MyPolymers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -710,6 +686,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="99-TMP" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/01-n-octane_103191_replicate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 3 3 3 --engine lammps" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="PQ" type="PythonConfigurationType" factoryName="Python">
       <module name="MyPolymers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -843,6 +841,7 @@
     <list>
       <item itemvalue="Python.00-INSTALL" />
       <item itemvalue="Python.01-noctane" />
+      <item itemvalue="Python.99-TMP" />
       <item itemvalue="Python.02-C150_5x5x1" />
       <item itemvalue="Python.03-C150_10x10x3" />
       <item itemvalue="Python.04-C150_20x20x1" />
@@ -941,7 +940,7 @@
       <workItem from="1655371015626" duration="2548000" />
       <workItem from="1655392462888" duration="10000" />
       <workItem from="1655659892317" duration="3744000" />
-      <workItem from="1655996808634" duration="64354000" />
+      <workItem from="1655996808634" duration="68726000" />
     </task>
     <servers />
   </component>
@@ -965,8 +964,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="231" width="1920" height="529" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1656272649922">
-      <screen x="0" y="27" width="1920" height="1015" />
+    <state x="270" y="164" width="1920" height="529" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1656342166490">
+      <screen x="0" y="27" width="1920" height="703" />
     </state>
     <state x="2363" y="203" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650449259261" />
     <state x="443" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1013@0.27.1920.1013" timestamp="1649936435738" />
@@ -974,7 +973,7 @@
     <state x="0" y="231" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1656272649922" />
     <state x="2363" y="203" width="1327" height="755" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652893223474" />
     <state x="443" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015@0.27.1920.1015" timestamp="1655660029029" />
-    <state x="270" y="164" width="1152" height="529" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656055041867" />
+    <state x="270" y="164" width="1152" height="529" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656342166490" />
     <state x="0" y="219" width="1920" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653576917757" />
     <state x="2116" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653386505144" />
     <state x="0" y="219" width="1920" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.3200.959@0.27.3200.959" timestamp="1654002996404" />
@@ -1007,7 +1006,7 @@
     </state>
     <state width="978" height="506" key="DebuggerActiveHint/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653569738596" />
     <state width="1630" height="506" key="DebuggerActiveHint/0.27.3200.959@0.27.3200.959" timestamp="1653993148156" />
-    <state x="449" y="226" width="424" height="491" key="FileChooserDialogImpl" timestamp="1656055040063">
+    <state x="449" y="226" width="424" height="491" key="FileChooserDialogImpl" timestamp="1656342115339">
       <screen x="0" y="27" width="1920" height="703" />
     </state>
     <state x="2369" y="306" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1013/1920.0.1920.1080@1920.0.1920.1080" timestamp="1650447834535" />
@@ -1015,12 +1014,12 @@
     <state x="449" y="315" width="379" height="534" key="FileChooserDialogImpl/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1654421538740" />
     <state x="2369" y="306" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652892178312" />
     <state x="449" y="315" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1015@0.27.1920.1015" timestamp="1655660026728" />
-    <state x="449" y="226" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656055040063" />
+    <state x="449" y="226" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656342115339" />
     <state x="449" y="299" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577248446" />
     <state x="748" y="299" key="FileChooserDialogImpl/0.27.3200.959@0.27.3200.959" timestamp="1654001306598" />
     <state x="767" y="196" width="424" height="491" key="FileChooserDialogImpl/0.27.3280.703@0.27.3280.703" timestamp="1654862755688" />
     <state x="898" y="315" key="FileChooserDialogImpl/0.27.3840.1015@0.27.3840.1015" timestamp="1651834274302" />
-    <state width="1874" height="242" key="GridCell.Tab.0.bottom" timestamp="1656315936208">
+    <state width="1874" height="242" key="GridCell.Tab.0.bottom" timestamp="1656342170924">
       <screen x="0" y="27" width="1920" height="703" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.0.bottom/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -1030,14 +1029,14 @@
     <state width="1874" height="244" key="GridCell.Tab.0.bottom/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1656272922511" />
     <state width="1874" height="289" key="GridCell.Tab.0.bottom/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652893506157" />
     <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.27.1920.1015@0.27.1920.1015" timestamp="1655661649414" />
-    <state width="1874" height="242" key="GridCell.Tab.0.bottom/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656315936208" />
+    <state width="1874" height="242" key="GridCell.Tab.0.bottom/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656342170924" />
     <state width="1314" height="239" key="GridCell.Tab.0.bottom/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654243706415" />
     <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577078939" />
     <state width="1234" height="275" key="GridCell.Tab.0.bottom/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967335" />
     <state width="1874" height="152" key="GridCell.Tab.0.bottom/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="244" key="GridCell.Tab.0.bottom/0.27.3200.959@0.27.3200.959" timestamp="1654010747324" />
     <state width="1874" height="315" key="GridCell.Tab.0.bottom/0.27.3280.703@0.27.3280.703" timestamp="1655737393889" />
-    <state width="1874" height="242" key="GridCell.Tab.0.center" timestamp="1656315936208">
+    <state width="1874" height="242" key="GridCell.Tab.0.center" timestamp="1656342170924">
       <screen x="0" y="27" width="1920" height="703" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.0.center/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -1047,14 +1046,14 @@
     <state width="1874" height="244" key="GridCell.Tab.0.center/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1656272922511" />
     <state width="1874" height="289" key="GridCell.Tab.0.center/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652893506157" />
     <state width="1874" height="315" key="GridCell.Tab.0.center/0.27.1920.1015@0.27.1920.1015" timestamp="1655661649414" />
-    <state width="1874" height="242" key="GridCell.Tab.0.center/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656315936208" />
+    <state width="1874" height="242" key="GridCell.Tab.0.center/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656342170924" />
     <state width="1314" height="239" key="GridCell.Tab.0.center/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654243706415" />
     <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577078939" />
     <state width="1234" height="275" key="GridCell.Tab.0.center/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967335" />
     <state width="1874" height="152" key="GridCell.Tab.0.center/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="244" key="GridCell.Tab.0.center/0.27.3200.959@0.27.3200.959" timestamp="1654010747323" />
     <state width="1874" height="315" key="GridCell.Tab.0.center/0.27.3280.703@0.27.3280.703" timestamp="1655737393889" />
-    <state width="1874" height="242" key="GridCell.Tab.0.left" timestamp="1656315936208">
+    <state width="1874" height="242" key="GridCell.Tab.0.left" timestamp="1656342170924">
       <screen x="0" y="27" width="1920" height="703" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.0.left/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -1064,14 +1063,14 @@
     <state width="1874" height="244" key="GridCell.Tab.0.left/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1656272922511" />
     <state width="1874" height="289" key="GridCell.Tab.0.left/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652893506157" />
     <state width="1874" height="315" key="GridCell.Tab.0.left/0.27.1920.1015@0.27.1920.1015" timestamp="1655661649414" />
-    <state width="1874" height="242" key="GridCell.Tab.0.left/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656315936208" />
+    <state width="1874" height="242" key="GridCell.Tab.0.left/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656342170924" />
     <state width="1314" height="239" key="GridCell.Tab.0.left/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654243706415" />
     <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577078939" />
     <state width="1234" height="275" key="GridCell.Tab.0.left/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967334" />
     <state width="1874" height="152" key="GridCell.Tab.0.left/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="244" key="GridCell.Tab.0.left/0.27.3200.959@0.27.3200.959" timestamp="1654010747323" />
     <state width="1874" height="315" key="GridCell.Tab.0.left/0.27.3280.703@0.27.3280.703" timestamp="1655737393889" />
-    <state width="1874" height="242" key="GridCell.Tab.0.right" timestamp="1656315936208">
+    <state width="1874" height="242" key="GridCell.Tab.0.right" timestamp="1656342170924">
       <screen x="0" y="27" width="1920" height="703" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.0.right/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -1081,14 +1080,14 @@
     <state width="1874" height="244" key="GridCell.Tab.0.right/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1656272922511" />
     <state width="1874" height="289" key="GridCell.Tab.0.right/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652893506157" />
     <state width="1874" height="315" key="GridCell.Tab.0.right/0.27.1920.1015@0.27.1920.1015" timestamp="1655661649414" />
-    <state width="1874" height="242" key="GridCell.Tab.0.right/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656315936208" />
+    <state width="1874" height="242" key="GridCell.Tab.0.right/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656342170924" />
     <state width="1314" height="239" key="GridCell.Tab.0.right/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654243706415" />
     <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577078939" />
     <state width="1234" height="275" key="GridCell.Tab.0.right/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967335" />
     <state width="1874" height="152" key="GridCell.Tab.0.right/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="244" key="GridCell.Tab.0.right/0.27.3200.959@0.27.3200.959" timestamp="1654010747324" />
     <state width="1874" height="315" key="GridCell.Tab.0.right/0.27.3280.703@0.27.3280.703" timestamp="1655737393889" />
-    <state width="1874" height="242" key="GridCell.Tab.1.bottom" timestamp="1656315941764">
+    <state width="1874" height="242" key="GridCell.Tab.1.bottom" timestamp="1656342170924">
       <screen x="0" y="27" width="1920" height="703" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.1.bottom/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -1098,13 +1097,13 @@
     <state width="1874" height="242" key="GridCell.Tab.1.bottom/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1656264150467" />
     <state width="1874" height="152" key="GridCell.Tab.1.bottom/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652892768318" />
     <state width="1874" height="315" key="GridCell.Tab.1.bottom/0.27.1920.1015@0.27.1920.1015" timestamp="1655661649415" />
-    <state width="1874" height="242" key="GridCell.Tab.1.bottom/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656315941764" />
+    <state width="1874" height="242" key="GridCell.Tab.1.bottom/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656342170924" />
     <state width="1314" height="239" key="GridCell.Tab.1.bottom/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654244044318" />
     <state width="1874" height="242" key="GridCell.Tab.1.bottom/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
     <state width="1874" height="152" key="GridCell.Tab.1.bottom/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="195" key="GridCell.Tab.1.bottom/0.27.3200.959@0.27.3200.959" timestamp="1654010085139" />
     <state width="1874" height="315" key="GridCell.Tab.1.bottom/0.27.3280.703@0.27.3280.703" timestamp="1655737393890" />
-    <state width="1874" height="242" key="GridCell.Tab.1.center" timestamp="1656315941764">
+    <state width="1874" height="242" key="GridCell.Tab.1.center" timestamp="1656342170924">
       <screen x="0" y="27" width="1920" height="703" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.1.center/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -1114,13 +1113,13 @@
     <state width="1874" height="242" key="GridCell.Tab.1.center/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1656264150467" />
     <state width="1874" height="152" key="GridCell.Tab.1.center/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652892768318" />
     <state width="1874" height="315" key="GridCell.Tab.1.center/0.27.1920.1015@0.27.1920.1015" timestamp="1655661649414" />
-    <state width="1874" height="242" key="GridCell.Tab.1.center/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656315941764" />
+    <state width="1874" height="242" key="GridCell.Tab.1.center/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656342170924" />
     <state width="1314" height="239" key="GridCell.Tab.1.center/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654244044318" />
     <state width="1874" height="242" key="GridCell.Tab.1.center/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
     <state width="1874" height="152" key="GridCell.Tab.1.center/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="195" key="GridCell.Tab.1.center/0.27.3200.959@0.27.3200.959" timestamp="1654010085139" />
     <state width="1874" height="315" key="GridCell.Tab.1.center/0.27.3280.703@0.27.3280.703" timestamp="1655737393890" />
-    <state width="1874" height="242" key="GridCell.Tab.1.left" timestamp="1656315941764">
+    <state width="1874" height="242" key="GridCell.Tab.1.left" timestamp="1656342170924">
       <screen x="0" y="27" width="1920" height="703" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.1.left/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -1130,13 +1129,13 @@
     <state width="1874" height="242" key="GridCell.Tab.1.left/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1656264150467" />
     <state width="1874" height="152" key="GridCell.Tab.1.left/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652892768318" />
     <state width="1874" height="315" key="GridCell.Tab.1.left/0.27.1920.1015@0.27.1920.1015" timestamp="1655661649414" />
-    <state width="1874" height="242" key="GridCell.Tab.1.left/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656315941764" />
+    <state width="1874" height="242" key="GridCell.Tab.1.left/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656342170924" />
     <state width="1314" height="239" key="GridCell.Tab.1.left/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654244044318" />
     <state width="1874" height="242" key="GridCell.Tab.1.left/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
     <state width="1874" height="152" key="GridCell.Tab.1.left/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="195" key="GridCell.Tab.1.left/0.27.3200.959@0.27.3200.959" timestamp="1654010085139" />
     <state width="1874" height="315" key="GridCell.Tab.1.left/0.27.3280.703@0.27.3280.703" timestamp="1655737393889" />
-    <state width="1874" height="242" key="GridCell.Tab.1.right" timestamp="1656315941764">
+    <state width="1874" height="242" key="GridCell.Tab.1.right" timestamp="1656342170924">
       <screen x="0" y="27" width="1920" height="703" />
     </state>
     <state width="1874" height="248" key="GridCell.Tab.1.right/0.27.1920.1013/1920.0.1920.1080@0.27.1920.1013" timestamp="1650652119965" />
@@ -1146,7 +1145,7 @@
     <state width="1874" height="242" key="GridCell.Tab.1.right/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1656264150467" />
     <state width="1874" height="152" key="GridCell.Tab.1.right/0.27.1920.1015/1920.0.1920.1080@1920.0.1920.1080" timestamp="1652892768318" />
     <state width="1874" height="315" key="GridCell.Tab.1.right/0.27.1920.1015@0.27.1920.1015" timestamp="1655661649415" />
-    <state width="1874" height="242" key="GridCell.Tab.1.right/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656315941764" />
+    <state width="1874" height="242" key="GridCell.Tab.1.right/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1656342170924" />
     <state width="1314" height="239" key="GridCell.Tab.1.right/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654244044318" />
     <state width="1874" height="242" key="GridCell.Tab.1.right/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
     <state width="1874" height="152" key="GridCell.Tab.1.right/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
@@ -1275,9 +1274,19 @@
           <option name="timeStamp" value="957" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="958" />
+          <url>file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="961" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="962" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="963" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1308,7 +1317,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/replicate_polymer_topology$01_noctane.coverage" NAME="01-noctane Coverage Results" MODIFIED="1656315936124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/01-n-octane_103191_replicate" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$01_noctane.coverage" NAME="01-noctane Coverage Results" MODIFIED="1656316816153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/01-n-octane_103191_replicate" />
     <SUITE FILE_PATH="coverage/replicate_polymer$01_noctane.coverage" NAME="01-noctane Coverage Results" MODIFIED="1649755600956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/01-n-octane_103191_replicate" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$21_PE500_exclusions.coverage" NAME="21-PE500_exclusions Coverage Results" MODIFIED="1655661649395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/02-500PE_1Ch" />
     <SUITE FILE_PATH="coverage/replicate_polymer$12_ETH_EVA_50wt_trappeua.coverage" NAME="00-INSTALL Coverage Results" MODIFIED="1639829737362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
