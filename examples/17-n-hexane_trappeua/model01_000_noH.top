@@ -1,8 +1,8 @@
 ;
 ;   File model01_000_noH.top  was generated
-;   By user: jramos (1000)
-;   On host: totem
-;   At date: Thu. December  4 00:14:51 2021
+;   By user: jramos (1001)
+;   On host: totem2
+;   At date: Fri. June  5 10:17:23 2022
 ;
 ;   This is a standalone topology file
 ;
@@ -11,7 +11,7 @@
 ;   Executable:   replicate_polymer.py
 ;   Library dir:  /usr/local/gromacs/share/gromacs/top
 ;   Command line:
-;     /home/jramos/PycharmProjects/GITHUB_REPO_DIR/replicate_polymer/replicate_polymer/replicate_polymer.py -p model01_000.pdb -f ../../forcefields/trappe-ua.xml --images 1 1 1 -e lammps --noh
+;     /home/jramos/Programacion/GITHUB_REPO_DIR/replicate_polymer_topology/replicate_polymer/replicate_polymer.py -p model01_000.pdb -f ../../forcefields/trappe-ua.xml --images 1 1 1 -e lammps --noh
 ;
 
 [ defaults ]
@@ -40,11 +40,11 @@ HEX          3
 
 [ bonds ]
 ;    ai     aj funct         c0         c1         c2         c3
-      2      1     1   0.15400 376560.000000
-      3      2     1   0.15400 376560.000000
-      4      3     1   0.15400 376560.000000
-      5      4     1   0.15400 376560.000000
-      6      5     1   0.15400 376560.000000
+      1      2     1   0.15400 376560.000000
+      2      3     1   0.15400 376560.000000
+      3      4     1   0.15400 376560.000000
+      4      5     1   0.15400 376560.000000
+      5      6     1   0.15400 376560.000000
 
 [ angles ]
 ;    ai     aj     ak funct         c0         c1         c2         c3

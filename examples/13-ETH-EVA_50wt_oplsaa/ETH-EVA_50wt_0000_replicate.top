@@ -2,7 +2,7 @@
 ;   File ETH-EVA_50wt_0000.top  was generated
 ;   By user: jramos (1001)
 ;   On host: totem2
-;   At date: Sun. June  0 13:51:41 2022
+;   At date: Sun. June  0 18:45:54 2022
 ;
 ;   This is a standalone topology file
 ;
@@ -10662,6 +10662,7 @@ Blo          3
    1121   1118   1119   1122     3     0.6276000     1.8828000     0.0000000    -2.5104000     0.0000000     0.0000000
    1121   1118   1119   1123     3     0.6276000     1.8828000     0.0000000    -2.5104000     0.0000000     0.0000000
    1121   1118   1119   1124     3     0.6276000     1.8828000     0.0000000    -2.5104000     0.0000000     0.0000000
+ ;multiple propers (Toxwaerd torsion)
 
 [ system ]
 ; Name

@@ -8,7 +8,7 @@ from replicate_polymer_lib.check_connect_pdb import check_conect_pdb, check_resn
 from replicate_polymer_lib.remove_hydrogens import remove_hydrogens
 from replicate_polymer_lib.typing_molecule import typing_molecule
 from replicate_polymer_lib.replicate_pdb import replicate_pdb
-from replicate_polymer_lib.prepare_lammps import prepare_lammps
+from replicate_polymer_lib.prepare_lammps import prepare_lammps, clean_lammps
 from replicate_polymer_lib.exclusions import exclusion_gromacs, insert_exclusions
 from replicate_polymer_lib.insert_impropers_top_gromacs import insert_impropers
 from replicate_polymer_lib.insert_nonopenmm_ff_terms import insert_nonopenmm_ff_terms
@@ -87,7 +87,8 @@ def main_app(version):
         dirlocal = "./"
         ext = ".gro"
         filenamegro_new = os.path.join(dirlocal, base + "_replicate" + ext)
-        prepare_lammps([basefile_gro, basefile_top], title=filenamegro_new, logger=logger)
+        input_filename, data_filename = prepare_lammps([basefile_gro, basefile_top], title=filenamegro_new, logger=logger)
+        clean_lammps(input_filename, data_filename, basefile_gro, basefile_top, opts.xmlfile)
 
     now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     endtime = datetime.datetime.now()

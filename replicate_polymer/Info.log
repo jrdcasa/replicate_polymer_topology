@@ -21,16 +21,3 @@
 
     ***********************************************************************
         
-		Start Job at 27-06-2022 10:45:11 ============
-
-		Command line: 
-			python replicate_polymer.py -p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 5 5 1 --engine lammps
-			         or
-			replicate_polymer -p ./data/C150_1fold_initial_new.pdb -f ../../forcefields/oplsaa.xml --images 5 5 1 --engine lammps
-
-
-		Check resname and connect in the input file. (./data/C150_1fold_initial_new.pdb)... (27-06-2022 10:45:11)
-		Replicating and typing molecule (27-06-2022 10:45:11)
-		********************************************************
-		Loading seed structure from ./data/C150_1fold_initial_new.pdb (27-06-2022 10:45:11)
-		Applying force field to the seed molecules ./data/C150_1fold_initial_new.pdb (27-06-2022 10:45:11)

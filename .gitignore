@@ -11,3 +11,4 @@ OLD/
 nohup.out
 topology/**
 __pycache__/**
+*.pyc

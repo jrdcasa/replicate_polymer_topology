@@ -1,59 +1,69 @@
 
-		 Starting installation!!!! at 15/06/2022 11:09:08
+		 Starting installation!!!! at 16/06/2022 18:00:30
 
 
 
-		 Starting installation!!!! at 15/06/2022 11:09:08
+		 Starting installation!!!! at 16/06/2022 18:00:30
 
 
-		 CHECKING TOPOLOGY INSTALLATION (15/06/2022 11:09:08)
+		 CHECKING TOPOLOGY INSTALLATION (16/06/2022 18:00:30)
 
-		** REPLICATE: Topology is installed in your system(15/06/2022 11:09:09)
-		** REPLICATE: /home/jramos/Programacion/sandboxes/sandbox_replicate_topology/lib/python3.8/site-packages/topology-2.2-py3.8-linux-x86_64.egg/topology/__init__.py
+		** REPLICATE: Topology is installed in your system(16/06/2022 18:00:30)
+		** REPLICATE: /home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages/topology-2.2-py3.8-linux-x86_64.egg/topology/__init__.py
 		 SYS PATH
 /home/jramos/Programacion/GITHUB_REPO_DIR/replicate_polymer_topology
 /usr/lib/python38.zip
 /usr/lib/python3.8
 /usr/lib/python3.8/lib-dynload
-/home/jramos/Programacion/sandboxes/sandbox_replicate_topology/lib/python3.8/site-packages
-/home/jramos/Programacion/sandboxes/sandbox_replicate_topology/lib/python3.8/site-packages/topology-2.2-py3.8-linux-x86_64.egg
-/home/jramos/Programacion/sandboxes/sandbox_replicate_topology/lib/python3.8/site-packages/intermol-0.1.0-py3.8.egg
-/home/jramos/Programacion/sandboxes/sandbox_replicate_topology/lib/python3.8/site-packages/replicate_polymer-4.0-py3.8-linux-x86_64.egg
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages
+/home/jramos/Programacion/sandboxes/sandbox_common/lib/python3.8/site-packages/topology-2.2-py3.8-linux-x86_64.egg
 
-		 INSTALLING PIP PACKAGES (15/06/2022 11:09:09)
+		 INSTALLING PIP PACKAGES (16/06/2022 18:00:30)
 
-REPLICATE: ** 15/06/2022 11:09:09: Installing numpy
-REPLICATE: ** 15/06/2022 11:09:10: Installing lark
-REPLICATE: ** 15/06/2022 11:09:10: Installing Cython==0.29.24
-REPLICATE: ** 15/06/2022 11:09:11: Installing argcomplete==1.12.3
-REPLICATE: ** 15/06/2022 11:09:11: Installing numpy==1.21.3
-REPLICATE: ** 15/06/2022 11:09:12: Installing GitPython==3.1.1
-REPLICATE: ** 15/06/2022 11:09:13: Installing ParmEd==3.4.3
-REPLICATE: ** 15/06/2022 11:09:14: Installing lark-parser==0.12.0
-REPLICATE: ** 15/06/2022 11:09:14: Installing ele==0.2.0
-REPLICATE: ** 15/06/2022 11:09:15: Installing pydantic==1.8.2
-REPLICATE: ** 15/06/2022 11:09:16: Installing unyt==2.8.0
-REPLICATE: ** 15/06/2022 11:09:17: Installing lxml==4.6.3
-REPLICATE: ** 15/06/2022 11:09:17: Installing boltons==21.0.0
-REPLICATE: ** 15/06/2022 11:09:18: Installing networkx==2.6.3
-REPLICATE: ** 15/06/2022 11:09:19: Installing requests==2.26.0
-REPLICATE: ** 15/06/2022 11:09:19: Installing MDAnalysis==2.2.0
-REPLICATE: ** 15/06/2022 11:09:20: Installing mdtraj==1.9.6
+REPLICATE: ** 16/06/2022 18:00:30: Installing numpy
+REPLICATE: ** 16/06/2022 18:00:31: Installing lark
+REPLICATE: ** 16/06/2022 18:00:31: Installing Cython==0.29.24
+REPLICATE: ** 16/06/2022 18:00:32: Installing argcomplete==1.12.3
+REPLICATE: ** 16/06/2022 18:00:33: Installing numpy==1.21.3
+REPLICATE: ** 16/06/2022 18:00:33: Installing GitPython==3.1.1
+REPLICATE: ** 16/06/2022 18:00:33: Installing ParmEd==3.4.3
+REPLICATE: ** 16/06/2022 18:00:34: Installing lark-parser==0.12.0
+REPLICATE: ** 16/06/2022 18:00:35: Installing ele==0.2.0
+REPLICATE: ** 16/06/2022 18:00:36: Installing pydantic==1.8.2
+REPLICATE: ** 16/06/2022 18:00:37: Installing unyt==2.8.0
+REPLICATE: ** 16/06/2022 18:00:43: Installing lxml==4.6.3
+REPLICATE: ** 16/06/2022 18:00:44: Installing boltons==21.0.0
+REPLICATE: ** 16/06/2022 18:00:45: Installing networkx==2.6.3
+REPLICATE: ** 16/06/2022 18:00:45: Installing requests==2.26.0
+REPLICATE: ** 16/06/2022 18:00:46: Installing MDAnalysis==2.2.0
+REPLICATE: ** 16/06/2022 18:00:47: Installing mdtraj==1.9.6
 
-		 INSTALLING OPENMM (https://openmm.org/) (15/06/2022 11:09:21)
+		 INSTALLING OPENMM (https://openmm.org/) (16/06/2022 18:00:48)
 
-openmm installed in the python environment (15/06/2022 11:09:21)
+Trying to install openmm python in an automatic way.
+Cloning from https://:@github.com/openmm/openmm.git in ./thirdparty/openmm
+Repository cloned
 
-		 INSTALLING InterMol (https://github.com/shirtsgroup/InterMol) (15/06/2022 11:09:21)
+Making cmake...
 
-https://:@github.com/jrdcasa/intermol_cj.git is already cloned in ./thirdparty/intermol
+Make install (compile)...
+
+Making PythonInstall...
+
+openmm installed in the python environment (16/06/2022 18:04:44)
+
+		 INSTALLING InterMol (https://github.com/shirtsgroup/InterMol) (16/06/2022 18:04:44)
+
+Cloning from https://:@github.com/jrdcasa/intermol_cj.git in ./thirdparty/intermol
+Repository cloned
+
 intermol installed in the python environment
 
-		 RUNNING SETUP FROM SETUPTOOLS 15/06/2022 11:09:31
+		 RUNNING SETUP FROM SETUPTOOLS 16/06/2022 18:04:57
 
 
 
-		 Installation Done!!!! at 15/06/2022 11:09:31
+		 Installation Done!!!! at 16/06/2022 18:04:59
 
 
 
@@ -64,5 +74,6 @@ intermol installed in the python environment
 		 Openbabel has been installed in /home/jramos/.local/openbabel.
 		 Topology has been succesfully imported.
 		 Openmm has been succesfully imported.
-		 Intermol has been succesfully imported.
-		 ******************* SUMMARY *******************
+		 ERROR: Package intermol cannot be imported.
+		 ERROR: The installation is unsuccesfully!!!!!.
+

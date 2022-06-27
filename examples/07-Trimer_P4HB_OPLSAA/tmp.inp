@@ -1,0 +1,15 @@
+# LAMMPS Input Script created with replicate_polymer_topology
+# FF: ../../forcefields/oplsaa.xml
+
+#======1.Initialization======
+units                real                                    
+boundary             p p p                                   
+dimension            3                                       
+atom_style           full                                    
+
+#======2.Force Field terms======
+pair_style     hybrid ffterms[0]
+bond_style     hybrid ffterms[1]
+angle_style    hybrid ffterms[2]
+dihedral_style hybrid ffterms[3]
+improper_style hybrid 

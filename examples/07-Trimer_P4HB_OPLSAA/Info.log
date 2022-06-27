@@ -21,11 +21,25 @@
 
     ***********************************************************************
         
-		Start Job at 09-06-2022 21:24:33 ============
-		Replicating and typing molecule (09-06-2022 21:24:33)
+		Start Job at 26-06-2022 18:34:27 ============
+
+		Command line: 
+			python replicate_polymer.py -p 00-Inital_trimerP4HB.pdb -f ../../forcefields/oplsaa.xml --images 1 1 1 -e lammps
+			         or
+			replicate_polymer -p 00-Inital_trimerP4HB.pdb -f ../../forcefields/oplsaa.xml --images 1 1 1 -e lammps
+
+
+		Check resname and connect in the input file. (00-Inital_trimerP4HB.pdb)... (26-06-2022 18:34:27)
+		Replicating and typing molecule (26-06-2022 18:34:27)
 		********************************************************
-		Loading seed structure from ./00-Inital_trimerP4HB_r.pdb (09-06-2022 21:24:33)
-		Applying force field to the seed molecules ./00-Inital_trimerP4HB_r.pdb (09-06-2022 21:24:33)
+		Loading seed structure from ./00-Inital_trimerP4HB_r.pdb (26-06-2022 18:34:27)
+		Applying force field to the seed molecules ./00-Inital_trimerP4HB_r.pdb (26-06-2022 18:34:27)
+		 Checking bonds    ... (verbose: False) (26-06-2022 18:34:27).
+		 End checking bonds ... (verbose: False) (26-06-2022 18:34:27).
+		 Checking angles    ... (verbose: False) (26-06-2022 18:34:27).
+		 End checking angles ... (verbose: False) (26-06-2022 18:34:27).
+		 Checking dihedrals    ... (verbose: False) (26-06-2022 18:34:27).
+		 End dihedrals angles ... (verbose: False) (26-06-2022 18:34:27).
 		------------------------------------------------------------------------------------
 		WARN: Parameters have not been assigned to all impropers.
 		Total system impropers: 43, Parameterized impropers: 0.
@@ -34,8 +48,9 @@
 		This warn can be ignored if you are sure that impropers are not needed!!!!!
 		------------------------------------------------------------------------------------
 
+		Replicating molecules ./00-Inital_trimerP4HB_r.pdb (26-06-2022 18:34:27)
 
-		Replicate a molecule or polymer chain (09-06-2022 21:24:34)
+		Replicate a molecule or polymer chain (26-06-2022 18:34:27)
 		***************************************************************
 		Input file                  : ./00-Inital_trimerP4HB_r.pdb
 		Number of molecules in cell : 1
@@ -48,7 +63,7 @@
 		Replicate the molecule 1x1x1 times
 		***************************************************************
 
-		Molecule replicated info (09-06-2022 21:24:34)
+		Molecule replicated info (26-06-2022 18:34:27)
 		*************************************************
 		Number of molecules in cell : 1
 		Number of chains in cell    : 1
@@ -58,8 +73,9 @@
 		Simulation box angles       : 90.00 90.00 90.00 degrees
 		*************************************************
 
-		Generating lmp and data files for LAMMPS (09-06-2022 21:24:34)
+		Generating lmp and data files for LAMMPS (26-06-2022 18:34:27)
 		*****************************************************************
 
-		Job  Done at 09-06-2022 21:24:34 ============
+		Job  Done at 26-06-2022 18:34:27 ============
 
+		Total time: 0.81 seconds

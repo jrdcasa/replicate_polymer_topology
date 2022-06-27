@@ -2,7 +2,7 @@
 ;   File C150_1fold_initial_new.top  was generated
 ;   By user: jramos (1001)
 ;   On host: totem2
-;   At date: Thu. June  4 21:15:40 2022
+;   At date: Sun. June  0 22:48:47 2022
 ;
 ;   This is a standalone topology file
 ;
@@ -4529,6 +4529,7 @@ MOL          3
     448    446    449    450     3     0.6276000     1.8828000     0.0000000    -2.5104000     0.0000000     0.0000000
     448    446    449    451     3     0.6276000     1.8828000     0.0000000    -2.5104000     0.0000000     0.0000000
     448    446    449    452     3     0.6276000     1.8828000     0.0000000    -2.5104000     0.0000000     0.0000000
+ ;multiple propers (Toxwaerd torsion)
 
 [ system ]
 ; Name

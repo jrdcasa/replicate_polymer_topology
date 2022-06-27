@@ -21,7 +21,7 @@
 
     ***********************************************************************
         
-		Start Job at 30-12-2021 00:14:51 ============
+		Start Job at 24-06-2022 10:17:23 ============
 
 		Command line: 
 			python replicate_polymer.py -p model01_000.pdb -f ../../forcefields/trappe-ua.xml --images 1 1 1 -e lammps --noh
@@ -29,13 +29,22 @@
 			replicate_polymer -p model01_000.pdb -f ../../forcefields/trappe-ua.xml --images 1 1 1 -e lammps --noh
 
 
-		Removing hydrogens in the pdb file of the seed molecles.(model01_000.pdb)... (30-12-2021 00:14:51)
-		Replicating and typing molecule (30-12-2021 00:14:51)
-		********************************************************
-		Loading seed structure from model01_000_noH.pdb (30-12-2021 00:14:51)
-		Applying force field to the seed molecules model01_000_noH.pdb (30-12-2021 00:14:51)
+		Check resname and connect in the input file. (model01_000.pdb)... (24-06-2022 10:17:23)
 
-		Replicate a molecule or polymer chain (30-12-2021 00:14:51)
+		Removing hydrogens in the pdb file of the seed molecles.(model01_000.pdb)... (24-06-2022 10:17:23)
+		Replicating and typing molecule (24-06-2022 10:17:23)
+		********************************************************
+		Loading seed structure from model01_000_noH.pdb (24-06-2022 10:17:23)
+		Applying force field to the seed molecules model01_000_noH.pdb (24-06-2022 10:17:23)
+		 Checking bonds    ... (verbose: False) (24-06-2022 10:17:23).
+		 End checking bonds ... (verbose: False) (24-06-2022 10:17:23).
+		 Checking angles    ... (verbose: False) (24-06-2022 10:17:23).
+		 End checking angles ... (verbose: False) (24-06-2022 10:17:23).
+		 Checking dihedrals    ... (verbose: False) (24-06-2022 10:17:23).
+		 End dihedrals angles ... (verbose: False) (24-06-2022 10:17:23).
+		Replicating molecules model01_000_noH.pdb (24-06-2022 10:17:23)
+
+		Replicate a molecule or polymer chain (24-06-2022 10:17:23)
 		***************************************************************
 		Input file                  : model01_000_noH.pdb
 		Number of molecules in cell : 1
@@ -48,7 +57,7 @@
 		Replicate the molecule 1x1x1 times
 		***************************************************************
 
-		Molecule replicated info (30-12-2021 00:14:51)
+		Molecule replicated info (24-06-2022 10:17:23)
 		*************************************************
 		Number of molecules in cell : 1
 		Number of chains in cell    : 1
@@ -58,8 +67,11 @@
 		Simulation box angles       : 90.00 90.00 90.00 degrees
 		*************************************************
 
-		Generating lmp and data files for LAMMPS (30-12-2021 00:14:51)
+		Inserting impropers in the topology file (24-06-2022 10:17:23)
+			Guessing impropers ...
+		Generating lmp and data files for LAMMPS (24-06-2022 10:17:23)
 		*****************************************************************
 
-		Job  Done at 30-12-2021 00:14:51 ============
+		Job  Done at 24-06-2022 10:17:23 ============
 
+		Total time: 0.09 seconds
