@@ -1,0 +1,37 @@
+# This file was created Mon Jul 25 14:32:43 2022
+# Created by:
+#              :-) GROMACS - gmx energy, 2021.5-EasyBuild-4.5.4 (-:
+# 
+# Executable:   /opt/easybuild/software/GROMACS/2021.5-foss-2021b/bin/gmx
+# Data prefix:  /opt/easybuild/software/GROMACS/2021.5-foss-2021b
+# Working dir:  /home/jramos/Programacion/GITHUB_REPO_DIR/replicate_polymer_topology/examples/01-n-octane_103191_replicate/99-GROMACS_INP_MIN_NVT
+# Command line:
+#   gmx energy -f ener.edr
+# gmx energy is part of G R O M A C S:
+#
+# Grunge ROck MAChoS
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Bond"
+@ s1 legend "Angle"
+@ s2 legend "Ryckaert-Bell."
+@ s3 legend "LJ-14"
+@ s4 legend "Coulomb-14"
+@ s5 legend "LJ (SR)"
+@ s6 legend "Coulomb (SR)"
+@ s7 legend "Coul. recip."
+@ s8 legend "Potential"
+    0.000000  59217.328125  707.578857   59.450466  1544.155029  -604.962097  -11696.312500  2821.063232   34.060932  52082.363281
+    1.000000  14355.759766  15570.316406  524.627197  890.574585  -648.115967  -11597.363281  2674.267334   55.813663  21825.880859
+    2.000000  11380.161133  848.988159   17.195101  1109.250977  -705.882507  -11618.373047  2732.693115   44.898911  3808.931885
+    4.000000  3887.437500  3636.740723  179.952820  785.942749  -700.724182  -11504.500977  2675.386719   51.501152  -988.263977
+    5.000000  5157.664551  1525.648071   11.840132  955.263367  -741.998718  -11531.619141  2715.825928   44.804180  -1862.571533

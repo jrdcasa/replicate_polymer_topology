@@ -1,0 +1,13 @@
+# 2 Main Features
+
+[Replicate_Polymer](https://github.com/jrdcasa/replicate_polymer_topology.git) has the following features implemented:
+
+* Given a seed molecular system in pdb, gro or xsd format, the system can be periodically replicated.
+* Apply force field to the replicated system.
+* Produce input files for several MD and MC programs, such as GROMACS, LAMMPS and like-LAMMPS for MC Single chain.
+* In the current version the distributed partial versions of these force fields:
+
+  * [oplsaa](../forcefields/oplsaa.xml)
+  * [loplsaa](../forcefields/loplsaa.xml)
+  * [trappe-ua](../forcefields/trappe-ua.xml)
+  * [trappe-ua_PEToxvaerd](../forcefields/trappe-ua_PEToxvaerd.xml)

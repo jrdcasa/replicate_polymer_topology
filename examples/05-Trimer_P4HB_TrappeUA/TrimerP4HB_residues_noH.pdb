@@ -1,0 +1,45 @@
+MODEL        0
+ATOM      1  O   _OH A   1      -4.192   0.687   0.000  1.00  1.00           O  
+ATOM      2  H   _OH A   1      -4.512   1.592   0.000  1.00  1.00           H  
+ATOM      3 _CH2 P4H A   2      -2.762   0.687   0.000  1.00  1.00           C  
+ATOM      4 _CH2 P4H A   2      -2.248  -0.765   0.000  1.00  1.00           C  
+ATOM      5 _CH2 P4H A   2      -0.708  -0.765  -0.000  1.00  1.00           C  
+ATOM      6  C   P4H A   2      -0.195  -2.217   0.003  1.00  1.00           C  
+ATOM      7  O   P4H A   2      -0.956  -3.180   0.005  1.00  1.00           O  
+ATOM      8  O   P4H A   2       1.227  -2.368   0.003  1.00  1.00           O  
+ATOM      9 _CH2 P4H A   3       1.562  -3.734  -0.255  1.00  1.00           C  
+ATOM     10 _CH2 P4H A   3       3.092  -3.879  -0.347  1.00  1.00           C  
+ATOM     11 _CH2 P4H A   3       3.454  -5.356  -0.593  1.00  1.00           C  
+ATOM     12  C   P4H A   3       4.984  -5.501  -0.685  1.00  1.00           C  
+ATOM     13  O   P4H A   3       5.741  -4.541  -0.570  1.00  1.00           O  
+ATOM     14  O   P4H A   3       5.465  -6.828  -0.913  1.00  1.00           O  
+ATOM     15 _CH2 P4H A   4       6.894  -6.814  -0.975  1.00  1.00           C  
+ATOM     16 _CH2 P4H A   4       7.411  -8.244  -1.220  1.00  1.00           C  
+ATOM     17 _CH2 P4H A   4       8.950  -8.229  -1.286  1.00  1.00           C  
+ATOM     18  C   P4H A   4       9.467  -9.658  -1.530  1.00  1.00           C  
+ATOM     19  O   P4H A   4       8.847 -10.713  -1.666  1.00  1.00           O  
+ATOM     20  O   P4H A   4      10.821  -9.711  -1.599  1.00  1.00           O  
+ATOM     21 _CH3 MET A   5      11.262 -11.052  -1.826  1.00  1.00           C  
+ENDMDL
+CONECT    1    2    3
+CONECT    2    1
+CONECT    3    1    4
+CONECT    4    3    5
+CONECT    5    4    6
+CONECT    6    5    7    8
+CONECT    7    6
+CONECT    8    6    9
+CONECT    9    8   10
+CONECT   10    9   11
+CONECT   11   10   12
+CONECT   12   11   13   14
+CONECT   13   12
+CONECT   14   12   15
+CONECT   15   14   16
+CONECT   16   15   17
+CONECT   17   16   18
+CONECT   18   17   19   20
+CONECT   19   18
+CONECT   20   18   21
+CONECT   21   20
+END

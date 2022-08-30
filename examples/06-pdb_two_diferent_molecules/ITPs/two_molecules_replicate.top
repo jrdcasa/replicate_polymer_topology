@@ -1,0 +1,40 @@
+;
+;   File two_molecules.top  was generated
+;   By user: jramos (1001)
+;   On host: totem2
+;   At date: Thu. July  4 10:41:32 2022
+;
+;   This is a standalone topology file
+;
+;   Created by:
+;   ParmEd:       replicate_polymer.py, VERSION 3.4.3
+;   Executable:   replicate_polymer.py
+;   Library dir:  /usr/local/gromacs/share/gromacs/top
+;   Command line:
+;     /home/jramos/Programacion/GITHUB_REPO_DIR/replicate_polymer_topology/replicate_polymer/replicate_polymer.py -p two_molecules.pdb -f ../../forcefields/oplsaa.xml --images 2 2 2 -e lammps --boxlength 1 1 1
+;
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               3               no              1            0.5         
+
+[ atomtypes ]
+; name    at.num    mass    charge ptype  sigma      epsilon
+opls_135        6  12.010780  0.00000000  A           0.35       0.276144
+opls_140        1   1.007947  0.00000000  A           0.25        0.12552
+opls_136        6  12.010780  0.00000000  A           0.35       0.276144
+opls_277        6  12.010780  0.00000000  A          0.375        0.43932
+opls_278        8  15.999430  0.00000000  A          0.296        0.87864
+opls_279        1   1.007947  0.00000000  A          0.242        0.06276
+opls_282        1   1.007947  0.00000000  A          0.242        0.06276
+
+#include "but.itp"
+#include "mol.itp"
+
+[ system ]
+; Name
+Generic title
+
+[ molecules ]
+but 8
+mol 8

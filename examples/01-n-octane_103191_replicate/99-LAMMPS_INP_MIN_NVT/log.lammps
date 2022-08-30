@@ -1,0 +1,144 @@
+LAMMPS (2 Jun 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+# LAMMPS Input Script created with replicate_polymer_topology
+# FF: /home/jramos/Programacion/GITHUB_REPO_DIR/Compare_Energy_LAMMPS_GROMACS/oplsaa.xml
+
+#======1.Initialization======
+units                real
+boundary             p p p
+dimension            3
+atom_style           full
+
+#======2.Force Field terms======
+pair_style     hybrid lj/cut/coul/long 10.0 10.0
+bond_style     hybrid harmonic
+angle_style    hybrid harmonic
+dihedral_style hybrid multi/harmonic
+#improper_style hybrid harmonic
+special_bonds lj 0.0 0.0 0.5 coul 0.0 0.0 0.5
+
+#======3.Data======
+read_data ../103191_noctane_order_cryst_replicate_clean.lmp
+Reading data file ...
+  triclinic box = (1.17 1.12 0.5) to (25.908 23.7622 54.9413) with tilt (6.0246 6.0021 3.2924)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3900 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  9 = max dihedrals/atom
+  reading bonds ...
+  3750 bonds
+  reading angles ...
+  7200 angles
+  reading dihedrals ...
+  9450 dihedrals
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0.5     
+  special bond factors coul:  0        0        0.5     
+     4 = max # of 1-2 neighbors
+     6 = max # of 1-3 neighbors
+    12 = max # of 1-4 neighbors
+    16 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.029 seconds
+
+#======4.Modify Pairs======
+pair_modify mix geometric #tail yes
+kspace_style pppm 1e-5
+ #kspace_modify   diff  ad
+
+#======5.Settings======
+neigh_modify every 10 delay 20 check yes
+thermo          450
+thermo_style custom step cpu ebond eangle edihed eimp epair evdwl ecoul elong etail pe temp press lx ly lz density
+dump       1 all dcd      100  dump.dcd
+dump       2 all xyz    10000  dump_last.xyz
+dump       3 all atom   10000  dump_last.atom
+dump       4 all xtc      100  dump.xtc
+restart    10000 restart.data
+
+#======6.Minimization simulation======
+#run 0
+minimize 1.0e-8 1.0e-10 10000 10000
+WARNING: Using 'neigh_modify every 1 delay 0 check yes' setting during minimization (src/min.cpp:187)
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.24642255
+  grid = 12 15 24
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.002034504
+  estimated relative force accuracy = 6.1268485e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 12122 4320
+Generated 3 of 3 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update every 1 steps, delay 0 steps, check yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 7 5 10
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut/coul/long, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton/tri
+      stencil: half/bin/3d/tri
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 38.4 | 38.4 | 38.4 Mbytes
+   Step          CPU           E_bond        E_angle        E_dihed        E_impro         E_pair         E_vdwl         E_coul         E_long         E_tail         PotEng          Temp          Press            Lx             Ly             Lz          Density    
+         0   0              14153.276      169.11656      14.208951      0             -1888.1048     -2426.4224      2031.9631     -1493.6455      0              12448.497      0              168694.69      24.738         22.6422        54.4413        0.93305251   
+        83   7.0410564      7.6438026      86.796836      8.4287846      0             -2126.8157     -2600.776       1966.7882     -1492.8279      0             -2023.9462      0             -4120.2966      24.738         22.6422        54.4413        0.93305251   
+Loop time of 7.04109 on 1 procs for 83 steps with 3900 atoms
+
+100.0% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = linesearch alpha is zero
+  Energy initial, next-to-last, final = 
+      12448.4969594993  -2023.94624522976  -2023.94624522976
+  Force two-norm initial, final = 5442.9651 6.4694394
+  Force max component initial, final = 102.52243 0.31510914
+  Final line search alpha, max atom move = 1.4469273e-10 4.5594e-11
+  Iterations, force evaluations = 83 225
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 6.4392     | 6.4392     | 6.4392     |   0.0 | 91.45
+Bond    | 0.2182     | 0.2182     | 0.2182     |   0.0 |  3.10
+Kspace  | 0.28437    | 0.28437    | 0.28437    |   0.0 |  4.04
+Neigh   | 0.058251   | 0.058251   | 0.058251   |   0.0 |  0.83
+Comm    | 0.019478   | 0.019478   | 0.019478   |   0.0 |  0.28
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.02154    |            |       |  0.31
+
+Nlocal:           3900 ave        3900 max        3900 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:          19592 ave       19592 max       19592 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:     1.7973e+06 ave  1.7973e+06 max  1.7973e+06 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 1797300
+Ave neighs/atom = 460.84615
+Ave special neighs/atom = 10.461538
+Neighbor list builds = 1
+Dangerous builds = 0
+
+#======6.NVT simulation======
+# timestep 1.0
+# fix 1 all nvt temp 450 450 100.0 drag 0.1
+# fix 2 all temp/csvr 450 450 500 54324  # Equivalent to v-rescale Gromacs
+# run 10000
+
+#======6.NPT simulation======
+# fix 1 all npt temp 450 450 100.0 iso 1.0 1.0 1000.0 drag 1.0
+# fix 2 all temp/csvr 450 450 500 54324  # Equivalent to v-rescale Gromacs
+# run 10000
+
+Total wall time: 0:00:07
