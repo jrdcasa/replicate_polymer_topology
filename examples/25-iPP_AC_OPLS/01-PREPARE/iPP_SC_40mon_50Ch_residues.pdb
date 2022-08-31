@@ -3,7 +3,7 @@ REMARK     Backbone atoms --> Beta field == 0.00
 REMARK     Branch   atoms --> Beta field >= 1.00
 REMARK     Head     atoms --> Occupanccy field == 1.00
 REMARK     Tail     atoms --> Occupanccy field == 2.00
-REMARK     Middle     atoms --> Occupanccy field == 2.00
+REMARK     Middle   atoms --> Occupanccy field == 0.00
 CRYST1   65.409   65.409   65.409  90.00  90.00  90.00 P -1          1
 HETATM    1 C    PPE A   1      41.224   2.340  17.852  1.00  0.00           C
 HETATM    2 H    PPE A   1      40.165   2.347  18.158  0.00  1.00           H

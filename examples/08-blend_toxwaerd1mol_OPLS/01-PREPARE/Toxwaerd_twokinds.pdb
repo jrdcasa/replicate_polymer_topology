@@ -1,4 +1,9 @@
-REMARK     Written by MStoLAGRO (J.Ramos)
+REMARK     Renumbered with topology (J.Ramos)
+REMARK     Backbone atoms --> Beta field == 0.00
+REMARK     Branch   atoms --> Beta field >= 1.00
+REMARK     Head     atoms --> Occupanccy field == 1.00
+REMARK     Tail     atoms --> Occupanccy field == 2.00
+REMARK     Middle   atoms --> Occupanccy field == 0.00
 CRYST1    0.000    0.000    0.000   0.00   0.00   0.00 P -1          1
 HETATM    1 C    C       1      -8.227   5.678   6.015  1.00  0.00           C
 HETATM    2 H    C       1      -8.636   4.996   5.270  1.00  0.00           H

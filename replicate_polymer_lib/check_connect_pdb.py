@@ -123,7 +123,7 @@ def check_conect_pdb(fnameinp):
 
     return filenamepdb
 
-def check_and_remove_ter_labels(fnameinp, logger=None):
+def check_and_remove_ter_labels(fnameinp, occup=None, logger=None):
 
     """
     MDtraj library uses the TER label when several chains are presented in the pdb file.
@@ -131,6 +131,7 @@ def check_and_remove_ter_labels(fnameinp, logger=None):
 
     Args:
         fnameinp: Name of the pdb file
+        occup: List of occcup factors
         logger: a looger to report messages
 
     Returns:
@@ -152,7 +153,10 @@ def check_and_remove_ter_labels(fnameinp, logger=None):
         natoms = 0
         for iline in lines:
             if iline[0:6].find("ATOM") != -1 or iline[0:6].find("HETATM") != -1:
-                jline = iline[0:6]+"{0:>5d}".format(idx)+iline[11:]
+                if occup is None:
+                    jline = iline[0:6]+"{0:>5d}".format(idx) + iline[11:]
+                else:
+                    jline = iline[0:6] + "{0:>5d}".format(idx) + iline[11:54] + "{0:6.2f}".format(occup[idx-1])+iline[60:]
                 newlines.append(jline)
                 map_oldidx_to_new_idx[iline_atom] = idx
                 idx += 1

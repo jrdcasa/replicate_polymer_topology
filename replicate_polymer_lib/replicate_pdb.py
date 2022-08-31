@@ -8,7 +8,7 @@ import numpy as np
 with warnings.catch_warnings():
     warnings.filterwarnings("ignore")
     import mdtraj as md
-from replicate_polymer_lib.remove_hydrogens import get_tempfactor_list
+from replicate_polymer_lib.remove_hydrogens import get_tempfactor_occup_list
 warnings.filterwarnings("ignore")
 from replicate_polymer_lib.check_connect_pdb import check_and_remove_ter_labels
 
@@ -42,7 +42,7 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
     nat_single = trj_single.n_atoms
     nframes_single = trj_single.n_frames
     nbonds_single = topo_single.n_bonds
-    atom_to_chainid = _assign_chain_to_atom(single_mol_pdb)
+    atom_to_chainid_single = _assign_chain_to_atom(single_mol_pdb)
 
     # MDTraj has several standardBonds for protein residues this can cause problems for non-protein systems in which
     # any residue has the same name that those standard residue names.
@@ -68,7 +68,7 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
     for imol in mols_single:
         # Just check the first atom in each molecule. It is supposed that the rest belong to the same chainID(molecule)
         idx = list(imol)[0].index
-        name = '%s%s' % ('system', atom_to_chainid[idx])
+        name = '%s%s' % ('system', atom_to_chainid_single[idx])
         try:
             dict_nmolecules[name][0] += 1
         except IndexError:
@@ -138,8 +138,9 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
     new_xyz = np.zeros([1, natoms, 3])
 
     # Initializate tempFactor list to take into account the backbone and branch atoms
-    tempFactor_list_single = get_tempfactor_list(single_mol_pdb)
+    tempFactor_list_single, occup_list_single = get_tempfactor_occup_list(single_mol_pdb)
     tempFactor = np.zeros([natoms])
+    occupFactor = np.zeros([natoms])
 
     # Copy the original cell ==========
     new_topo = copy.deepcopy(topo_single)
@@ -162,6 +163,7 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
     # Coordinates of the first chain
     new_xyz[0, 0:nat_single, :] = trj_single.xyz[-1, :, :]
     tempFactor[0:nat_single] = tempFactor_list_single
+    occupFactor[0:nat_single] = occup_list_single
 
     # Add the cells in the x-direction, y-direction and z-direction ==========
     ind_atom = nat_single
@@ -184,7 +186,7 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
                     # Just check the first atom in each molecule. It is supposed that
                     # the rest belong to the same chainID(molecule)
                     idx = list(imol)[0].index
-                    name = '%s%s' % ('system', atom_to_chainid[idx])
+                    name = '%s%s' % ('system', atom_to_chainid_single[idx])
                     mols_replicate.append(imol)
 
                 # Residues
@@ -205,6 +207,7 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
                         new_xyz[0, ind_atom, :] = new_xyz[0, local_ind_atom, :] +\
                             np.dot([inx, iny, inz], trj_single.unitcell_vectors)
                         tempFactor[ind_atom] = tempFactor[local_ind_atom]
+                        occupFactor[ind_atom] = occupFactor[local_ind_atom]
                         local_ind_atom += 1
                         ind_atom += 1
                     ires += 1
@@ -240,7 +243,8 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
     m1 = "\t\tMolecule replicated info ({})\n".format(nows)
     m = "\t\t" + len(m1) * "*"
     print(m1 + m) if logger_log is None else logger_log.info(m1 + m)
-    m = "\t\tNumber of molecules in cell : {}\n".format(len(new_trj.topology.find_molecules()))
+    nmols_replicate = new_trj.topology.find_molecules()
+    m = "\t\tNumber of molecules in cell : {}\n".format(len(mols_replicate))
     m += "\t\tNumber of chains in cell    : {}\n".format(new_trj.n_chains)
     m += "\t\tNumber of residues in cell  : {}\n".format(new_trj.n_residues)
     m += "\t\tNumber of atoms in cell     : {}\n".format(new_trj.n_atoms)
@@ -261,9 +265,8 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
     base = os.path.split(base)[-1]
     dirlocal = "./"
     filenamepdb_new = os.path.join(dirlocal, base + "_replicate" + ext)
-    new_trj.save_pdb(filenamepdb_new, bfactors=tempFactor)
-    filenamepdb = check_and_remove_ter_labels(filenamepdb_new, logger=logger_log)
-
+    new_trj.save_pdb(filenamepdb_new, bfactors=tempFactor, )
+    filenamepdb = check_and_remove_ter_labels(filenamepdb_new, occup=occupFactor, logger=logger_log)
 
     # Save gro =========
     ext = ".gro"
@@ -300,13 +303,16 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
 
     # PDB modify chain info. Mdtraj label each chain with a different name. In our pdb, we want that a chain of the
     # same type have the same name.
-    _modify_chain_info_pdb(filenamepdb_new, atom_to_chainid)
+    _modify_chain_info_pdb(filenamepdb_new, atom_to_chainid_single)
 
     # Map : residue_map_index[0] = [0, 1, 2, ...] Indexes of the residue 0
     residue_map_index = defaultdict(list)
     for ires in topo_single.residues:
         for iatres in ires.atoms:
             residue_map_index[ires.index].append(iatres.index)
+
+    # Write end-to-end and backbone information
+    _write_etoe_bb_info(nmols_replicate , tempFactor, occupFactor)
 
     # Debug
     # new_trj.save_pdb("test.pdb")
@@ -315,6 +321,36 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
 
     return trj_single, new_trj, residue_map_index, mols_replicate
 
+
+# ==================================================
+def _write_etoe_bb_info(nmols_replicate, beta, occup):
+
+    fee = open("listendtoend_replicate.dat", 'w')
+    fbb = open("backbone_idx_replicate.dat", 'w')
+    fee.writelines("# ich head tail\n")
+
+    chain_to_atom = defaultdict(list)
+    ich = 0
+    for item in nmols_replicate:
+        fbb.writelines("[mol{}]\n".format(ich))
+        bb_ch = []
+        for iat in item:
+            idx = iat.index
+            if occup[idx] == 1:
+                ihead = idx
+            elif occup[idx] == 2:
+                itail = idx
+            if beta[idx] == 0:
+                bb_ch.append(idx)
+
+        for ibb in sorted(bb_ch):
+            fbb.writelines("{}\n".format(ibb))
+
+        fee.writelines("{} {} {}\n".format(ich, ihead, itail))
+        ich += 1
+
+    fee.close()
+    fbb.close()
 
 # ==================================================
 def _assign_chain_to_atom(filenamepdb):
@@ -340,7 +376,7 @@ def _assign_chain_to_atom(filenamepdb):
 
 
 # ==================================================
-def _modify_chain_info_pdb(filenamepdb, atom_to_chainid):
+def _modify_chain_info_pdb(filenamepdb, atom_to_chainid_single):
 
     start = ord('A')
     end = ord('Z')
@@ -351,8 +387,9 @@ def _modify_chain_info_pdb(filenamepdb, atom_to_chainid):
         map_in_to_letter[j] = chr(i)
         j += 1
 
-    d = defaultdict()
+    atom_to_chainid_replicate = defaultdict()
     nwlines = []
+    ich = 0
     with open(filenamepdb, 'r') as fpdb:
         lines = fpdb.readlines()
         idx_local = 0
@@ -360,15 +397,18 @@ def _modify_chain_info_pdb(filenamepdb, atom_to_chainid):
             if iline.find("ATOM") != -1 or iline.find("HETATM") != -1:
                 idx = int(iline[6:11]) - 1
                 try:
-                    jline = iline[0:21]+map_in_to_letter[atom_to_chainid[idx_local]]+iline[22:]
+                    jline = iline[0:21] + map_in_to_letter[atom_to_chainid_single[idx_local]] + iline[22:]
                     nwlines.append(jline)
+                    atom_to_chainid_replicate[idx] = ich
                 except KeyError:
                     idx_local = 0
-                    jline = iline[0:21]+map_in_to_letter[atom_to_chainid[idx_local]]+iline[22:]
+                    ich += 1
+                    atom_to_chainid_replicate[idx] = ich
+                    jline = iline[0:21] + map_in_to_letter[atom_to_chainid_single[idx_local]] + iline[22:]
                     nwlines.append(jline)
                 idx_local += 1
             elif iline.find("TER") != -1:
-                jline = iline[0:21] + map_in_to_letter[atom_to_chainid[idx_local-1]] + iline[22:]
+                jline = iline[0:21] + map_in_to_letter[atom_to_chainid_single[idx_local - 1]] + iline[22:]
                 nwlines.append(jline)
             else:
                 nwlines.append(iline)
@@ -377,4 +417,4 @@ def _modify_chain_info_pdb(filenamepdb, atom_to_chainid):
         for iline in nwlines:
             fpdb.writelines(iline)
 
-    return d
+    return atom_to_chainid_replicate

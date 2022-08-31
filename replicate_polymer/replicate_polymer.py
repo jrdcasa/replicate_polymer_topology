@@ -79,7 +79,7 @@ def main_app(version):
     if opts.impropers.upper() != 'NO':
         insert_impropers(opts, filenamepdb, logger=logger)
     elif opts.hydrogens and opts.impropers.upper():
-        m = "\t\tWARNING: Usign a united-atom model without guess or define improper angles. " \
+        m = "\t\tWARNING: Using a united-atom model without guess or define improper angles. " \
             "\n\t\tIf this is correct ignore this warning."
         print(m) if logger is None else logger.info(m)
 

@@ -1,6 +1,7 @@
 from collections import defaultdict
 import os
 import warnings
+from replicate_polymer_lib.check_connect_pdb import check_and_remove_ter_labels
 with warnings.catch_warnings():
     warnings.filterwarnings("ignore")
     import mdtraj as md
@@ -8,7 +9,7 @@ warnings.filterwarnings("ignore")
 
 
 # =============================================================================
-def get_tempfactor_list(pdb):
+def get_tempfactor_occup_list(pdb):
 
     """
     Get the temp factor list from a pdb file
@@ -21,6 +22,7 @@ def get_tempfactor_list(pdb):
     """
 
     tempfactor_list = []
+    occupancy_list = []
     with open(pdb, 'r') as fpdb:
         lines = fpdb.readlines()
         for iline in lines:
@@ -28,9 +30,15 @@ def get_tempfactor_list(pdb):
                 try:
                     tempfactor_list.append(float(iline[60:66]))
                 except ValueError:
-                    tempfactor_list.append(float(1.0))
+                    tempfactor_list.append(float(0.0))
 
-    return tempfactor_list
+                try:
+                    occupancy_list.append(float(iline[54:60]))
+                except ValueError:
+                    occupancy_list.append(float(0.0))
+
+
+    return tempfactor_list, occupancy_list
 
 
 # =============================================================================
@@ -48,10 +56,10 @@ def remove_hydrogens(filename_pdb, removeallh=False):
 
     """
 
-    # Read the original pdb in which the atoms are not ordered (i.e. produced by VESTA)
+    # Read the original pdb in which the atoms are not ordered
     traj = md.load_pdb(filename_pdb)
     atoms_UA = list(traj.topology.select("element != H"))
-    tempfactor_single = get_tempfactor_list(filename_pdb)
+    tempfactor_single, occup_single = get_tempfactor_occup_list(filename_pdb)
 
     # Add hydrogens explicitly to atoms different to C
     dict_graph = defaultdict(list)
@@ -74,8 +82,10 @@ def remove_hydrogens(filename_pdb, removeallh=False):
             dict_graph[ibond[1].index].append(ibond[0].index)
 
     tempfactor = []
+    occfactor = []
     for iatom in atoms_UA:
         tempfactor.append(tempfactor_single[iatom])
+        occfactor.append(occup_single[iatom])
 
     # Rename united atoms
     idx = 0
@@ -111,9 +121,13 @@ def remove_hydrogens(filename_pdb, removeallh=False):
         a1.serial = a1.index + 1
         a2.serial = a2.index + 1
 
+    # PDB
     baset, extt = os.path.splitext(os.path.basename(filename_pdb))
     newname_pdb = baset + "_noH" + extt
     new_trj.save_pdb(newname_pdb, bfactors=tempfactor)
+    filenamepdb = check_and_remove_ter_labels(newname_pdb, occup=occfactor, logger=None)
+
+    # GRO
     extt = ".gro"
     newname_gro = baset + "_noH" + extt
     new_trj.save_gro(newname_gro)

@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH MDTraj 1.9.6, 2022-08-24
+REMARK   1 CREATED WITH MDTraj 1.9.6, 2022-08-30
 CRYST1   46.000   46.000   69.000  90.00  90.00  90.00 P 1           1 
 MODEL        0
 ATOM      1 _CH3 PES A   1       0.198   3.317  11.983  1.00  1.00           C  

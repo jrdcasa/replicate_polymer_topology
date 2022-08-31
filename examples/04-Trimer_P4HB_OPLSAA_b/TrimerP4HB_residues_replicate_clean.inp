@@ -1,5 +1,5 @@
 # LAMMPS Input Script created with replicate_polymer_topology
-# FF: ../../forcefields/trappe-ua.xml
+# FF: ../../forcefields/oplsaa.xml
 
 #======1.Initialization======
 units                real                                    
@@ -11,17 +11,17 @@ atom_style           full
 pair_style     hybrid lj/cut/coul/long 10.0 10.0
 bond_style     hybrid harmonic
 angle_style    hybrid harmonic
-dihedral_style hybrid nharmonic multi/harmonic
-improper_style hybrid harmonic
-special_bonds lj 0.0 0.0 0.0 coul 0.0 0.0 0.0
+dihedral_style hybrid multi/harmonic
+#improper_style hybrid harmonic
+special_bonds lj 0.0 0.0 0.5 coul 0.0 0.0 0.5
 
 #======3.Data======
-read_data ETH-EVA_50wt_0000_noH_replicate_clean.lmp
+read_data TrimerP4HB_residues_replicate_clean.lmp
 
 #======4.Modify Pairs======
-pair_modify mix arithmetic #tail yes
+pair_modify mix geometric #tail yes
 kspace_style pppm 1e-6
-kspace_modify gewald 0.1
+ #kspace_modify   diff  ad
 
 #======5.Settings======
 neigh_modify every 10 delay 20 check yes
