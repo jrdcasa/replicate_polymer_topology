@@ -327,13 +327,16 @@ def _write_etoe_bb_info(nmols_replicate, beta, occup):
 
     fee = open("listendtoend_replicate.dat", 'w')
     fbb = open("backbone_idx_replicate.dat", 'w')
+    faa = open("allatom_idx_replicate", 'w')
     fee.writelines("# ich head tail\n")
 
     chain_to_atom = defaultdict(list)
     ich = 0
     for item in nmols_replicate:
         fbb.writelines("[mol{}]\n".format(ich))
+        faa.writelines("[mol{}]\n".format(ich))
         bb_ch = []
+        aa_ch = []
         for iat in item:
             idx = iat.index
             if occup[idx] == 1:
@@ -342,9 +345,13 @@ def _write_etoe_bb_info(nmols_replicate, beta, occup):
                 itail = idx
             if beta[idx] == 0:
                 bb_ch.append(idx)
+            aa_ch.append(idx)
 
         for ibb in sorted(bb_ch):
             fbb.writelines("{}\n".format(ibb))
+        for iaa in sorted(aa_ch):
+            faa.writelines("{}\n".format(iaa))
+
 
         fee.writelines("{} {} {}\n".format(ich, ihead, itail))
         ich += 1
