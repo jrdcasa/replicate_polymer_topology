@@ -23,7 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="097f4e77-3800-4c0f-93e1-d3b7c8a880f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/replicate_pdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/replicate_pdb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/examples/35-PMMA_SC_Trappe" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -81,7 +82,7 @@
       <recent name="$PROJECT_DIR$/examples" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.04-example ">
+  <component name="RunManager" selected="Python.35-PMMA_SC_Trappe">
     <configuration name="00-INSTALL" type="PythonConfigurationType" factoryName="Python">
       <module name="MyPolymers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -478,6 +479,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="35-PMMA_SC_Trappe" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/35-PMMA_SC_Trappe" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p 01-PREPARE/PMMA_SC_residues.pdb -f ../../forcefields/trappe-ua.xml --images 1 1 1 -e lammps_mc --noh" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="C102_40Ch" type="PythonConfigurationType" factoryName="Python">
       <module name="MyPolymers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -659,6 +682,7 @@
       <item itemvalue="Python.33-PE-iPP_AC_50Ch_OPLS 2 2 2" />
       <item itemvalue="Python.33-PE-iPP_AC_50Ch_OPLS 2 2 2 create_lammps" />
       <item itemvalue="Python.Test" />
+      <item itemvalue="Python.35-PMMA_SC_Trappe" />
       <item itemvalue="Python.Test2" />
       <item itemvalue="Python.C102_40Ch" />
       <item itemvalue="Python tests.Test (1)" />
@@ -762,7 +786,8 @@
       <workItem from="1661623890227" duration="612000" />
       <workItem from="1661753687930" duration="14000" />
       <workItem from="1661771489796" duration="8878000" />
-      <workItem from="1661869479809" duration="16468000" />
+      <workItem from="1661869479809" duration="18516000" />
+      <workItem from="1662132456932" duration="1954000" />
     </task>
     <servers />
   </component>
@@ -790,16 +815,14 @@
       <screen x="0" y="27" width="1920" height="703" />
     </state>
     <state x="622" y="27" width="666" height="703" key="#Unittests_for_04-test_examples.TestExamples.test_01_octane/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1657006550104" />
-    <state x="392" y="27" width="1390" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1661933605482">
-      <screen x="0" y="27" width="1920" height="703" />
+    <state x="0" y="231" width="1644" height="608" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1662132607884">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state x="0" y="218" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408361446" />
-    <state x="0" y="231" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1658736014683" />
+    <state x="0" y="231" width="1644" height="608" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662132607884" />
     <state x="86" y="336" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1015@0.27.1920.1015" timestamp="1660810851573" />
     <state x="392" y="27" width="1390" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1661933605482" />
     <state x="270" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1657034880848" />
     <state x="0" y="219" width="1920" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653576917757" />
-    <state x="2116" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653386505144" />
     <state x="0" y="219" width="1920" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.3200.959@0.27.3200.959" timestamp="1654002996404" />
     <state x="0" y="159" width="1920" height="529" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.3280.703@0.27.3280.703" timestamp="1661856015645" />
     <state x="942" y="145" width="764" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1657182135096">
@@ -810,7 +833,6 @@
     <state x="1039" y="292" key="#xdebugger.evaluate" timestamp="1656360373498">
       <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state x="293" y="248" key="#xdebugger.evaluate/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653407242428" />
     <state x="1039" y="292" key="#xdebugger.evaluate/0.27.1920.1015@0.27.1920.1015" timestamp="1656360373498" />
     <state x="665" y="219" key="#xdebugger.evaluate/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1655371600706" />
     <state x="2391" y="210" key="#xdebugger.evaluate/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654245866955" />
@@ -824,113 +846,93 @@
     </state>
     <state width="978" height="506" key="DebuggerActiveHint/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653569738596" />
     <state width="1630" height="506" key="DebuggerActiveHint/0.27.3200.959@0.27.3200.959" timestamp="1653993148156" />
-    <state x="767" y="196" width="379" height="583" key="FileChooserDialogImpl" timestamp="1661856350388">
-      <screen x="0" y="27" width="3280" height="703" />
+    <state x="449" y="315" width="379" height="590" key="FileChooserDialogImpl" timestamp="1662132490196">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state x="449" y="315" width="379" height="583" key="FileChooserDialogImpl/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1657981672755" />
+    <state x="449" y="315" width="379" height="590" key="FileChooserDialogImpl/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662132490196" />
     <state x="449" y="315" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1015@0.27.1920.1015" timestamp="1660762466993" />
     <state x="449" y="226" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1657873049699" />
     <state x="449" y="299" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577248446" />
     <state x="748" y="299" key="FileChooserDialogImpl/0.27.3200.959@0.27.3200.959" timestamp="1654001306598" />
     <state x="767" y="196" width="424" height="491" key="FileChooserDialogImpl/0.27.3280.703@0.27.3280.703" timestamp="1661856350388" />
-    <state width="1874" height="243" key="GridCell.Tab.0.bottom" timestamp="1661939502475">
-      <screen x="0" y="27" width="1920" height="703" />
+    <state width="1874" height="243" key="GridCell.Tab.0.bottom" timestamp="1662133476116">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408405763" />
-    <state width="1874" height="286" key="GridCell.Tab.0.bottom/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1658736143797" />
+    <state width="1874" height="243" key="GridCell.Tab.0.bottom/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662133476116" />
     <state width="1874" height="353" key="GridCell.Tab.0.bottom/0.27.1920.1015@0.27.1920.1015" timestamp="1660826779385" />
-    <state width="1874" height="243" key="GridCell.Tab.0.bottom/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1661939502475" />
+    <state width="1874" height="292" key="GridCell.Tab.0.bottom/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662020150384" />
     <state width="1314" height="328" key="GridCell.Tab.0.bottom/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1657034918725" />
     <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577078939" />
-    <state width="1234" height="275" key="GridCell.Tab.0.bottom/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967335" />
-    <state width="1874" height="152" key="GridCell.Tab.0.bottom/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="244" key="GridCell.Tab.0.bottom/0.27.3200.959@0.27.3200.959" timestamp="1654010747324" />
     <state width="1874" height="353" key="GridCell.Tab.0.bottom/0.27.3280.703@0.27.3280.703" timestamp="1661869346745" />
-    <state width="1874" height="243" key="GridCell.Tab.0.center" timestamp="1661939502475">
-      <screen x="0" y="27" width="1920" height="703" />
+    <state width="1874" height="243" key="GridCell.Tab.0.center" timestamp="1662133476116">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408405763" />
-    <state width="1874" height="286" key="GridCell.Tab.0.center/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1658736143797" />
+    <state width="1874" height="243" key="GridCell.Tab.0.center/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662133476116" />
     <state width="1874" height="353" key="GridCell.Tab.0.center/0.27.1920.1015@0.27.1920.1015" timestamp="1660826779385" />
-    <state width="1874" height="243" key="GridCell.Tab.0.center/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1661939502475" />
+    <state width="1874" height="292" key="GridCell.Tab.0.center/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662020150384" />
     <state width="1314" height="328" key="GridCell.Tab.0.center/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1657034918725" />
     <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577078939" />
-    <state width="1234" height="275" key="GridCell.Tab.0.center/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967335" />
-    <state width="1874" height="152" key="GridCell.Tab.0.center/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="244" key="GridCell.Tab.0.center/0.27.3200.959@0.27.3200.959" timestamp="1654010747323" />
     <state width="1874" height="353" key="GridCell.Tab.0.center/0.27.3280.703@0.27.3280.703" timestamp="1661869346745" />
-    <state width="1874" height="243" key="GridCell.Tab.0.left" timestamp="1661939502475">
-      <screen x="0" y="27" width="1920" height="703" />
+    <state width="1874" height="243" key="GridCell.Tab.0.left" timestamp="1662133476116">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408405762" />
-    <state width="1874" height="286" key="GridCell.Tab.0.left/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1658736143797" />
+    <state width="1874" height="243" key="GridCell.Tab.0.left/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662133476116" />
     <state width="1874" height="353" key="GridCell.Tab.0.left/0.27.1920.1015@0.27.1920.1015" timestamp="1660826779385" />
-    <state width="1874" height="243" key="GridCell.Tab.0.left/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1661939502475" />
+    <state width="1874" height="292" key="GridCell.Tab.0.left/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662020150384" />
     <state width="1314" height="328" key="GridCell.Tab.0.left/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1657034918725" />
     <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577078939" />
-    <state width="1234" height="275" key="GridCell.Tab.0.left/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967334" />
-    <state width="1874" height="152" key="GridCell.Tab.0.left/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="244" key="GridCell.Tab.0.left/0.27.3200.959@0.27.3200.959" timestamp="1654010747323" />
     <state width="1874" height="353" key="GridCell.Tab.0.left/0.27.3280.703@0.27.3280.703" timestamp="1661869346745" />
-    <state width="1874" height="243" key="GridCell.Tab.0.right" timestamp="1661939502475">
-      <screen x="0" y="27" width="1920" height="703" />
+    <state width="1874" height="243" key="GridCell.Tab.0.right" timestamp="1662133476116">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408405763" />
-    <state width="1874" height="286" key="GridCell.Tab.0.right/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1658736143797" />
+    <state width="1874" height="243" key="GridCell.Tab.0.right/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662133476116" />
     <state width="1874" height="353" key="GridCell.Tab.0.right/0.27.1920.1015@0.27.1920.1015" timestamp="1660826779385" />
-    <state width="1874" height="243" key="GridCell.Tab.0.right/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1661939502475" />
+    <state width="1874" height="292" key="GridCell.Tab.0.right/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662020150384" />
     <state width="1314" height="328" key="GridCell.Tab.0.right/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1657034918725" />
     <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653577078939" />
-    <state width="1234" height="275" key="GridCell.Tab.0.right/0.27.1920.959/1920.0.1280.1024@1920.0.1280.1024" timestamp="1653462967335" />
-    <state width="1874" height="152" key="GridCell.Tab.0.right/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="244" key="GridCell.Tab.0.right/0.27.3200.959@0.27.3200.959" timestamp="1654010747324" />
     <state width="1874" height="353" key="GridCell.Tab.0.right/0.27.3280.703@0.27.3280.703" timestamp="1661869346745" />
-    <state width="1874" height="292" key="GridCell.Tab.1.bottom" timestamp="1661939452996">
-      <screen x="0" y="27" width="1920" height="703" />
+    <state width="1874" height="321" key="GridCell.Tab.1.bottom" timestamp="1662133465003">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="344" key="GridCell.Tab.1.bottom/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408325789" />
-    <state width="1874" height="286" key="GridCell.Tab.1.bottom/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1658736143797" />
+    <state width="1874" height="321" key="GridCell.Tab.1.bottom/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662133465003" />
     <state width="1874" height="353" key="GridCell.Tab.1.bottom/0.27.1920.1015@0.27.1920.1015" timestamp="1660826779385" />
-    <state width="1874" height="292" key="GridCell.Tab.1.bottom/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1661939452996" />
+    <state width="1874" height="292" key="GridCell.Tab.1.bottom/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662020150384" />
     <state width="1314" height="239" key="GridCell.Tab.1.bottom/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654244044318" />
     <state width="1874" height="242" key="GridCell.Tab.1.bottom/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
-    <state width="1874" height="152" key="GridCell.Tab.1.bottom/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="195" key="GridCell.Tab.1.bottom/0.27.3200.959@0.27.3200.959" timestamp="1654010085139" />
     <state width="1874" height="353" key="GridCell.Tab.1.bottom/0.27.3280.703@0.27.3280.703" timestamp="1661869346745" />
-    <state width="1874" height="292" key="GridCell.Tab.1.center" timestamp="1661939452996">
-      <screen x="0" y="27" width="1920" height="703" />
+    <state width="1874" height="321" key="GridCell.Tab.1.center" timestamp="1662133465003">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="344" key="GridCell.Tab.1.center/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408325789" />
-    <state width="1874" height="286" key="GridCell.Tab.1.center/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1658736143797" />
+    <state width="1874" height="321" key="GridCell.Tab.1.center/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662133465003" />
     <state width="1874" height="353" key="GridCell.Tab.1.center/0.27.1920.1015@0.27.1920.1015" timestamp="1660826779385" />
-    <state width="1874" height="292" key="GridCell.Tab.1.center/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1661939452996" />
+    <state width="1874" height="292" key="GridCell.Tab.1.center/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662020150384" />
     <state width="1314" height="239" key="GridCell.Tab.1.center/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654244044318" />
     <state width="1874" height="242" key="GridCell.Tab.1.center/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
-    <state width="1874" height="152" key="GridCell.Tab.1.center/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="195" key="GridCell.Tab.1.center/0.27.3200.959@0.27.3200.959" timestamp="1654010085139" />
     <state width="1874" height="353" key="GridCell.Tab.1.center/0.27.3280.703@0.27.3280.703" timestamp="1661869346745" />
-    <state width="1874" height="292" key="GridCell.Tab.1.left" timestamp="1661939452996">
-      <screen x="0" y="27" width="1920" height="703" />
+    <state width="1874" height="321" key="GridCell.Tab.1.left" timestamp="1662133465003">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="344" key="GridCell.Tab.1.left/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408325789" />
-    <state width="1874" height="286" key="GridCell.Tab.1.left/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1658736143797" />
+    <state width="1874" height="321" key="GridCell.Tab.1.left/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662133465003" />
     <state width="1874" height="353" key="GridCell.Tab.1.left/0.27.1920.1015@0.27.1920.1015" timestamp="1660826779385" />
-    <state width="1874" height="292" key="GridCell.Tab.1.left/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1661939452996" />
+    <state width="1874" height="292" key="GridCell.Tab.1.left/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662020150384" />
     <state width="1314" height="239" key="GridCell.Tab.1.left/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654244044318" />
     <state width="1874" height="242" key="GridCell.Tab.1.left/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
-    <state width="1874" height="152" key="GridCell.Tab.1.left/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="195" key="GridCell.Tab.1.left/0.27.3200.959@0.27.3200.959" timestamp="1654010085139" />
     <state width="1874" height="353" key="GridCell.Tab.1.left/0.27.3280.703@0.27.3280.703" timestamp="1661869346745" />
-    <state width="1874" height="292" key="GridCell.Tab.1.right" timestamp="1661939452996">
-      <screen x="0" y="27" width="1920" height="703" />
+    <state width="1874" height="321" key="GridCell.Tab.1.right" timestamp="1662133465003">
+      <screen x="0" y="27" width="1920" height="1015" />
     </state>
-    <state width="1874" height="344" key="GridCell.Tab.1.right/0.27.1920.1015/1920.0.1280.1024@0.27.1920.1015" timestamp="1653408325789" />
-    <state width="1874" height="286" key="GridCell.Tab.1.right/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1658736143797" />
+    <state width="1874" height="321" key="GridCell.Tab.1.right/0.27.1920.1015/1920.0.1360.768@0.27.1920.1015" timestamp="1662133465003" />
     <state width="1874" height="353" key="GridCell.Tab.1.right/0.27.1920.1015@0.27.1920.1015" timestamp="1660826779385" />
-    <state width="1874" height="292" key="GridCell.Tab.1.right/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1661939452996" />
+    <state width="1874" height="292" key="GridCell.Tab.1.right/0.27.1920.703/1920.0.1360.768@0.27.1920.703" timestamp="1662020150384" />
     <state width="1314" height="239" key="GridCell.Tab.1.right/0.27.1920.703/1920.0.1360.768@1920.0.1360.768" timestamp="1654244044318" />
     <state width="1874" height="242" key="GridCell.Tab.1.right/0.27.1920.959/1920.0.1280.1024@0.27.1920.959" timestamp="1653575264036" />
-    <state width="1874" height="152" key="GridCell.Tab.1.right/0.27.1920.959/1920.0.1920.1080@1920.0.1920.1080" timestamp="1653375821493" />
     <state width="1874" height="195" key="GridCell.Tab.1.right/0.27.3200.959@0.27.3200.959" timestamp="1654010085139" />
     <state width="1874" height="353" key="GridCell.Tab.1.right/0.27.3280.703@0.27.3280.703" timestamp="1661869346745" />
     <state x="449" y="173" width="1022" height="737" key="SettingsEditor" timestamp="1655659929224">
@@ -971,44 +973,34 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py</url>
-          <line>79</line>
-          <option name="timeStamp" value="1362" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py</url>
-          <line>783</line>
-          <option name="timeStamp" value="1363" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py</url>
-          <line>709</line>
+          <line>711</line>
           <option name="timeStamp" value="1365" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py</url>
-          <line>81</line>
-          <option name="timeStamp" value="1372" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py</url>
-          <line>83</line>
-          <option name="timeStamp" value="1373" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py</url>
-          <line>1296</line>
+          <line>1298</line>
           <option name="timeStamp" value="1374" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/replicate_polymer_lib/replicate_pdb.py</url>
-          <line>321</line>
-          <option name="timeStamp" value="1380" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <condition expression="ich == 3" language="Python" />
           <url>file://$PROJECT_DIR$/replicate_polymer_lib/replicate_pdb.py</url>
           <line>339</line>
           <option name="timeStamp" value="1422" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py</url>
+          <line>393</line>
+          <option name="timeStamp" value="1423" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="1424" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py</url>
+          <line>139</line>
+          <option name="timeStamp" value="1425" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1038,6 +1030,8 @@
         <watch expression="beta[84:125]" language="Python" />
         <watch expression="beta[126:167]" language="Python" />
         <watch expression="item" />
+        <watch expression="ib_local" />
+        <watch expression="bonds_info" />
       </configuration>
     </watches-manager>
   </component>
@@ -1069,6 +1063,7 @@
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$23_P3HB_50mon_5Ch.coverage" NAME="23-P3HB_50mon_5Ch Coverage Results" MODIFIED="1654865611400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/04-P3HB_50Mon_05Ch_Th" />
     <SUITE FILE_PATH="coverage/replicate_polymer$PQ_3.coverage" NAME="PQ_3 Coverage Results" MODIFIED="1650447785442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PROYECTOS___/2021-PHA/08-SingleChain/01-TYPE_P3HB" />
     <SUITE FILE_PATH="coverage/replicate_polymer$16_n_hexane_LOPLS.coverage" NAME="16-n-hexane_LOPLS Coverage Results" MODIFIED="1640818196729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/16-n-hexane_LOPLS" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$35_PMMA_SC_Trappe.coverage" NAME="35-PMMA_SC_Trappe Coverage Results" MODIFIED="1662133476108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/35-PMMA_SC_Trappe" />
     <SUITE FILE_PATH="coverage/replicate_polymer$08_P4HB_trappeUA_1x1x1__1_.coverage" NAME="08-P4HB_trappeUA_1x1x1 (1) Coverage Results" MODIFIED="1639134587235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/08-Trimer_P4HB_TrappeUA" />
     <SUITE FILE_PATH="coverage/replicate_polymer$21_PE500_exclusions.coverage" NAME="21-PE500_exclusions Coverage Results" MODIFIED="1653562419221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/02-500PE_1Ch" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1661939502465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PETICIONES_PROYECTOS___/2021-MovilidadExtranjero/08-Results/04-PE_AA/01-PE/2022-PE_102C_040Ch_TrappeTox/02-REPLICATE_TYPING_1_1_1_TRAPPETOX_NEW" />

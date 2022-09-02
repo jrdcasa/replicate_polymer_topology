@@ -316,19 +316,19 @@ def _write_lmp_data_mc(lmp_filename_new, ffname, top_filename, lines_top, lines_
     natomtypes, atomtypes =\
         _parse_top_atomtypes_section(lines_top, d_indices_lines["atomtypes"], ffname)
 
-    natoms_per_mol, atoms_info,  is_charged_system =\
+    natoms_per_mol, atoms_info,  is_charged_system, atoms_kind_info =\
         _parse_top_atoms_section(lines_top, d_indices_lines["atoms"])
 
     nmols = _parse_top_molecules_section(lines_top, d_indices_lines["molecules"])
 
     nbonds_per_mol, bonds_type, bonds_info =\
-        _parse_top_bonds_section(lines_top, d_indices_lines["bonds"], atoms_info)
+        _parse_top_bonds_section(lines_top, d_indices_lines["bonds"], atoms_kind_info)
 
     nangles_per_mol, angles_type, angles_info =\
-        _parse_top_angles_section(lines_top, d_indices_lines["angles"], atoms_info)
+        _parse_top_angles_section(lines_top, d_indices_lines["angles"], atoms_kind_info)
 
     ndihedrals_per_mol, nimpropers_per_mol, dihedrals_type, impropers_type, dihedrals_info, impropers_info = \
-        _parse_top_dihedrals_section(lines_top, d_indices_lines["dihedrals"], atoms_info)
+        _parse_top_dihedrals_section(lines_top, d_indices_lines["dihedrals"], atoms_kind_info)
 
     # Check if there is new atom pairs under the section [pairs] of the top file
     try:
@@ -395,6 +395,8 @@ def _write_lmp_data_mc(lmp_filename_new, ffname, top_filename, lines_top, lines_
                                     format(ib_global+1,ib_local[0],
                                            ib_global1,ib_global2, ib_local[-2], ib_local[-1]))
                     ib_global += 1
+
+
 
         # Angles
         if nangles_per_mol != 0:
