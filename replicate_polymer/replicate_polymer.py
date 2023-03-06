@@ -37,14 +37,14 @@ def main_app(version):
     m = "\n\t\tCheck resname and connect in the input file. ({})... ({})".format(opts.pdbfile, now)
     print(m) if logger is None else logger.info(m)
     filenamepdb = check_resname_pdb(opts.pdbfile)
-    filenamepdb = check_conect_pdb(filenamepdb)
+    filenamepdb, bond_list_more100K = check_conect_pdb(filenamepdb, logger=logger)
 
     # Remove hydrogen atoms
     if opts.hydrogens:
         now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
         m = "\n\t\tRemoving hydrogens in the pdb file of the seed molecules.({})... ({})".format(filenamepdb, now)
         print(m) if logger is None else logger.info(m)
-        filenamepdb_new, filenamegro_new = remove_hydrogens(filenamepdb)
+        filenamepdb_new, filenamegro_new = remove_hydrogens(filenamepdb, bond_list_more100K)
         filenamepdb = filenamepdb_new
 
     filenamepdb = check_and_remove_ter_labels(filenamepdb, logger=logger)

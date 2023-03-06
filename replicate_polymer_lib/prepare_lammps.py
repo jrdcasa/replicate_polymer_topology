@@ -354,7 +354,7 @@ def _write_lmp_data_mc(lmp_filename_new, ffname, top_filename, lines_top, lines_
         flmp.writelines("{0:<8d}  dihedral types\n".format(len(dihedrals_type)))
         flmp.writelines("{0:<8d}  improper types\n".format(len(impropers_type)))
         flmp.writelines("\n")
-        # From nanometers to anstroms
+        # From nanometers to angstroms
         flmp.writelines("{0:>11.5f} {1:>11.5f}   xlo xhi\n".format(box_info_gro[0][0]*10,
                                                                    box_info_gro[1][0]*10+box_info_gro[0][0]*10))
         flmp.writelines("{0:>11.5f} {1:>11.5f}   ylo yhi\n".format(box_info_gro[0][1]*10,
@@ -1035,9 +1035,9 @@ def _parse_gro_info(lines_gro):
     # Get coordinates
     for iatom in range(natoms):
         iline = lines_gro[iatom+2]
-        coords[iatom, 0] = float(iline[20:29])
-        coords[iatom, 1] = float(iline[29:38])
-        coords[iatom, 2] = float(iline[38:47])
+        coords[iatom, 0] = float(iline[20:28])
+        coords[iatom, 1] = float(iline[28:36])
+        coords[iatom, 2] = float(iline[36:44])
 
     # Max and minimum coordinates in all directions
     minx = np.min(coords[:, 0])

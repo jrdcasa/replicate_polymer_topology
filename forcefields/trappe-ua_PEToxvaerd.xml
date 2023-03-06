@@ -277,7 +277,7 @@
   <Proper class1="C"   class2="CH2" class3="C" class4="CH2" c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
   <Proper class1="C"   class2="CH2" class3="C" class4="CH"  c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
   <Proper class1="C"   class2="CH2" class3="C" class4="C"   c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
-  <Proper class1="C"   class2="CH2" class3="C" class4="COO" c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+
   <!-- CHX-[CH]-[CH]-CHY -->
   <!-- J. Phys. Chem. B 1999, 103, 4508-4517. Branched alkanes, 10.1021/jp984742e-->
   <Proper class1="CH3" class2="CH" class3="CH" class4="CH3" c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
@@ -317,21 +317,28 @@
   CHX-[CH]-[CH]-OH, CHX-[CH]-[C]-OH, CHX-[C]-[CH2]-OH, CHX-[C]-[CH]-OH,
   CHX-[C]-[C]-OH ?
   -->
-  <!-- CH2-CH2-CH2-COO -->
-  <!--  ===================== ESTERS ==================== -->
-  <!-- Esters doi:10.1016/j.fluid.2005.11.03 -->
-  <Proper class1="CH" class2="OCO" class3="COO" class4="OC" c0="53.95753" c1="14.41561" c2="-34.23895" c3="5.10175" c4="0.0" c5="0.0"/>
-  <Proper class1="CH2" class2="OCO" class3="COO" class4="OC" c0="53.95753" c1="14.41561" c2="-34.23895" c3="5.10175" c4="0.0" c5="0.0"/>
-  <Proper class1="CH" class2="OCO" class3="COO" class4="CH3" c0="54.47053" c1="-13.02128" c2="-34.88748" c3="-6.56177" c4="0.0" c5="0.0"/>
-  <Proper class1="CH2" class2="OCO" class3="COO" class4="CH3" c0="54.47053" c1="-13.02128" c2="-34.88748" c3="-6.56177" c4="0.0" c5="0.0"/>
-  <!-- This parameter is developed for eter/alcohol, but it has been used for esters. 10.1021/jp049459w-->
-  <Proper class1="CH2" class2="CH2" class3="CH" class4="OCO" c0="6.98307" c1="17.73616" c2="0.88699" c3="-25.60622" c4="0.0" c5="0.0"/>
-  <Proper class1="CH"  class2="CH2" class3="CH" class4="OCO" c0="6.98307" c1="17.73616" c2="0.88699" c3="-25.60622" c4="0.0" c5="0.0"/>
-  <Proper class1="CH"  class2="CH2" class3="CH2" class4="OCO" c0="6.98307" c1="17.73616" c2="0.88699" c3="-25.60622" c4="0.0" c5="0.0"/>
-  <Proper class1="CH2" class2="CH" class3="OCO" class4="COO" c0="7.94904" c1="7.89250" c2="2.72299" c3="-18.56453" c4="0.0" c5="0.0"/>
-  <Proper class1="CH2" class2="CH2" class3="OCO" class4="COO" c0="7.94904" c1="7.89250" c2="2.72299" c3="-18.56453" c4="0.0" c5="0.0"/>
-  <Proper class1="CH3" class2="CH" class3="OCO" class4="COO" c0="7.94904" c1="7.89250" c2="2.72299" c3="-18.56453" c4="0.0" c5="0.0"/>
- </RBTorsionForce>
+ <!--  ===================== CARBOXYLATES - ESTERS ==================== -->
+  <!-- J. Chem. Phys 2004, 108, 17596-17605. 10.1021/jp049459w -->
+  <Proper class1="CH3"  class2="C" class3="COO"   class4="OC" c0="9.321952"   c1="-1.188256" c2="-0.962320" c3="9.752904" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2"  class2="C" class3="COO"   class4="OC" c0="9.321952"   c1="-1.188256" c2="-0.962320" c3="9.752904" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2"  class2="CH" class3="COO"  class4="OC" c0="9.321952"   c1="-1.188256" c2="-0.962320" c3="9.752904" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3"  class2="CH" class3="COO"  class4="OC" c0="9.321952"   c1="-1.188256" c2="-0.962320" c3="9.752904" c4="0.0" c5="0.0"/>
+  <!-- J. Phys. Chem. B 2006, 110, 21938-21943, 10.1021/jp0625053 -->
+  <Proper class1="CH3"  class2="C" class3="COO"   class4="OCO" c0="8.397288"  c1="16.7862083" c2="1.133864" c3="-26.317360" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2"  class2="C" class3="COO"   class4="OCO" c0="8.397288"  c1="16.7862083" c2="1.133864" c3="-26.317360" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2"  class2="CH" class3="COO"  class4="OCO" c0="8.397288"  c1="16.7862083" c2="1.133864" c3="-26.317360" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3"  class2="CH" class3="COO"  class4="OCO" c0="8.397288"  c1="16.7862083" c2="1.133864" c3="-26.317360" c4="0.0" c5="0.0"/>
+  <!-- Fluid Phase Equilibria 240 (2006) 46–55, 10.1016/j.fluid.2005.11.034 -->
+  <Proper class1="C"    class2="COO" class3="OCO" class4="CH3" c0="54.471496" c1="-13.020608" c2="-34.886192" c3="-6.560512" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"   class2="COO" class3="OCO" class4="CH3" c0="54.471496" c1="-13.020608" c2="-34.886192" c3="-6.560512" c4="0.0" c5="0.0"/>
+  <Proper class1="OC"   class2="COO" class3="OCO" class4="CH3" c0="90.41624"  c1="-22.066416" c2="-34.237672" c3="5.100296" c4="0.0" c5="0.0"/>
+  <!-- J. Phys. Chem. B 1999, 103, 4508-4517. Branched alkanes, 10.1021/jp984742e-->
+  <Proper class1="C"    class2="CH2" class3="C"   class4="COO" c0="3.83538"   c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"   class2="CH2" class3="C"   class4="COO" c0="3.83538"   c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <!-- J. Phys. Chem. B 1999, 103, 4508-4517. Branched alkanes, 10.1021/jp984742e-->
+  <Proper class1="C"    class2="CH2" class3="CH"  class4="COO" c0="3.28621"   c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+
+</RBTorsionForce>
 
  <NonbondedForce coulomb14scale="0" lj14scale="0">
   <!--  ===================== ALKANES ==================== -->
@@ -349,14 +356,17 @@
   <Atom type="CH3_OH" charge="0.265" sigma="0.375" epsilon="0.814817"/>
   <Atom type="CH2_OH" charge="0.265" sigma="0.395" epsilon="0.382465"/>
   <!--  ===================== ESTERS ==================== -->
-  <!-- Esters doi:10.1016/j.fluid.2005.11.03 -->
-  <Atom type="OC" charge="-0.45" sigma="0.305" epsilon="0.656842"/>
-  <Atom type="OCO" charge="-0.4" sigma="0.280" epsilon="0.457295"/>
+  <!-- Acrylates doi:10.1021/jp810558v -->
+  <!-- Esters and acetates doi:10.1016/j.fluid.2005.11.034 -->
+  <Atom type="COO" charge="0.40" sigma="0.390" epsilon="0.340893"/>
+  <Atom type="OCO" charge="-0.25" sigma="0.280" epsilon="0.109296"/>
+  <Atom type="OC" charge="-0.40" sigma="0.305" epsilon="0.656842"/>
+  <!-- sigma and epsilon are the same that for alkanes but the charge change. -->
   <Atom type="CH3_OC" charge="0.25" sigma="0.375" epsilon="0.814817"/>
   <Atom type="CH2_OC" charge="0.25" sigma="0.395" epsilon="0.382465"/>
-  <Atom type="COO" charge="0.550" sigma="0.390" epsilon="0.340893"/>
   <!-- This parameter is developed for eter/alcohol, but it has been used for esters. -->
   <!-- sigma and epsilon are the same that for alkanes but the charge change. -->
+  <!-- Esters doi:10.1021/jp049459w -->
   <Atom type="CH_OCO" charge="0.25" sigma="0.433" epsilon="0.0831445"/>
   <!-- Esters doi:10.1021/jp049459w -->
   <Atom type="CH3_ace" charge="0.05" sigma="0.375" epsilon="0.814817"/>

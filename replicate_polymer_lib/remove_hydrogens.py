@@ -42,13 +42,14 @@ def get_tempfactor_occup_list(pdb):
 
 
 # =============================================================================
-def remove_hydrogens(filename_pdb, removeallh=False):
+def remove_hydrogens(filename_pdb, bondlist=None, removeallh=False):
     """
     This function takes the name of a pdb file and removes the hydrogen atoms.
     This can be usefult oe be used in united group force fields.
 
     Args:
         filename_pdb(str): Name of the file containing the coordinates without atomic order.
+        bondlist(list)
         removeallh (bool): If True remove all Hs, otherwise only remove Hs attached to carbon atoms (united atoms)
 
     Returns:
@@ -60,6 +61,15 @@ def remove_hydrogens(filename_pdb, removeallh=False):
     traj = md.load_pdb(filename_pdb)
     atoms_UA = list(traj.topology.select("element != H"))
     tempfactor_single, occup_single = get_tempfactor_occup_list(filename_pdb)
+
+    # Create boinds if there are not present in the md.traj
+    if bondlist is not None and traj.topology.n_bonds == 0:
+        for ibond in bondlist:
+            iat1_idx = ibond[0]
+            iat2_idx = ibond[1]
+            iat1 = traj.topology._atoms[iat1_idx]
+            iat2 = traj.topology._atoms[iat2_idx]
+            traj.topology.add_bond(iat1, iat2)
 
     # Add hydrogens explicitly to atoms different to C
     dict_graph = defaultdict(list)

@@ -68,7 +68,7 @@ def check_resname_pdb(fnameinp, dict_namemol=None):
         return fnameinp
 
 # =============================================================================
-def check_conect_pdb(fnameinp):
+def check_conect_pdb(fnameinp, logger=None):
 
     """
     Read a pdb or gro file and then check if the CONECT section is present. If not the conect section is written
@@ -83,37 +83,52 @@ def check_conect_pdb(fnameinp):
 
     """
 
+    bond_list_more100K = []
+
     # Try to open the file
     with open(fnameinp, 'r') as f:
         lines = f.readlines()
         n = len([i for i in lines if "CONECT" in i])
-        # If there is not CONECT section, we try to build up using MDAnalysis framework
-        if n == 0:
+        natoms = len([i for i in lines if "ATOM" in i or "HETATM" in i])
+        # If there is not CONECT section or the number of atoms is greater than 99999,
+        # we try to build up using MDAnalysis framework
+        if n == 0 or natoms > 99999:
             try:
+                m = "\n\t\t CONECT section is not present in the PDB or\n"
+                m += "\t\t number of atoms is >99999 (natoms={})\n".format(natoms)
+                m += "\t\t Guessing bonds from MD.Universe"
+                print(m) if logger is None else logger.info(m)
                 t = md.Universe(fnameinp, guess_bonds=True)
             except Exception as e:
-                print(e)
-                print("Return None object")
-                return None
+                m = "\t\t"+str(e)+"\n"
+                m += "\t\tReturn None object from md.Universe"
+                print(m) if logger is None else logger.info(m)
+                return None, bond_list_more100K
+
             graph_dict = {x: [] for x in range(0, len(t.atoms))}
 
             basename = os.path.splitext(os.path.split(fnameinp)[-1])[0]
-            filenamepdb = "./"+basename+"_con.pdb"
+            if natoms < 99999:
+                filenamepdb = "./"+basename+"_con.pdb"
+            else:
+                filenamepdb = "./" + basename + "_nocon.pdb"
 
             ag = t.select_atoms("all")
             ag.write(filenamepdb, frames='all')
             for ibond in t.bonds:
                 graph_dict[ibond.atoms[0].ix].append(ibond.atoms[1].ix)
                 graph_dict[ibond.atoms[1].ix].append(ibond.atoms[0].ix)
+                bond_list_more100K.append(sorted([ibond.atoms[0].ix, ibond.atoms[1].ix]))
 
-            with open(filenamepdb, 'a') as ftmp:
-                for key, values in graph_dict.items():
-                    line = "CONECT"
-                    line += "{0:5d}".format(key + 1)
-                    for ival in values:
-                        line += "{0:5d}".format(ival + 1)
-                    line += "\n"
-                    ftmp.writelines(line)
+            if natoms < 99999:
+                with open(filenamepdb, 'a') as ftmp:
+                    for key, values in graph_dict.items():
+                        line = "CONECT"
+                        line += "{0:5d}".format(key + 1)
+                        for ival in values:
+                            line += "{0:5d}".format(ival + 1)
+                        line += "\n"
+                        ftmp.writelines(line)
 
             del t
 
@@ -121,8 +136,9 @@ def check_conect_pdb(fnameinp):
 
             filenamepdb = fnameinp
 
-    return filenamepdb
+    return filenamepdb, bond_list_more100K
 
+# =============================================================================
 def check_and_remove_ter_labels(fnameinp, occup=None, logger=None):
 
     """
@@ -191,8 +207,6 @@ def check_and_remove_ter_labels(fnameinp, occup=None, logger=None):
         return fnameinp
     else:
         return fnameinp
-
-
 
 # # =============================================================================
 # def check_bonds(parmed_topo, mdtraj_topo, logger=None):

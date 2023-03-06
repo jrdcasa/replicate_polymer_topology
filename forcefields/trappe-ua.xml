@@ -20,6 +20,9 @@
   <Type name="OCO" class="OCO" element="O" mass="15.99940" def="[O;X2]([_CH3,_CH2,_CH,C])C" desc="Oxygen in ester group" doi="10.1016/j.fluid.2005.11.03 "/>
   <Type name="CH3_OC"  class="CH3" element="_CH3" mass="15.03500" def="[_CH3;X1][O]"  desc="CH3, united atom, attached to ester" doi="????????"/>
   <Type name="CH2_OC"  class="CH2" element="_CH2" mass="14.02700" def="[_CH2;X2]([_CH3,_CH2,_CH,C])[O;%OCO]" desc="CH2, united atom, attached to ester oxygen" doi="10.1016/j.fluid.2005.11.03 "/>
+
+  <Type name="CH_OC"  class="CH" element="C" mass="13.01900" def="[C;X3]([_CH3,_CH2,_CH,C])([_CH3,_CH2,_CH,C])[O;%OCO]" desc="CH, united atom, attached to ester oxygen" doi="???????????"/>
+
   <Type name="COO" class="COO" element="C" mass="12.01100" def="[C;X3]([_CH3,_CH2,_CH,C])(O)(O)" desc="Carbon in carbonyl group" doi="?????????"/>
   <!-- Esters doi:10.1021/jp049459w -->
   <Type name="CH3_ace" class="CH3" element="_CH3" mass="15.03500" def="[_CH3;X1][C;%COO]" overrides="CH3_sp3" desc="Methyl acetate, united atom, attached to ester oxygen" doi="10.1021/jp049459w"/>
@@ -285,9 +288,9 @@
   <!--  ===================== ESTERS ==================== -->
   <!-- Acrylates doi:10.1021/jp810558v -->
   <!-- Esters and acetates doi:10.1016/j.fluid.2005.11.034 -->
-  <Atom type="COO" charge="0.55" sigma="0.390" epsilon="0.340893"/>
-  <Atom type="OCO" charge="-0.40" sigma="0.280" epsilon="0.109296"/>
-  <Atom type="OC" charge="-0.45" sigma="0.305" epsilon="0.656842"/>
+  <Atom type="COO" charge="0.40" sigma="0.390" epsilon="0.340893"/>
+  <Atom type="OCO" charge="-0.25" sigma="0.280" epsilon="0.109296"/>
+  <Atom type="OC" charge="-0.40" sigma="0.305" epsilon="0.656842"/>
   <!-- sigma and epsilon are the same that for alkanes but the charge change. -->
   <Atom type="CH3_OC" charge="0.25" sigma="0.375" epsilon="0.814817"/>
   <Atom type="CH2_OC" charge="0.25" sigma="0.395" epsilon="0.382465"/>

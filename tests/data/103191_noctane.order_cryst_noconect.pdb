@@ -26,4 +26,4 @@ HETATM   23  C   OCT     0       4.662   1.737   9.596                       C
 HETATM   24  H   OCT     0       3.922   1.195   9.841                       H
 HETATM   25  H   OCT     0       4.979   2.242  10.388                       H
 HETATM   26  H   OCT     0       5.361   1.119   9.297                       H
-
+END

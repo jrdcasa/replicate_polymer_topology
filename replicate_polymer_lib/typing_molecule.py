@@ -55,6 +55,8 @@ def typing_molecule(filename, molecule, forcefield_xml_files, overwrite=True,
         m = "\t\t" + ll * "-" + "\n"
         print(m + m1 + m2 + m) if logger is None else logger.info(m + m1 + m2 + m)
 
+    import sys
+    sys.setrecursionlimit(30000)
     pmd_structure.save(filename, overwrite=overwrite, **kwargs)
 
     return non_openmm_potentials_terms

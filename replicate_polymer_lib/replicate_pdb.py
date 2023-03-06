@@ -9,8 +9,9 @@ with warnings.catch_warnings():
     warnings.filterwarnings("ignore")
     import mdtraj as md
 from replicate_polymer_lib.remove_hydrogens import get_tempfactor_occup_list
-warnings.filterwarnings("ignore")
 from replicate_polymer_lib.check_connect_pdb import check_and_remove_ter_labels
+import MDAnalysis as mdanalysis
+warnings.filterwarnings("ignore")
 
 
 # =============================================================================
@@ -35,7 +36,11 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
     # mols_single is the total number of molecules
     trj_single = md.load_pdb(single_mol_pdb)
     topo_single = trj_single.topology
-    mols_single = topo_single.find_molecules()
+    try:
+        mols_single = topo_single.find_molecules()
+    except ValueError:
+        _guessing_bonds(single_mol_pdb, topo_single, logger=logger_log)
+        mols_single = topo_single.find_molecules()
     nmols_single = len(mols_single)
     nch_single = trj_single.n_chains
     nres_single = trj_single.n_residues
@@ -46,9 +51,9 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
 
     # MDTraj has several standardBonds for protein residues this can cause problems for non-protein systems in which
     # any residue has the same name that those standard residue names.
-    standardResidues = topo_single._standardBonds.keys()
+    standard_residues = topo_single._standardBonds.keys()
     for ires in topo_single.residues:
-        if ires.name in standardResidues:
+        if ires.name in standard_residues:
             mm1 = "\t\tWARN: The residue {} is a standard residue.\n".format(ires.name)
             mm2 = "\t\tThis can be a source of problems for non-protein systems\n"
             mm3 = "\t\tConsiderer to change the residue name before to use this program\n"
@@ -138,7 +143,7 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
     new_xyz = np.zeros([1, natoms, 3])
 
     # Initializate tempFactor list to take into account the backbone and branch atoms
-    tempFactor_list_single, occup_list_single = get_tempfactor_occup_list(single_mol_pdb)
+    temp_factor_list_single, occup_list_single = get_tempfactor_occup_list(single_mol_pdb)
     tempFactor = np.zeros([natoms])
     occupFactor = np.zeros([natoms])
 
@@ -162,7 +167,7 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
 
     # Coordinates of the first chain
     new_xyz[0, 0:nat_single, :] = trj_single.xyz[-1, :, :]
-    tempFactor[0:nat_single] = tempFactor_list_single
+    tempFactor[0:nat_single] = temp_factor_list_single
     occupFactor[0:nat_single] = occup_list_single
 
     # Add the cells in the x-direction, y-direction and z-direction ==========
@@ -269,6 +274,10 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
     filenamepdb = check_and_remove_ter_labels(filenamepdb_new, occup=occupFactor, logger=logger_log)
 
     # Save gro =========
+    # Correct number of residues > 100000
+    for ires in new_trj.topology.residues:
+        tmp = ires.resSeq % 100000
+        ires.resSeq = tmp
     ext = ".gro"
     filenamegro_new = os.path.join(dirlocal, base + "_replicate" + ext)
     new_trj.save_gro(filenamegro_new)
@@ -286,7 +295,7 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
             idx_mol_label = lines.index(mol_label[0])
             new_lines = lines[0:idx_mol_label+1]
             if nres_single/nmols_single == 1:
-                #CJ2 for name_mol, n in dict_nresidues.items():
+                # CJ2 for name_mol, n in dict_nresidues.items():
                 for name_mol in list_nresidues:
                     ll = "{} {}\n".format(name_mol, 1)
                     new_lines.append(ll)
@@ -301,7 +310,8 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
     except FileNotFoundError:
         pass
 
-    # PDB modify chain info. Mdtraj label each chain with a different name. In our pdb, we want that a chain of the
+    # PDB modify chain info. Mdtraj label each chain with a different name.
+    # In our pdb, we want that a chain of the
     # same type have the same name.
     _modify_chain_info_pdb(filenamepdb_new, atom_to_chainid_single)
 
@@ -327,7 +337,7 @@ def _write_etoe_bb_info(nmols_replicate, beta, occup):
 
     fee = open("listendtoend_replicate.dat", 'w')
     fbb = open("backbone_idx_replicate.dat", 'w')
-    faa = open("allatom_idx_replicate", 'w')
+    faa = open("allatom_idx_replicate.dat", 'w')
     fee.writelines("# ich head tail\n")
 
     chain_to_atom = defaultdict(list)
@@ -351,13 +361,15 @@ def _write_etoe_bb_info(nmols_replicate, beta, occup):
             fbb.writelines("{}\n".format(ibb))
         for iaa in sorted(aa_ch):
             faa.writelines("{}\n".format(iaa))
-
-
-        fee.writelines("{} {} {}\n".format(ich, ihead, itail))
+        try:
+            fee.writelines("{} {} {}\n".format(ich, ihead, itail))
+        except Exception as e:
+            continue
         ich += 1
 
     fee.close()
     fbb.close()
+
 
 # ==================================================
 def _assign_chain_to_atom(filenamepdb):
@@ -400,23 +412,41 @@ def _modify_chain_info_pdb(filenamepdb, atom_to_chainid_single):
     with open(filenamepdb, 'r') as fpdb:
         lines = fpdb.readlines()
         idx_local = 0
+        idx = 1
         for iline in lines:
             if iline.find("ATOM") != -1 or iline.find("HETATM") != -1:
-                idx = int(iline[6:11]) - 1
+                # idx = int(iline[6:11]) - 1
+                if idx > 99999:
+                    magic = 100000
+                    new_idx = (idx % magic) + 1
+                    sentinel_a = 12
+                    sentinel_b = 22
+                else:
+                    new_idx = idx
+                    sentinel_a = 11
+                    sentinel_b = 21
                 try:
-                    jline = iline[0:21] + map_in_to_letter[atom_to_chainid_single[idx_local]] + iline[22:]
+                    # jline = iline[0:21] + map_in_to_letter[atom_to_chainid_single[idx_local]] + iline[22:]
+                    jline = iline[0:6] + "{0:5d}".format(new_idx) + iline[sentinel_a:sentinel_b] + \
+                            map_in_to_letter[atom_to_chainid_single[idx_local]] + iline[sentinel_b+1:]
                     nwlines.append(jline)
                     atom_to_chainid_replicate[idx] = ich
                 except KeyError:
                     idx_local = 0
                     ich += 1
                     atom_to_chainid_replicate[idx] = ich
-                    jline = iline[0:21] + map_in_to_letter[atom_to_chainid_single[idx_local]] + iline[22:]
+                    # jline = iline[0:21] + map_in_to_letter[atom_to_chainid_single[idx_local]] + iline[22:]
+                    jline = iline[0:6] + "{0:5d}".format(new_idx) + iline[sentinel_a:sentinel_b] + \
+                            map_in_to_letter[atom_to_chainid_single[idx_local]] + iline[sentinel_b+1:]
                     nwlines.append(jline)
                 idx_local += 1
+                idx += 1
             elif iline.find("TER") != -1:
-                jline = iline[0:21] + map_in_to_letter[atom_to_chainid_single[idx_local - 1]] + iline[22:]
+                # jline = iline[0:21] + map_in_to_letter[atom_to_chainid_single[idx_local - 1]] + iline[22:]
+                jline = iline[0:6] + "{0:5d}".format(new_idx) + iline[sentinel_a:sentinel_b] +\
+                        map_in_to_letter[atom_to_chainid_single[idx_local]] + iline[sentinel_b+1:]
                 nwlines.append(jline)
+                idx += 1
             else:
                 nwlines.append(iline)
 
@@ -425,3 +455,28 @@ def _modify_chain_info_pdb(filenamepdb, atom_to_chainid_single):
             fpdb.writelines(iline)
 
     return atom_to_chainid_replicate
+
+
+# ==================================================
+def _guessing_bonds(fnameinp, topo_single, logger=None):
+
+    # Guessing bonds from md.Universe
+    try:
+        m = "\n\t\t CONECT section is not present in the PDB\n"
+        m += "\t\t Guessing bonds from MD.Universe"
+        print(m) if logger is None else logger.info(m)
+        t = mdanalysis.Universe(fnameinp, guess_bonds=True)
+    # If universe cannot be created raise an error
+    except Exception as e:
+        m = "\n\t\t ERROR:" + str(e) + "\n"
+        m += "n\t\t ERROR: Return None object from md.Universe"
+        print(m) if logger is None else logger.error(m)
+        exit()
+
+    # Add bonds to the md_topology
+    for ibond in t.bonds:
+        idx1 = ibond.atoms[0].index
+        idx2 = ibond.atoms[1].index
+        iatom1 = topo_single._atoms[idx1]
+        iatom2 = topo_single._atoms[idx2]
+        topo_single.add_bond(iatom1, iatom2)

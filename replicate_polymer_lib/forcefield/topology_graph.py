@@ -74,7 +74,6 @@ class TopologyGraph(nx.Graph):
             m2 = "\t\tMolecule cannot be typed!!!!!. Exiting....\n"
             m = "\t\t" + len(m1) * "*" + "\n"
             print("\n" + m + m1 + m3 + m2 + m) if logger is None else logger.info("\n" + m + m1 + m3 + m2 + m)
-            print("MEGAGO EN LA PUTA")
             exit()
 
         atom_data = AtomData(index, name, atomic_number, element, **kwargs)
