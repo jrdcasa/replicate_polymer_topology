@@ -22,13 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="097f4e77-3800-4c0f-93e1-d3b7c8a880f0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/Forcefield.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/forcefield/Forcefield.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/insert_impropers_top_gromacs.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/insert_impropers_top_gromacs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/prepare_lammps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/setup_chiral_impropers.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/setup_chiral_impropers.py" afterDir="false" />
-    </list>
+    <list default="true" id="097f4e77-3800-4c0f-93e1-d3b7c8a880f0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1096,7 +1090,7 @@
       <workItem from="1678185721176" duration="689000" />
       <workItem from="1678210378411" duration="618000" />
       <workItem from="1678455183300" duration="9000" />
-      <workItem from="1679819935800" duration="18610000" />
+      <workItem from="1679819935800" duration="18709000" />
     </task>
     <servers />
   </component>
