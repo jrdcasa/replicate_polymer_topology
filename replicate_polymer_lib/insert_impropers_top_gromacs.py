@@ -14,12 +14,17 @@ def insert_impropers(opts, fnamepdb, logger=None):
         now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
         m = "\t\tInserting impropers in the topology file ({})\n".format(now)
         if opts.impropers.title() == "Guess":
-            m += "\t\t\tGuessing impropers ..."
+            m += "\t\t\tGuessing impropers ... (it is better use a improper list)"
             nimpropers_list, imp_lines_list = setup_chiral_impropers(fnamepdb, improper_filename=None)
-
         else:
             nimpropers_list, imp_lines_list = setup_chiral_impropers(fnamepdb, improper_filename=opts.impropers)
             m += "\t\t\tInserting impropers from {} ...".format(opts.impropers)
+        print(m) if logger is None else logger.info(m)
+    elif opts.impropers is not None:
+        now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+        m = "\t\tInserting impropers in the topology file ({})\n".format(now)
+        nimpropers_list, imp_lines_list = setup_chiral_impropers(fnamepdb, improper_filename=opts.impropers)
+        m += "\t\t\tInserting impropers from {} ...".format(opts.impropers)
         print(m) if logger is None else logger.info(m)
     else:
         imp_lines = [""]

@@ -711,8 +711,7 @@ class Forcefield(app.ForceField):
 
         Parameters
         ----------
-        structure : ReadPdb molecular object
-            Molecular structure to apply the force field to
+        molecule : TODO
         use_residue_map : boolean, optional, default=True
             Store atomtyped topologies of residues to a dictionary that maps
             them to residue names.  Each topology, including atomtypes, will be
@@ -852,7 +851,9 @@ class Forcefield(app.ForceField):
 
         _check_bonds(data, structure, assert_bond_params, logger=logger)
         _check_angles(data, structure, verbose, assert_angle_params, logger=logger)
-        _check_dihedrals(data, structure, non_openmm_potentials_terms, verbose, assert_dihedral_params, assert_improper_params, logger=logger)
+        # Include improper angles
+        _check_dihedrals(data, structure, non_openmm_potentials_terms, verbose, assert_dihedral_params,
+                         assert_improper_params, logger=logger)
 
         try:
             structure.combining_rule = self.combining_rule

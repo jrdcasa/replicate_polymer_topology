@@ -31,7 +31,7 @@ def setup_chiral_impropers(filenamepdb, improper_filename=None):
         for iline in lines:
             if iline.find("ATOM") != -1 or iline.find("HETATM") != -1:
                 try:
-                    # backbone = 1.00, not backbone = 0.00
+                    # backbone = 0.00, not backbone = 1.00
                     is_backbone.append(int(float(iline[60:66])))
                 except ValueError:
                     is_backbone.append(int(1))
@@ -73,7 +73,8 @@ def setup_chiral_impropers(filenamepdb, improper_filename=None):
         for key, values in graph.items():
             if len(values) < 3:
                 continue
-            if is_backbone[key] == 0:
+            # if is_backbone[key] == 0:
+            if is_backbone[key] == 1:
                 continue
             atoms_improper = [key]
             br_onwait = []
@@ -99,6 +100,19 @@ def setup_chiral_impropers(filenamepdb, improper_filename=None):
                 else:
                     dd = 30.5
 
+                # ibbl = []
+                # ibrl = []
+                # ibpl = [atoms_improper[0]]
+                # for iat in atoms_improper[1:]:
+                #     if is_backbone[iat] == 0:
+                #         ibbl.append(iat)
+                #     else:
+                #         ibrl.append(iat)
+                # ibbl = sorted(ibbl)
+                # at1 = ibpl[0]
+                # at2 = ibbl[0]
+                # at3 = ibbl[1]
+                # at4 = ibrl[0]
                 improper_lines += "{0:8d} {1:8d} {2:8d} {3:8d}  2   {4:7.3f} 0.5178E+03\n".\
                     format(at1+1, at2+1, at3+1, at4+1, dd)
             except ValueError:
@@ -116,6 +130,7 @@ def setup_chiral_impropers(filenamepdb, improper_filename=None):
                 if re.match("^#", lines[idx]):
                     idx += 1
                     continue
+
                 a, b = lines[idx][:-1].split()
                 b = int(b)
                 nimpropers_list.append(b)

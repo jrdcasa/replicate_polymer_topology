@@ -281,7 +281,8 @@ def _write_lmp_data(lmp_filename_new, ffname, top_filename, lines_top, lines_gro
                     line = "{0:<4d} nharmonic {1:2d}".format(itype.idx_dihedral, nterms)
                     for key, value in params.items():
                         line += " {0:>8.4f}".format(value/4.184)
-                    line += "\n"
+                    itype.type_A, itype.type_B, itype.type_C, itype.type_D
+                    line += "#{0:s} {1:s} {2:s} {3:s} \n".format(itype.type_A, itype.type_B, itype.type_C, itype.type_D)
                     flmp.writelines(line)
 
         # Improper coefficients
@@ -929,10 +930,13 @@ def _parse_top_dihedrals_section(lines_top, idx, atoms_kind_info):
                     if len(tokens) == 0:
                         idx = jdx - 1
                         break
-                    jdx1 = int(tokens[0])
-                    jdx2 = int(tokens[1])
-                    jdx3 = int(tokens[2])
-                    jdx4 = int(tokens[3])
+                    try:
+                        jdx1 = int(tokens[0])
+                        jdx2 = int(tokens[1])
+                        jdx3 = int(tokens[2])
+                        jdx4 = int(tokens[3])
+                    except ValueError:
+                        break
                     label_current = str(jdx1) + "-" + str(jdx2) + "-" + str(jdx3) + "-" + str(jdx4)
                     if label_current != label_previous:
                         idx = jdx - 1
