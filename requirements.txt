@@ -14,4 +14,4 @@ boltons>=21.0.0
 networkx>=2.6.3
 requests>=2.26.0
 MDAnalysis>=2.2.0
-mdtraj>=1.9.6
+mdtraj
