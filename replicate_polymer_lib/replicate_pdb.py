@@ -54,11 +54,12 @@ def replicate_pdb(single_mol_pdb, images, boxlength=None, boxangles=None, save_s
     standard_residues = topo_single._standardBonds.keys()
     for ires in topo_single.residues:
         if ires.name in standard_residues:
-            mm1 = "\t\tWARN: The residue {} is a standard residue.\n".format(ires.name)
+            mm1 = "\t\tERROR: The residue {} is a standard residue.\n".format(ires.name)
             mm2 = "\t\tThis can be a source of problems for non-protein systems\n"
             mm3 = "\t\tConsiderer to change the residue name before to use this program\n"
             mm0 = "\t\t"+len(mm3)*"-"+"\n"
             print(mm0+mm1+mm2+mm3+mm0) if logger_log is None else logger_log.info(mm0+mm1+mm2+mm3+mm0)
+            exit()
 
     # Set of residues names in the PDB ==========
     name_residues = list(set([i.name for i in trj_single.topology.residues]))

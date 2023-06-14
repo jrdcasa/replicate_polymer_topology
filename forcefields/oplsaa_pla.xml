@@ -1,0 +1,86 @@
+<!--
+    PLAFF-AA: Quantum and molecular modeling of polylactide (Paul O'Brien, PHd, 2005)
+    https://www.proquest.com/openview/1657893f4f3425779e087d042353ea48/1?pq-origsite=gscholar&cbl=18750&diss=y
+-->
+<ForceField name="PLAFF-AA" version="0.0.1" combining_rule="geometric">
+ <AtomTypes>
+  <!-- PLAFF-AA --> 
+  <Type name="opls_135" class="CT"  element="C" mass="12.01100" def="[C;X4](C)(H)(H)H" desc="alkane CH3" doi=""/>
+  <Type name="opls_140" class="HC"  element="H" mass="1.00800"  def="H[C;X4]" desc="alkane H" doi=""/>
+  <Type name="opls_183" class="CT"  element="C" mass="12.011"   def="[C;X4]([O])(C)(C)H" desc = "Central Carbon in Isopropyl group attached to Oxygen in ether" doi=""/>
+  <Type name="opls_465" class="C_2" element="C" mass="12.011"   def="[C;X3]([O;X1])([O;X2])" desc="C in C=O in ester" doi=""/>
+  <Type name="opls_466" class="O_2" element="O" mass="15.9994"  def="[O;X1]([C;%opls_465]([O;%opls_467]))" desc="O in C=O in ester" doi=""/>
+  <Type name="opls_467" class="OS"  element="O" mass="15.9994"  def="[O;X2]([C;%opls_465])([!H])" desc="O connected to R of O=C-O-R in esters" doi=""/>
+  <!-- OPLS-AA --> 
+  <Type name="opls_137" class="CT"  element="C" mass="12.01100" def="[C;X4](C)(C)(C)H" desc="alkane CH" doi="10.1021/ja9621760"/>
+  <Type name="opls_267" class="C"   element="C" mass="12.01100" def="[C;X3]([O;X1])OH" desc="Co in CCOOH" overrides="opls_465" doi="10.1021/ja9621760"/>
+  <Type name="opls_268" class="OH"  element="O" mass="15.9994"  def="[O;X2]([C;%opls_267])H" desc="Oh in CCOOH" doi="10.1021/ja9621760"/>
+  <Type name="opls_269" class="O_3" element="O" mass="15.9994"  def="[O;X1]([C;%opls_267](OH))" desc="Oc in CCOOH" doi="10.1021/ja9621760"/>
+  <Type name="opls_270" class="HO"  element="H" mass="1.00800"  def="H([O;%opls_268])" desc="H in CCOOH" doi="10.1021/ja9621760"/>
+ </AtomTypes>
+
+ <NonbondedForce coulomb14scale="0.0" lj14scale="0.0">
+  <!-- PLAFF-AA --> 
+  <Atom type="opls_135" charge="-0.180" sigma="0.350" epsilon="0.276329"/>
+  <Atom type="opls_140"  charge="0.060" sigma="0.250" epsilon="0.125604"/>
+  <Atom type="opls_183"  charge="0.170" sigma="0.350" epsilon="0.276144"/>
+  <Atom type="opls_465"  charge="0.520" sigma="0.375" epsilon="0.439614"/>
+  <Atom type="opls_466" charge="-0.430" sigma="0.296" epsilon="0.879228"/>
+  <Atom type="opls_467" charge="-0.320" sigma="0.300" epsilon="0.711756"/>
+  <!-- OPLS-AA --> 
+  <Atom type="opls_137" charge="-0.060" sigma="0.350" epsilon="0.276329"/>
+  <Atom type="opls_267"  charge="0.520" sigma="0.375" epsilon="0.439614"/>
+  <Atom type="opls_268" charge="-0.530" sigma="0.300" epsilon="0.711756"/>
+  <Atom type="opls_269" charge="-0.440" sigma="0.296" epsilon="0.87864"/>
+  <Atom type="opls_270"  charge="0.450" sigma="1.000" epsilon="0.00000"/>
+ </NonbondedForce>
+
+ <HarmonicBondForce>
+     <!-- PLAFF-AA --> 
+     <Bond class1="HO"  class2="OH"  length="0.09450" k="463060.1"/>
+     <Bond class1="C"   class2="CT"  length="0.15220" k="265443.1"/>
+     <Bond class1="C"   class2="OH"  length="0.13640" k="376812.0"/>
+     <Bond class1="C"   class2="O_3" length="0.12290" k="477295.2"/>
+     <Bond class1="C"   class2="O_2" length="0.12100" k="477295.2"/> 
+     <Bond class1="C_2" class2="CT"  length="0.15290" k="224412.5"/>
+     <Bond class1="C_2" class2="O_2" length="0.12290" k="477295.2"/>
+     <Bond class1="C_2" class2="OS"  length="0.13270" k="179195.0"/>
+     <Bond class1="CT"  class2="CT"  length="0.15320" k="265443.1"/>
+     <Bond class1="CT"  class2="HC"  length="0.10800" k="284702.4"/> 
+     <Bond class1="CT"  class2="OS"  length="0.14400" k="267955.2"/>
+     <Bond class1="CT"  class2="OH"  length="0.14100" k="267955.2"/>
+ </HarmonicBondForce>
+
+ <HarmonicAngleForce>
+     <!-- PLAFF-AA --> 
+     <Angle class1="C"   class2="OH"  class3="HO"  angle="1.97222205475"  k="293.076"/>
+     <Angle class1="CT"  class2="C"   class3="OH"  angle="1.88495559215"  k="586.152"/>
+     <Angle class1="O_3" class2="C"   class3="OH"  angle="2.11184839491"  k="669.888"/>
+     <Angle class1="CT"  class2="C"   class3="O_3" angle="2.10137641940"  k="669.888"/>
+     <Angle class1="C"   class2="CT"  class3="CT"  angle="1.94604211597"  k="527.537"/>
+     <Angle class1="CT"  class2="CT"  class3="OS"  angle="1.89368223841"  k="418.680"/>
+     <Angle class1="C"   class2="CT"  class3="OS"  angle="1.89193690916"  k="418.680"/>
+     <Angle class1="C_2" class2="OS"  class3="CT"  angle="2.00712863979"  k="695.009"/>
+     <Angle class1="C"   class2="CT"  class3="HC"  angle="1.92858882345"  k="293.076"/>
+     <Angle class1="CT"  class2="CT"  class3="HC"  angle="1.91811684794"  k="314.010"/>
+     <Angle class1="HC"  class2="CT"  class3="OS"  angle="1.91113553093"  k="293.076"/>
+     <Angle class1="CT"  class2="CT"  class3="HC"  angle="1.91811684794"  k="314.010"/>
+     <Angle class1="OS"  class2="C_2" class3="CT"  angle="1.94778744523"  k="678.262"/>
+     <Angle class1="CT"  class2="C_2" class3="O_2" angle="2.19562419901"  k="669.888"/>
+     <Angle class1="C_2" class2="CT"  class3="CT"  angle="1.95127810373"  k="527.537"/>
+     <Angle class1="C_2" class2="CT"  class3="OS"  angle="1.89368223841"  k="418.600"/>
+     <Angle class1="C_2" class2="CT"  class3="HC"  angle="1.92858882345"  k="293.076"/>
+     <Angle class1="C_2" class2="CT"  class3="OH"  angle="1.91113553093"  k="418.680"/>
+     <Angle class1="CT"  class2="CT"  class3="OH"  angle="1.91113553093"  k="418.600"/>
+     <Angle class1="CT"  class2="OH"  class3="HO"  angle="1.89368223841"  k="460.548"/>
+     <Angle class1="HC"  class2="CT"  class3="HC"  angle="1.88146493365"  k="276.329"/>
+     <Angle class1="O_2" class2="C_2" class3="OS"  angle="2.15373629696"  k="694.009"/>
+     <!-- OPLS-AA --> 
+     <Angle class1="CT" class2="CT" class3="CT" angle="1.966986067" k="488.273"/>
+ </HarmonicAngleForce>
+
+
+
+</ForceField>
+
+

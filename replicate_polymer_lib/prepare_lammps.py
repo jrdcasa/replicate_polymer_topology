@@ -457,9 +457,9 @@ def _write_lmp_data_mc(lmp_filename_new, ffname, top_filename, lines_top, lines_
         ffname_b = os.path.splitext(os.path.split(ffname)[-1])[0].upper()
 
         # Generate all nb pairs
-        geometric_nb_ff = ["OPLSAA", "LOPLSAA"]
+        geometric_nb_ff = ["OPLSAA", "LOPLSAA", "OPLSAA_AM"]
         arithmetic_nb_ff = ["TRAPPE-UA", "TRAPPE-UA_PETOXVAERD"]
-        LJ_type_dict = {"OPLSAA": 1, "LOPLSAA": 1, "TRAPPE-UA": 1, "TRAPPE-UA_PETOXVAERD": 1}
+        LJ_type_dict = {"OPLSAA": 1, "LOPLSAA": 1, "OPLSAA_AM":1, "TRAPPE-UA": 1, "TRAPPE-UA_PETOXVAERD": 1}
         try:
             LJ_type = LJ_type_dict[ffname_b]
         except KeyError:
@@ -613,7 +613,7 @@ def _write_lmp_inp(inp_filename_new, ffname, energy_terms, ischargedsystem, unit
         # Get terms as a function of the force field
         ff = os.path.splitext(os.path.basename(ffname))[0]
 
-        if ff.upper() == "OPLSAA" or ff.upper() == "OPLS" or ff.upper() == "LOPLSAA":
+        if ff.upper() == "OPLSAA" or ff.upper() == "OPLS" or ff.upper() == "LOPLSAA" or ff.upper() == "OPLSAA_AM":
             ffterms = ["lj/cut/coul/long 10.0 10.0", "harmonic", "harmonic", "multi/harmonic", "harmonic"]
             ffterms_special_bonds = ["special_bonds lj 0.0 0.0 0.5 coul 0.0 0.0 0.5"]
             ffterms_pair_modify = ["pair_modify mix geometric #tail yes"]
@@ -1102,7 +1102,7 @@ def _parse_top_atomtypes_section(lines_top, idx, ffname):
     ff = os.path.splitext(os.path.basename(ffname))[0]
 
     if ff.upper() == "OPLSAA" or ff.upper() == "OPLS" or ff.upper() == "LOPLSAA" or\
-       ff.upper() == "TRAPPE-UA_PETOXVAERD" or ff.upper() == "TRAPPE-UA" :
+       ff.upper() == "TRAPPE-UA_PETOXVAERD" or ff.upper() == "TRAPPE-UA" or ff.upper() == "OPLSAA_AM" :
         nbpairs = "lj/cut/coul/long"
     else:
         print("ERROR: prepare_lammps.py::_parse_top_atomtypes_section()")

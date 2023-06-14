@@ -20,15 +20,17 @@
   <Type name="OCO" class="OCO" element="O" mass="15.99940" def="[O;X2]([_CH3,_CH2,_CH,C])C" desc="Oxygen in ester group" doi="10.1016/j.fluid.2005.11.03 "/>
   <Type name="CH3_OC"  class="CH3" element="_CH3" mass="15.03500" def="[_CH3;X1][O]"  desc="CH3, united atom, attached to ester" doi="????????"/>
   <Type name="CH2_OC"  class="CH2" element="_CH2" mass="14.02700" def="[_CH2;X2]([_CH3,_CH2,_CH,C])[O;%OCO]" desc="CH2, united atom, attached to ester oxygen" doi="10.1016/j.fluid.2005.11.03 "/>
-
   <Type name="CH_OC"  class="CH" element="C" mass="13.01900" def="[C;X3]([_CH3,_CH2,_CH,C])([_CH3,_CH2,_CH,C])[O;%OCO]" desc="CH, united atom, attached to ester oxygen" doi="???????????"/>
-
   <Type name="COO" class="COO" element="C" mass="12.01100" def="[C;X3]([_CH3,_CH2,_CH,C])(O)(O)" desc="Carbon in carbonyl group" doi="?????????"/>
   <!-- Esters doi:10.1021/jp049459w -->
   <Type name="CH3_ace" class="CH3" element="_CH3" mass="15.03500" def="[_CH3;X1][C;%COO]" overrides="CH3_sp3" desc="Methyl acetate, united atom, attached to ester oxygen" doi="10.1021/jp049459w"/>
   <!-- This parameter is developed for eter/alcohol, but it has been used for esters. -->
   <!-- sigma and epsilon are the same that for alkanes but the charge change. -->
   <Type name="CH_OCO" class="CH" element="_CH" mass="13.01900" def="[_CH;X3]([_CH3,_CH2,_CH,C])([_CH3,_CH2,_CH,C])[O;%OCO]" desc="Alkane CH, united atom, attached to ester oxygen" doi="10.1021/jp049459w"/>
+  <!--  ===================== ETHERS ==================== -->
+  <Type name="OE" class="OE"   element="O" mass="15.99940" def="[O;X2]([_CH3,_CH2,_CH])([_CH3,_CH2,_CH])" desc="Oxygen in ether group" doi="??????????"/>
+  <Type name="CH2_OE" class="CH2" element="_CH2" mass="14.02700" def="[_CH2;X2][O]([_CH3,_CH2,_CH])" desc="-CH2-O in ether group" doi="??????????"/>
+  <Type name="CH3_OE" class="CH3" element="_CH3" mass="15.03500" def="[_CH3;X1][O;%OCO]" desc="CH3-O in ether group" doi="??????????"/>
 
  </AtomTypes>
 
@@ -63,6 +65,9 @@
   <Bond class1="COO" class2="CH3" length="0.1520" k="167360.0"/>
   <Bond class1="COO" class2="CH" length="0.1520" k="167360.0"/>
   <Bond class1="COO" class2="C" length="0.1520" k="167360.0"/>
+  <!-- Ether bond constants from Charmm c36-->
+  <Bond class1="CH3" class2="OE" length="0.1410" k="301248.0"/>
+  <Bond class1="CH2" class2="OE" length="0.1410" k="301248.0"/>
 
  </HarmonicBondForce>
 
@@ -154,6 +159,9 @@
   <!-- This parameter is developed for eters, but it has been used for esters. -->
   <Angle class1="CH2" class2="CH" class3="OCO"  angle="1.95477" k="418.21744"/>
   <Angle class1="CH3" class2="CH" class3="OCO"  angle="1.95477" k="418.21744"/>
+  <!-- Ether Angles from 1,2-dimethoxyethane J. Phys. Chem. B 108, 17596-17605 (2004) -->
+  <Angle class1="CH3" class2="OE" class3="CH2"  angle="1.95477" k="516.32810"/>
+  <Angle class1="CH2" class2="CH2" class3="OE"  angle="1.95477" k="418.21744"/>
 
  </HarmonicAngleForce>
 
@@ -267,6 +275,10 @@
   <Proper class1="CH"   class2="CH2" class3="C"   class4="COO" c0="3.83538"   c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
   <!-- J. Phys. Chem. B 1999, 103, 4508-4517. Branched alkanes, 10.1021/jp984742e-->
   <Proper class1="C"    class2="CH2" class3="CH"  class4="COO" c0="3.28621"   c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <!--  ===================== CARBOXYLATES - ETHERS ==================== -->
+  <!-- Ether Angles from 1,2-dimethoxyethane J. Phys. Chem. B 108, 17596-17605 (2004) -->
+  <Proper class1="CH3"    class2="OE" class3="CH2"  class4="CH2" c0="7.949041" c1="7.892503"  c2="2.722986" c3="-18.564531" c4="0.0" c5="0.0"/>
+  <Proper class1="OE"    class2="CH2" class3="CH2"  class4="OE"  c0="8.368257" c1="25.104770" c2="4.184170" c3="-33.473026" c4="0.0" c5="0.0"/>
 
 </RBTorsionForce>
 
@@ -300,6 +312,10 @@
   <Atom type="CH_OCO" charge="0.25" sigma="0.433" epsilon="0.0831445"/>
   <!-- Esters doi:10.1021/jp049459w -->
   <Atom type="CH3_ace" charge="0.05" sigma="0.375" epsilon="0.814817"/>
+  <!--  ===================== ETHERS ==================== -->
+  <Atom type="OE"     charge="-0.5" sigma="0.280" epsilon="0.457295"/>
+  <Atom type="CH2_OE" charge="0.25" sigma="0.395" epsilon="0.382465"/>
+  <Atom type="CH3_OE" charge="0.25" sigma="0.375" epsilon="0.814817"/>
  </NonbondedForce>
 
 </ForceField>

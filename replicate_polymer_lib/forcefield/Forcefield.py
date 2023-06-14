@@ -10,6 +10,7 @@ from collections import defaultdict
 from tempfile import NamedTemporaryFile
 from topology import Topology
 from topology.atomic_data import atomic_number
+from copy import deepcopy
 
 import numpy as np
 import openmm as mm
@@ -329,6 +330,23 @@ def _check_angles(data, structure, verbose, assert_angle_params, logger=None):
         m2 = "\t\tMolecule cannot be typed!!!!!. Exiting....\n"
         m = "\t\t" + len(m1) * "*" + "\n"
         print("\n" + m + m1 + m2 + m) if logger is None else logger.info("\n" + m + m1 + m2 + m)
+
+        no_typed = deepcopy(data.angles)
+        for item in structure.angles:
+            tt = (item.atom1.idx, item.atom2.idx, item.atom3.idx)
+            if tt in data.angles:
+                no_typed.remove(tt)
+        m = ""
+        for tt in no_typed:
+            tt_type = (structure.atoms[tt[0]].type,
+                       structure.atoms[tt[1]].type,
+                       structure.atoms[tt[2]].type,
+                       )
+            m += "Angle {} ({})-{} ({})-{} ({})is not typed.\n".format(tt[0], tt_type[0],
+                                                                       tt[1], tt_type[1],
+                                                                       tt[2], tt_type[2])
+
+        print("\n" + m) if logger is None else logger.info("\n" + m)
         exit()
 
     now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
@@ -415,6 +433,24 @@ def _check_dihedrals(data, structure, non_openmm_potentials_terms, verbose, asse
             ll = int(len(m1) / 2)
             m = "\t\t" + ll * "*" + "\n"
             print("\n" + m + m1 + m2 + m) if logger is None else logger.info("\n" + m + m1 + m2 + m)
+
+            no_typed = deepcopy(data.propers)
+            for item in structure.rb_torsions:
+                tt = (item.atom1.idx, item.atom2.idx, item.atom3.idx, item.atom4.idx)
+                if tt in data.propers:
+                    no_typed.remove(tt)
+            m = ""
+            for tt in no_typed:
+                tt_type = (structure.atoms[tt[0]].type,
+                           structure.atoms[tt[1]].type,
+                           structure.atoms[tt[2]].type,
+                           structure.atoms[tt[3]].type
+                           )
+                m += "Dihedral {} ({})-{} ({})-{} ({})-{} ({}) is not typed.\n".format(tt[0], tt_type[0],
+                                                                                       tt[1], tt_type[1],
+                                                                                       tt[2], tt_type[2],
+                                                                                       tt[3], tt_type[3])
+            print("\n" + m) if logger is None else logger.info("\n" + m)
             exit()
 
     now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")

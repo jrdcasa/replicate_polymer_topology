@@ -184,7 +184,8 @@ def check_and_remove_ter_labels(fnameinp, occup=None, logger=None):
             elif iline[0:6] == "CONECT" != -1 and natoms < 100000:
                 jline = "CONECT"
                 pos = 6
-                iiline = iline[:-1]  # Remove carrier return
+                iiline = iline.strip() # Remove carrier return and trim spaces
+                #iiline = iline[:-1]  # Remove carrier return
                 while pos < len(iiline):
                     old_idx = int(iiline[pos:pos+5])
                     new_idx = map_oldidx_to_new_idx[old_idx]
