@@ -96,7 +96,10 @@ def check_conect_pdb(fnameinp, logger=None):
             try:
                 m = "\n\t\t CONECT section is not present in the PDB or\n"
                 m += "\t\t number of atoms is >99999 (natoms={})\n".format(natoms)
-                m += "\t\t Guessing bonds from MD.Universe"
+                m += "\t\t Guessing bonds from MD.Universe\n"
+                m += "\t\t This can be quite time-consuming.\n"
+                m += "\t\t Consider using the PSF file provided by the topology " \
+                     "library as an option of replicate_polymer.\n"
                 print(m) if logger is None else logger.info(m)
                 t = md.Universe(fnameinp, guess_bonds=True)
             except Exception as e:

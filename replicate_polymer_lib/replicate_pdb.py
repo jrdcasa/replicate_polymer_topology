@@ -385,13 +385,15 @@ def _assign_chain_to_atom(filenamepdb):
     map_letter_to_in[' '] = 0
 
     d = defaultdict()
+    idx = 0
     with open(filenamepdb, 'r') as fpdb:
         lines = fpdb.readlines()
         for iline in lines:
             if iline.find("ATOM") != -1 or iline.find("HETATM") != -1:
-                idx = int(iline[6:11]) - 1
+                # idx = int(iline[6:11]) - 1
                 chain_id = iline[21:22]
                 d[idx] = map_letter_to_in[chain_id]
+                idx += 1
     return d
 
 

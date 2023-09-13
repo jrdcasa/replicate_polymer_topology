@@ -1,17 +1,17 @@
 ;
 ;   File 103191_noctane_order_cryst.top  was generated
 ;   By user: jramos (1001)
-;   On host: multiscale
-;   At date: Mon. March  1 17:39:24 2023
+;   On host: totem2
+;   At date: Mon. July  1 20:01:56 2023
 ;
 ;   This is a standalone topology file
 ;
 ;   Created by:
-;   ParmEd:       replicate_polymer, VERSION 3.4.3
-;   Executable:   replicate_polymer
+;   ParmEd:       replicate_polymer.py, VERSION 3.4.3
+;   Executable:   replicate_polymer.py
 ;   Library dir:  /usr/share/gromacs/top
 ;   Command line:
-;     /home/jramos/Programacion/sandboxes/sandbox_common/bin/replicate_polymer -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 6 5 5 -e lammps
+;     /home/jramos/Programacion/GITHUB_REPO_DIR/replicate_polymer_topology/replicate_polymer/replicate_polymer.py -p 103191_noctane_order_cryst.pdb -f ../../forcefields/oplsaa.xml --images 5 1 1 -e lammps
 ;
 
 [ defaults ]
@@ -275,151 +275,6 @@ OCT          3
 Generic title
 
 [ molecules ]
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
-OCT 1
 OCT 1
 OCT 1
 OCT 1
