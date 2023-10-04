@@ -100,8 +100,13 @@ def check_conect_pdb(fnameinp, logger=None):
                 m += "\t\t This can be quite time-consuming.\n"
                 m += "\t\t Consider using the PSF file provided by the topology " \
                      "library as an option of replicate_polymer.\n"
+                now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+                m += "\t\t\t Start Guessing bonds using MDAnalysis library. ({})\n".format(now)
                 print(m) if logger is None else logger.info(m)
                 t = md.Universe(fnameinp, guess_bonds=True)
+                now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+                m += "\t\t\t End Guessing bonds using MDAnalysis library. ({})\n".format(now)
+                print(m) if logger is None else logger.info(m)
             except Exception as e:
                 m = "\t\t"+str(e)+"\n"
                 m += "\t\tReturn None object from md.Universe"

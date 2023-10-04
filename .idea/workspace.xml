@@ -23,19 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="097f4e77-3800-4c0f-93e1-d3b7c8a880f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/top2forcefieldxml/top2forcefieldxml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/top2forcefieldxml_lib/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/top2forcefieldxml_lib/parse_arguments.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst.top" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.gro" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.gro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.top" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.top" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/allatom_idx_replicate.dat" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/allatom_idx_replicate.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/backbone_idx_replicate.dat" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/backbone_idx_replicate.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/check_connect_pdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/check_connect_pdb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/replicate_pdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/replicate_pdb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +86,7 @@
       <recent name="$PROJECT_DIR$/replicate_polymer_lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.32-PE-iPP_AC_50Ch_LOPLS TrapeUATox_noconect">
+  <component name="RunManager" selected="Python.39-PE-iPP-CGARCIA (1)">
     <configuration name="00-INSTALL" type="PythonConfigurationType" factoryName="Python">
       <module name="MyPolymers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -603,6 +593,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="39-PE-iPP-CGARCIA (1)" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/01-PE-iPP_cJ/05-REPLICATE_POLYMER" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p ../04-PACKMOL/PE-iPP_PBC.pdb --images 1 1 1 -f $PROJECT_DIR$/forcefields/trappe-ua_PEToxvaerd.xml" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="39-PE-iPP-CGARCIA" type="PythonConfigurationType" factoryName="Python">
       <module name="MyPolymers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1082,6 +1094,7 @@
       <item itemvalue="Python.replicate_polymer PCL FF OPLS " />
       <item itemvalue="Python.TEST" />
       <item itemvalue="Python.39-PE-iPP-CGARCIA" />
+      <item itemvalue="Python.39-PE-iPP-CGARCIA (1)" />
       <item itemvalue="Python.00-script_AA_renameatoms" />
       <item itemvalue="Python tests.Test (1)" />
       <item itemvalue="Python tests.Test01_check_connect" />
@@ -1236,7 +1249,8 @@
       <workItem from="1693899429915" duration="9060000" />
       <workItem from="1694110764964" duration="3561000" />
       <workItem from="1694420367103" duration="842000" />
-      <workItem from="1694616442546" duration="652000" />
+      <workItem from="1694616442546" duration="1258000" />
+      <workItem from="1695746335655" duration="13927000" />
     </task>
     <servers />
   </component>
@@ -1375,18 +1389,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py</url>
-          <line>71</line>
+          <line>74</line>
           <option name="timeStamp" value="1605" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py</url>
-          <line>42</line>
-          <option name="timeStamp" value="1610" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="1611" />
+          <line>60</line>
+          <option name="timeStamp" value="1623" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1405,6 +1414,10 @@
         <watch expression="mols_single" />
         <watch expression="len(lines)" language="Python" />
         <watch expression="idx" />
+        <watch expression="topology" />
+        <watch expression="pairs" />
+        <watch expression="a" language="Python" />
+        <watch expression="b" language="Python" />
       </configuration>
     </watches-manager>
   </component>
@@ -1494,6 +1507,7 @@
     <SUITE FILE_PATH="coverage/replicate_polymer$08_P4HB_trappeUA_1x1x1.coverage" NAME="08-P4HB_trappeUA_1x1x1 Coverage Results" MODIFIED="1639830650314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/08-Trimer_P4HB_TrappeUA" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$05_example.coverage" NAME="05-example Coverage Results" MODIFIED="1661872655418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/05-Trimer_P4HB_TrappeUA_b" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$42_P3HB_150Mon.coverage" NAME="42-P3HB_150Mon Coverage Results" MODIFIED="1676760879007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../CLionProjects/Single_Chain_MC_v02/examples_v02/19-P3HB_150mon_TrappeUA/02-REPLICATE_1_1_1" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$39_PE_iPP_CGARCIA__1_.coverage" NAME="39-PE-iPP-CGARCIA (1) Coverage Results" MODIFIED="1696062095584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/01-PE-iPP_cJ/05-REPLICATE_POLYMER" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$38_TEST.coverage" NAME="38-TEST Coverage Results" MODIFIED="1669456822106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PETICIONES_PROYECTOS___/2021-MovilidadExtranjero/08-Results/09-Layers/2022-PE-PE_252m_40-40Ch_TrappeTox/02-REPLICATE_1_1_1" />
     <SUITE FILE_PATH="coverage/replicate_polymer$14_ModelEVA_torsion_trappeua.coverage" NAME="14-ModelEVA_torsion_trappeua Coverage Results" MODIFIED="1640544215490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/14-ModelEVA_torsion_trappeua" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$05_C150_03_Replicate_5x5x5_with_box.coverage" NAME="05-C150_03_Replicate_5x5x5 with box Coverage Results" MODIFIED="1656951401291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/02-LAMMPS_amorphous" />

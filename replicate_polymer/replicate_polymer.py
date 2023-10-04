@@ -38,6 +38,9 @@ def main_app(version):
     print(m) if logger is None else logger.info(m)
     filenamepdb = check_resname_pdb(opts.pdbfile)
     filenamepdb, bond_list_more100K = check_conect_pdb(filenamepdb, logger=logger)
+    now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+    m = "\n\t\tEnd Check resname and connect in the input file. ({})... ({})".format(opts.pdbfile, now)
+    print(m) if logger is None else logger.info(m)
 
     # Remove hydrogen atoms
     if opts.hydrogens:
@@ -51,11 +54,11 @@ def main_app(version):
 
     # Build a ReadPdbFormat object for the molecular topology
     now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-    m1 = "\t\tReplicating and typing molecule ({})\n".format(now)
+    m1 = "\n\t\tReplicating and typing molecule ({})\n".format(now)
     m = "\t\t" + len(m1) * "*" + "\n"
     m += "\t\tLoading seed structure from {} ({})".format(filenamepdb, now)
     print(m1+m) if logger is None else logger.info(m1+m)
-    untyped_mol = ReadPdbFormat(filenamepdb)
+    untyped_mol = ReadPdbFormat(filenamepdb, logger=logger)
 
     # Apply force field to the seed molecules
     now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
