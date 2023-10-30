@@ -23,9 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="097f4e77-3800-4c0f-93e1-d3b7c8a880f0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/MyPolymers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MyPolymers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.gro" beforeDir="false" afterPath="$PROJECT_DIR$/examples/01-n-octane_103191_replicate/103191_noctane_order_cryst_replicate.gro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/check_connect_pdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/check_connect_pdb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/replicate_polymer_lib/ext_libc/c_distC_replicate.c" beforeDir="false" afterPath="$PROJECT_DIR$/replicate_polymer_lib/ext_libc/c_distC_replicate.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,15 +65,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jramos/Programacion/GITHUB_REPO_DIR/replicate_polymer_topology/examples/39-PE-iPP-CGARCIA&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/jramos/Programacion/GITHUB_REPO_DIR/tioesteres_rtp",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/top2forcefieldxml_lib" />
@@ -86,7 +91,7 @@
       <recent name="$PROJECT_DIR$/replicate_polymer_lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.39-PE-iPP-CGARCIA (1)">
+  <component name="RunManager" selected="Python.39-PE-iPP-CGARCIA_TEST_SHORT">
     <configuration name="00-INSTALL" type="PythonConfigurationType" factoryName="Python">
       <module name="MyPolymers" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -409,7 +414,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create_lammps_from_gromacs/create_lammps_from_gromacs.py" />
-      <option name="PARAMETERS" value="-g  iPP-PE_40mon_25-25Ch_residues_replicate.gro -t iPP-PE_40mon_25-25Ch_residues_replicate.top -f ../../forcefields/oplsaa.xml" />
+      <option name="PARAMETERS" value="-g  iPP-PE_40mon_25-25Ch_residues_replicate.gro -t iPP-PE_40mon_25-25Ch_residues_replicate.top" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -593,16 +598,38 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="39-PE-iPP-CGARCIA (1)" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="39-PE-iPP-CGARCIA" type="PythonConfigurationType" factoryName="Python">
       <module name="MyPolymers" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/39-PE-iPP-CGARCIA" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
+      <option name="PARAMETERS" value="-p 05-PE-iPP_initial_residues.pdb -f ../../forcefields/trappe-ua_PEToxvaerd.xml --images 1 1 1" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="39-PE-iPP-CGARCIA_TEST_LONG" type="PythonConfigurationType" factoryName="Python">
+      <module name="MyPolymers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/01-PE-iPP_cJ/05-REPLICATE_POLYMER" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -615,21 +642,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="39-PE-iPP-CGARCIA" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="39-PE-iPP-CGARCIA_TEST_SHORT" type="PythonConfigurationType" factoryName="Python">
       <module name="MyPolymers" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/../../sandboxes/sandbox_common/bin/python3" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples/39-PE-iPP-CGARCIA" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/01-PE-iPP_cJ/05-REPLICATE_POLYMER_SHORT" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/replicate_polymer/replicate_polymer.py" />
-      <option name="PARAMETERS" value="-p 05-PE-iPP_initial_residues.pdb -f ../../forcefields/trappe-ua_PEToxvaerd.xml --images 1 1 1" />
+      <option name="PARAMETERS" value="-p ../04-GROMACS_PREPARE/layer_2.pdb --images 1 1 1 -f $PROJECT_DIR$/forcefields/trappe-ua_PEToxvaerd.xml" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -1094,7 +1121,8 @@
       <item itemvalue="Python.replicate_polymer PCL FF OPLS " />
       <item itemvalue="Python.TEST" />
       <item itemvalue="Python.39-PE-iPP-CGARCIA" />
-      <item itemvalue="Python.39-PE-iPP-CGARCIA (1)" />
+      <item itemvalue="Python.39-PE-iPP-CGARCIA_TEST_LONG" />
+      <item itemvalue="Python.39-PE-iPP-CGARCIA_TEST_SHORT" />
       <item itemvalue="Python.00-script_AA_renameatoms" />
       <item itemvalue="Python tests.Test (1)" />
       <item itemvalue="Python tests.Test01_check_connect" />
@@ -1251,6 +1279,9 @@
       <workItem from="1694420367103" duration="842000" />
       <workItem from="1694616442546" duration="1258000" />
       <workItem from="1695746335655" duration="13927000" />
+      <workItem from="1697438169362" duration="3801000" />
+      <workItem from="1697523465999" duration="3916000" />
+      <workItem from="1698074289883" duration="33420000" />
     </task>
     <servers />
   </component>
@@ -1389,13 +1420,83 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py</url>
-          <line>74</line>
+          <line>78</line>
           <option name="timeStamp" value="1605" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_common/lib/python3.10/site-packages/parmed/structure.py</url>
+          <line>1491</line>
+          <option name="timeStamp" value="1627" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_common/lib/python3.10/site-packages/parmed/gromacs/gromacstop.py</url>
+          <line>1246</line>
+          <option name="timeStamp" value="1630" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_common/lib/python3.10/site-packages/parmed/gromacs/gromacstop.py</url>
+          <line>1293</line>
+          <option name="timeStamp" value="1631" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_common/lib/python3.10/site-packages/parmed/parameters.py</url>
+          <line>248</line>
+          <option name="timeStamp" value="1632" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_common/lib/python3.10/site-packages/parmed/parameters.py</url>
+          <line>377</line>
+          <option name="timeStamp" value="1633" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer_lib/typing_molecule.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="1634" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_common/lib/python3.10/site-packages/topology-1.0.0-py3.10-linux-x86_64.egg/topology/readmol/readpdbformat.py</url>
+          <line>203</line>
+          <option name="timeStamp" value="1635" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_common/lib/python3.10/site-packages/topology-1.0.0-py3.10-linux-x86_64.egg/topology/readmol/readpdbformat.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="1637" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/replicate_polymer/replicate_polymer.py</url>
-          <line>60</line>
-          <option name="timeStamp" value="1623" />
+          <line>41</line>
+          <option name="timeStamp" value="1652" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer_lib/check_connect_pdb.py</url>
+          <line>123</line>
+          <option name="timeStamp" value="1653" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/replicate_polymer_lib/check_connect_pdb.py</url>
+          <line>105</line>
+          <option name="timeStamp" value="1654" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_common/lib/python3.10/site-packages/MDAnalysis/core/universe.py</url>
+          <line>373</line>
+          <option name="timeStamp" value="1655" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_common/lib/python3.10/site-packages/MDAnalysis/core/groups.py</url>
+          <line>3291</line>
+          <option name="timeStamp" value="1656" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_common/lib/python3.10/site-packages/MDAnalysis/topology/guessers.py</url>
+          <line>330</line>
+          <option name="timeStamp" value="1657" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../sandboxes/sandbox_common/lib/python3.10/site-packages/MDAnalysis/topology/guessers.py</url>
+          <line>294</line>
+          <option name="timeStamp" value="1658" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1411,13 +1512,18 @@
         <watch expression="topo_single" />
       </configuration>
       <configuration name="PythonConfigurationType">
-        <watch expression="mols_single" />
-        <watch expression="len(lines)" language="Python" />
-        <watch expression="idx" />
-        <watch expression="topology" />
-        <watch expression="pairs" />
-        <watch expression="a" language="Python" />
-        <watch expression="b" language="Python" />
+        <watch expression="self" language="Python" />
+        <watch expression="len(self.bonds)" language="Python" />
+        <watch expression="universe.bonds" language="Python" />
+        <watch expression="elf._fnamepath" />
+        <watch expression="self._fnamepath" />
+        <watch expression="u" language="Python" />
+        <watch expression="u._classes[cls]" />
+        <watch expression="object" />
+        <watch expression="vdwradii[atomtypes[i]]" />
+        <watch expression="vdwradii[atomtypes[j]]" />
+        <watch expression="fudge_factor" />
+        <watch expression="kwargs" />
       </configuration>
     </watches-manager>
   </component>
@@ -1447,8 +1553,8 @@
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$replicate_polymer.coverage" NAME="replicate_polymer Coverage Results" MODIFIED="1668704297832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PETICIONES_PROYECTOS___/2021-MovilidadExtranjero/08-Results/09-Layers/2022-PE-iPP_252m_40-27Ch_TrappeTox/02-REPLICATE_1_1_1" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$19_n_hexane_trappeUA_PEToxvaerd.coverage" NAME="19-n-hexane_trappeUA_PEToxvaerd Coverage Results" MODIFIED="1657023163836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$03_example_.coverage" NAME="04-example  Coverage Results" MODIFIED="1659370321305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/04-Trimer_P4HB_OPLSAA" />
-    <SUITE FILE_PATH="coverage/replicate_polymer_topology$30_PE_iPP_AC_50Ch_LOPLS.coverage" NAME="30-PE-iPP_AC_50Ch_LOPLS Coverage Results" MODIFIED="1660719705751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/30-PE-iPP_AC_50Ch_LOPLS" />
     <SUITE FILE_PATH="coverage/replicate_polymer$19_n_hexane_trappeUA_PEToxvaerd.coverage" NAME="19-n-hexane_trappeUA_PEToxvaerd Coverage Results" MODIFIED="1653574904491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/19-n-hexane_trappeua_Toxvaerd" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$30_PE_iPP_AC_50Ch_LOPLS.coverage" NAME="30-PE-iPP_AC_50Ch_LOPLS Coverage Results" MODIFIED="1698307134788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/30-PE-iPP_AC_50Ch_LOPLS" />
     <SUITE FILE_PATH="coverage/replicate_polymer$PQ_3.coverage" NAME="PQ_3 Coverage Results" MODIFIED="1650447785442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PROYECTOS___/2021-PHA/08-SingleChain/01-TYPE_P3HB" />
     <SUITE FILE_PATH="coverage/replicate_polymer$02_C150_5x5x1.coverage" NAME="02-C150_5x5x1 Coverage Results" MODIFIED="1639133489733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/02-C150_onefolded_replicate_5x5x1" />
     <SUITE FILE_PATH="coverage/replicate_polymer$Test02_Remove_hydrogens.coverage" NAME="Test02_Remove_hydrogens Coverage Results" MODIFIED="1649935913251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
@@ -1507,7 +1613,7 @@
     <SUITE FILE_PATH="coverage/replicate_polymer$08_P4HB_trappeUA_1x1x1.coverage" NAME="08-P4HB_trappeUA_1x1x1 Coverage Results" MODIFIED="1639830650314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/08-Trimer_P4HB_TrappeUA" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$05_example.coverage" NAME="05-example Coverage Results" MODIFIED="1661872655418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/05-Trimer_P4HB_TrappeUA_b" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$42_P3HB_150Mon.coverage" NAME="42-P3HB_150Mon Coverage Results" MODIFIED="1676760879007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../CLionProjects/Single_Chain_MC_v02/examples_v02/19-P3HB_150mon_TrappeUA/02-REPLICATE_1_1_1" />
-    <SUITE FILE_PATH="coverage/replicate_polymer_topology$39_PE_iPP_CGARCIA__1_.coverage" NAME="39-PE-iPP-CGARCIA (1) Coverage Results" MODIFIED="1696062095584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/01-PE-iPP_cJ/05-REPLICATE_POLYMER" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$39_PE_iPP_CGARCIA__1_.coverage" NAME="39-PE-iPP-CGARCIA (1) Coverage Results" MODIFIED="1698397282532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/01-PE-iPP_cJ/05-REPLICATE_POLYMER" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$38_TEST.coverage" NAME="38-TEST Coverage Results" MODIFIED="1669456822106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PETICIONES_PROYECTOS___/2021-MovilidadExtranjero/08-Results/09-Layers/2022-PE-PE_252m_40-40Ch_TrappeTox/02-REPLICATE_1_1_1" />
     <SUITE FILE_PATH="coverage/replicate_polymer$14_ModelEVA_torsion_trappeua.coverage" NAME="14-ModelEVA_torsion_trappeua Coverage Results" MODIFIED="1640544215490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/14-ModelEVA_torsion_trappeua" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$05_C150_03_Replicate_5x5x5_with_box.coverage" NAME="05-C150_03_Replicate_5x5x5 with box Coverage Results" MODIFIED="1656951401291" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/05-C150_amorphous_replicate_5x5x2/02-LAMMPS_amorphous" />
@@ -1524,13 +1630,14 @@
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$32_PE_iPP_AC_50Ch_LOPLS_TrapeUATox.coverage" NAME="32-PE-iPP_AC_50Ch_LOPLS TrapeUATox Coverage Results" MODIFIED="1668760746652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/32-PE-iPP_AC_50Ch_TrappeTox" />
     <SUITE FILE_PATH="coverage/replicate_polymer$Test.coverage" NAME="Test Coverage Results" MODIFIED="1649692399954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$22_PMMA5.coverage" NAME="22-PMMA5 Coverage Results" MODIFIED="1658755561289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/22-PMMA5_lammpsforMCSingleChain" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$39_PE_iPP_CGARCIA_TEST_SHORT.coverage" NAME="39-PE-iPP-CGARCIA_TEST_SHORT Coverage Results" MODIFIED="1698512292151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_ESTUDIANTES___/2023-CarlosGarcia/02-PREPARE_MULTILAYER/01-PE-iPP_cJ/05-REPLICATE_POLYMER_SHORT" />
     <SUITE FILE_PATH="coverage/replicate_polymer$16_n_hexane_LOPLS.coverage" NAME="16-n-hexane_LOPLS Coverage Results" MODIFIED="1640818196729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/16-n-hexane_LOPLS" />
     <SUITE FILE_PATH="coverage/replicate_polymer$20_P3HB_exclusions.coverage" NAME="20-P3HB_exclusions Coverage Results" MODIFIED="1653462967328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../Replicate_Polymer_tutorials/01-P3HB_10mon_1Ch" />
     <SUITE FILE_PATH="coverage/replicate_polymer$03_C150_10x10x3.coverage" NAME="03-C150_10x10x3 Coverage Results" MODIFIED="1639133632382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/03-C150_onefolded_replicate_10x10x3" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$Test01_check_connect.coverage" NAME="Test01_check_connect Coverage Results" MODIFIED="1654679773196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/replicate_polymer$PQ_2.coverage" NAME="PQ_2 Coverage Results" MODIFIED="1650551045575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Documentos/___MIS_PROYECTOS___/2021-PHA/08-SingleChain/01-TYPE_P3HB" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$01_example.coverage" NAME="01-example Coverage Results" MODIFIED="1688407315042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/01-n-octane_103191_replicate" />
-    <SUITE FILE_PATH="coverage/replicate_polymer_topology$00_INSTALL.coverage" NAME="00-INSTALL Coverage Results" MODIFIED="1688407285702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/replicate_polymer_topology$00_INSTALL.coverage" NAME="00-INSTALL Coverage Results" MODIFIED="1698397255698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1668713963609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/36-PE-iPP_interface_100kAtoms_1_1_1" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$07_pdb_blend_form_xsd__1_.coverage" NAME="07-pdb_blend_form_xsd (1) Coverage Results" MODIFIED="1658844644027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/07-blend_xsd" />
     <SUITE FILE_PATH="coverage/replicate_polymer_topology$06_example_twomol.coverage" NAME="06-example-twomol Coverage Results" MODIFIED="1659428215827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples/06-pdb_two_diferent_molecules" />

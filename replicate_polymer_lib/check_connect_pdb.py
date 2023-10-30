@@ -103,7 +103,7 @@ def check_conect_pdb(fnameinp, logger=None):
                 now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
                 m += "\t\t\t Start Guessing bonds using MDAnalysis library. ({})\n".format(now)
                 print(m) if logger is None else logger.info(m)
-                t = md.Universe(fnameinp, guess_bonds=True)
+                t = md.Universe(fnameinp, guess_bonds=True, fudge_factor=0.5)
                 now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
                 m += "\t\t\t End Guessing bonds using MDAnalysis library. ({})\n".format(now)
                 print(m) if logger is None else logger.info(m)

@@ -34,12 +34,15 @@ def main_app(version):
 
     # Read the original pdb and check PDB Connect section in the PDB file
     now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+
     m = "\n\t\tCheck resname and connect in the input file. ({})... ({})".format(opts.pdbfile, now)
+    m += "\n\t\t{}".format(len(m)*"*")
     print(m) if logger is None else logger.info(m)
     filenamepdb = check_resname_pdb(opts.pdbfile)
     filenamepdb, bond_list_more100K = check_conect_pdb(filenamepdb, logger=logger)
     now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     m = "\n\t\tEnd Check resname and connect in the input file. ({})... ({})".format(opts.pdbfile, now)
+    m += "\n\t\t{}".format(len(m)*"*")
     print(m) if logger is None else logger.info(m)
 
     # Remove hydrogen atoms
@@ -69,6 +72,7 @@ def main_app(version):
                                   type_kwargs={'verbose': opts.verbose, 'assert_dihedral_params': True})
 
     # Replicate the system (image)
+    now = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     if opts.images is not None:
         m = "\t\tReplicating molecules {} ({})".format(filenamepdb, now)
         print(m) if logger is None else logger.info(m)
