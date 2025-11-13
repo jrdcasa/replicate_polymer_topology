@@ -1,0 +1,36 @@
+;-------------------------------------
+;             VL0-TL0 LINK                      
+;-------------------------------------
+[link]
+resname "VL0|TL0"
+[ bonds ]
++CTL01 OVL15      1      0.1327    179075.2  {"group": "connection"}
+[ angles ]
+OVL15 +CTL01 +CTL03      1    111.4000       677.8   {"group": "connection"}
+OVL15 +CTL01 +OTL02      1    123.4000       694.5   {"group": "connection"}
+CVL12 OVL15 +CTL01      1    116.9000       694.5   {"group": "connection"}
+[ dihedrals ]
+ OVL15 +CTL01 +CTL03 +CTL06      3       -1.157      -3.471       0.000       4.628       0.000       0.000 {"group": "connection"}
+ OVL15 +CTL01 +CTL03 +HTL05      3        0.276       0.828       0.000      -1.105       0.000       0.000 {"group": "connection"}
+ OVL15 +CTL01 +CTL03 +HTL04      3        0.276       0.828       0.000      -1.105       0.000       0.000 {"group": "connection"}
+ CVL12  OVL15 +CTL01 +CTL03      3       31.206      -9.768     -21.439       0.000       0.000       0.000 {"group": "connection"}
+ CVL12  OVL15 +CTL01 +OTL02      3       21.439       0.000     -21.439       0.000       0.000       0.000 {"group": "connection"}
+ HVL14  CVL12  OVL15 +CTL01      3        0.414       1.243       0.000      -1.657       0.000       0.000 {"group": "connection"}
+ HVL13  CVL12  OVL15 +CTL01      3        0.414       1.243       0.000      -1.657       0.000       0.000 {"group": "connection"}
+ CVL09  CVL12  OVL15 +CTL01      3       -2.197       5.201       0.527      -3.531       0.000       0.000 {"group": "connection"}
+[ pairs ]
+ OVL15 +CTL06       1  0.325000000  0.221594057 {"group": "connection"}
+ OVL15 +HTL05       1  0.275000000  0.149398683 {"group": "connection"}
+ OVL15 +HTL04       1  0.275000000  0.149398683 {"group": "connection"}
+ CVL12 +CTL03       1  0.350000000  0.138072000 {"group": "connection"}
+ CVL12 +OTL02       1  0.323000000  0.246288025 {"group": "connection"}
+ HVL14 +CTL01       1  0.308500000  0.083023676 {"group": "connection"}
+ HVL13 +CTL01       1  0.308500000  0.083023676 {"group": "connection"}
+ CVL09 +CTL01       1  0.362500000  0.174151932 {"group": "connection"}
+;-------------------------------------
+;             VL0-TL0 LINK-TERMS                      
+;-------------------------------------
+[link]
+resname "VL0|TL0"
+[ dihedrals ]
+[ pairs ]

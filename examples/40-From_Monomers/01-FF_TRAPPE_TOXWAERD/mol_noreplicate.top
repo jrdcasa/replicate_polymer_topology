@@ -1,0 +1,10 @@
+#include "forcefield.itp"
+#include "ETH.itp"
+
+[ system ]
+; Name
+Generic title
+
+[ molecules ]
+; Compound       #mols
+ETH                  1

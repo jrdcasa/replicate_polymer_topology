@@ -1,0 +1,19 @@
+# Information of the residues. Indexes start at 0
+<RESIDUES>
+# Number of residues
+3
+# idx-residue name_residue natoms_resiude
+0 PES 7
+1 PEE 6
+</RESIDUES>
+
+<COMPOSITION>
+# Number of different molecules
+1
+# Start_chain End_chain nresidues
+0 0 3 A
+PES 0 0
+PEE 1 73
+PES 74 74
+</COMPOSITION>
+

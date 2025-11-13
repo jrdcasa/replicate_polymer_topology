@@ -1,0 +1,39 @@
+;-------------------------------------
+;             VL0-VL0 LINK                      
+;-------------------------------------
+[link]
+resname "VL0"
+[ bonds ]
++CVL01 OVL15      1      0.1327    179075.2  {"group": "connection"}
+[ angles ]
+OVL15   +CVL01   +CVL03    1          111.4000        677.8      {"group": "connection"}
+OVL15   +CVL01   +OVL02    1          123.4000        694.5      {"group": "connection"}
+CVL12    OVL15   +CVL01    1          116.9000        694.5      {"group": "connection"}
+[ dihedrals ]
+ ; propers
+ OVL15 +CVL01 +CVL03 +CVL06      3       -1.157      -3.471       0.000       4.628      -0.000       0.000 {"group": "connection"}
+ OVL15 +CVL01 +CVL03 +HVL05      3        0.276       0.828       0.000      -1.105      -0.000       0.000 {"group": "connection"}
+ OVL15 +CVL01 +CVL03 +HVL04      3        0.276       0.828       0.000      -1.105      -0.000       0.000 {"group": "connection"}
+ CVL12  OVL15 +CVL01 +CVL03      3       31.206      -9.768     -21.439      -0.000      -0.000       0.000 {"group": "connection"}
+ CVL12  OVL15 +CVL01 +OVL02      3       21.439       0.000     -21.439      -0.000      -0.000       0.000 {"group": "connection"}
+ HVL14  CVL12  OVL15 +CVL01      3        0.414       1.243       0.000      -1.657      -0.000       0.000 {"group": "connection"}
+ HVL13  CVL12  OVL15 +CVL01      3        0.414       1.243       0.000      -1.657      -0.000       0.000 {"group": "connection"}
+ CVL09  CVL12  OVL15 +CVL01      3       -2.197       5.201       0.527      -3.531      -0.000       0.000 {"group": "connection"}
+; impropers
++CVL03 +CVL01 OVL15 +OVL02    4 180.000  43.932    2 {"group": "connection"} 
+[ pairs ]
+ OVL15 +CVL06       1  0.320000000  0.201084174 {"group": "connection"}
+ OVL15 +HVL05       1  0.270000000  0.135570922 {"group": "connection"}
+ OVL15 +HVL04       1  0.270000000  0.135570922 {"group": "connection"}
+ CVL12 +CVL03       1  0.350000000  0.138050000 {"group": "connection"}
+ CVL12 +OVL02       1  0.323000000  0.246262797 {"group": "connection"}
+ HVL14 +CVL01       1  0.302500000  0.095863119 {"group": "connection"}
+ HVL13 +CVL01       1  0.302500000  0.095863119 {"group": "connection"}
+ CVL09 +CVL01       1  0.352500000  0.142187983 {"group": "connection"}
+;-------------------------------------
+;             VL0-VL0 LINK-TERMS                      
+;-------------------------------------
+[link]
+resname "VL0"
+[ dihedrals ]
+[ pairs ]

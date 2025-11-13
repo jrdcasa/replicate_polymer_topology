@@ -1,0 +1,39 @@
+[ moleculetype ]
+; Name            nrexcl
+system1          3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr    charge       mass  typeB    chargeB      massB
+; residue    1 tME rtp tME q 0.0
+    1    CH3_sp3      1    tME   _CH3      1 0.00000000  15.035000   ; qtot 0.000000
+; residue    2 ETH rtp ETH q 0.0
+    2    CH2_sp3      2    ETH   _CH2      2 0.00000000  14.027000   ; qtot 0.000000
+    3    CH2_sp3      2    ETH   _CH2      3 0.00000000  14.027000   ; qtot 0.000000
+; residue    3 ETH rtp ETH q 0.0
+    4    CH2_sp3      3    ETH   _CH2      4 0.00000000  14.027000   ; qtot 0.000000
+    5    CH2_sp3      3    ETH   _CH2      5 0.00000000  14.027000   ; qtot 0.000000
+; residue    4 ETH rtp ETH q 0.0
+    6    CH2_sp3      4    ETH   _CH2      6 0.00000000  14.027000   ; qtot 0.000000
+    7    CH2_sp3      4    ETH   _CH2      7 0.00000000  14.027000   ; qtot 0.000000
+; residue    5 tME rtp tME q 0.0
+    8    CH3_sp3      5    tME   _CH3      8 0.00000000  15.035000   ; qtot 0.000000
+
+[ bonds ]
+;    ai     aj funct         c0         c1         c2         c3
+      1      2     1   0.15400 376560.000000
+      2      3     1   0.15400 376560.000000
+      3      4     1   0.15400 376560.000000
+      4      5     1   0.15400 376560.000000
+      5      6     1   0.15400 376560.000000
+      6      7     1   0.15400 376560.000000
+      7      8     1   0.15400 376560.000000
+
+[ angles ]
+;    ai     aj     ak funct         c0         c1         c2         c3
+      1      2      3     1   113.9996936 519.653890
+      2      3      4     1   113.9996936 519.653890
+      3      4      5     1   113.9996936 519.653890
+      4      5      6     1   113.9996936 519.653890
+      5      6      7     1   113.9996936 519.653890
+      6      7      8     1   113.9996936 519.653890
+

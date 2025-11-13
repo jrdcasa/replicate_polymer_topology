@@ -1,0 +1,21 @@
+REMARK   1 CREATED WITH MDTraj 1.9.9, 2024-02-10
+CRYST1    6.387    8.380    1.802  90.00  90.00  90.00 P 1           1 
+MODEL        0
+ATOM      1 _CH3 tME A   1       1.000   0.000  -0.000  1.00  0.00           C  
+ATOM      2 _CH2 ETH A   2       1.000   1.540   0.000  0.00  0.00           C  
+ATOM      3 _CH2 ETH A   2       2.456   2.041   0.000  0.00  0.00           C  
+ATOM      4 _CH2 ETH A   3       2.456   3.581   0.000  0.00  0.00           C  
+ATOM      5 _CH2 ETH A   3       3.912   4.083  -0.000  0.00  0.00           C  
+ATOM      6 _CH2 ETH A   4       3.912   5.623  -0.000  0.00  0.00           C  
+ATOM      7 _CH2 ETH A   4       5.368   6.124  -0.000  0.00  0.00           C  
+ATOM      8 _CH3 tME A   5       5.368   7.664  -0.000  2.00  0.00           C  
+ENDMDL
+CONECT    1    2
+CONECT    2    1    3
+CONECT    3    2    4
+CONECT    4    3    5
+CONECT    5    4    6
+CONECT    6    5    7
+CONECT    7    6    8
+CONECT    8    7
+END

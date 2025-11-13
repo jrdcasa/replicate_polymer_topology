@@ -1,0 +1,13 @@
+[ moleculetype ]
+; Name      nrexcl
+tME         3
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass
+     1     CH3_sp3       1     tME     C01     1      0.0000     15.0350   ;  0.0000
+[ bonds ]
+; atom1 atom2   b0    kb
+[ angles ]
+; ai    aj    ak funct  theta kbend
+[ dihedrals ]
+;  ai    aj    ak    al funct       c0   c1  c2   c3  c4   c5
+[ pairs ]

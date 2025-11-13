@@ -1,0 +1,11 @@
+#include "forcefield.itp"
+#include "system1.itp"
+#include "system2.itp"
+
+[ system ]
+; Name
+Generic title
+
+[ molecules ]
+system1 12
+system2 12

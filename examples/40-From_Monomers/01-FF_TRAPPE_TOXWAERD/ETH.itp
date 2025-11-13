@@ -1,0 +1,14 @@
+[ moleculetype ]
+; Name            nrexcl
+ETH          3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr    charge       mass  typeB    chargeB      massB
+; residue    1 ETH rtp ETH q 0.0
+    1    CH3_sp3      1    ETH   _CH3      1 0.00000000  15.035000   ; qtot 0.000000
+    2    CH3_sp3      1    ETH   _CH3      2 0.00000000  15.035000   ; qtot 0.000000
+
+[ bonds ]
+;    ai     aj funct         c0         c1         c2         c3
+      1      2     1   0.15400 376560.000000
+

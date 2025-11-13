@@ -1,0 +1,50 @@
+; This mdp is for GROMACS 2021.4 (J. Ramos)
+; Run parameters ====================================================
+integrator            = md
+dt                    = 0.001         ; 1.0 fs
+nsteps                = 50000000      ; nsteps * dt = total time
+tinit                 = 0             ; Starting time in ps
+
+; COM ===============================================================
+;comm-mode             = angular
+
+; Output control: Save every dt * nst ===============================
+nstxout-compressed    = 1
+nstlog                = 1
+nstenergy             = 1000
+
+; Bond parameters ===================================================
+continuation          = no
+
+; Neighbor searching ================================================
+cutoff-scheme         = verlet
+nstlist               = 10
+pbc                   = xyz
+rlist                 = 0.9
+
+; Electrostatics ====================================================
+coulombtype           = cut-off
+rcoulomb              = 0.9
+
+; Van der Waals =====================================================
+vdwtype               = cut-off
+rvdw                  = 0.9
+DispCorr              = no
+
+; Temperature coupling ==============================================
+tcoupl                = v-rescale
+tc-grps               = system            ; three coupling groups - more accurate
+tau-t                 = 0.5           ; ps
+ref-t                 = 450           ; K
+
+; Pressure coupling =================================================
+pcoupl                = no
+
+; Velocity generation ===============================================
+gen-vel               = yes
+gen-temp              = 450           ; K
+gen-seed              = 892349023
+
+; Bonds =============================================================
+constraints           = none
+

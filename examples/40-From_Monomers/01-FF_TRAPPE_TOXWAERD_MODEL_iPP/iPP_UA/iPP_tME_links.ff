@@ -1,0 +1,19 @@
+;-------------------------------------
+;             iPP-tME LINK                      
+;-------------------------------------
+[link]
+resname "iPP|tME"
+[ bonds ]
++C01   C02        1      0.1540    376560.0  {"group": "connection"}
+[ angles ]
+C03   C02   +C01        1    112.0001       519.7   {"group": "connection"}
+C01   C02   +C01        1    112.0001       519.7   {"group": "connection"}
+[ dihedrals ]
+[ pairs ]
+;-------------------------------------
+;             iPP-tME LINK-TERMS                      
+;-------------------------------------
+[link]
+resname "iPP|tME"
+[ dihedrals ]
+[ pairs ]

@@ -1,0 +1,245 @@
+REMARK   1 CREATED WITH MDTraj 1.9.6, 2022-08-30
+CRYST1   27.635   38.354   14.995  90.00  90.00  90.00 P 1           1 
+MODEL        0
+ATOM      1 _CH3 PPE A   1      10.111   4.103   0.730  1.00  1.00      A    C  
+ATOM      2 _CH  PPE A   1       9.050   4.822   1.573  1.00  1.00      A    C  
+ATOM      3 _CH3 PPE A   1       8.167   5.678   0.662  1.00  0.00      A    C  
+ATOM      4 _CH2 PPR A   2       9.735   5.629   2.695  1.00  1.00      A    C  
+ATOM      5 _CH  PPR A   2       8.897   5.884   3.968  1.00  1.00      A    C  
+ATOM      6 _CH3 PPR A   2       7.894   7.039   3.859  1.00  0.00      A    C  
+ATOM      7 _CH2 PPR A   3       9.828   6.125   5.175  1.00  1.00      A    C  
+ATOM      8 _CH  PPR A   3       9.291   5.766   6.573  1.00  1.00      A    C  
+ATOM      9 _CH3 PPR A   3      10.331   6.216   7.602  1.00  0.00      A    C  
+ATOM     10 _CH2 PPR A   4       9.053   4.245   6.691  1.00  1.00      A    C  
+ATOM     11 _CH  PPR A   4       7.674   3.779   7.205  1.00  1.00      A    C  
+ATOM     12 _CH3 PPR A   4       6.534   4.504   6.494  1.00  0.00      A    C  
+ATOM     13 _CH2 PPR A   5       7.591   3.536   8.731  1.00  1.00      A    C  
+ATOM     14 _CH  PPR A   5       7.445   4.268  10.122  1.00  1.00      A    C  
+ATOM     15 _CH3 PPR A   5       7.277   3.030  11.054  1.00  0.00      A    C  
+ATOM     16 _CH2 PPR A   6       6.737   5.378  11.017  1.00  1.00      A    C  
+ATOM     17 _CH  PPR A   6       6.085   6.789  11.067  1.00  1.00      A    C  
+ATOM     18 _CH3 PPR A   6       4.599   6.700  10.699  1.00  0.00      A    C  
+ATOM     19 _CH2 PPR A   7       6.667   8.063  10.430  1.00  1.00      A    C  
+ATOM     20 _CH  PPR A   7       8.005   8.639  10.951  1.00  1.00      A    C  
+ATOM     21 _CH3 PPR A   7       9.183   7.889  10.326  1.00  0.00      A    C  
+ATOM     22 _CH2 PPR A   8       8.189   8.703  12.485  1.00  1.00      A    C  
+ATOM     23 _CH  PPR A   8       9.175   9.818  12.906  1.00  1.00      A    C  
+ATOM     24 _CH3 PPR A   8      10.212   9.294  13.914  1.00  0.00      A    C  
+ATOM     25 _CH2 PPR A   9       8.566  11.106  13.513  1.00  1.00      A    C  
+ATOM     26 _CH  PPR A   9       7.468  11.906  12.773  1.00  1.00      A    C  
+ATOM     27 _CH3 PPR A   9       7.495  13.344  13.318  1.00  0.00      A    C  
+ATOM     28 _CH2 PPR A  10       6.075  11.260  12.951  1.00  1.00      A    C  
+ATOM     29 _CH  PPR A  10       4.829  12.058  12.515  1.00  1.00      A    C  
+ATOM     30 _CH3 PPR A  10       3.586  11.299  13.005  1.00  0.00      A    C  
+ATOM     31 _CH2 PPR A  11       4.791  12.280  10.989  1.00  1.00      A    C  
+ATOM     32 _CH  PPR A  11       3.632  13.150  10.449  1.00  1.00      A    C  
+ATOM     33 _CH3 PPR A  11       3.648  13.136   8.915  1.00  0.00      A    C  
+ATOM     34 _CH2 PPR A  12       3.601  14.572  11.056  1.00  1.00      A    C  
+ATOM     35 _CH  PPR A  12       4.818  15.483  10.782  1.00  1.00      A    C  
+ATOM     36 _CH3 PPR A  12       5.040  16.421  11.980  1.00  0.00      A    C  
+ATOM     37 _CH2 PPR A  13       4.653  16.318   9.493  1.00  1.00      A    C  
+ATOM     38 _CH  PPR A  13       5.973  16.832   8.883  1.00  1.00      A    C  
+ATOM     39 _CH3 PPR A  13       5.698  18.016   7.946  1.00  0.00      A    C  
+ATOM     40 _CH2 PPR A  14       6.700  15.689   8.144  1.00  1.00      A    C  
+ATOM     41 _CH  PPR A  14       8.134  15.964   7.643  1.00  1.00      A    C  
+ATOM     42 _CH3 PPR A  14       8.596  14.770   6.795  1.00  0.00      A    C  
+ATOM     43 _CH2 PPR A  15       9.116  16.363   8.771  1.00  1.00      A    C  
+ATOM     44 _CH  PPR A  15       9.386  15.350   9.908  1.00  1.00      A    C  
+ATOM     45 _CH3 PPR A  15       9.741  16.113  11.193  1.00  0.00      A    C  
+ATOM     46 _CH2 PPR A  16      10.506  14.363   9.524  1.00  1.00      A    C  
+ATOM     47 _CH  PPR A  16      10.709  13.188  10.507  1.00  1.00      A    C  
+ATOM     48 _CH3 PPR A  16      11.977  13.380  11.356  1.00  0.00      A    C  
+ATOM     49 _CH2 PPR A  17      10.651  11.783   9.845  1.00  1.00      A    C  
+ATOM     50 _CH  PPR A  17      11.279  11.549   8.451  1.00  1.00      A    C  
+ATOM     51 _CH3 PPR A  17      11.081  10.071   8.082  1.00  0.00      A    C  
+ATOM     52 _CH2 PPR A  18      12.756  11.973   8.365  1.00  1.00      A    C  
+ATOM     53 _CH  PPR A  18      13.446  11.793   6.998  1.00  1.00      A    C  
+ATOM     54 _CH3 PPR A  18      14.950  12.041   7.174  1.00  0.00      A    C  
+ATOM     55 _CH2 PPR A  19      12.780  12.677   5.916  1.00  1.00      A    C  
+ATOM     56 _CH  PPR A  19      13.336  12.512   4.489  1.00  1.00      A    C  
+ATOM     57 _CH3 PPR A  19      14.539  13.424   4.227  1.00  0.00      A    C  
+ATOM     58 _CH2 PPR A  20      12.218  12.619   3.418  1.00  1.00      A    C  
+ATOM     59 _CH  PPR A  20      11.615  13.998   3.059  1.00  1.00      A    C  
+ATOM     60 _CH3 PPR A  20      10.204  13.793   2.488  1.00  0.00      A    C  
+ATOM     61 _CH2 PPR A  21      12.517  14.708   2.028  1.00  1.00      A    C  
+ATOM     62 _CH  PPR A  21      12.185  16.144   1.560  1.00  1.00      A    C  
+ATOM     63 _CH3 PPR A  21      13.405  16.601   0.744  1.00  0.00      A    C  
+ATOM     64 _CH2 PPR A  22      11.781  17.046   2.752  1.00  1.00      A    C  
+ATOM     65 _CH  PPR A  22      11.749  18.580   2.580  1.00  1.00      A    C  
+ATOM     66 _CH3 PPR A  22      10.952  19.011   1.338  1.00  0.00      A    C  
+ATOM     67 _CH2 PPR A  23      13.100  19.332   2.592  1.00  1.00      A    C  
+ATOM     68 _CH  PPR A  23      14.004  19.219   3.842  1.00  1.00      A    C  
+ATOM     69 _CH3 PPR A  23      14.796  20.529   3.972  1.00  0.00      A    C  
+ATOM     70 _CH2 PPR A  24      14.955  18.000   3.783  1.00  1.00      A    C  
+ATOM     71 _CH  PPR A  24      15.947  17.805   4.953  1.00  1.00      A    C  
+ATOM     72 _CH3 PPR A  24      16.722  16.497   4.736  1.00  0.00      A    C  
+ATOM     73 _CH2 PPR A  25      15.233  17.845   6.322  1.00  1.00      A    C  
+ATOM     74 _CH  PPR A  25      16.073  17.566   7.589  1.00  1.00      A    C  
+ATOM     75 _CH3 PPR A  25      15.165  17.649   8.827  1.00  0.00      A    C  
+ATOM     76 _CH2 PPR A  26      17.376  18.392   7.736  1.00  1.00      A    C  
+ATOM     77 _CH  PPR A  26      17.408  19.902   7.408  1.00  1.00      A    C  
+ATOM     78 _CH3 PPR A  26      18.888  20.309   7.328  1.00  0.00      A    C  
+ATOM     79 _CH2 PPR A  27      16.511  20.818   8.271  1.00  1.00      A    C  
+ATOM     80 _CH  PPR A  27      16.824  21.085   9.763  1.00  1.00      A    C  
+ATOM     81 _CH3 PPR A  27      15.530  21.600  10.411  1.00  0.00      A    C  
+ATOM     82 _CH2 PPR A  28      18.026  22.056   9.877  1.00  1.00      A    C  
+ATOM     83 _CH  PPR A  28      18.397  22.745  11.211  1.00  1.00      A    C  
+ATOM     84 _CH3 PPR A  28      18.556  21.765  12.379  1.00  0.00      A    C  
+ATOM     85 _CH2 PPR A  29      17.457  23.919  11.551  1.00  1.00      A    C  
+ATOM     86 _CH  PPR A  29      18.028  25.046  12.440  1.00  1.00      A    C  
+ATOM     87 _CH3 PPR A  29      16.864  25.982  12.789  1.00  0.00      A    C  
+ATOM     88 _CH2 PPR A  30      19.219  25.738  11.737  1.00  1.00      A    C  
+ATOM     89 _CH  PPR A  30      19.820  27.029  12.342  1.00  1.00      A    C  
+ATOM     90 _CH3 PPR A  30      20.139  26.895  13.837  1.00  0.00      A    C  
+ATOM     91 _CH2 PPR A  31      18.985  28.293  12.024  1.00  1.00      A    C  
+ATOM     92 _CH  PPR A  31      19.777  29.352  11.229  1.00  1.00      A    C  
+ATOM     93 _CH3 PPR A  31      20.918  29.929  12.085  1.00  0.00      A    C  
+ATOM     94 _CH2 PPR A  32      18.857  30.480  10.713  1.00  1.00      A    C  
+ATOM     95 _CH  PPR A  32      19.191  31.081   9.322  1.00  1.00      A    C  
+ATOM     96 _CH3 PPR A  32      20.682  31.363   9.102  1.00  0.00      A    C  
+ATOM     97 _CH2 PPR A  33      18.320  32.344   9.131  1.00  1.00      A    C  
+ATOM     98 _CH  PPR A  33      18.604  33.281   7.939  1.00  1.00      A    C  
+ATOM     99 _CH3 PPR A  33      17.734  34.533   8.124  1.00  0.00      A    C  
+ATOM    100 _CH2 PPR A  34      18.369  32.667   6.543  1.00  1.00      A    C  
+ATOM    101 _CH  PPR A  34      18.943  33.543   5.409  1.00  1.00      A    C  
+ATOM    102 _CH3 PPR A  34      18.251  33.309   4.059  1.00  0.00      A    C  
+ATOM    103 _CH2 PPR A  35      20.465  33.330   5.278  1.00  1.00      A    C  
+ATOM    104 _CH  PPR A  35      21.255  34.490   4.643  1.00  1.00      A    C  
+ATOM    105 _CH3 PPR A  35      22.655  33.997   4.250  1.00  0.00      A    C  
+ATOM    106 _CH2 PPR A  36      21.321  35.674   5.633  1.00  1.00      A    C  
+ATOM    107 _CH  PPR A  36      22.123  36.920   5.213  1.00  1.00      A    C  
+ATOM    108 _CH3 PPR A  36      22.174  37.884   6.407  1.00  0.00      A    C  
+ATOM    109 _CH2 PPR A  37      21.528  37.591   3.962  1.00  1.00      A    C  
+ATOM    110 _CH  PPR A  37      22.297  38.779   3.343  1.00  1.00      A    C  
+ATOM    111 _CH3 PPR A  37      21.473  39.320   2.166  1.00  0.00      A    C  
+ATOM    112 _CH2 PPR A  38      23.701  38.386   2.842  1.00  1.00      A    C  
+ATOM    113 _CH  PPR A  38      24.849  38.484   3.867  1.00  1.00      A    C  
+ATOM    114 _CH3 PPR A  38      25.278  39.946   4.059  1.00  0.00      A    C  
+ATOM    115 _CH2 PPR A  39      25.990  37.502   3.516  1.00  1.00      A    C  
+ATOM    116 _CH  PPR A  39      26.699  37.662   2.156  1.00  1.00      A    C  
+ATOM    117 _CH3 PPR A  39      27.269  36.310   1.700  1.00  0.00      A    C  
+ATOM    118 _CH2 PPE A  40      27.771  38.772   2.081  1.00  1.00      A    C  
+ATOM    119 _CH2 PPE A  40      29.165  38.510   2.682  1.00  1.00      A    C  
+ATOM    120 _CH3 PPE A  40      29.238  38.248   4.187  1.00  0.00      A    C  
+ENDMDL
+CONECT    1    2
+CONECT    2    1    3    4
+CONECT    3    2
+CONECT    4    2    5
+CONECT    5    4    6    7
+CONECT    6    5
+CONECT    7    5    8
+CONECT    8    7    9   10
+CONECT    9    8
+CONECT   10    8   11
+CONECT   11   10   12   13
+CONECT   12   11
+CONECT   13   11   14
+CONECT   14   13   15   16
+CONECT   15   14
+CONECT   16   14   17
+CONECT   17   16   18   19
+CONECT   18   17
+CONECT   19   17   20
+CONECT   20   19   21   22
+CONECT   21   20
+CONECT   22   20   23
+CONECT   23   22   24   25
+CONECT   24   23
+CONECT   25   23   26
+CONECT   26   25   27   28
+CONECT   27   26
+CONECT   28   26   29
+CONECT   29   28   30   31
+CONECT   30   29
+CONECT   31   29   32
+CONECT   32   31   33   34
+CONECT   33   32
+CONECT   34   32   35
+CONECT   35   34   36   37
+CONECT   36   35
+CONECT   37   35   38
+CONECT   38   37   39   40
+CONECT   39   38
+CONECT   40   38   41
+CONECT   41   40   42   43
+CONECT   42   41
+CONECT   43   41   44
+CONECT   44   43   45   46
+CONECT   45   44
+CONECT   46   44   47
+CONECT   47   46   48   49
+CONECT   48   47
+CONECT   49   47   50
+CONECT   50   49   51   52
+CONECT   51   50
+CONECT   52   50   53
+CONECT   53   52   54   55
+CONECT   54   53
+CONECT   55   53   56
+CONECT   56   55   57   58
+CONECT   57   56
+CONECT   58   56   59
+CONECT   59   58   60   61
+CONECT   60   59
+CONECT   61   59   62
+CONECT   62   61   63   64
+CONECT   63   62
+CONECT   64   62   65
+CONECT   65   64   66   67
+CONECT   66   65
+CONECT   67   65   68
+CONECT   68   67   69   70
+CONECT   69   68
+CONECT   70   68   71
+CONECT   71   70   72   73
+CONECT   72   71
+CONECT   73   71   74
+CONECT   74   73   75   76
+CONECT   75   74
+CONECT   76   74   77
+CONECT   77   76   78   79
+CONECT   78   77
+CONECT   79   77   80
+CONECT   80   79   81   82
+CONECT   81   80
+CONECT   82   80   83
+CONECT   83   82   84   85
+CONECT   84   83
+CONECT   85   83   86
+CONECT   86   85   87   88
+CONECT   87   86
+CONECT   88   86   89
+CONECT   89   88   90   91
+CONECT   90   89
+CONECT   91   89   92
+CONECT   92   91   93   94
+CONECT   93   92
+CONECT   94   92   95
+CONECT   95   94   96   97
+CONECT   96   95
+CONECT   97   95   98
+CONECT   98   97   99  100
+CONECT   99   98
+CONECT  100   98  101
+CONECT  101  100  102  103
+CONECT  102  101
+CONECT  103  101  104
+CONECT  104  103  105  106
+CONECT  105  104
+CONECT  106  104  107
+CONECT  107  106  108  109
+CONECT  108  107
+CONECT  109  107  110
+CONECT  110  109  111  112
+CONECT  111  110
+CONECT  112  110  113
+CONECT  113  112  114  115
+CONECT  114  113
+CONECT  115  113  116
+CONECT  116  115  117  118
+CONECT  117  116
+CONECT  118  116  119
+CONECT  119  118  120
+CONECT  120  119
+END

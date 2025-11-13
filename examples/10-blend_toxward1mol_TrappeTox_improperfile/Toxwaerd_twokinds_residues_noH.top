@@ -1,0 +1,148 @@
+;
+;   File Toxwaerd_twokinds_residues_noH.top  was generated
+;   By user: jramos (1000)
+;   On host: totem3
+;   At date: Sat. November  6 13:06:47 2023
+;
+;   This is a standalone topology file
+;
+;   Created by:
+;   ParmEd:       replicate_polymer.py, VERSION 3.4.3
+;   Executable:   replicate_polymer.py
+;   Library dir:  /usr/share/gromacs/top
+;   Command line:
+;     /home/jramos/Programacion/GITHUB_REPO_DIR/replicate_polymer_topology/replicate_polymer/replicate_polymer.py -p ./01-PREPARE/Toxwaerd_twokinds_residues.pdb -f ../../forcefields/trappe-ua_PEToxvaerd.xml --images 2 2 3 -e lammps --noh --boxlength 2.3 2.3 2.3 --impropers improper.ndx
+;
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             1            1           
+
+[ atomtypes ]
+; name    at.num    mass    charge ptype  sigma      epsilon
+CH3_sp3        0  15.035000  0.00000000  A          0.375       0.814817
+CH2_sp3        0  14.027000  0.00000000  A          0.395       0.382465
+CH_sp3         0  13.019000  0.00000000  A          0.468      0.0831445
+
+
+[ moleculetype ]
+; Name            nrexcl
+system1          3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr    charge       mass  typeB    chargeB      massB
+; residue    1 PES rtp PES q 0.0
+    1    CH3_sp3      1    PES   _CH3      1 0.00000000  15.035000   ; qtot 0.000000
+    2    CH2_sp3      1    PES   _CH2      2 0.00000000  14.027000   ; qtot 0.000000
+; residue    2 HEX rtp HEX q 0.0
+    3    CH2_sp3      2    HEX   _CH2      3 0.00000000  14.027000   ; qtot 0.000000
+    4     CH_sp3      2    HEX    _CH      4 0.00000000  13.019000   ; qtot 0.000000
+    5    CH2_sp3      2    HEX   _CH2      5 0.00000000  14.027000   ; qtot 0.000000
+    6    CH2_sp3      2    HEX   _CH2      6 0.00000000  14.027000   ; qtot 0.000000
+    7    CH2_sp3      2    HEX   _CH2      7 0.00000000  14.027000   ; qtot 0.000000
+    8    CH3_sp3      2    HEX   _CH3      8 0.00000000  15.035000   ; qtot 0.000000
+; residue    3 PEE rtp PEE q 0.0
+    9    CH2_sp3      3    PEE   _CH2      9 0.00000000  14.027000   ; qtot 0.000000
+   10    CH2_sp3      3    PEE   _CH2     10 0.00000000  14.027000   ; qtot 0.000000
+; residue    4 PEE rtp PEE q 0.0
+   11    CH2_sp3      4    PEE   _CH2     11 0.00000000  14.027000   ; qtot 0.000000
+   12    CH2_sp3      4    PEE   _CH2     12 0.00000000  14.027000   ; qtot 0.000000
+; residue    5 PES rtp PES q 0.0
+   13    CH2_sp3      5    PES   _CH2     13 0.00000000  14.027000   ; qtot 0.000000
+   14    CH3_sp3      5    PES   _CH3     14 0.00000000  15.035000   ; qtot 0.000000
+
+[ bonds ]
+;    ai     aj funct         c0         c1         c2         c3
+      1      2     1   0.15400 376560.000000
+      2      3     1   0.15400 376560.000000
+      3      4     1   0.15400 376560.000000
+      4      5     1   0.15400 376560.000000
+      4      9     1   0.15400 376560.000000
+      5      6     1   0.15400 376560.000000
+      6      7     1   0.15400 376560.000000
+      7      8     1   0.15400 376560.000000
+      9     10     1   0.15400 376560.000000
+     10     11     1   0.15400 376560.000000
+     11     12     1   0.15400 376560.000000
+     12     13     1   0.15400 376560.000000
+     13     14     1   0.15400 376560.000000
+
+[ angles ]
+;    ai     aj     ak funct         c0         c1         c2         c3
+      1      2      3     1   113.9996936 519.653890
+      2      3      4     1   113.9996936 519.653890
+      3      4      5     1   112.0000709 519.653890
+      3      4      9     1   112.0000709 519.653890
+      4      5      6     1   113.9996936 519.653890
+      4      9     10     1   113.9996936 519.653890
+      5      4      9     1   112.0000709 519.653890
+      5      6      7     1   113.9996936 519.653890
+      6      7      8     1   113.9996936 519.653890
+      9     10     11     1   113.9996936 519.653890
+     10     11     12     1   113.9996936 519.653890
+     11     12     13     1   113.9996936 519.653890
+     12     13     14     1   113.9996936 519.653890
+
+[ dihedrals ]
+;    ai     aj     ak     al funct         c0         c1         c2         c3         c4         c5
+      2      3      4      5     3     3.2862100     7.4421100     1.8599500   -14.6756900     0.0000000     0.0000000
+      2      3      4      9     3     3.2862100     7.4421100     1.8599500   -14.6756900     0.0000000     0.0000000
+      3      4      5      6     3     3.2862100     7.4421100     1.8599500   -14.6756900     0.0000000     0.0000000
+      3      4      9     10     3     3.2862100     7.4421100     1.8599500   -14.6756900     0.0000000     0.0000000
+      5      4      9     10     3     3.2862100     7.4421100     1.8599500   -14.6756900     0.0000000     0.0000000
+      6      5      4      9     3     3.2862100     7.4421100     1.8599500   -14.6756900     0.0000000     0.0000000
+
+
+[ moleculetype ]
+; Name            nrexcl
+system2          3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr    charge       mass  typeB    chargeB      massB
+; residue    1 PES rtp PES q 0.0
+    1    CH3_sp3      1    PES   _CH3      1 0.00000000  15.035000   ; qtot 0.000000
+    2    CH2_sp3      1    PES   _CH2      2 0.00000000  14.027000   ; qtot 0.000000
+; residue    2 PEE rtp PEE q 0.0
+    3    CH2_sp3      2    PEE   _CH2      3 0.00000000  14.027000   ; qtot 0.000000
+    4    CH2_sp3      2    PEE   _CH2      4 0.00000000  14.027000   ; qtot 0.000000
+; residue    3 PEE rtp PEE q 0.0
+    5    CH2_sp3      3    PEE   _CH2      5 0.00000000  14.027000   ; qtot 0.000000
+    6    CH2_sp3      3    PEE   _CH2      6 0.00000000  14.027000   ; qtot 0.000000
+; residue    4 PEE rtp PEE q 0.0
+    7    CH2_sp3      4    PEE   _CH2      7 0.00000000  14.027000   ; qtot 0.000000
+    8    CH2_sp3      4    PEE   _CH2      8 0.00000000  14.027000   ; qtot 0.000000
+; residue    5 PES rtp PES q 0.0
+    9    CH2_sp3      5    PES   _CH2      9 0.00000000  14.027000   ; qtot 0.000000
+   10    CH3_sp3      5    PES   _CH3     10 0.00000000  15.035000   ; qtot 0.000000
+
+[ bonds ]
+;    ai     aj funct         c0         c1         c2         c3
+      1      2     1   0.15400 376560.000000
+      2      3     1   0.15400 376560.000000
+      3      4     1   0.15400 376560.000000
+      4      5     1   0.15400 376560.000000
+      5      6     1   0.15400 376560.000000
+      6      7     1   0.15400 376560.000000
+      7      8     1   0.15400 376560.000000
+      8      9     1   0.15400 376560.000000
+      9     10     1   0.15400 376560.000000
+
+[ angles ]
+;    ai     aj     ak funct         c0         c1         c2         c3
+      1      2      3     1   113.9996936 519.653890
+      2      3      4     1   113.9996936 519.653890
+      3      4      5     1   113.9996936 519.653890
+      4      5      6     1   113.9996936 519.653890
+      5      6      7     1   113.9996936 519.653890
+      6      7      8     1   113.9996936 519.653890
+      7      8      9     1   113.9996936 519.653890
+      8      9     10     1   113.9996936 519.653890
+
+[ system ]
+; Name
+Generic title
+
+[ molecules ]
+; Compound       #mols
+system1              1
+system2              1

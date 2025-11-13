@@ -1,0 +1,24 @@
+;-------------------------------------
+;             iPP-iPP LINK                      
+;-------------------------------------
+[link]
+resname "iPP"
+[ bonds ]
++C01   C02        1      0.1540    376560.0  {"group": "connection"}
+[ angles ]
+C02   +C01   +C02        1    113.9997       519.7   {"group": "connection"}
+C03   C02   +C01        1    112.0001       519.7   {"group": "connection"}
+C01   C02   +C01        1    112.0001       519.7   {"group": "connection"}
+[ dihedrals ]
+[ pairs ]
+ C02   +C03    1 {"group": "connection"}
+ C01   +C02    1 {"group": "connection"}
+ C03   +C02    1 {"group": "connection"}
+;-------------------------------------
+;             iPP-iPP LINK-TERMS                      
+;-------------------------------------
+[link]
+resname "iPP"
+[ dihedrals ]
+[ pairs ]
+ C02   ++C01    1 {"group": "connection"}

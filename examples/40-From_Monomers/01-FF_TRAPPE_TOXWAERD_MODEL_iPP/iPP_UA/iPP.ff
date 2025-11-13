@@ -1,0 +1,18 @@
+[ moleculetype ]
+; Name      nrexcl
+iPP         3
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr     charge       mass
+     1     CH2_sp3       1     iPP     C01     1      0.0000     14.0270   ;  0.0000
+     2      CH_sp3       1     iPP     C02     2      0.0000     13.0190   ;  0.0000
+     3     CH3_sp3       1     iPP     C03     3      0.0000     15.0350   ;  0.0000
+[ bonds ]
+; atom1 atom2   b0    kb
+     1     2     1      0.1540    376560.0
+     2     3     1      0.1540    376560.0
+[ angles ]
+; ai    aj    ak funct  theta kbend
+     1     2     3     1    112.0001       519.7
+[ dihedrals ]
+;  ai    aj    ak    al funct       c0   c1  c2   c3  c4   c5
+[ pairs ]

@@ -1,0 +1,4 @@
+[ atomtypes ]
+; name    at.num    mass    charge ptype  sigma      epsilon
+CH3_sp3 CH3 0  15.035000  0.00000000  A  0.375  0.814817
+CH2_sp3 CH2 0  14.027000  0.00000000  A  0.395  0.382465

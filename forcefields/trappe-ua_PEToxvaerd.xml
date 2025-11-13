@@ -1,0 +1,529 @@
+<ForceField name="Trappe-UA" version="0.0.2" combining_rule="lorentz">
+ <AtomTypes>
+  <!--  ===================== ALKANES ==================== -->
+  <!-- J. Phys. Chem. B 1998, 102, 2569-2577. Linear alkanes, 10.1021/jp972543+ -->
+  <!-- J. Phys. Chem. B 1999, 103, 4508-4517. Branched alkanes, 10.1021/jp984742e-->
+  <Type name="CH4" class="CH4" element="_CH4" mass="16.04300" def="_CH4" desc="CH4, united atom" doi="10.1021/jp972543+"/>
+  <Type name="CH3_sp3" class="CH3" element="_CH3" mass="15.03500" def="[_CH3;X1][_CH3,_CH2,_CH,C]" desc="Alkane CH3, united atom" doi="10.1021/jp972543+"/>
+  <Type name="CH2_sp3" class="CH2" element="_CH2" mass="14.02700" def="[_CH2;X2]([_CH3,_CH2,_CH,C])[_CH3,_CH2,_CH,C]" desc="Alkane CH2, united atom" overrides="CH2_sp3b" doi="10.1021/jp972543+"/>
+  <Type name="CH2_sp3b" class="CH2" element="_CH2" mass="14.02700" def="[_CH2;X1]([_CH2,_CH])" desc="Alkane CH2, united atom when is monomer and act as linker _CH2-_CH2 or _CH2-_CH" doi="10.1021/jp972543+"/>
+  <Type name="CH_sp3" class="CH" element="_CH" mass="13.01900" def="[_CH;X3]([_CH3,_CH2,_CH,C])([_CH3,_CH2,_CH,C])[_CH3,_CH2,_CH,C]" desc="Alkane CH, united atom" doi="10.1021/jp984742e"/>
+  <Type name="C_sp3" class="C" element="C" mass="12.01100" def="[C;X4]([_CH3,_CH2,_CH,C])([_CH3,_CH2,_CH,C])([_CH3,_CH2,_CH,C])[_CH3,_CH2,_CH,C]" desc="Alkane carbon" doi="10.1021/jp984742e"/>
+  <!--  ===================== ALCOHOL ==================== -->
+  <!-- J. Phys. Chem. B, Vol. 105, No. 15, 2001. Alcohols, 10.1021/jp003882x-->
+  <Type name="OH"  class="OH"  element="O" mass="15.99940" def="[O;X2]([_CH3,_CH2,_CH,C])H"  desc="Oxygen in hydroxyl" doi="10.1021/jp003882x"/>
+  <Type name="HO" class="HO" element="H" mass="1.00800" def="HO" desc="Hydrogen in hydroxyl" doi="10.1021/jp003882x"/>
+  <Type name="CH3_OH"  class="CH3" element="_CH3" mass="15.03500" def="[_CH3;X1]OH"  desc="CH3, united atom, attached to hydroxyl" doi="10.1021/jp003882x"/>
+  <Type name="CH2_OH"  class="CH2" element="_CH2" mass="14.02700" def="[_CH2;X2]([_CH3,_CH2,_CH,C])[O;%OH]" desc="CH2, united atom, attached to hydroxyl" doi="10.1021/jp003882x"/>
+  <!--  ===================== ESTERS ==================== -->
+  <!-- Esters doi:10.1016/j.fluid.2005.11.03 -->
+  <Type name="OC" class="OC"   element="O" mass="15.99940" def="[O;X1]C" desc="Oxygen in carbonyl group" doi="10.1016/j.fluid.2005.11.03 "/>
+  <Type name="OCO" class="OCO" element="O" mass="15.99940" def="[O;X2]([_CH3,_CH2,_CH,C])C" desc="Oxygen in ester group" doi="10.1016/j.fluid.2005.11.03 "/>
+  <Type name="CH3_OCO"  class="CH3" element="_CH3" mass="15.03500" def="[_CH3;X1][O]"  desc="CH3, united atom, attached to ester" doi="????????"/>
+  <Type name="CH2_OCO"  class="CH2" element="_CH2" mass="14.02700" def="[_CH2;X2]([_CH3,_CH2,_CH,C])[O;%OCO]" desc="CH2, united atom, attached to ester oxygen" doi="10.1016/j.fluid.2005.11.03 "/>
+  <Type name="COO" class="COO" element="C" mass="12.01100" def="[C;X3]([_CH3,_CH2,_CH,C])(O)(O)" desc="Carbon in carbonyl group ester" doi="?????????"/>
+  <!-- Esters doi:10.1021/jp049459w -->
+  <Type name="CH3_ace" class="CH3" element="_CH3" mass="15.03500" def="[_CH3;X1][C;%COO]" overrides="CH3_sp3" desc="Methyl acetate, united atom, attached to ester oxygen" doi="10.1021/jp049459w"/>
+  <!-- This parameter is developed for eter/alcohol, but it has been used for esters. -->
+  <!-- sigma and epsilon are the same that for alkanes but the charge change. -->
+  <Type name="CH_OCO" class="CH" element="_CH" mass="13.01900" def="[_CH;X3]([_CH3,_CH2,_CH,C])([_CH3,_CH2,_CH,C])[O;%OCO]" desc="Alkane CH, united atom, attached to ester oxygen" doi="10.1021/jp049459w"/>
+  <!-- Carboxylic acid doi:10.1021/jp049459w -->
+  <!-- O of an acid carboxylic acid (OHa) and hydrogen of an acid carboxylic (HOa)-->
+  <Type name="OHa"  class="OHa"  element="O" mass="15.99940" def="[O;X2]([C])H"  desc="Oxygen in OH carboxylic" overrides="OH" doi="10.1021/jp048581s"/>
+  <Type name="HOa"  class="HOa"  element="H" mass="1.00800" def="[H;X1]([%OHa])"  desc="Hydrogen in OH carboxylic" overrides="HO" doi="10.1021/jp048581s"/>
+  <Type name="COOa"  class="COOa"  element="C" mass="12.01100" def="[C;X3][O;%OHa]" overrides="COO" desc="Carbon in C=O in an acid carboxylic" doi="10.1021/jp048581s"/>
+  <Type name="OCa"  class="OCa"  element="O" mass="15.99940" def="[O;X1][C;%COOa]" overrides="OC" desc="Oxygen in C=O in an acid carboxylic" doi="10.1021/jp048581s"/>
+  <Type name="CH3_COOa"  class="CH3" element="_CH3" mass="15.03500" def="[_CH3;X1][C;%COOa]" desc="CH3, united atom, attached to C=O group in carboxylic acid" doi="10.1021/jp048581s"/>
+  <Type name="CH2_COOa"  class="CH2_COOa" element="_CH2" mass="14.02700" def="[_CH2;X2][C;%COOa]" overrides="CH2_sp3" desc="CH2, united atom, attached to C=O group in carboxylic acid" doi="10.1021/jp048581s"/>
+  <Type name="C_COOa" class="C_COOa" element="C" mass="12.01100"  def="[C;X4][C;%COOa]" overrides="C_sp3" desc="C, united atom, attached to C=O group in carboxylic acid" doi="10.1021/jp048581s"/>
+ </AtomTypes>
+
+ <HarmonicBondForce>
+  <!-- CHX-CHY kb = 450kcal/molA2-->
+  <Bond class1="CH3" class2="CH3" length="0.1540" k="376560.0"/>
+  <Bond class1="CH3" class2="CH2" length="0.1540" k="376560.0"/>
+  <Bond class1="CH3" class2="CH" length="0.1540" k="376560.0"/>
+  <Bond class1="CH3" class2="C" length="0.1540" k="376560.0"/>
+  <Bond class1="CH2" class2="CH2" length="0.1540" k="376560.0"/>
+  <Bond class1="CH2" class2="CH" length="0.1540" k="376560.0"/>
+  <Bond class1="CH2" class2="C" length="0.1540" k="376560.0"/>
+  <Bond class1="CH" class2="CH" length="0.1540" k="376560.0"/>
+  <Bond class1="CH" class2="C" length="0.1540" k="376560.0"/>
+  <Bond class1="C" class2="C" length="0.1540" k="376560.0"/>
+  <Bond class1="CH2_OC" class2="CH2" length="0.1540" k="376560.0"/>
+  <Bond class1="CH2_OH" class2="CH2" length="0.1540" k="376560.0"/>
+  <Bond class1="C_COOa" class2="CH2" length="0.1540" k="376560.0"/>
+  <Bond class1="CH2_COOa" class2="CH2" length="0.1540" k="376560.0"/>
+  <!-- CHX-OH bond constants from Charmm c36 -->
+  <Bond class1="CH3" class2="OH" length="0.1430" k="358150.4"/>
+  <Bond class1="CH2" class2="OH" length="0.1430" k="358150.4"/>
+  <Bond class1="CH" class2="OH" length="0.1430" k="358150.4"/>
+  <Bond class1="C" class2="OH" length="0.1430" k="358150.4"/>
+  <!-- O-H bond constants from Charmm c36-->
+  <Bond class1="OH" class2="HO" length="0.0945" k="456056.0"/>
+  <!-- Esters bond constants from Charmm c36-->
+  <Bond class1="CH3" class2="OCO" length="0.1410" k="284512.0"/>
+  <Bond class1="CH2" class2="OCO" length="0.1410" k="284512.0"/>
+  <Bond class1="CH" class2="OCO" length="0.1410" k="284512.0"/>
+  <Bond class1="COO" class2="OC" length="0.1200" k="543920.0"/>
+  <Bond class1="COO" class2="OCO" length="0.1344" k="439320"/>
+  <Bond class1="COO" class2="CH2" length="0.1520" k="167360.0"/>
+  <Bond class1="COO" class2="CH3" length="0.1520" k="167360.0"/>
+  <Bond class1="COO" class2="CH" length="0.1520" k="167360.0"/>
+  <Bond class1="COO" class2="C" length="0.1520" k="167360.0"/>
+  <!-- Carboxilic bond constants from OPLS-AA, J.Phys.ChemB 108 (37) 14130-->
+  <!-- O of an acid carboxylic acid (OHa) and hydrogen of an acid carboxylic (HOa)-->
+  <!-- Bond constants from Charmm c36-->
+  <Bond class1="OHa" class2="COOa" length="0.1364" k="1924640"/>
+  <Bond class1="OHa" class2="HOa" length="0.0970" k="456056.0"/>
+  <Bond class1="COOa" class2="OCa" length="0.1214" k="627600.0"/>
+  <Bond class1="COOa" class2="C_COOa" length="0.1520" k="167360.0"/>
+  <Bond class1="COOa" class2="CH2_COOa" length="0.1520" k="167360.0"/>
+
+
+ </HarmonicBondForce>
+
+ <HarmonicAngleForce>
+  <!-- CHX-[CH2]-CHY -->
+  <!-- J. Phys. Chem. B 1998, 102, 2569-2577. Linear alkanes, 10.1021/jp972543+ -->
+  <!-- J. Phys. Chem. B 1999, 103, 4508-4517. Branched alkanes, 10.1021/jp984742e-->
+  <Angle class1="CH3" class2="CH2" class3="CH3" angle="1.98967" k="519.65389"/>
+  <Angle class1="CH3" class2="CH2" class3="CH2" angle="1.98967" k="519.65389"/>
+  <Angle class1="CH3" class2="CH2" class3="CH" angle="1.98967" k="519.65389"/>
+  <Angle class1="CH3" class2="CH2" class3="C" angle="1.98967" k="519.65389"/>
+  <Angle class1="CH2" class2="CH2" class3="CH2" angle="1.98967" k="519.65389"/>
+  <Angle class1="CH2" class2="CH2" class3="CH" angle="1.98967" k="519.65389"/>
+  <Angle class1="CH2" class2="CH2" class3="C" angle="1.98967" k="519.65389"/>
+  <Angle class1="CH" class2="CH2" class3="CH" angle="1.98967" k="519.65389"/>
+  <Angle class1="CH" class2="CH2" class3="C" angle="1.98967" k="519.65389"/>
+  <Angle class1="C" class2="CH2" class3="C" angle="1.98967" k="519.65389"/>
+  <Angle class1="C_COOa" class2="CH2" class3="CH2" angle="1.98967" k="519.65389"/>
+  <Angle class1="C_COOa" class2="CH2" class3="CH3" angle="1.98967" k="519.65389"/>
+  <Angle class1="COOa" class2="CH2_COOa" class3="CH2" angle="1.98967" k="519.65389"/>
+  <Angle class1="CH2_COOa" class2="CH2" class3="CH2" angle="1.98967" k="519.65389"/>
+
+  <!-- CHX-[CH]-CHY -->
+  <!-- J. Phys. Chem. B 1998, 102, 2569-2577. Linear alkanes, 10.1021/jp972543+ -->
+  <!-- J. Phys. Chem. B 1999, 103, 4508-4517. Branched alkanes, 10.1021/jp984742e-->
+  <Angle class1="CH3" class2="CH" class3="CH3" angle="1.95477" k="519.65389"/>
+  <Angle class1="CH3" class2="CH" class3="CH2" angle="1.95477" k="519.65389"/>
+  <Angle class1="CH3" class2="CH" class3="CH" angle="1.95477" k="519.65389"/>
+  <Angle class1="CH3" class2="CH" class3="C" angle="1.95477" k="519.65389"/>
+  <Angle class1="CH2" class2="CH" class3="CH2" angle="1.95477" k="519.65389"/>
+  <Angle class1="CH2" class2="CH" class3="CH" angle="1.95477" k="519.65389"/>
+  <Angle class1="CH2" class2="CH" class3="C" angle="1.95477" k="519.65389"/>
+  <Angle class1="CH" class2="CH" class3="CH" angle="1.95477" k="519.65389"/>
+  <Angle class1="CH" class2="CH" class3="C" angle="1.95477" k="519.65389"/>
+  <Angle class1="C" class2="CH" class3="C" angle="1.95477" k="519.65389"/>
+  <!-- CHX-[C]-CHY -->
+  <!-- J. Phys. Chem. B 1998, 102, 2569-2577. Linear alkanes, 10.1021/jp972543+ -->
+  <!-- J. Phys. Chem. B 1999, 103, 4508-4517. Branched alkanes, 10.1021/jp984742e-->
+  <Angle class1="CH3" class2="C" class3="CH3" angle="1.91061" k="519.65389"/>
+  <Angle class1="CH3" class2="C" class3="CH2" angle="1.91061" k="519.65389"/>
+  <Angle class1="CH3" class2="C" class3="CH" angle="1.91061" k="519.65389"/>
+  <Angle class1="CH3" class2="C" class3="C" angle="1.91061" k="519.65389"/>
+  <Angle class1="CH2" class2="C" class3="CH2" angle="1.91061" k="519.65389"/>
+  <Angle class1="CH2" class2="C" class3="CH" angle="1.91061" k="519.65389"/>
+  <Angle class1="CH2" class2="C" class3="C" angle="1.91061" k="519.65389"/>
+  <Angle class1="CH" class2="C" class3="CH" angle="1.91061" k="519.65389"/>
+  <Angle class1="CH" class2="C" class3="C" angle="1.91061" k="519.65389"/>
+  <Angle class1="C" class2="C" class3="C" angle="1.91061" k="519.65389"/>
+  <Angle class1="CH3" class2="C" class3="COO" angle="1.91061" k="519.65389"/>
+  <Angle class1="CH2" class2="C" class3="COO" angle="1.91061" k="519.65389"/>
+  <Angle class1="CH2" class2="C_COOa" class3="COOa"  angle="1.91061" k="519.65389"/>
+  <Angle class1="CH2" class2="C_COOa" class3="CH2"  angle="1.91061" k="519.65389"/>
+
+  <!--Angle class1="CH3" class2="CH" class3="COO" angle="1.91061" k="519.65389"/-->
+  <!--Angle class1="CH2" class2="CH" class3="COO" angle="1.91061" k="519.65389"/-->
+
+  <!-- CHX-[CHY]-O Alcohol doi: 10.1021/jp003882x-->
+  <Angle class1="CH3" class2="CH3" class3="OH" angle="1.91061" k="419.04889"/>
+  <Angle class1="CH3" class2="CH2" class3="OH" angle="1.91061" k="419.04889"/>
+  <Angle class1="CH3" class2="CH" class3="OH" angle="1.91061" k="419.04889"/>
+  <Angle class1="CH3" class2="C" class3="OH" angle="1.91061" k="419.04889"/>
+  <Angle class1="CH2" class2="CH3" class3="OH" angle="1.91061" k="419.04889"/>
+  <Angle class1="CH2" class2="CH2" class3="OH" angle="1.91061" k="419.04889"/>
+  <Angle class1="CH2" class2="CH" class3="OH" angle="1.91061" k="419.04889"/>
+  <Angle class1="CH2" class2="C" class3="OH" angle="1.91061" k="419.04889"/>
+  <Angle class1="CH" class2="CH3" class3="OH" angle="1.91061" k="419.04889"/>
+  <Angle class1="CH" class2="CH2" class3="OH" angle="1.91061" k="419.04889"/>
+  <Angle class1="CH" class2="CH" class3="OH" angle="1.91061" k="419.04889"/>
+  <Angle class1="CH" class2="C" class3="OH" angle="1.91061" k="419.04889"/>
+  <Angle class1="C" class2="CH3" class3="OH" angle="1.91061" k="419.04889"/>
+  <Angle class1="C" class2="CH2" class3="OH" angle="1.91061" k="419.04889"/>
+  <Angle class1="C" class2="CH" class3="OH" angle="1.91061" k="419.04889"/>
+  <Angle class1="C" class2="C" class3="OH" angle="1.91061" k="419.04889"/>
+  <!-- CHX-[CH2]-CHY No publication, deduced from 10.1016/j.fluid.2005.11.03-->
+  <Angle class1="CH2" class2="CH2" class3="COO" angle="1.98967" k="519.65389"/>
+  <!-- CHX-[O]-H doi:10.1016/j.fluid.2005.11.03 -->
+  <Angle class1="CH3" class2="OH" class3="HO" angle="1.89368" k="460.62120"/>
+  <Angle class1="CH2" class2="OH" class3="HO" angle="1.89368" k="460.62120"/>
+  <Angle class1="CH" class2="OH" class3="HO" angle="1.89368" k="460.62120"/>
+  <Angle class1="C"  class2="OH" class3="HO" angle="1.89368" k="460.62120"/>
+  <!-- C[=O]-(O)-CHx doi:10.1016/j.fluid.2005.11.03 -->
+  <Angle class1="CH3" class2="OCO" class3="COO" angle="2.00713" k="519.65388"/>
+  <Angle class1="CH2" class2="OCO" class3="COO" angle="2.00713" k="519.65388"/>
+  <Angle class1="CH"  class2="OCO" class3="COO" angle="2.00713" k="519.65388"/>
+  <!-- O=(C)-OCHx Esters doi:10.1016/j.fluid.2005.11.03 -->
+  <Angle class1="OC"  class2="COO" class3="OCO" angle="2.18166" k="519.65388"/>
+  <Angle class1="CH3" class2="COO" class3="OCO" angle="1.91986" k="587.00102"/>
+  <Angle class1="CH2" class2="COO" class3="OCO" angle="1.91986" k="587.00102"/>
+  <Angle class1="CH"  class2="COO" class3="OCO" angle="1.91986" k="587.00102"/>
+  <Angle class1="C"   class2="COO" class3="OCO" angle="1.91986" k="587.00102"/>
+  <Angle class1="CH3" class2="COO" class3="OC"  angle="2.18166" k="519.65388"/>
+  <Angle class1="CH2" class2="COO" class3="OC"  angle="2.18166" k="519.65388"/>
+  <Angle class1="CH"  class2="COO" class3="OC"  angle="2.18166" k="519.65388"/>
+  <Angle class1="C"   class2="COO" class3="OC"  angle="2.18166" k="519.65388"/>
+
+  <!-- CHX-[CHY]-O Esters doi:10.1021/jp810558v-->
+  <Angle class1="CH2" class2="CH2" class3="OCO" angle="1.95477" k="418.21744"/>
+  <!-- CHX-[CHY]-O J. Phys. Chem. B, Vol. 108, No. 45, 2004 17596, doi:10.1021/jp049459w-->
+  <!-- This parameter is developed for eters, but it has been used for esters. -->
+  <Angle class1="CH2" class2="CH" class3="OCO"  angle="1.95477" k="418.21744"/>
+  <Angle class1="CH3" class2="CH" class3="OCO"  angle="1.95477" k="418.21744"/>
+
+  <!-- Carboxilic angle from J.Phys.ChemB 108 (37) 14130-->
+  <Angle class1="OHa" class2="COOa" class3="OCa"  angle="2.14675" k="335.072823"/>
+  <Angle class1="OHa" class2="COOa" class3="C_COOa"  angle="1.93732" k="293.50051"/>
+  <Angle class1="OHa" class2="COOa" class3="CH2_COOa"  angle="1.93732" k="293.50051"/>
+  <Angle class1="HOa" class2="OHa" class3="COOa"  angle="1.86750" k="146.33453"/>
+  <Angle class1="C_COOa" class2="COOa" class3="OCa" angle="2.19911" k="335.07282"/>
+  <Angle class1="CH2_COOa" class2="COOa" class3="OCa" angle="2.19911" k="335.07282"/>
+
+ </HarmonicAngleForce>
+
+ <PeriodicToxvaerdForce>
+     <Proper class1="CH2" class2="CH2" class3="CH2" class4="CH2"
+             periodicity0="0" phase0="0.0" k0="8.7375"
+             periodicity1="1" phase1="3.14159265359" k1="-2.4896"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
+             periodicity3="3" phase3="3.14159265359" k3="-7.1311"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
+             periodicity7="7" phase7="3.14159265359" k7="-0.2254"
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+     <Proper class1="CH3" class2="CH2" class3="CH2" class4="CH2"
+             periodicity0="0" phase0="0.0" k0="8.7375"
+             periodicity1="1" phase1="3.14159265359" k1="-2.4896"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
+             periodicity3="3" phase3="3.14159265359" k3="-7.1311"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
+             periodicity7="7" phase7="3.14159265359" k7="-0.2254"
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+     <Proper class1="CH3" class2="CH2" class3="CH2" class4="CH3"
+             periodicity0="0" phase0="0.0" k0="8.7375"
+             periodicity1="1" phase1="3.14159265359" k1="-2.4896"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
+             periodicity3="3" phase3="3.14159265359" k3="-7.1311"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
+             periodicity7="7" phase7="3.14159265359" k7="-0.2254"
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+     <Proper class1="CH3" class2="CH2" class3="CH2" class4="CH"
+             periodicity0="0" phase0="0.0" k0="8.7375"
+             periodicity1="1" phase1="3.14159265359" k1="-2.4896"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
+             periodicity3="3" phase3="3.14159265359" k3="-7.1311"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
+             periodicity7="7" phase7="3.14159265359" k7="-0.2254"
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+     <Proper class1="CH2" class2="CH2" class3="CH2" class4="CH"
+             periodicity0="0" phase0="0.0" k0="8.7375"
+             periodicity1="1" phase1="3.14159265359" k1="-2.4896"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
+             periodicity3="3" phase3="3.14159265359" k3="-7.1311"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
+             periodicity7="7" phase7="3.14159265359" k7="-0.2254"
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+     <Proper class1="CH2" class2="CH2" class3="CH2" class4="C"
+             periodicity0="0" phase0="0.0" k0="8.7375"
+             periodicity1="1" phase1="3.14159265359" k1="-2.4896"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
+             periodicity3="3" phase3="3.14159265359" k3="-7.1311"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
+             periodicity7="7" phase7="3.14159265359" k7="-0.2254"
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+      <Proper class1="CH" class2="CH2" class3="CH2" class4="CH"
+             periodicity0="0" phase0="0.0" k0="8.7375"
+             periodicity1="1" phase1="3.14159265359" k1="-2.4896"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
+             periodicity3="3" phase3="3.14159265359" k3="-7.1311"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
+             periodicity7="7" phase7="3.14159265359" k7="-0.2254"
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+     <Proper class1="CH" class2="CH2" class3="CH2" class4="CH2"
+             periodicity0="0" phase0="0.0" k0="8.7375"
+             periodicity1="1" phase1="3.14159265359" k1="-2.4896"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
+             periodicity3="3" phase3="3.14159265359" k3="-7.1311"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
+             periodicity7="7" phase7="3.14159265359" k7="-0.2254"
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+     <Proper class1="C_COOa" class2="CH2" class3="CH2" class4="CH2"
+             periodicity0="0" phase0="0.0" k0="8.7375"
+             periodicity1="1" phase1="3.14159265359" k1="-2.4896"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
+             periodicity3="3" phase3="3.14159265359" k3="-7.1311"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
+             periodicity7="7" phase7="3.14159265359" k7="-0.2254"
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+     <Proper class1="OCO" class2="CH2" class3="CH2" class4="CH2"
+             periodicity0="0" phase0="0.0" k0="8.7375"
+             periodicity1="1" phase1="3.14159265359" k1="-2.4896"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
+             periodicity3="3" phase3="3.14159265359" k3="-7.1311"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
+             periodicity7="7" phase7="3.14159265359" k7="-0.2254"
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+       <Proper class1="COOa" class2="CH2_COOa" class3="CH2" class4="CH2"
+             periodicity0="0" phase0="0.0" k0="8.7375"
+             periodicity1="1" phase1="3.14159265359" k1="-2.4896"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
+             periodicity3="3" phase3="3.14159265359" k3="-7.1311"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
+             periodicity7="7" phase7="3.14159265359" k7="-0.2254"
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+         <Proper class1="CH2_COOa" class2="CH2" class3="CH2" class4="CH2"
+             periodicity0="0" phase0="0.0" k0="8.7375"
+             periodicity1="1" phase1="3.14159265359" k1="-2.4896"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
+             periodicity3="3" phase3="3.14159265359" k3="-7.1311"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
+             periodicity7="7" phase7="3.14159265359" k7="-0.2254"
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+           <Proper class1="COO" class2="CH2" class3="CH2" class4="CH2"
+             periodicity0="0" phase0="0.0" k0="8.7375"
+             periodicity1="1" phase1="3.14159265359" k1="-2.4896"
+             periodicity2="2" phase2="0.0"           k2="0.7496"
+             periodicity3="3" phase3="3.14159265359" k3="-7.1311"
+             periodicity4="4" phase4="0.0"           k4="0.4396"
+             periodicity5="5" phase5="3.14159265359" k5="-0.5567"
+             periodicity6="6" phase6="0.0"           k6="0.2973"
+             periodicity7="7" phase7="3.14159265359" k7="-0.2254"
+             periodicity8="8" phase8="0.0"           k8="0.1829"/>
+ </PeriodicToxvaerdForce>
+
+ <!--PeriodicTorsionForce>
+    <Proper class1="CH3" class2="CH2" class3="CH2" class4="CH2"
+    periodicity1="3" phase1="0.0" k1="0.75312"
+    periodicity2="2" phase2="3.14159265359" k2="1.046"
+    periodicity3="1" phase3="3.14159265359" k3="0.8368"/>
+ </PeriodicTorsionForce-->
+
+ <RBTorsionForce>
+  <!--  ===================== ALKANES ==================== -->
+  <!-- CHX-[CH2]-[CH2]-CHY -->
+  <!-- J. Phys. Chem. B 1998, 102, 2569-2577. Linear alkanes, 10.1021/jp972543+ -->
+  <!-- Publication misprint see http://trappe.oit.umn.edu/ -->
+  <!--
+  <Proper class1="CH3" class2="CH2" class3="CH2" class4="CH3" c0="8.39736" c1="16.78632" c2="1.13393" c3="-26.31760" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3" class2="CH2" class3="CH2" class4="CH2" c0="8.39736" c1="16.78632" c2="1.13393" c3="-26.31760" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3" class2="CH2" class3="CH2" class4="CH" c0="8.39736" c1="16.78632" c2="1.13393" c3="-26.31760" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3" class2="CH2" class3="CH2" class4="C" c0="8.39736" c1="16.78632" c2="1.13393" c3="-26.31760" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH2" class3="CH2" class4="CH2" c0="8.39736" c1="16.78632" c2="1.13393" c3="-26.31760" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH2" class3="CH2" class4="CH" c0="8.39736" c1="16.78632" c2="1.13393" c3="-26.31760" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH2" class3="CH2" class4="C" c0="8.39736" c1="16.78632" c2="1.13393" c3="-26.31760" c4="0.0" c5="0.0"/>
+  <Proper class1="CH" class2="CH2" class3="CH2" class4="CH" c0="8.39736" c1="16.78632" c2="1.13393" c3="-26.31760" c4="0.0" c5="0.0"/>
+  <Proper class1="CH" class2="CH2" class3="CH2" class4="C" c0="8.39736" c1="16.78632" c2="1.13393" c3="-26.31760" c4="0.0" c5="0.0"/>
+  <Proper class1="C" class2="CH2" class3="CH2" class4="C" c0="8.39736" c1="16.78632" c2="1.13393" c3="-26.31760" c4="0.0" c5="0.0"/>
+  -->
+  <!-- CHX-[CH2]-[CH]-CHY -->
+  <!-- J. Phys. Chem. B 1999, 103, 4508-4517. Branched alkanes, 10.1021/jp984742e-->
+  <Proper class1="CH3" class2="CH2" class3="CH" class4="CH3" c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3" class2="CH2" class3="CH" class4="CH2" c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3" class2="CH2" class3="CH" class4="CH"  c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3" class2="CH2" class3="CH" class4="C"   c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH2" class3="CH" class4="CH3" c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH2" class3="CH" class4="CH2" c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH2" class3="CH" class4="CH"  c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH2" class3="CH" class4="C"   c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"  class2="CH2" class3="CH" class4="CH3" c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"  class2="CH2" class3="CH" class4="CH2" c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"  class2="CH2" class3="CH" class4="CH"  c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"  class2="CH2" class3="CH" class4="C"   c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="C"   class2="CH2" class3="CH" class4="CH3" c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="C"   class2="CH2" class3="CH" class4="CH2" c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="C"   class2="CH2" class3="CH" class4="CH"  c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="C"   class2="CH2" class3="CH" class4="C"   c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <!-- CHX-[CH2]-[C]-CHY -->
+  <!-- J. Phys. Chem. B 1999, 103, 4508-4517. Branched alkanes, 10.1021/jp984742e-->
+  <Proper class1="CH3" class2="CH2" class3="C" class4="CH3" c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3" class2="CH2" class3="C" class4="CH2" c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3" class2="CH2" class3="C" class4="CH"  c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3" class2="CH2" class3="C" class4="C"   c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH2" class3="C" class4="CH3" c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH2" class3="C" class4="CH2" c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH2" class3="C" class4="CH"  c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH2" class3="C" class4="C"   c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"  class2="CH2" class3="C" class4="CH3" c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"  class2="CH2" class3="C" class4="CH2" c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"  class2="CH2" class3="C" class4="CH"  c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"  class2="CH2" class3="C" class4="C"   c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="C"   class2="CH2" class3="C" class4="CH3" c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="C"   class2="CH2" class3="C" class4="CH2" c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="C"   class2="CH2" class3="C" class4="CH"  c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="C"   class2="CH2" class3="C" class4="C"   c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+
+  <!-- CHX-[CH]-[CH]-CHY -->
+  <!-- J. Phys. Chem. B 1999, 103, 4508-4517. Branched alkanes, 10.1021/jp984742e-->
+  <Proper class1="CH3" class2="CH" class3="CH" class4="CH3" c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3" class2="CH" class3="CH" class4="CH2" c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3" class2="CH" class3="CH" class4="CH"  c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3" class2="CH" class3="CH" class4="C"   c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH" class3="CH" class4="CH2" c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH" class3="CH" class4="CH"  c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH" class3="CH" class4="C"   c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"  class2="CH" class3="CH" class4="CH"  c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"  class2="CH" class3="CH" class4="C"   c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <Proper class1="C"   class2="CH" class3="CH" class4="C"   c0="3.28621" c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <!-- No parameters for CHX-[C]-[C]-CHY or CHX-[CH]-[C]-CHY ? -->
+  <!--  ===================== ALCOHOL ==================== -->
+  <!-- CHX-[CH2]-[CH2]-OH doi: 10.1021/jp003882x -->
+  <Proper class1="CH3" class2="CH2" class3="CH2" class4="OH" c0="6.98307" c1="17.73616" c2="0.88699" c3="-25.60622" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH2" class3="CH2" class4="OH" c0="6.98307" c1="17.73616" c2="0.88699" c3="-25.60622" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"  class2="CH2" class3="CH2" class4="OH" c0="6.98307" c1="17.73616" c2="0.88699" c3="-25.60622" c4="0.0" c5="0.0"/>
+  <Proper class1="C"   class2="CH2" class3="CH2" class4="OH" c0="6.98307" c1="17.73616" c2="0.88699" c3="-25.60622" c4="0.0" c5="0.0"/>
+  <!-- CHX-[CH2]-[O]-H doi: 10.1021/jp003882x -->
+  <Proper class1="CH3" class2="CH2" class3="OH" class4="HO" c0="2.82201" c1="2.94307" c2="0.48507" c3="-6.25015" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH2" class3="OH" class4="HO" c0="2.82201" c1="2.94307" c2="0.48507" c3="-6.25015" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"  class2="CH2" class3="OH" class4="HO" c0="2.82201" c1="2.94307" c2="0.48507" c3="-6.25015" c4="0.0" c5="0.0"/>
+  <Proper class1="C"   class2="CH2" class3="OH" class4="HO" c0="2.82201" c1="2.94307" c2="0.48507" c3="-6.25015" c4="0.0" c5="0.0"/>
+  <!-- CHX-[CH]-[O]-H doi: 10.1021/jp003882x -->
+  <Proper class1="CH3" class2="CH" class3="O" class4="HO" c0="2.51338" c1="-5.97885" c2="-0.52315" c3="5.78421" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="CH" class3="O" class4="HO" c0="2.51338" c1="-5.97885" c2="-0.52315" c3="5.78421" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"  class2="CH" class3="O" class4="HO" c0="2.51338" c1="-5.97885" c2="-0.52315" c3="5.78421" c4="0.0" c5="0.0"/>
+  <Proper class1="C"   class2="CH" class3="O" class4="HO" c0="2.51338" c1="-5.97885" c2="-0.52315" c3="5.78421" c4="0.0" c5="0.0"/>
+  <!-- CHX-[C]-[O]-H doi: 10.1021/jp003882x -->
+  <Proper class1="CH3" class2="C" class3="O" class4="HO" c0="1.35991" c1="4.07974" c2="0.0" c3="-5.43965" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2" class2="C" class3="O" class4="HO" c0="1.35991" c1="4.07974" c2="0.0" c3="-5.43965" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"  class2="C" class3="O" class4="HO" c0="1.35991" c1="4.07974" c2="0.0" c3="-5.43965" c4="0.0" c5="0.0"/>
+  <Proper class1="C"   class2="C" class3="O" class4="HO" c0="1.35991" c1="4.07974" c2="0.0" c3="-5.43965" c4="0.0" c5="0.0"/>
+  <!--
+  No parameters for CHX-[CH2]-[CH]-OH, CHX-[CH2]-[C]-OH, CHX-[CH]-[CH2]-OH,
+  CHX-[CH]-[CH]-OH, CHX-[CH]-[C]-OH, CHX-[C]-[CH2]-OH, CHX-[C]-[CH]-OH,
+  CHX-[C]-[C]-OH ?
+  -->
+ <!--  ===================== CARBOXYLATES - ESTERS ==================== -->
+  <!-- J. Chem. Phys 2004, 108, 17596-17605. 10.1021/jp049459w -->
+  <Proper class1="CH3"  class2="C" class3="COO"   class4="OC" c0="9.321952"   c1="-1.188256" c2="-0.962320" c3="9.752904" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2"  class2="C" class3="COO"   class4="OC" c0="9.321952"   c1="-1.188256" c2="-0.962320" c3="9.752904" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2"  class2="CH" class3="COO"  class4="OC" c0="9.321952"   c1="-1.188256" c2="-0.962320" c3="9.752904" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2"  class2="CH2" class3="COO"  class4="OC" c0="9.321952"   c1="-1.188256" c2="-0.962320" c3="9.752904" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3"  class2="CH" class3="COO"  class4="OC" c0="9.321952"   c1="-1.188256" c2="-0.962320" c3="9.752904" c4="0.0" c5="0.0"/>
+  <!-- J. Phys. Chem. B 2006, 110, 21938-21943, 10.1021/jp0625053 -->
+  <Proper class1="CH3"  class2="C" class3="COO"   class4="OCO" c0="8.397288"  c1="16.7862083" c2="1.133864" c3="-26.317360" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2"  class2="C" class3="COO"   class4="OCO" c0="8.397288"  c1="16.7862083" c2="1.133864" c3="-26.317360" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2"  class2="CH" class3="COO"  class4="OCO" c0="8.397288"  c1="16.7862083" c2="1.133864" c3="-26.317360" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2"  class2="CH2" class3="COO"  class4="OCO" c0="8.397288"  c1="16.7862083" c2="1.133864" c3="-26.317360" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3"  class2="CH" class3="COO"  class4="OCO" c0="8.397288"  c1="16.7862083" c2="1.133864" c3="-26.317360" c4="0.0" c5="0.0"/>
+  <!-- Fluid Phase Equilibria 240 (2006) 46–55, 10.1016/j.fluid.2005.11.034 -->
+  <Proper class1="C"    class2="COO" class3="OCO" class4="CH3" c0="54.471496" c1="-13.020608" c2="-34.886192" c3="-6.560512" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"   class2="COO" class3="OCO" class4="CH3" c0="54.471496" c1="-13.020608" c2="-34.886192" c3="-6.560512" c4="0.0" c5="0.0"/>
+  <Proper class1="C"   class2="COO" class3="OCO" class4="CH2" c0="54.471496" c1="-13.020608" c2="-34.886192" c3="-6.560512" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2"   class2="COO" class3="OCO" class4="CH2" c0="54.471496" c1="-13.020608" c2="-34.886192" c3="-6.560512" c4="0.0" c5="0.0"/>
+  <Proper class1="OC"   class2="COO" class3="OCO" class4="CH3" c0="90.41624"  c1="-22.066416" c2="-34.237672" c3="5.100296" c4="0.0" c5="0.0"/>
+  <!-- J. Phys. Chem. B 1999, 103, 4508-4517. Branched alkanes, 10.1021/jp984742e-->
+  <Proper class1="C"    class2="CH2" class3="C"   class4="COO" c0="3.83538"   c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH"   class2="CH2" class3="C"   class4="COO" c0="3.83538"   c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH3"   class2="CH2" class3="C"   class4="COO" c0="3.83538"   c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+
+  <!-- J. Phys. Chem. B 1999, 103, 4508-4517. Branched alkanes, 10.1021/jp984742e-->
+  <Proper class1="C"    class2="CH2" class3="CH"  class4="COO" c0="3.28621"   c1="7.44211" c2="1.85995" c3="-14.67569" c4="0.0" c5="0.0"/>
+  <!-- Carboxylic acids, -->
+  <!--    J. Phys. Chem. B 2006, 110, 21938-21943, 10.1021/jp0625053. -->
+  <Proper class1="CH2"  class2="C_COOa" class3="COOa"  class4="OHa" c0="8.397288"  c1="16.7862083" c2="1.133864" c3="-26.317360" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2"  class2="CH2_COOa" class3="COOa"  class4="OHa" c0="8.397288"  c1="16.7862083" c2="1.133864" c3="-26.317360" c4="0.0" c5="0.0"/>
+  <!--    J. Phys. Chem. B 2006, 110, 21938-21943, 10.1021/jp0625053.,  J. Phys. Chem. B 2004, 108, 14130-14136-->
+  <Proper class1="C_COOa"  class2="COOa" class3="OHa"  class4="HOa" c0="31.219142"  c1="5.238111" c2="-25.981031" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2_COOa"  class2="COOa" class3="OHa"  class4="HOa" c0="31.219142"  c1="5.238111" c2="-25.981031" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper class1="OCa"  class2="COOa" class3="OHa"  class4="HOa" c0="31.219142"  c1="-5.238111" c2="-25.981031" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper class1="OCa"  class2="COOa" class3="C_COOa"  class4="CH2" c0="31.219142"  c1="-5.238111" c2="-25.981031" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper class1="OCa"  class2="COOa" class3="CH2_COOa"  class4="CH2" c0="31.219142"  c1="-5.238111" c2="-25.981031" c3="0.0" c4="0.0" c5="0.0"/>
+
+  <!--     Same paremeters than CHx-C-CH2-CHy for alkanes-->
+  <Proper class1="COOa"  class2="C_COOa" class3="CH2" class4="CH2" c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="COOa"  class2="C_COOa" class3="CH2" class4="CH3" c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2"  class2="C_COOa" class3="CH2" class4="CH2" c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2"  class2="C_COOa" class3="CH2" class4="CH3" c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <Proper class1="CH2"  class2="CH2" class3="C" class4="COO"   c0="3.83538" c1="11.50613" c2="0.0" c3="-15.34151" c4="0.0" c5="0.0"/>
+  <!--     Same paremeters than CHx-(CH2)-(O)-C(sp2) n-butyl acrylate (UA), TrappeUA web-->
+  <Proper class1="CH2"  class2="CH2" class3="OCO" class4="COO" c0="20.933071" c1="5.699813" c2="-5.551899" c3="0.734998" c4="-3.410260" c5="0.0"/>
+  <!--     Same paremeters than CHx-(O)-(C)=O n-butyl acrylate (UA), TrappeUA web-->
+  <Proper class1="CH2"  class2="OCO" class3="COO" class4="OC" c0="26.555393" c1="2.717499" c2="-22.833841" c3="1.004054" c4="0.0" c5="0.0"/>
+
+</RBTorsionForce>
+
+ <NonbondedForce coulomb14scale="0" lj14scale="0">
+  <!--  ===================== ALKANES ==================== -->
+  <!-- J. Phys. Chem. B 1998, 102, 2569-2577. Linear alkanes, 10.1021/jp972543+ -->
+  <!-- J. Phys. Chem. B 1999, 103, 4508-4517. Branched alkanes, 10.1021/jp984742e-->
+  <Atom type="CH4" charge="0.0" sigma="0.373" epsilon="1.23054"/>
+  <Atom type="CH3_sp3" charge="0.0" sigma="0.375" epsilon="0.814817"/>
+  <Atom type="CH2_sp3" charge="0.0" sigma="0.395" epsilon="0.382465"/>
+  <Atom type="CH2_sp3b" charge="0.0" sigma="0.395" epsilon="0.382465"/>
+  <Atom type="CH_sp3" charge="0.0" sigma="0.468" epsilon="0.0831445"/>
+  <Atom type="C_sp3" charge="0.0" sigma="0.64" epsilon="0.00415723"/>
+  <!--  ===================== ALCOHOL ==================== -->
+  <!-- J. Phys. Chem. B, Vol. 105, No. 15, 2001. Alcohols, 10.1021/jp003882x-->
+  <Atom type="OH" charge="-0.700" sigma="0.302" epsilon="0.773245"/>
+  <Atom type="HO" charge="0.435" sigma="0.0" epsilon="0.0"/>
+  <Atom type="CH3_OH" charge="0.265" sigma="0.375" epsilon="0.814817"/>
+  <Atom type="CH2_OH" charge="0.265" sigma="0.395" epsilon="0.382465"/>
+  <!--  ===================== ESTERS ==================== -->
+  <!-- Acrylates doi:10.1021/jp810558v -->
+  <!-- Esters and acetates doi:10.1016/j.fluid.2005.11.034 -->
+  <Atom type="COO" charge="0.40" sigma="0.390" epsilon="0.340893"/>
+  <Atom type="OCO" charge="-0.25" sigma="0.280" epsilon="0.109296"/>
+  <Atom type="OC" charge="-0.40" sigma="0.305" epsilon="0.656842"/>
+  <!-- sigma and epsilon are the same that for alkanes but the charge change. -->
+  <Atom type="CH3_OCO" charge="0.25" sigma="0.375" epsilon="0.814817"/>
+  <Atom type="CH2_OCO" charge="0.25" sigma="0.395" epsilon="0.382465"/>
+  <!-- This parameter is developed for eter/alcohol, but it has been used for esters. -->
+  <!-- sigma and epsilon are the same that for alkanes but the charge change. -->
+  <!-- Esters doi:10.1021/jp049459w -->
+  <Atom type="CH_OCO" charge="0.25" sigma="0.433" epsilon="0.0831445"/>
+  <!-- Esters doi:10.1021/jp049459w -->
+  <Atom type="CH3_ace" charge="0.05" sigma="0.375" epsilon="0.814817"/>
+  <!-- Carboxylic acid doi:10.1021/jp048581s -->
+  <!-- O of an acid carboxylic acid (OHa) and hydrogen of an acid carboxylic (HOa)-->
+  <Atom type="OHa"  charge="-0.46" sigma="0.302" epsilon="0.773245"/>
+  <Atom type="HOa"  charge="0.37"  sigma="0.0"   epsilon="0.0"/>
+  <Atom type="COOa" charge="0.42"  sigma="0.390"   epsilon="0.340893"/>
+  <Atom type="OCa" charge="-0.45"  sigma="0.305"   epsilon="0.656842"/>
+  <Atom type="CH3_COOa" charge="0.12"  sigma="0.375" epsilon="0.814817"/>
+  <Atom type="CH2_COOa" charge="0.12"  sigma="0.395" epsilon="0.382465"/>
+  <Atom type="C_COOa" charge="0.12" sigma="0.64" epsilon="0.00415723"/>
+
+
+
+
+ </NonbondedForce>
+
+ <CustomTorsionForce energy="k*(theta-theta0)^2">
+ <PerTorsionParameter name="k"/>
+ <PerTorsionParameter name="theta0"/>
+ <Improper k="258.9" theta0="0.5323254219" type1="CH_sp3" type2="CH2_sp3" type3="CH3_sp3" type4="CH2_sp3"/>
+ </CustomTorsionForce>
+</ForceField>

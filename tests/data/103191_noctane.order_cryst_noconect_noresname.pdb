@@ -1,0 +1,29 @@
+REMARK   1 File created by GaussView 6.0.16
+CRYST1    4.123    4.686   10.974  85.06  83.72  75.10 P -1           1
+HETATM    1  C           0       1.866   3.450   1.292                       C
+HETATM    2  H           0       2.606   3.992   1.047                       H
+HETATM    3  H           0       1.550   2.945   0.500                       H
+HETATM    4  H           0       1.167   4.068   1.591                       H
+HETATM    5  C           0       2.233   2.485   2.410                       C
+HETATM    6  H           0       1.482   1.934   2.618                       H
+HETATM    7  H           0       2.929   1.879   2.113                       H
+HETATM    8  C           0       2.687   3.194   3.676                       C
+HETATM    9  H           0       1.999   3.818   3.980                       H
+HETATM   10  H           0       3.445   3.734   3.476                       H
+HETATM   11  C           0       3.035   2.238   4.812                       C
+HETATM   12  H           0       3.726   1.626   4.499                       H
+HETATM   13  H           0       2.278   1.704   5.023                       H
+HETATM   14  C           0       3.493   2.949   6.077                       C
+HETATM   15  H           0       4.251   3.483   5.866                       H
+HETATM   16  H           0       2.802   3.561   6.389                       H
+HETATM   17  C           0       3.841   1.993   7.212                       C
+HETATM   18  H           0       4.530   1.369   6.909                       H
+HETATM   19  H           0       3.083   1.453   7.413                       H
+HETATM   20  C           0       4.295   2.701   8.478                       C
+HETATM   21  H           0       5.046   3.253   8.271                       H
+HETATM   22  H           0       3.599   3.308   8.775                       H
+HETATM   23  C           0       4.662   1.737   9.596                       C
+HETATM   24  H           0       3.922   1.195   9.841                       H
+HETATM   25  H           0       4.979   2.242  10.388                       H
+HETATM   26  H           0       5.361   1.119   9.297                       H
+

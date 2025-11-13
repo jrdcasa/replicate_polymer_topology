@@ -1,0 +1,41 @@
+;-------------------------------------
+;             SP3-VP3 LINK                      
+;-------------------------------------
+[link]
+resname "SP3|VP3"
+[ bonds ]
++CVP01 OSP14      1      0.1334    125520.0  {"group": "connection"}
+[ angles ]
+OSP14   +CVP01   +CVP03    5          109.0000        460.2       0.2326      16736.0    {"group": "connection"}
+OSP14   +CVP01   +OVP02    5          125.9000        753.1       0.2258     133888.0    {"group": "connection"}
+CSP08    OSP14   +CVP01    5          109.6000        334.7       0.2265      25104.0   {"group": "connection"}
+[ dihedrals ]
+ ; propers
+ OSP14 +CVP01 +CVP03 +CVP06      9         180.0          2.218    2
+ OSP14 +CVP01 +CVP03 +CVP06      9         180.0          2.218    2
+ OSP14 +CVP01 +CVP03 +HVP05      9           0.0          0.000    3
+ OSP14 +CVP01 +CVP03 +HVP04      9           0.0          0.000    3
+ CSP08  OSP14 +CVP01 +CVP03      9         180.0          8.577    2
+ CSP08  OSP14 +CVP01 +OVP02      9         180.0          4.038    1
+ CSP08  OSP14 +CVP01 +OVP02      9         180.0         16.108    2
+ CSP10  CSP08  OSP14 +CVP01      9           0.0          0.000    3
+ HSP09  CSP08  OSP14 +CVP01      9           0.0          0.000    3
+ CSP05  CSP08  OSP14 +CVP01      9         180.0          2.929    1
+; impropers
++CVP01 +CVP03 +OVP02 OSP14    2   0.000 518.816 {"group": "connection"} 
+[ pairs ]
+ OSP14 +CVP06  1 {"group": "connection"}
+ OSP14 +HVP05  1 {"group": "connection"}
+ OSP14 +HVP04  1 {"group": "connection"}
+ CSP08 +CVP03  1 {"group": "connection"}
+ CSP08 +OVP02  1 {"group": "connection"}
+ CSP10 +CVP01  1 {"group": "connection"}
+ HSP09 +CVP01  1 {"group": "connection"}
+ CSP05 +CVP01  1 {"group": "connection"}
+;-------------------------------------
+;             SP3-VP3 LINK-TERMS                      
+;-------------------------------------
+[link]
+resname "SP3|VP3"
+[ dihedrals ]
+[ pairs ]

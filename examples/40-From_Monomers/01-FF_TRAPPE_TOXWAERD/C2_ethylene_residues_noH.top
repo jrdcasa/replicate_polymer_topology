@@ -1,0 +1,46 @@
+;
+;   File C2_ethylene_residues_noH.top  was generated
+;   By user: jramos (1000)
+;   On host: totem3
+;   At date: Tue. January  2 10:09:14 2024
+;
+;   This is a standalone topology file
+;
+;   Created by:
+;   ParmEd:       create_library_monomer.py, VERSION 3.4.3
+;   Executable:   create_library_monomer.py
+;   Library dir:  /usr/share/gromacs/top
+;   Command line:
+;     /home/jramos/Programacion/GITHUB_REPO_DIR/replicate_polymer_topology/create_library_monomer/create_library_monomer.py -p ../00-MONOMERS/C2_ethylene_residues.pdb -f /home/jramos/Programacion/GITHUB_REPO_DIR/replicate_polymer_topology/forcefields/trappe-ua_PEToxvaerd.xml --noh
+;
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             1            1           
+
+[ atomtypes ]
+; name    at.num    mass    charge ptype  sigma      epsilon
+CH3_sp3        0  15.035000  0.00000000  A          0.375       0.814817
+
+
+[ moleculetype ]
+; Name            nrexcl
+ETH          3
+
+[ atoms ]
+;   nr       type  resnr residue  atom   cgnr    charge       mass  typeB    chargeB      massB
+; residue    1 ETH rtp ETH q 0.0
+    1    CH3_sp3      1    ETH   _CH3      1 0.00000000  15.035000   ; qtot 0.000000
+    2    CH3_sp3      1    ETH   _CH3      2 0.00000000  15.035000   ; qtot 0.000000
+
+[ bonds ]
+;    ai     aj funct         c0         c1         c2         c3
+      1      2     1   0.15400 376560.000000
+
+[ system ]
+; Name
+Generic title
+
+[ molecules ]
+; Compound       #mols
+ETH                  1

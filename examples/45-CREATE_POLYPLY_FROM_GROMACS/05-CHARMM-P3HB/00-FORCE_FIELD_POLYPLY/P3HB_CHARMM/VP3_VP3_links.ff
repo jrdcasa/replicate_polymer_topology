@@ -1,0 +1,41 @@
+;-------------------------------------
+;             VP3-VP3 LINK                      
+;-------------------------------------
+[link]
+resname "VP3"
+[ bonds ]
++CVP01 OVP12      1      0.1334    125520.0  {"group": "connection"}
+[ angles ]
+OVP12   +CVP01   +CVP03    5          109.0000        460.2       0.2326      16736.0    {"group": "connection"}
+OVP12   +CVP01   +OVP02    5          125.9000        753.1       0.2258     133888.0    {"group": "connection"}
+CVP06    OVP12   +CVP01    5          109.6000        334.7       0.2265      25104.0   {"group": "connection"}
+[ dihedrals ]
+ ; propers
+ OVP12 +CVP01 +CVP03 +CVP06      9         180.0          2.218    2
+ OVP12 +CVP01 +CVP03 +CVP06      9         180.0          2.218    2
+ OVP12 +CVP01 +CVP03 +HVP05      9           0.0          0.000    3
+ OVP12 +CVP01 +CVP03 +HVP04      9           0.0          0.000    3
+ CVP06  OVP12 +CVP01 +CVP03      9         180.0          8.577    2
+ CVP06  OVP12 +CVP01 +OVP02      9         180.0          4.038    1
+ CVP06  OVP12 +CVP01 +OVP02      9         180.0         16.108    2
+ CVP08  CVP06  OVP12 +CVP01      9           0.0          0.000    3
+ HVP07  CVP06  OVP12 +CVP01      9           0.0          0.000    3
+ CVP03  CVP06  OVP12 +CVP01      9         180.0          2.929    1
+; impropers
++CVP01 +CVP03 +OVP02 OVP12    2   0.000 518.816 {"group": "connection"} 
+[ pairs ]
+ OVP12 +CVP06  1 {"group": "connection"}
+ OVP12 +HVP05  1 {"group": "connection"}
+ OVP12 +HVP04  1 {"group": "connection"}
+ CVP06 +CVP03  1 {"group": "connection"}
+ CVP06 +OVP02  1 {"group": "connection"}
+ CVP08 +CVP01  1 {"group": "connection"}
+ HVP07 +CVP01  1 {"group": "connection"}
+ CVP03 +CVP01  1 {"group": "connection"}
+;-------------------------------------
+;             VP3-VP3 LINK-TERMS                      
+;-------------------------------------
+[link]
+resname "VP3"
+[ dihedrals ]
+[ pairs ]

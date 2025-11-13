@@ -1,0 +1,10 @@
+#include "forcefield/forcefield.itp"
+#include "PVL.itp"
+
+[ system ]
+; name
+Polymer
+
+[ molecules ]
+;name number
+PVL 5

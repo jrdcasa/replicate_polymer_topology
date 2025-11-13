@@ -1,0 +1,66 @@
+;Run control: A leap-frog algorithm for integrating Newtons equations.
+integrator               = md
+;time step in femtoseconds
+dt                       = 0.002
+;number of steps
+nsteps                   =  1000000
+;frequency to write coordinates to output trajectory file
+nstxout                  = 50000000
+;frequency to write velocities to output trajectory file
+nstvout                  = 50000000
+;frequency to write energies to log file
+nstlog                   = 10000
+;frequency to write energies to energy file
+nstenergy                = 10000
+;frequency to write coordinates to xtc trajectory
+nstxout-compressed     = 10000
+;group(s) to write to xtc trajectory
+compressed-x-grps        = System
+;group(s) to write to energy file
+energygrps               = System
+;Frequency to update the neighbor list (and the long-range forces,
+;when using twin-range cut-offs).
+nstlist                  = 40
+; Bond parameters
+constraint_algorithm = lincs	; holonomic constraints 
+constraints	= h-bonds	        ; all bonds (even heavy atom-H bonds) constrained
+lincs_iter	= 1		            ; accuracy of LINCS
+lincs_order	= 4		            ; also related to accuracy
+;Make a grid in the box and only check atoms in neighboring grid cells
+;when constructing a new neighbor list every nstlist steps.
+cutoff-scheme   = Verlet
+coulombtype     = PME
+pme_order	= 4             ; cubic interpolation
+fourierspacing	= 0.16		; grid spacing for FFT
+rvdw = 1.0
+rlist = 1.0
+rcoulomb = 1.0
+vdw_type                 = Cut-off
+rvdw_switch              = 1.0
+; Periodic boudary conditions in all the directions
+pbc                      = xyz
+;Temperature coupling
+tcoupl                   = V-rescale
+tc-grps                  = System
+tau_t                    = 0.5
+ref_t                    = 100
+;Pressure coupling
+;Pcoupl                  = berendsen
+;Pcoupl                   = Parrinello-Rahman
+;Pcoupltype               = isotropic
+;tau_p                    = 5.0
+;compressibility          = 4.5e-5
+;ref_p                    = 1.0
+
+;Velocity generation
+gen_vel                  = yes
+gen_temp                 = 100
+gen_seed                 = 173529
+
+DispCorr = EnerPres
+
+;Simulated anneling
+;annealing                = single
+;annealing-npoints        = 2
+;annealing-time           = 0 1500000
+;annealing-temp           = 500 350

@@ -1,0 +1,163 @@
+<!--
+     Parameters for atomtypes in this XML file
+     are imported from the gromacs atomtypes file at
+     https://github.com/gromacs/gromacs/blob/aa66efd3179a671aace62b827c54aadc3d89c1ee/share/top/oplsaa.ff/atomtypes.atp
+     OPLS types 1-65 are united-atom parameters for proteins (JACS 110, 1657, 1988)
+
+     https://github.com/wesbarnett/lopls/tree/master
+
+-->
+<ForceField name="OPLS-AA" version="0.0.3" combining_rule="geometric">
+
+ <AtomTypes>
+   <!--OPLS-->
+
+  <Type name="opls_135"   class="CT"  element="C" mass="12.01100" def="[C;X4]([C;%opls_137])(H)(H)H" overrides="lopls_135" desc="alkane CH3" doi="10.1021/ja9621760"/>
+  <Type name="opls_136"   class="CT"  element="C" mass="12.01100" def="[C;X4]([C;%opls_137])([C;%opls_137])(H)H" overrides="lopls_136" desc="alkane CH2" doi="10.1021/ja9621760"/>
+
+  <Type name="opls_137" class="CT" element="C" mass="12.01100" def="[C;X4](C)(C)(C)H" desc="alkane CH" doi="10.1021/ja9621760"/>
+  <Type name="opls_139" class="CT" element="C" mass="12.01100" def="[C;X4](C)(C)(C)C" desc="alkane C" doi="10.1021/ja9621760"/>
+  <Type name="opls_140" class="HC" element="H" mass="1.00800"  def="H[C;X4;%opls_158,%opls_157,%opls_137,%opls_136,%opls_135]" overrides="lopls_140a, lopls_140b" desc="alkane H" doi="10.1021/ja9621760"/>
+  <Type name="opls_154" class="OH"  element="O" mass="15.9994"  def="[O;X2](H)([!H])"  desc="all-atom O: mono alcohols" doi="10.1021/ja9621760"/>
+  <Type name="opls_155" class="HO"  element="H" mass="1.00800"  def="H[O;%opls_154]" desc="all-atom H(O): mono alcohols, OP(=O)2" doi="10.1021/ja9621760"/>
+  <Type name="opls_156" class="HC"  element="H" mass="1.008"    def="H(C)(OH)" desc="all-atom H(C): methanol" doi="10.1021/ja9621760"/>
+  <Type name="opls_157" class="CT"  element="C" mass="12.01100" def="[C;X4]([H])([H])([*;!H])[O;%opls_154]" desc="all-atom C: CH3 and CH2, alcohols" overrides="lopls_136, opls_159" doi="10.1021/ja9621760"/>
+  <Type name="opls_158" class="CT"  element="C" mass="12.011"   def="[C;X4]([H])([*;!H])([*;!H])[O;%opls_154]" desc="Carbon in 2R-C(H)-OH" overrides="lopls_136, opls_159" doi="10.1021/ja9621760"/>
+  <Type name="opls_159" class="CT"  element="C" mass="12.011"   def="[C;X4]([*;!H])([*;!H])([*;!H])[O;%opls_154][O;%opls_154]" desc="Carbon in 3R-C-OH" overrides="lopls_136" doi="10.1021/ja9621760"/>
+  <Type name="opls_180" class="OS"  element="O" mass="15.9994"  def="[O;X2](C)C" desc="O, dialkyl ether" doi="10.1021/ja9621760"/>
+  <Type name="opls_181" class="CT"  element="C" mass="12.01100" def="[C;X4]([O;%opls_180])(H)(H)H" desc="C(H3OR), methyl ether" overrides="opls_182" doi="10.1021/ja9621760"/>
+  <Type name="opls_182" class="CT"  element="C" mass="12.01100" def="[C;X4]([O;%opls_180])(H)(H)C" desc="C(H2OR), methyl ether" doi="10.1021/ja9621760"/>
+  <Type name="opls_183" class="CT"  element="C" mass="12.011"   def="[C;X4]([O;%opls_180])(C)(C)H" desc = "Central Carbon in Isopropyl group attached to Oxygen in ether" doi="10.1021/ja9621760"/>
+  <Type name="opls_185" class="HC"  element="C" mass="1.00800"  def="HC[O;%opls_180]" desc="H(COR), alpha H ether" overrides="lopls_140a,lopls_140b" doi="10.1021/ja9621760"/>
+  <Type name="opls_267" class="C"   element="C" mass="12.01100" def="[C;X3]([O;X1])OH" desc="Co in CCOOH" overrides="opls_277,opls_271, lopls_4651" doi="10.1021/ja9621760"/>
+  <Type name="opls_268" class="OH"  element="O" mass="15.9994"  def="[O;X2]([C;%opls_267])H" desc="Oh in CCOOH" overrides="opls_154" doi="10.1021/ja9621760"/>
+  <Type name="opls_269" class="O_3" element="O" mass="15.9994"  def="[O;X1][C;%opls_267]"    desc="Oc in CCOOH" overrides="opls_278,opls_272,lopls_4662" doi="10.1021/ja9621760"/>
+  <Type name="opls_270" class="HO"  element="H" mass="1.00800"  def="H([O;%opls_268])" desc="H in CCOOH" overrides="opls_155" doi="10.1021/ja9621760"/>
+  <Type name="opls_271" class="C"   element="C" mass="12.011"   def="[C;X3]([O;X1])([O;X1])" desc="acetate C in COO-" doi = "10.1021/ja9621760"/>
+  <Type name="opls_272" class="O_3" element="O" mass="15.9994"  def="[O;X1]([C;%opls_271])" desc="O- in acetate group COO-" doi="10.1021/ja9621760"/>
+  <Type name="opls_277" class="C_2" element="C" mass="12.01100" def="[C;X3]([O;X1])H" desc="C in aldehyde" doi="10.1021/ja9621760"/>
+  <Type name="opls_278" class="O_2" element="O" mass="15.9994"  def="[O;X1][C;%opls_277]" desc="O in aldehyde" doi="10.1021/ja9621760"/>
+  <Type name="opls_468" class="CT"  element="C" mass="12.011"   def="[C;X4]([O;%lopls_4671])(H)(H)H" overrides='opls_181' desc="methoxy C in esters" doi="10.1002/jcc.1092"/>
+  <Type name="opls_469" class="HC"  element="H" mass="1.008"    def="H[C;%opls_468,%opls_490,%opls_491]" overrides='opls_185' desc="methoxy Hs in esters; alpha-alkoxy hydrogen" doi="10.1002/jcc.1092"/>
+  <Type name="opls_490" class="CT"  element="C" mass="12.011"   def="[C;X4]([O;%lopls_4671])(H)(H)C" overrides="opls_182" desc="ethoxy carbon; C(H2OS) ethyl ester" doi="10.1002/jcc.1092"/>
+  <Type name="opls_491" class="CT"  element="C" mass="12.011"   def="[C;X4]([O;%lopls_4671])(H)(C)C" overrides="opls_183" desc="isopropyl carbon; C(H2OS) iPr ester" doi="10.1002/jcc.1092"/>
+  <!--LOPLS-->
+  <Type name="lopls_135"   class="CT"  element="C" mass="12.01100" def="[C;X4](C)(H)(H)H" desc="alkane CH3" doi="10.1021/ct200908r"/>
+  <Type name="lopls_136"   class="CT"  element="C" mass="12.01100" def="[C;X4](C)(C)(H)H" desc="alkane CH2" doi="10.1021/ct200908r"/>
+  <Type name="lopls_140a"  class="HC"  element="H" mass="1.00800"  def="H[C;X4]" desc="alkane H" doi="10.1021/ct200908r"/>
+  <Type name="lopls_140b"  class="HC"  element="H" mass="1.00800"  def="H[C;%lopls_136]" overrides="lopls_140a" desc="alkane H" doi="10.1021/ct200908r"/>
+  <Type name="lopls_4651"  class="C_2" element="C" mass="12.011"   def="[C;X3]([O;X1])([O;X2])" overrides="opls_277" desc="C in C=O in ester" doi="10.1021/ct200908r"/>
+  <Type name="lopls_4662"  class="O_2" element="O" mass="15.9994"  def="[O;X1][C;%lopls_4651]"  desc="O in C=O in ester" overrides="opls_278" doi="10.1021/ct200908r"/>
+  <Type name="lopls_4671"  class="OS"  element="O" mass="15.9994"  def="[O;X2]([C;%lopls_4651])([!H])" overrides='opls_180' desc="O connected to R of O=C-O-R in esters" doi="10.1021/ct200908r"/>
+ </AtomTypes>
+ <HarmonicBondForce>
+  <Bond class1="HO" class2="OH" length="0.0945" k="462750.4"/>
+  <Bond class1="C" class2="OH" length="0.1364" k="376560.0"/>
+  <Bond class1="C" class2="O_3" length="0.1229" k="476976.0"/>
+  <Bond class1="C" class2="CT" length="0.1522" k="265265.6"/>
+  <Bond class1="CT" class2="HC" length="0.109" k="284512.0"/>
+  <Bond class1="CT" class2="CT" length="0.1529" k="224262.4"/>
+  <Bond class1="CT" class2="OS" length="0.141" k="267776.0"/>
+  <Bond class1="C_2" class2="OS" length="0.1327" k="179075.2"/>
+  <Bond class1="C_2" class2="O_2" length="0.1229" k="476976.0"/>
+  <Bond class1="C_2" class2="CT" length="0.1522" k="265265.6"/>
+  <Bond class1="CT" class2="OH" length="0.141" k="267776.0"/>
+ </HarmonicBondForce>
+ <HarmonicAngleForce>
+  <Angle class1="O_3" class2="C" class3="OH" angle="2.11184839491" k="669.44"/>
+  <Angle class1="CT" class2="C" class3="OH" angle="1.88495559215" k="585.76"/>
+  <Angle class1="C" class2="CT" class3="HC" angle="1.91113553093" k="292.88"/>
+  <Angle class1="C" class2="OH" class3="HO" angle="1.97222205475" k="292.88"/>
+  <Angle class1="C" class2="CT" class3="CT" angle="1.93906079897" k="527.184"/>
+  <Angle class1="CT" class2="C" class3="O_3" angle="2.1013764194" k="669.44"/>
+  <Angle class1="CT" class2="CT" class3="HC" angle="1.93207948196" k="313.8"/>
+  <Angle class1="CT" class2="CT" class3="CT" angle="1.966986067" k="488.273"/>
+  <Angle class1="CT" class2="CT" class3="OS" angle="1.91113553093" k="418.4"/>
+  <Angle class1="HC" class2="CT" class3="HC" angle="1.88146493365" k="276.144"/>
+  <Angle class1="HC" class2="CT" class3="OS" angle="1.91113553093" k="292.88"/>
+  <Angle class1="CT" class2="CT" class3="OS" angle="1.91113553093" k="418.4"/>
+  <Angle class1="C_2" class2="OS" class3="CT" angle="2.04028989558" k="694.544"/>
+  <Angle class1="O_2" class2="C_2" class3="OS" angle="2.15373629696" k="694.544"/>
+  <Angle class1="OS" class2="C_2" class3="CT" angle="1.94429678672" k="677.808"/>
+  <Angle class1="C_2" class2="CT" class3="HC" angle="1.91113553093" k="292.88"/>
+  <Angle class1="C_2" class2="CT" class3="CT" angle="1.93906079897" k="527.184"/>
+  <Angle class1="CT" class2="C_2" class3="O_2" angle="2.1013764194" k="669.44"/>
+  <Angle class1="CT" class2="CT" class3="OH" angle="1.91113553093" k="418.4"/>
+  <Angle class1="CT" class2="OH" class3="HO" angle="1.89368223841" k="460.24"/>
+  <Angle class1="HC" class2="CT" class3="OH" angle="1.91113553093" k="292.88"/>
+ </HarmonicAngleForce>
+ <RBTorsionForce>
+  <!--RCOOH acid -->
+  <Proper class1="HC" class2="CT" class3="C" class4="OH" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0" />
+  <Proper class1="CT" class2="CT" class3="C" class4="O_3" c0="2.28446" c1="0.0" c2="-2.28446" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper class1="HC" class2="CT" class3="C" class4="O_3" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
+  <!--Aldehyde ketone and Esters-->
+  <Proper class1="HC" class2="CT" class3="C_2" class4="O_2" c0="0.0" c1="0.0" c2="0.0" c3="0.0" c4="0.0" c5="0.0"/>
+  <!--Esters-->
+  <Proper class1="C_2" class2="OS" class3="CT" class4="HC" c0="0.41421" c1="1.24265" c2="0.0" c3="-1.65686" c4="0.0" c5="0.0"/>
+  <!--; carboxylic acid - aliphatic -->
+  <Proper class1="HO" class2="OH" class3="C" class4="O_3" c0="23.012" c1="0.0" c2="-23.012" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper class1="CT" class2="C" class3="OH" class4="HO" c0="26.15" c1="-3.138" c2="-23.012" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper class1="CT" class2="CT" class3="C" class4="OH" c0="5.31786" c1="0.7322" c2="-2.28446" c3="-3.7656" c4="0.0" c5="0.0"/>
+  <!--Butanamide -->
+  <Proper class1="C" class2="CT" class3="CT" class4="CT" c0="-4.96013" c1="6.28646" c2="1.30959" c3="-2.63592" c4="0.0" c5="0.0"/>
+  <!--Not description -->
+  <Proper class1="C" class2="CT" class3="CT" class4="HC" c0="-0.2092" c1="-0.6276" c2="0.0" c3="0.8368" c4="0.0" c5="0.0"/>
+  <!--; (From wildcard) alcohols, ethers AA-->
+  <Proper class1="C" class2="CT" class3="CT" class4="OS" c0="2.87441" c1="0.58158" c2="2.092" c3="-5.54799" c4="0.0" c5="0.0"/>
+  <Proper class1="C_2" class2="CT" class3="CT" class4="OS" c0="2.87441" c1="0.58158" c2="2.092" c3="-5.54799" c4="0.0" c5="0.0"/>
+  <Proper class1="C_2" class2="CT" class3="CT" class4="OH" c0="2.87441" c1="0.58158" c2="2.092" c3="-5.54799" c4="0.0" c5="0.0"/>
+  <!-- ; hydrocarbon all-atom -->
+  <Proper class1="CT" class2="CT" class3="CT" class4="HC" c0="0.6276" c1="1.8828" c2="0.0" c3="-2.5104" c4="0.0" c5="0.0"/>
+  <!-- ;  hydrocarbon *new* 11/99 -->
+  <Proper class1="HC" class2="CT" class3="CT" class4="HC" c0="0.6276" c1="1.8828" c2="0.0" c3="-2.5104" c4="0.0" c5="0.0"/>
+  <!--LOPLS, alcohols, ethers AA -->
+  <Proper class1="HC" class2="CT" class3="CT" class4="OS" c0="0.91475" c1="2.67338" c2="-0.09883" c3="-3.59612" c4="0.0" c5="0.0"/>
+  <Proper class1="HC" class2="CT" class3="CT" class4="OH" c0="0.60436" c1="1.64480" c2="-0.13816" c3="-2.23317" c4="0.0" c5="0.0"/>
+  <!--LOPLS, alcohols AA -->
+  <Proper class1="CT" class2="CT" class3="OH" class4="HO" c0="-0.79464" c1="3.75594" c2="0.06712" c3="-3.12293" c4="0.0" c5="0.0"/>
+  <Proper class1="HC" class2="CT" class3="OH" class4="HO" c0="0.76205" c1="2.37159" c2="0.06090" c3="-3.18897" c4="0.0" c5="0.0"/>
+  <Proper class1="CT" class2="CT" class3="CT" class4="OH" c0="2.97554" c1="1.25728" c2="1.11423" c3="-5.33767" c4="0.0" c5="0.0"/>
+  <!--LOPLS, esters-->
+  <Proper class1="C_2" class2="OS" class3="CT" class4="CT" c0="-7.05897" c1="7.54603" c2="5.22349" c3="-5.22077" c4="0.0" c5="0.0"/>
+  <Proper class1="CT" class2="OS" class3="C_2" class4="O_2" c0="22.82916" c1="0.0" c2="-24.00662" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper class1="CT" class2="C_2" class3="OS" class4="CT" c0="32.59672" c1="-6.52543" c2="-24.00659" c3="0.0" c4="0.0" c5="0.0"/>
+  <Proper class1="CT" class2="CT" class3="C_2" class4="OS" c0="-1.88531" c1="-4.94762" c2="2.62297" c3="4.12830" c4="0.0" c5="0.0"/>
+  <Proper class1="HC" class2="CT" class3="C_2" class4="OS" c0="0.17512" c1="0.71721" c2="-0.00911" c3="-0.93557" c4="0.0" c5="0.0"/>
+  <Proper class1="CT" class2="CT" class3="CT" class4="OS" c0="2.67162" c1="1.59535" c2="4.28477" c3="-8.42744" c4="0.0" c5="0.0"/>
+  <Proper class1="CT" class2="CT" class3="CT" class4="CT" c0="0.518787" c1="-0.230192" c2="0.896807" c3="-1.49134" c4="0.0" c5="0.0"/>
+  <!--LOPLS, aldehyde & ketone-->
+  <Proper class1="C_2" class2="CT" class3="CT" class4="CT" c0="-6.01526" c1="8.73040" c2="2.62473" c3="-5.20449" c4="0.0" c5="0.0"/>
+  <Proper class1="CT" class2="CT" class3="C_2" class4="O_2" c0="3.05944" c1="-3.63216" c2="-5.17499" c3="5.61279" c4="0.0" c5="0.0"/>
+  <Proper class1="C_2" class2="CT" class3="CT" class4="HC" c0="-0.73096" c1="-1.84830" c2="0.07261" c3="2.47030" c4="0.0" c5="0.0"/>
+ </RBTorsionForce>
+ <NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
+  <!--OPLS-->
+  <Atom type="opls_135" charge="-0.180" sigma="0.35" epsilon="0.276144"/>
+  <Atom type="opls_136" charge="-0.120" sigma="0.35" epsilon="0.276144"/>
+  <Atom type="opls_137" charge="-0.06" sigma="0.35" epsilon="0.276144"/>
+  <Atom type="opls_139" charge="0.0" sigma="0.35" epsilon="0.276144"/>
+  <Atom type="opls_140" charge="0.06" sigma="0.25" epsilon="0.12552"/>
+  <Atom type="opls_154" charge="-0.683" sigma="0.312" epsilon="0.71128"/>
+  <Atom type="opls_155" charge="0.418" sigma="0.0" epsilon="0.0"/>
+  <Atom type="opls_157" charge="0.145" sigma="0.35" epsilon="0.276144"/>
+  <Atom type="opls_158" charge="0.205" sigma="0.35" epsilon="0.276144"/>
+  <Atom type="opls_267" charge="0.52" sigma="0.375" epsilon="0.43932"/>
+  <Atom type="opls_268" charge="-0.53" sigma="0.3" epsilon="0.71128"/>
+  <Atom type="opls_269" charge="-0.44" sigma="0.296" epsilon="0.87864"/>
+  <Atom type="opls_270" charge="0.45" sigma="0.0" epsilon="0.0"/>
+  <Atom type="opls_490" charge="0.190" sigma="0.35" epsilon="0.276144"/>
+  <Atom type="opls_491" charge="0.22" sigma="0.35" epsilon="0.276144"/>
+  <Atom type="opls_469" charge="0.03" sigma="0.242" epsilon="0.06276"/>
+  <!--LOPLS-->
+  <Atom type="lopls_135" charge="-0.222" sigma="0.35" epsilon="0.276144"/>
+  <Atom type="lopls_136" charge="-0.148" sigma="0.35" epsilon="0.276144"/>
+  <Atom type="lopls_140a" charge="0.074" sigma="0.25" epsilon="0.12552"/>
+  <Atom type="lopls_140b" charge="0.074" sigma="0.25" epsilon="0.11000"/>
+  <Atom type="lopls_4651" charge="0.75" sigma="0.31875" epsilon="0.43932"/>
+  <Atom type="lopls_4662" charge="-0.55" sigma="0.3108" epsilon="0.702912"/>
+  <Atom type="lopls_4671" charge="-0.45" sigma="0.255" epsilon="0.71128"/>
+
+  </NonbondedForce>
+
+</ForceField>

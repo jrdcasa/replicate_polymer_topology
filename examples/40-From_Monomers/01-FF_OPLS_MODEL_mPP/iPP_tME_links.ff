@@ -1,0 +1,46 @@
+;-------------------------------------
+;             iPP-tME LINK                      
+;-------------------------------------
+[link]
+resname "iPP|tME"
+[ bonds ]
++C01   C04        1      0.1529    224262.4  {"group": "connection"}
+[ angles ]
+C04   +C01   +H04        1    110.7000       313.8   {"group": "connection"}
+C04   +C01   +H03        1    110.7000       313.8   {"group": "connection"}
+C04   +C01   +H02        1    110.7000       313.8   {"group": "connection"}
+C06   C04   +C01        1    112.7000       488.3   {"group": "connection"}
+H05   C04   +C01        1    110.7000       313.8   {"group": "connection"}
+C01   C04   +C01        1    112.7000       488.3   {"group": "connection"}
+[ dihedrals ]
+ C01    C04   +C01   +H04        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H05    C04   +C01   +H04        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ C06    C04   +C01   +H04        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ C01    C04   +C01   +H03        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H05    C04   +C01   +H03        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ C06    C04   +C01   +H03        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ C01    C04   +C01   +H02        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H05    C04   +C01   +H02        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ C06    C04   +C01   +H02        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H09    C06    C04   +C01        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H08    C06    C04   +C01        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H07    C06    C04   +C01        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H03    C01    C04   +C01        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H02    C01    C04   +C01        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+-C04    C01    C04   +C01        3        2.929      -1.464       0.209      -1.674       0.000       0.000 {"group": "connection"}
+[ pairs ]
+ C01   +H04    1 {"group": "connection"}
+ H05   +H04    1 {"group": "connection"}
+ C06   +H04    1 {"group": "connection"}
+ C01   +H03    1 {"group": "connection"}
+ H05   +H03    1 {"group": "connection"}
+ C06   +H03    1 {"group": "connection"}
+ C01   +H02    1 {"group": "connection"}
+ H05   +H02    1 {"group": "connection"}
+ C06   +H02    1 {"group": "connection"}
+ H09    C01    1 {"group": "connection"}
+ H08    C01    1 {"group": "connection"}
+ H07    C01    1 {"group": "connection"}
+ H03    C01    1 {"group": "connection"}
+ H02    C01    1 {"group": "connection"}
+ C04    C01    1 {"group": "connection"}

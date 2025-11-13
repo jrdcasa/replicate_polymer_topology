@@ -1,0 +1,10 @@
+#include "forcefield/forcefield.itp"
+#include "PVL4_all_residues.itp"
+
+[ system ]
+; name
+Polymer
+
+[ molecules ]
+;name number
+PVL4_all_residues 20

@@ -1,0 +1,445 @@
+REMARK   1 CREATED WITH MDTraj 1.9.6, 2022-07-07
+CRYST1   20.000   20.000   20.000  90.00  90.00  90.00 P 1           1 
+MODEL        0
+ATOM      1  C   but A   1      -3.014   1.658   0.000  1.00  1.00           C  
+ATOM      2  H   but A   1      -2.657   0.649   0.000  1.00  1.00           H  
+ATOM      3  H   but A   1      -2.657   2.163  -0.874  1.00  1.00           H  
+ATOM      4  H   but A   1      -4.084   1.658   0.000  1.00  1.00           H  
+ATOM      5  C   but A   1      -2.501   2.384   1.257  1.00  1.00           C  
+ATOM      6  H   but A   1      -2.857   3.393   1.257  1.00  1.00           H  
+ATOM      7  H   but A   1      -2.857   1.880   2.131  1.00  1.00           H  
+ATOM      8  C   but A   1      -0.961   2.384   1.258  1.00  1.00           C  
+ATOM      9  H   but A   1      -0.604   2.888   0.384  1.00  1.00           H  
+ATOM     10  H   but A   1      -0.604   2.888   2.131  1.00  1.00           H  
+ATOM     11  C   but A   1      -0.447   0.932   1.258  1.00  1.00           C  
+ATOM     12  H   but A   1       0.536   0.901   1.678  1.00  1.00           H  
+ATOM     13  H   but A   1      -1.104   0.322   1.842  1.00  1.00           H  
+ATOM     14  H   but A   1      -0.417   0.564   0.253  1.00  1.00           H  
+ATOM     15  C   mol A   2       1.939  -2.407   1.569  1.00  1.00           C  
+ATOM     16  O   mol A   2       3.166  -2.407   1.571  1.00  1.00           O  
+ATOM     17  H   mol A   2       1.347  -1.468   1.567  1.00  1.00           H  
+ATOM     18  C   mol A   2       1.118  -3.710   1.569  1.00  1.00           C  
+ATOM     19  H   mol A   2       1.356  -4.282   0.697  1.00  1.00           H  
+ATOM     20  H   mol A   2       1.353  -4.280   2.444  1.00  1.00           H  
+ATOM     21  C   mol A   2      -0.384  -3.370   1.566  1.00  1.00           C  
+ATOM     22  H   mol A   2      -0.955  -4.275   1.566  1.00  1.00           H  
+ATOM     23  H   mol A   2      -0.622  -2.798   2.439  1.00  1.00           H  
+ATOM     24  C   mol A   2      -0.723  -2.550   0.308  1.00  1.00           C  
+ATOM     25  H   mol A   2      -1.752  -2.694   0.054  1.00  1.00           H  
+ATOM     26  H   mol A   2      -0.545  -1.512   0.499  1.00  1.00           H  
+ATOM     27  H   mol A   2      -0.106  -2.873  -0.505  1.00  1.00           H  
+TER      28      mol A   2
+ATOM     29  C   but B   3       6.986   1.658   0.000  1.00  1.00           C  
+ATOM     30  H   but B   3       7.343   0.649   0.000  1.00  1.00           H  
+ATOM     31  H   but B   3       7.343   2.163  -0.874  1.00  1.00           H  
+ATOM     32  H   but B   3       5.916   1.658   0.000  1.00  1.00           H  
+ATOM     33  C   but B   3       7.499   2.384   1.257  1.00  1.00           C  
+ATOM     34  H   but B   3       7.143   3.393   1.257  1.00  1.00           H  
+ATOM     35  H   but B   3       7.143   1.880   2.131  1.00  1.00           H  
+ATOM     36  C   but B   3       9.039   2.384   1.258  1.00  1.00           C  
+ATOM     37  H   but B   3       9.396   2.888   0.384  1.00  1.00           H  
+ATOM     38  H   but B   3       9.396   2.888   2.131  1.00  1.00           H  
+ATOM     39  C   but B   3       9.553   0.932   1.258  1.00  1.00           C  
+ATOM     40  H   but B   3      10.536   0.901   1.678  1.00  1.00           H  
+ATOM     41  H   but B   3       8.896   0.322   1.842  1.00  1.00           H  
+ATOM     42  H   but B   3       9.583   0.564   0.253  1.00  1.00           H  
+ATOM     43  C   mol B   4      11.939  -2.407   1.569  1.00  1.00           C  
+ATOM     44  O   mol B   4      13.166  -2.407   1.571  1.00  1.00           O  
+ATOM     45  H   mol B   4      11.347  -1.468   1.567  1.00  1.00           H  
+ATOM     46  C   mol B   4      11.118  -3.710   1.569  1.00  1.00           C  
+ATOM     47  H   mol B   4      11.356  -4.282   0.697  1.00  1.00           H  
+ATOM     48  H   mol B   4      11.353  -4.280   2.444  1.00  1.00           H  
+ATOM     49  C   mol B   4       9.616  -3.370   1.566  1.00  1.00           C  
+ATOM     50  H   mol B   4       9.045  -4.275   1.566  1.00  1.00           H  
+ATOM     51  H   mol B   4       9.378  -2.798   2.439  1.00  1.00           H  
+ATOM     52  C   mol B   4       9.277  -2.550   0.308  1.00  1.00           C  
+ATOM     53  H   mol B   4       8.248  -2.694   0.054  1.00  1.00           H  
+ATOM     54  H   mol B   4       9.455  -1.512   0.499  1.00  1.00           H  
+ATOM     55  H   mol B   4       9.894  -2.873  -0.505  1.00  1.00           H  
+TER      56      mol B   4
+ATOM     57  C   but C   5      -3.014  11.658   0.000  1.00  1.00           C  
+ATOM     58  H   but C   5      -2.657  10.649   0.000  1.00  1.00           H  
+ATOM     59  H   but C   5      -2.657  12.163  -0.874  1.00  1.00           H  
+ATOM     60  H   but C   5      -4.084  11.658   0.000  1.00  1.00           H  
+ATOM     61  C   but C   5      -2.501  12.384   1.257  1.00  1.00           C  
+ATOM     62  H   but C   5      -2.857  13.393   1.257  1.00  1.00           H  
+ATOM     63  H   but C   5      -2.857  11.880   2.131  1.00  1.00           H  
+ATOM     64  C   but C   5      -0.961  12.384   1.258  1.00  1.00           C  
+ATOM     65  H   but C   5      -0.604  12.888   0.384  1.00  1.00           H  
+ATOM     66  H   but C   5      -0.604  12.888   2.131  1.00  1.00           H  
+ATOM     67  C   but C   5      -0.447  10.932   1.258  1.00  1.00           C  
+ATOM     68  H   but C   5       0.536  10.901   1.678  1.00  1.00           H  
+ATOM     69  H   but C   5      -1.104  10.322   1.842  1.00  1.00           H  
+ATOM     70  H   but C   5      -0.417  10.564   0.253  1.00  1.00           H  
+ATOM     71  C   mol C   6       1.939   7.593   1.569  1.00  1.00           C  
+ATOM     72  O   mol C   6       3.166   7.593   1.571  1.00  1.00           O  
+ATOM     73  H   mol C   6       1.347   8.532   1.567  1.00  1.00           H  
+ATOM     74  C   mol C   6       1.118   6.290   1.569  1.00  1.00           C  
+ATOM     75  H   mol C   6       1.356   5.718   0.697  1.00  1.00           H  
+ATOM     76  H   mol C   6       1.353   5.720   2.444  1.00  1.00           H  
+ATOM     77  C   mol C   6      -0.384   6.630   1.566  1.00  1.00           C  
+ATOM     78  H   mol C   6      -0.955   5.725   1.566  1.00  1.00           H  
+ATOM     79  H   mol C   6      -0.622   7.202   2.439  1.00  1.00           H  
+ATOM     80  C   mol C   6      -0.723   7.450   0.308  1.00  1.00           C  
+ATOM     81  H   mol C   6      -1.752   7.306   0.054  1.00  1.00           H  
+ATOM     82  H   mol C   6      -0.545   8.488   0.499  1.00  1.00           H  
+ATOM     83  H   mol C   6      -0.106   7.127  -0.505  1.00  1.00           H  
+TER      84      mol C   6
+ATOM     85  C   but D   7       6.986  11.658   0.000  1.00  1.00           C  
+ATOM     86  H   but D   7       7.343  10.649   0.000  1.00  1.00           H  
+ATOM     87  H   but D   7       7.343  12.163  -0.874  1.00  1.00           H  
+ATOM     88  H   but D   7       5.916  11.658   0.000  1.00  1.00           H  
+ATOM     89  C   but D   7       7.499  12.384   1.257  1.00  1.00           C  
+ATOM     90  H   but D   7       7.143  13.393   1.257  1.00  1.00           H  
+ATOM     91  H   but D   7       7.143  11.880   2.131  1.00  1.00           H  
+ATOM     92  C   but D   7       9.039  12.384   1.258  1.00  1.00           C  
+ATOM     93  H   but D   7       9.396  12.888   0.384  1.00  1.00           H  
+ATOM     94  H   but D   7       9.396  12.888   2.131  1.00  1.00           H  
+ATOM     95  C   but D   7       9.553  10.932   1.258  1.00  1.00           C  
+ATOM     96  H   but D   7      10.536  10.901   1.678  1.00  1.00           H  
+ATOM     97  H   but D   7       8.896  10.322   1.842  1.00  1.00           H  
+ATOM     98  H   but D   7       9.583  10.564   0.253  1.00  1.00           H  
+ATOM     99  C   mol D   8      11.939   7.593   1.569  1.00  1.00           C  
+ATOM    100  O   mol D   8      13.166   7.593   1.571  1.00  1.00           O  
+ATOM    101  H   mol D   8      11.347   8.532   1.567  1.00  1.00           H  
+ATOM    102  C   mol D   8      11.118   6.290   1.569  1.00  1.00           C  
+ATOM    103  H   mol D   8      11.356   5.718   0.697  1.00  1.00           H  
+ATOM    104  H   mol D   8      11.353   5.720   2.444  1.00  1.00           H  
+ATOM    105  C   mol D   8       9.616   6.630   1.566  1.00  1.00           C  
+ATOM    106  H   mol D   8       9.045   5.725   1.566  1.00  1.00           H  
+ATOM    107  H   mol D   8       9.378   7.202   2.439  1.00  1.00           H  
+ATOM    108  C   mol D   8       9.277   7.450   0.308  1.00  1.00           C  
+ATOM    109  H   mol D   8       8.248   7.306   0.054  1.00  1.00           H  
+ATOM    110  H   mol D   8       9.455   8.488   0.499  1.00  1.00           H  
+ATOM    111  H   mol D   8       9.894   7.127  -0.505  1.00  1.00           H  
+TER     112      mol D   8
+ATOM    113  C   but E   9      -3.014   1.658  10.000  1.00  1.00           C  
+ATOM    114  H   but E   9      -2.657   0.649  10.000  1.00  1.00           H  
+ATOM    115  H   but E   9      -2.657   2.163   9.126  1.00  1.00           H  
+ATOM    116  H   but E   9      -4.084   1.658  10.000  1.00  1.00           H  
+ATOM    117  C   but E   9      -2.501   2.384  11.257  1.00  1.00           C  
+ATOM    118  H   but E   9      -2.857   3.393  11.257  1.00  1.00           H  
+ATOM    119  H   but E   9      -2.857   1.880  12.131  1.00  1.00           H  
+ATOM    120  C   but E   9      -0.961   2.384  11.258  1.00  1.00           C  
+ATOM    121  H   but E   9      -0.604   2.888  10.384  1.00  1.00           H  
+ATOM    122  H   but E   9      -0.604   2.888  12.131  1.00  1.00           H  
+ATOM    123  C   but E   9      -0.447   0.932  11.258  1.00  1.00           C  
+ATOM    124  H   but E   9       0.536   0.901  11.678  1.00  1.00           H  
+ATOM    125  H   but E   9      -1.104   0.322  11.842  1.00  1.00           H  
+ATOM    126  H   but E   9      -0.417   0.564  10.253  1.00  1.00           H  
+ATOM    127  C   mol E  10       1.939  -2.407  11.569  1.00  1.00           C  
+ATOM    128  O   mol E  10       3.166  -2.407  11.571  1.00  1.00           O  
+ATOM    129  H   mol E  10       1.347  -1.468  11.567  1.00  1.00           H  
+ATOM    130  C   mol E  10       1.118  -3.710  11.569  1.00  1.00           C  
+ATOM    131  H   mol E  10       1.356  -4.282  10.697  1.00  1.00           H  
+ATOM    132  H   mol E  10       1.353  -4.280  12.444  1.00  1.00           H  
+ATOM    133  C   mol E  10      -0.384  -3.370  11.566  1.00  1.00           C  
+ATOM    134  H   mol E  10      -0.955  -4.275  11.566  1.00  1.00           H  
+ATOM    135  H   mol E  10      -0.622  -2.798  12.439  1.00  1.00           H  
+ATOM    136  C   mol E  10      -0.723  -2.550  10.308  1.00  1.00           C  
+ATOM    137  H   mol E  10      -1.752  -2.694  10.054  1.00  1.00           H  
+ATOM    138  H   mol E  10      -0.545  -1.512  10.499  1.00  1.00           H  
+ATOM    139  H   mol E  10      -0.106  -2.873   9.495  1.00  1.00           H  
+TER     140      mol E  10
+ATOM    141  C   but F  11       6.986   1.658  10.000  1.00  1.00           C  
+ATOM    142  H   but F  11       7.343   0.649  10.000  1.00  1.00           H  
+ATOM    143  H   but F  11       7.343   2.163   9.126  1.00  1.00           H  
+ATOM    144  H   but F  11       5.916   1.658  10.000  1.00  1.00           H  
+ATOM    145  C   but F  11       7.499   2.384  11.257  1.00  1.00           C  
+ATOM    146  H   but F  11       7.143   3.393  11.257  1.00  1.00           H  
+ATOM    147  H   but F  11       7.143   1.880  12.131  1.00  1.00           H  
+ATOM    148  C   but F  11       9.039   2.384  11.258  1.00  1.00           C  
+ATOM    149  H   but F  11       9.396   2.888  10.384  1.00  1.00           H  
+ATOM    150  H   but F  11       9.396   2.888  12.131  1.00  1.00           H  
+ATOM    151  C   but F  11       9.553   0.932  11.258  1.00  1.00           C  
+ATOM    152  H   but F  11      10.536   0.901  11.678  1.00  1.00           H  
+ATOM    153  H   but F  11       8.896   0.322  11.842  1.00  1.00           H  
+ATOM    154  H   but F  11       9.583   0.564  10.253  1.00  1.00           H  
+ATOM    155  C   mol F  12      11.939  -2.407  11.569  1.00  1.00           C  
+ATOM    156  O   mol F  12      13.166  -2.407  11.571  1.00  1.00           O  
+ATOM    157  H   mol F  12      11.347  -1.468  11.567  1.00  1.00           H  
+ATOM    158  C   mol F  12      11.118  -3.710  11.569  1.00  1.00           C  
+ATOM    159  H   mol F  12      11.356  -4.282  10.697  1.00  1.00           H  
+ATOM    160  H   mol F  12      11.353  -4.280  12.444  1.00  1.00           H  
+ATOM    161  C   mol F  12       9.616  -3.370  11.566  1.00  1.00           C  
+ATOM    162  H   mol F  12       9.045  -4.275  11.566  1.00  1.00           H  
+ATOM    163  H   mol F  12       9.378  -2.798  12.439  1.00  1.00           H  
+ATOM    164  C   mol F  12       9.277  -2.550  10.308  1.00  1.00           C  
+ATOM    165  H   mol F  12       8.248  -2.694  10.054  1.00  1.00           H  
+ATOM    166  H   mol F  12       9.455  -1.512  10.499  1.00  1.00           H  
+ATOM    167  H   mol F  12       9.894  -2.873   9.495  1.00  1.00           H  
+TER     168      mol F  12
+ATOM    169  C   but G  13      -3.014  11.658  10.000  1.00  1.00           C  
+ATOM    170  H   but G  13      -2.657  10.649  10.000  1.00  1.00           H  
+ATOM    171  H   but G  13      -2.657  12.163   9.126  1.00  1.00           H  
+ATOM    172  H   but G  13      -4.084  11.658  10.000  1.00  1.00           H  
+ATOM    173  C   but G  13      -2.501  12.384  11.257  1.00  1.00           C  
+ATOM    174  H   but G  13      -2.857  13.393  11.257  1.00  1.00           H  
+ATOM    175  H   but G  13      -2.857  11.880  12.131  1.00  1.00           H  
+ATOM    176  C   but G  13      -0.961  12.384  11.258  1.00  1.00           C  
+ATOM    177  H   but G  13      -0.604  12.888  10.384  1.00  1.00           H  
+ATOM    178  H   but G  13      -0.604  12.888  12.131  1.00  1.00           H  
+ATOM    179  C   but G  13      -0.447  10.932  11.258  1.00  1.00           C  
+ATOM    180  H   but G  13       0.536  10.901  11.678  1.00  1.00           H  
+ATOM    181  H   but G  13      -1.104  10.322  11.842  1.00  1.00           H  
+ATOM    182  H   but G  13      -0.417  10.564  10.253  1.00  1.00           H  
+ATOM    183  C   mol G  14       1.939   7.593  11.569  1.00  1.00           C  
+ATOM    184  O   mol G  14       3.166   7.593  11.571  1.00  1.00           O  
+ATOM    185  H   mol G  14       1.347   8.532  11.567  1.00  1.00           H  
+ATOM    186  C   mol G  14       1.118   6.290  11.569  1.00  1.00           C  
+ATOM    187  H   mol G  14       1.356   5.718  10.697  1.00  1.00           H  
+ATOM    188  H   mol G  14       1.353   5.720  12.444  1.00  1.00           H  
+ATOM    189  C   mol G  14      -0.384   6.630  11.566  1.00  1.00           C  
+ATOM    190  H   mol G  14      -0.955   5.725  11.566  1.00  1.00           H  
+ATOM    191  H   mol G  14      -0.622   7.202  12.439  1.00  1.00           H  
+ATOM    192  C   mol G  14      -0.723   7.450  10.308  1.00  1.00           C  
+ATOM    193  H   mol G  14      -1.752   7.306  10.054  1.00  1.00           H  
+ATOM    194  H   mol G  14      -0.545   8.488  10.499  1.00  1.00           H  
+ATOM    195  H   mol G  14      -0.106   7.127   9.495  1.00  1.00           H  
+TER     196      mol G  14
+ATOM    197  C   but H  15       6.986  11.658  10.000  1.00  1.00           C  
+ATOM    198  H   but H  15       7.343  10.649  10.000  1.00  1.00           H  
+ATOM    199  H   but H  15       7.343  12.163   9.126  1.00  1.00           H  
+ATOM    200  H   but H  15       5.916  11.658  10.000  1.00  1.00           H  
+ATOM    201  C   but H  15       7.499  12.384  11.257  1.00  1.00           C  
+ATOM    202  H   but H  15       7.143  13.393  11.257  1.00  1.00           H  
+ATOM    203  H   but H  15       7.143  11.880  12.131  1.00  1.00           H  
+ATOM    204  C   but H  15       9.039  12.384  11.258  1.00  1.00           C  
+ATOM    205  H   but H  15       9.396  12.888  10.384  1.00  1.00           H  
+ATOM    206  H   but H  15       9.396  12.888  12.131  1.00  1.00           H  
+ATOM    207  C   but H  15       9.553  10.932  11.258  1.00  1.00           C  
+ATOM    208  H   but H  15      10.536  10.901  11.678  1.00  1.00           H  
+ATOM    209  H   but H  15       8.896  10.322  11.842  1.00  1.00           H  
+ATOM    210  H   but H  15       9.583  10.564  10.253  1.00  1.00           H  
+ATOM    211  C   mol H  16      11.939   7.593  11.569  1.00  1.00           C  
+ATOM    212  O   mol H  16      13.166   7.593  11.571  1.00  1.00           O  
+ATOM    213  H   mol H  16      11.347   8.532  11.567  1.00  1.00           H  
+ATOM    214  C   mol H  16      11.118   6.290  11.569  1.00  1.00           C  
+ATOM    215  H   mol H  16      11.356   5.718  10.697  1.00  1.00           H  
+ATOM    216  H   mol H  16      11.353   5.720  12.444  1.00  1.00           H  
+ATOM    217  C   mol H  16       9.616   6.630  11.566  1.00  1.00           C  
+ATOM    218  H   mol H  16       9.045   5.725  11.566  1.00  1.00           H  
+ATOM    219  H   mol H  16       9.378   7.202  12.439  1.00  1.00           H  
+ATOM    220  C   mol H  16       9.277   7.450  10.308  1.00  1.00           C  
+ATOM    221  H   mol H  16       8.248   7.306  10.054  1.00  1.00           H  
+ATOM    222  H   mol H  16       9.455   8.488  10.499  1.00  1.00           H  
+ATOM    223  H   mol H  16       9.894   7.127   9.495  1.00  1.00           H  
+TER     224      mol H  16
+ENDMDL
+CONECT    1    2    3    4    5
+CONECT    2    1
+CONECT    3    1
+CONECT    4    1
+CONECT    5    1    6    7    8
+CONECT    6    5
+CONECT    7    5
+CONECT    8    5    9   10   11
+CONECT    9    8
+CONECT   10    8
+CONECT   11    8   12   13   14
+CONECT   12   11
+CONECT   13   11
+CONECT   14   11
+CONECT   15   16   17   18
+CONECT   16   15
+CONECT   17   15
+CONECT   18   15   19   20   21
+CONECT   19   18
+CONECT   20   18
+CONECT   21   18   22   23   24
+CONECT   22   21
+CONECT   23   21
+CONECT   24   21   25   26   27
+CONECT   25   24
+CONECT   26   24
+CONECT   27   24
+CONECT   29   30   31   32   33
+CONECT   30   29
+CONECT   31   29
+CONECT   32   29
+CONECT   33   29   34   35   36
+CONECT   34   33
+CONECT   35   33
+CONECT   36   33   37   38   39
+CONECT   37   36
+CONECT   38   36
+CONECT   39   36   40   41   42
+CONECT   40   39
+CONECT   41   39
+CONECT   42   39
+CONECT   43   44   45   46
+CONECT   44   43
+CONECT   45   43
+CONECT   46   43   47   48   49
+CONECT   47   46
+CONECT   48   46
+CONECT   49   46   50   51   52
+CONECT   50   49
+CONECT   51   49
+CONECT   52   49   53   54   55
+CONECT   53   52
+CONECT   54   52
+CONECT   55   52
+CONECT   57   58   59   60   61
+CONECT   58   57
+CONECT   59   57
+CONECT   60   57
+CONECT   61   57   62   63   64
+CONECT   62   61
+CONECT   63   61
+CONECT   64   61   65   66   67
+CONECT   65   64
+CONECT   66   64
+CONECT   67   64   68   69   70
+CONECT   68   67
+CONECT   69   67
+CONECT   70   67
+CONECT   71   72   73   74
+CONECT   72   71
+CONECT   73   71
+CONECT   74   71   75   76   77
+CONECT   75   74
+CONECT   76   74
+CONECT   77   74   78   79   80
+CONECT   78   77
+CONECT   79   77
+CONECT   80   77   81   82   83
+CONECT   81   80
+CONECT   82   80
+CONECT   83   80
+CONECT   85   86   87   88   89
+CONECT   86   85
+CONECT   87   85
+CONECT   88   85
+CONECT   89   85   90   91   92
+CONECT   90   89
+CONECT   91   89
+CONECT   92   89   93   94   95
+CONECT   93   92
+CONECT   94   92
+CONECT   95   92   96   97   98
+CONECT   96   95
+CONECT   97   95
+CONECT   98   95
+CONECT   99  100  101  102
+CONECT  100   99
+CONECT  101   99
+CONECT  102   99  103  104  105
+CONECT  103  102
+CONECT  104  102
+CONECT  105  102  106  107  108
+CONECT  106  105
+CONECT  107  105
+CONECT  108  105  109  110  111
+CONECT  109  108
+CONECT  110  108
+CONECT  111  108
+CONECT  113  114  115  116  117
+CONECT  114  113
+CONECT  115  113
+CONECT  116  113
+CONECT  117  113  118  119  120
+CONECT  118  117
+CONECT  119  117
+CONECT  120  117  121  122  123
+CONECT  121  120
+CONECT  122  120
+CONECT  123  120  124  125  126
+CONECT  124  123
+CONECT  125  123
+CONECT  126  123
+CONECT  127  128  129  130
+CONECT  128  127
+CONECT  129  127
+CONECT  130  127  131  132  133
+CONECT  131  130
+CONECT  132  130
+CONECT  133  130  134  135  136
+CONECT  134  133
+CONECT  135  133
+CONECT  136  133  137  138  139
+CONECT  137  136
+CONECT  138  136
+CONECT  139  136
+CONECT  141  142  143  144  145
+CONECT  142  141
+CONECT  143  141
+CONECT  144  141
+CONECT  145  141  146  147  148
+CONECT  146  145
+CONECT  147  145
+CONECT  148  145  149  150  151
+CONECT  149  148
+CONECT  150  148
+CONECT  151  148  152  153  154
+CONECT  152  151
+CONECT  153  151
+CONECT  154  151
+CONECT  155  156  157  158
+CONECT  156  155
+CONECT  157  155
+CONECT  158  155  159  160  161
+CONECT  159  158
+CONECT  160  158
+CONECT  161  158  162  163  164
+CONECT  162  161
+CONECT  163  161
+CONECT  164  161  165  166  167
+CONECT  165  164
+CONECT  166  164
+CONECT  167  164
+CONECT  169  170  171  172  173
+CONECT  170  169
+CONECT  171  169
+CONECT  172  169
+CONECT  173  169  174  175  176
+CONECT  174  173
+CONECT  175  173
+CONECT  176  173  177  178  179
+CONECT  177  176
+CONECT  178  176
+CONECT  179  176  180  181  182
+CONECT  180  179
+CONECT  181  179
+CONECT  182  179
+CONECT  183  184  185  186
+CONECT  184  183
+CONECT  185  183
+CONECT  186  183  187  188  189
+CONECT  187  186
+CONECT  188  186
+CONECT  189  186  190  191  192
+CONECT  190  189
+CONECT  191  189
+CONECT  192  189  193  194  195
+CONECT  193  192
+CONECT  194  192
+CONECT  195  192
+CONECT  197  198  199  200  201
+CONECT  198  197
+CONECT  199  197
+CONECT  200  197
+CONECT  201  197  202  203  204
+CONECT  202  201
+CONECT  203  201
+CONECT  204  201  205  206  207
+CONECT  205  204
+CONECT  206  204
+CONECT  207  204  208  209  210
+CONECT  208  207
+CONECT  209  207
+CONECT  210  207
+CONECT  211  212  213  214
+CONECT  212  211
+CONECT  213  211
+CONECT  214  211  215  216  217
+CONECT  215  214
+CONECT  216  214
+CONECT  217  214  218  219  220
+CONECT  218  217
+CONECT  219  217
+CONECT  220  217  221  222  223
+CONECT  221  220
+CONECT  222  220
+CONECT  223  220
+END

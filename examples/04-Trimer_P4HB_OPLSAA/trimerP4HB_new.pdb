@@ -1,0 +1,92 @@
+REMARK     Renumbered with topology (J.Ramos)
+REMARK     Backbone atoms --> Beta field == 0.00
+REMARK     Branch   atoms --> Beta field >= 1.00
+REMARK     Head     atoms --> Occupanccy field == 1.00
+REMARK     Tail     atoms --> Occupanccy field == 2.00
+REMARK     Middle   atoms --> Occupanccy field == 0.00
+CRYST1    0.000    0.000    0.000   0.00   0.00   0.00 P -1          1
+HETATM    1 O            1      -4.192   0.687   0.000  0.00  1.00           O
+HETATM    2 H            1      -4.512   1.592   0.000  0.00  1.00           H
+HETATM    3 C            1      -2.762   0.687   0.000  0.00  1.00           C
+HETATM    4 H            1      -2.405   1.192   0.874  0.00  1.00           H
+HETATM    5 H            1      -2.405   1.192  -0.874  0.00  1.00           H
+HETATM    6 C            1      -2.248  -0.765   0.000  0.00  1.00           C
+HETATM    7 H            1      -2.605  -1.269  -0.874  0.00  1.00           H
+HETATM    8 H            1      -2.605  -1.269   0.874  0.00  1.00           H
+HETATM    9 C            1      -0.708  -0.765  -0.000  0.00  1.00           C
+HETATM   10 H            1      -0.352  -0.262  -0.875  0.00  1.00           H
+HETATM   11 H            1      -0.352  -0.259   0.873  0.00  1.00           H
+HETATM   12 C            1      -0.195  -2.217   0.003  0.00  1.00           C
+HETATM   13 O            1      -0.956  -3.180   0.005  0.00  1.00           O
+HETATM   14 O            1       1.227  -2.368   0.003  0.00  1.00           O
+HETATM   15 C            1       1.562  -3.734  -0.255  0.00  1.00           C
+HETATM   16 H            1       1.192  -4.348   0.539  0.00  1.00           H
+HETATM   17 H            1       1.118  -4.041  -1.179  0.00  1.00           H
+HETATM   18 C            1       3.092  -3.879  -0.347  0.00  1.00           C
+HETATM   19 H            1       3.537  -3.551   0.569  0.00  1.00           H
+HETATM   20 H            1       3.459  -3.283  -1.156  0.00  1.00           H
+HETATM   21 C            1       3.454  -5.356  -0.593  0.00  1.00           C
+HETATM   22 H            1       3.008  -5.685  -1.509  0.00  1.00           H
+HETATM   23 H            1       3.087  -5.952   0.216  0.00  1.00           H
+HETATM   24 C            1       4.984  -5.501  -0.685  0.00  1.00           C
+HETATM   25 O            1       5.741  -4.541  -0.570  0.00  1.00           O
+HETATM   26 O            1       5.465  -6.828  -0.913  0.00  1.00           O
+HETATM   27 C            1       6.894  -6.814  -0.975  0.00  1.00           C
+HETATM   28 H            1       7.210  -6.178  -1.775  0.00  1.00           H
+HETATM   29 H            1       7.287  -6.446  -0.050  0.00  1.00           H
+HETATM   30 C            1       7.411  -8.244  -1.220  0.00  1.00           C
+HETATM   31 H            1       7.018  -8.612  -2.144  0.00  1.00           H
+HETATM   32 H            1       7.095  -8.880  -0.419  0.00  1.00           H
+HETATM   33 C            1       8.950  -8.229  -1.286  0.00  1.00           C
+HETATM   34 H            1       9.266  -7.593  -2.086  0.00  1.00           H
+HETATM   35 H            1       9.343  -7.860  -0.361  0.00  1.00           H
+HETATM   36 C            1       9.467  -9.658  -1.530  0.00  1.00           C
+HETATM   37 O            1       8.847 -10.713  -1.666  0.00  1.00           O
+HETATM   38 O            1      10.821  -9.711  -1.599  0.00  1.00           O
+HETATM   39 C            1      11.262 -11.052  -1.826  0.00  1.00           C
+HETATM   40 H            1      10.847 -11.413  -2.744  0.00  1.00           H
+HETATM   41 H            1      12.330 -11.072  -1.886  0.00  1.00           H
+HETATM   42 H            1      10.938 -11.676  -1.019  0.00  1.00           H
+END
+CONECT    1    2    3
+CONECT    2    1
+CONECT    3    1    4    5    6
+CONECT    4    3
+CONECT    5    3
+CONECT    6    3    7    8    9
+CONECT    7    6
+CONECT    8    6
+CONECT    9    6   10   11   12
+CONECT   10    9
+CONECT   11    9
+CONECT   12    9   13   14
+CONECT   13   12
+CONECT   14   12   15
+CONECT   15   14   16   17   18
+CONECT   16   15
+CONECT   17   15
+CONECT   18   15   19   20   21
+CONECT   19   18
+CONECT   20   18
+CONECT   21   18   22   23   24
+CONECT   22   21
+CONECT   23   21
+CONECT   24   21   25   26
+CONECT   25   24
+CONECT   26   24   27
+CONECT   27   26   28   29   30
+CONECT   28   27
+CONECT   29   27
+CONECT   30   27   31   32   33
+CONECT   31   30
+CONECT   32   30
+CONECT   33   30   34   35   36
+CONECT   34   33
+CONECT   35   33
+CONECT   36   33   37   38
+CONECT   37   36
+CONECT   38   36   39
+CONECT   39   38   40   41   42
+CONECT   40   39
+CONECT   41   39
+CONECT   42   39

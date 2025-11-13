@@ -1,0 +1,47 @@
+;-------------------------------------
+;             tME-ETH LINK                      
+;-------------------------------------
+[link]
+resname "tME|ETH"
+[ bonds ]
++C01   C01        1      0.1529    224262.4  {"group": "connection"}
+[ angles ]
+C01   +C01   +C04        1    112.7000       488.3   {"group": "connection"}
+C01   +C01   +H03        1    110.7000       313.8   {"group": "connection"}
+C01   +C01   +H02        1    110.7000       313.8   {"group": "connection"}
+H04   C01   +C01        1    110.7000       313.8   {"group": "connection"}
+H03   C01   +C01        1    110.7000       313.8   {"group": "connection"}
+H02   C01   +C01        1    110.7000       313.8   {"group": "connection"}
+[ dihedrals ]
+ C01   +C01   +C04   +H06        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ C01   +C01   +C04   +H05        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H02    C01   +C01   +C04        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H03    C01   +C01   +C04        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H04    C01   +C01   +C04        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H02    C01   +C01   +H03        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H03    C01   +C01   +H03        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H04    C01   +C01   +H03        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H02    C01   +C01   +H02        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H03    C01   +C01   +H02        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ H04    C01   +C01   +H02        3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+[ pairs ]
+ C01   +H06         1  0.300000000  0.093088123 {"group": "connection"}
+ C01   +H05         1  0.300000000  0.093088123 {"group": "connection"}
+ H02   +C04         1  0.300000000  0.093088123 {"group": "connection"}
+ H03   +C04         1  0.300000000  0.093088123 {"group": "connection"}
+ H04   +C04         1  0.300000000  0.093088123 {"group": "connection"}
+ H02   +H03         1  0.250000000  0.062760000 {"group": "connection"}
+ H03   +H03         1  0.250000000  0.062760000 {"group": "connection"}
+ H04   +H03         1  0.250000000  0.062760000 {"group": "connection"}
+ H02   +H02         1  0.250000000  0.062760000 {"group": "connection"}
+ H03   +H02         1  0.250000000  0.062760000 {"group": "connection"}
+ H04   +H02         1  0.250000000  0.062760000 {"group": "connection"}
+;-------------------------------------
+;             tME-ETH LINK-TERMS                      
+;-------------------------------------
+[link]
+resname "tME|ETH"
+[ dihedrals ]
+ C01   +C01   +C04   ++C01        3        2.929      -1.464       0.209      -1.674       0.000       0.000 {"group": "connection"}
+[ pairs ]
+ C01   ++C01         1  0.350000000  0.138072000 {"group": "connection"}

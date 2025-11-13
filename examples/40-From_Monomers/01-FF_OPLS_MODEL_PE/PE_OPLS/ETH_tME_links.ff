@@ -1,0 +1,47 @@
+;-------------------------------------
+;             ETH-tME LINK                      
+;-------------------------------------
+[link]
+resname "ETH|tME"
+[ bonds ]
++CtM01 CET04      1      0.1529    224262.4  {"group": "connection"}
+[ angles ]
+CET04 +CtM01 +HtM04      1    110.7000       313.8   {"group": "connection"}
+CET04 +CtM01 +HtM03      1    110.7000       313.8   {"group": "connection"}
+CET04 +CtM01 +HtM02      1    110.7000       313.8   {"group": "connection"}
+HET06 CET04 +CtM01      1    110.7000       313.8   {"group": "connection"}
+HET05 CET04 +CtM01      1    110.7000       313.8   {"group": "connection"}
+CET01 CET04 +CtM01      1    112.7000       488.3   {"group": "connection"}
+[ dihedrals ]
+ ; propers
+ CET01  CET04 +CtM01 +HtM04      3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ HET05  CET04 +CtM01 +HtM04      3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ HET06  CET04 +CtM01 +HtM04      3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ CET01  CET04 +CtM01 +HtM03      3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ HET05  CET04 +CtM01 +HtM03      3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ HET06  CET04 +CtM01 +HtM03      3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ CET01  CET04 +CtM01 +HtM02      3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ HET05  CET04 +CtM01 +HtM02      3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ HET06  CET04 +CtM01 +HtM02      3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ HET03  CET01  CET04 +CtM01      3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+ HET02  CET01  CET04 +CtM01      3        0.628       1.883       0.000      -2.510       0.000       0.000 {"group": "connection"}
+; impropers
+[ pairs ]
+ CET01 +HtM04       1  0.300000000  0.093088123 {"group": "connection"}
+ HET05 +HtM04       1  0.250000000  0.062760000 {"group": "connection"}
+ HET06 +HtM04       1  0.250000000  0.062760000 {"group": "connection"}
+ CET01 +HtM03       1  0.300000000  0.093088123 {"group": "connection"}
+ HET05 +HtM03       1  0.250000000  0.062760000 {"group": "connection"}
+ HET06 +HtM03       1  0.250000000  0.062760000 {"group": "connection"}
+ CET01 +HtM02       1  0.300000000  0.093088123 {"group": "connection"}
+ HET05 +HtM02       1  0.250000000  0.062760000 {"group": "connection"}
+ HET06 +HtM02       1  0.250000000  0.062760000 {"group": "connection"}
+ HET03 +CtM01       1  0.300000000  0.093088123 {"group": "connection"}
+ HET02 +CtM01       1  0.300000000  0.093088123 {"group": "connection"}
+;-------------------------------------
+;             ETH-tME LINK-TERMS                      
+;-------------------------------------
+[link]
+resname "ETH|tME"
+[ dihedrals ]
+[ pairs ]

@@ -1,0 +1,10 @@
+#include "forcefield/forcefield.itp"
+#include "PE.itp"
+
+[ system ]
+; name
+Polymer
+
+[ molecules ]
+;name number
+PE 200
