@@ -1,8 +1,17 @@
-import cython
+# cython: language_level=3
+# cython: boundscheck=False
+# cython: wraparound=False
+# cython: cdivision=True
 
-# import both numpy and the Cython declarations for numpy
+# Required for compatibility with NumPy >= 2.0
+cdef extern from "numpy/arrayobject.h":
+    pass
+
 import numpy as np
 cimport numpy as np
+
+# Force use of the new API (no deprecated API allowed)
+np.import_array()
 
 # declare the interface to the C code
 cdef extern from "calc_dist.c":
@@ -16,9 +25,6 @@ cdef extern from "calc_dist.c":
   int c_dihDistFlory(int natoms, int ndih,int dim4, int* dl, double* x, double* y, double* z, int* dihhist)
   int c_tacticity(int natoms, int ndih,int dim4, int* dl, double* x, double* y, double* z, int* dihhist)
   double dihedral(double x1, double y1, double z1, double x2, double y2, double z2, double x3, double y3, double z3, double x4, double y4, double z4)
-
-@cython.boundscheck(False)
-@cython.wraparound(False)
 
 ####################################################################################  
 def setup_hist_bondC(double deltaB, int maxBinB, np.ndarray[double,ndim=1] bdist):

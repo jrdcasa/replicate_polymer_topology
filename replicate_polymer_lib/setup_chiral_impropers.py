@@ -1,5 +1,5 @@
 from _collections import defaultdict
-from ext_libc.c_distC_replicate import dihedralC
+from replicate_polymer_lib.ext_libc.c_distC_replicate import dihedralC
 import re
 
 
