@@ -71,8 +71,11 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/jrdcasa/topology",
     license="GPL-3.0-or-later",
-    packages=find_packages()+["replicate_polymer_lib.ext_libc"],
+    packages=find_packages(exclude=["docs", "tests", "dist", "build"])+["replicate_polymer_lib.ext_libc"],
     include_package_data=True,
+    package_data={
+            "forcefields": ["*.xsd", "*.xml"],
+        },
     install_requires=[
         "argcomplete",
         "mdtraj",

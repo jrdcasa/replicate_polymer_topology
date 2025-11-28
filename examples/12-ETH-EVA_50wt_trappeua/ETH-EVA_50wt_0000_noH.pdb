@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH MDTraj 1.9.6, 2022-08-30
+REMARK   1 CREATED WITH MDTraj 1.10.3, 2025-11-28
 CRYST1   64.144   64.144   64.144  90.00  90.00  90.00 P 1           1 
 MODEL        0
 ATOM      1 _CH3 Blo A   1      20.786  64.706  -7.190  1.00  1.00           C  
